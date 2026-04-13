@@ -1,0 +1,20 @@
+question,category,expected_answer,source_document,source_paragraph,source_quote
+"What was the MPC vote split in February 2026?",simple_factual,"5-4 to maintain Bank Rate at 3.75%, four members voted to reduce to 3.5%",MPC_minutes_Feb_2026,para_1,"voted by a majority of 5–4 to maintain Bank Rate at 3.75%"
+"What was Brent crude price cited in the March 2026 MPC minutes?",simple_factual,"Over $100 per barrel, around 60% higher than at the time of the February Report",MPC_minutes_Mar_2026,para_3,"The Brent crude spot price in the run-up to the MPC meeting on 18 March had been over $100 per barrel"
+"What was the CPI inflation rate cited in the November 2025 minutes?",simple_factual,TODO - fill from source,MPC_minutes_Nov_2025,TODO,TODO
+"When did the MPC last cut Bank Rate before March 2026?",simple_factual,"December 2025, reduced to 3.75%",MPC_minutes_Dec_2025,para_1,TODO
+"What was the household saving ratio cited in the November 2025 MPR?",simple_factual,"10.8% in 2025 Q2",MPR_Nov_2025,Box_D,TODO
+"How did the February 2026 MPR near-term inflation projection differ from November 2025?",comparative,"CPI projected at 2.1% in 2026 Q2, 0.7pp lower than November projection of ~2.8%",MPR_Feb_2026,para_3,TODO
+"How did the MPC's language on inflation persistence change between November 2025 and February 2026?",comparative,TODO - fill from source,MPC_minutes_Nov_2025 + MPC_minutes_Feb_2026,TODO,TODO
+"Compare voting patterns across November 2025 December 2025 and February 2026 meetings",comparative,TODO - fill from source,Multiple,TODO,TODO
+"How did the BoE's assessment of global risks evolve between July 2025 and December 2025 FSRs?",comparative,TODO - fill from source,FSR_Jul_2025 + FSR_Dec_2025,TODO,TODO
+"What changed in Catherine Mann's policy stance between November 2025 and February 2026?",comparative,TODO - fill from source,MPC_minutes_Nov_2025 + MPC_minutes_Feb_2026,TODO,TODO
+"What specific consumption weakness scenario did Box D in the November 2025 MPR describe?",deep_context,"Elevated saving ratio persists rather than falling back to historical norms due to household caution after cost-of-living shock",MPR_Nov_2025,Box_D pages 45-48,TODO
+"What structural labour market changes did Clare Lombardelli highlight in November 2025?",deep_context,"Structural changes may mean less slack, leading to more persistent inflationary pressures. Referenced Box F.",MPC_minutes_Nov_2025,Lombardelli_statement,TODO
+"What risks from US corporate defaults did the December 2025 FSR identify?",deep_context,TODO - fill from source,FSR_Dec_2025,TODO,TODO
+"What was the MPC's assessment of second-round effects from the Middle East energy shock in March 2026?",deep_context,TODO - fill from source,MPC_minutes_Mar_2026,TODO,TODO
+"What asymmetric policy risk argument did Lombardelli make in November 2025?",deep_context,"Plenty of policy space to lower Bank Rate if needed, whereas a policy reversal would be costly",MPC_minutes_Nov_2025,Lombardelli_statement,TODO
+"What is the Federal Reserve's view on interest rates?",edge_case_out_of_scope,"System should indicate this is outside the BoE corpus",N/A,N/A,N/A
+"What does the BoE think about cryptocurrency regulation?",edge_case_ambiguous,"May retrieve tangential content or indicate insufficient information",Unknown,Unknown,Unknown
+"Summarise the entire November 2025 MPR",edge_case_too_broad,"System should handle gracefully - either refuse or provide high-level summary",MPR_Nov_2025,Multiple,N/A
+"What was the exact GDP growth figure for Q3 2025 cited on page 23 of the November MPR?",edge_case_numerical,TODO - fill from source,MPR_Nov_2025,page_23,TODO
