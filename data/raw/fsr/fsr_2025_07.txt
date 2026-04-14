@@ -162,7 +162,7 @@ Market contacts report that foreign investors have been increasing their hedging
 
 Market participants should consider the implications of further shifts in these historical corelations when managing risk.
 
-The recent episode highlights that typical relationships across global financial markets can break down in periods of high volatility and during significant economic shifts. This matters for risk management practices, for example, where participants use portfolio margining based on historical correlations to reflect diversification benefits across different products (Breeden, 2025). footnote [1] The recent episode also highlights how stress from one market can spread quickly to others. In this environment, significant changes in foreign investor currency hedging may also create extra pressure on funding markets, as foreign investors who hedge their US dollar exposure will be left with a short US dollar cash position that they need to roll.
+The recent episode highlights that typical relationships across global financial markets can break down in periods of high volatility and during significant economic shifts. This matters for risk management practices, for example, where participants use portfolio margining based on historical correlations to reflect diversification benefits across different products (Breeden, 2025). The recent episode also highlights how stress from one market can spread quickly to others. In this environment, significant changes in foreign investor currency hedging may also create extra pressure on funding markets, as foreign investors who hedge their US dollar exposure will be left with a short US dollar cash position that they need to roll.
 
 Long-term US government bond yields remain significantly higher than they were at the time of the November FSR.
 
@@ -192,9 +192,9 @@ Global risks remain elevated. Risks linked to heightened geopolitical tensions, 
 
 In June, tensions between Israel and Iran escalated into military conflict, and the United States also became involved. In response, oil and gas prices rose, before subsequently falling back. The risk of further escalation remains, with energy prices being particularly sensitive to disruption in the Strait of Hormuz.
 
-Further conflict in the Middle East, Russia's continued war in Ukraine, US-China relations and trade-related tensions globally all continue to represent sources of material geopolitical risk. Respondents to the Bank's Systemic Risk Survey, covering a range of banks and non-bank financial institutions, have continued to cite geopolitical risk as the top systemic threat to the UK financial system. footnote [2]
+Further conflict in the Middle East, Russia's continued war in Ukraine, US-China relations and trade-related tensions globally all continue to represent sources of material geopolitical risk. Respondents to the Bank's Systemic Risk Survey, covering a range of banks and non-bank financial institutions, have continued to cite geopolitical risk as the top systemic threat to the UK financial system.
 
-Geopolitical tensions and other aspects of global fragmentation, such as a reduction in trade and policy cooperation, can interact with - and reinforce - each other. As highlighted by the International Monetary Fund (IMF), footnote [3] indicators of global fragmentation have risen consistently over recent years, with one composite measure at its highest level in several decades (Chart 2.1).
+Geopolitical tensions and other aspects of global fragmentation, such as a reduction in trade and policy cooperation, can interact with - and reinforce - each other. As highlighted by the International Monetary Fund (IMF), indicators of global fragmentation have risen consistently over recent years, with one composite measure at its highest level in several decades (Chart 2.1).
 
 In the context of heightened trade policy tension, there is a high degree of uncertainty around the global economic outlook.
 
@@ -208,7 +208,7 @@ Further global shocks could impact financial stability in a number of ways, incl
 
 Geopolitical events can lead to sharp reactions in market pricing, and general uncertainty around the global outlook for growth and inflation can also contribute to more volatile financial markets. Such volatility can interact with vulnerabilities in market-based finance (Section 6).
 
-The sharp market reaction to the 2 April US tariff announcements included a depreciation of the US dollar in conjunction with a fall in the price of US dollar assets such as long-dated Treasury bonds that are commonly perceived as safe havens. This represented a notable break in historical patterns (Section 1). The US dollar (and US dollar-denominated assets) have a unique position in global finance. For example, the US dollar accounts for one side of around 90% of foreign exchange (FX) swaps, with demand for this form of US dollar borrowing in part driven by corporates that operate cross-border and transact in US dollars. footnote [4] Shocks that affect the central role of the US dollar in global finance and trade - or shocks that affect the functioning of short-term US dollar funding markets, including the FX swap market - could have impacts on financial stability globally.
+The sharp market reaction to the 2 April US tariff announcements included a depreciation of the US dollar in conjunction with a fall in the price of US dollar assets such as long-dated Treasury bonds that are commonly perceived as safe havens. This represented a notable break in historical patterns (Section 1). The US dollar (and US dollar-denominated assets) have a unique position in global finance. For example, the US dollar accounts for one side of around 90% of foreign exchange (FX) swaps, with demand for this form of US dollar borrowing in part driven by corporates that operate cross-border and transact in US dollars. Shocks that affect the central role of the US dollar in global finance and trade - or shocks that affect the functioning of short-term US dollar funding markets, including the FX swap market - could have impacts on financial stability globally.
 
 In addition, banks globally can be impacted by sharp market moves, for example as a result of changes in the value of their assets, losses on structural FX exposures, or margin calls on FX swaps. Stresses in overseas banks could affect the UK financial system through macroeconomic spillovers and contagion to funding conditions for UK banks. In the recent market turbulence this potential source of stress did not materialise but more prolonged or extreme bouts of volatility - especially if combined with a shift in historical correlations - could prove more challenging for banks globally to manage. Material adverse impacts on internationally active banks' balance sheets could lead them to pull back from certain markets or types of exposures, potentially amplifying shocks.
 
@@ -240,7 +240,7 @@ Globally, household and corporate balance sheets remain healthy in aggregate but
 
 Shifts in trade policies pose specific challenges for exposed corporate sectors in affected jurisdictions, including through lower earnings and higher production costs (Section 3). In addition, many businesses globally will still need to refinance maturing fixed-term debt at higher interest rates over the coming years. Higher debt-servicing burdens can put pressure on corporate balance sheets, especially for smaller, highly leveraged, capital intensive or less profitable firms. Corporate bankruptcies in major advanced economies have continued to rise, although they remain below pre-Covid levels in the United States.
 
-In the euro area, the steel and automotive industries are particularly export-oriented and therefore tariff-sensitive, and automotive receives a large share of bank lending. The European Central Bank has highlighted how adverse trade developments could impact euro-area banks, including via a deterioration of asset quality, a deterioration of investor perceptions and a decline in share prices. footnote [5] In the US, manufacturing, automotive, consumer goods and construction are among those sectors particularly exposed to trade tensions.
+In the euro area, the steel and automotive industries are particularly export-oriented and therefore tariff-sensitive, and automotive receives a large share of bank lending. The European Central Bank has highlighted how adverse trade developments could impact euro-area banks, including via a deterioration of asset quality, a deterioration of investor perceptions and a decline in share prices. In the US, manufacturing, automotive, consumer goods and construction are among those sectors particularly exposed to trade tensions.
 
 Commercial real estate (CRE) prices globally have broadly stabilised, but some refinancing challenges remain.
 
@@ -310,7 +310,7 @@ In the May MPR, shocks to global trade and associated uncertainty were projected
 
 - Reduced availability of funding could reduce the ability of UK corporates to invest, reinforcing weakness in demand.
 
-These channels could pose risks to financial stability through the borrower and lender resilience channels set out in the November FSR. Further shocks could particularly impact firms in sectors dependent on demand from the US market, such as manufacturing. These sectors - and others such as retail trade - are also vulnerable to broader reduction in consumer demand globally, as well as often being less able to recover earnings through adjusting prices. Staff analysis suggests that firms in sectors likely to be more impacted by the global trade shock - either directly or indirectly - account for around 60% of UK employment. footnote [6]
+These channels could pose risks to financial stability through the borrower and lender resilience channels set out in the November FSR. Further shocks could particularly impact firms in sectors dependent on demand from the US market, such as manufacturing. These sectors - and others such as retail trade - are also vulnerable to broader reduction in consumer demand globally, as well as often being less able to recover earnings through adjusting prices. Staff analysis suggests that firms in sectors likely to be more impacted by the global trade shock - either directly or indirectly - account for around 60% of UK employment.
 
 These firms account for around 30% of the stock of UK corporate debt, and typically have less debt and stronger ICRs than firms in less vulnerable sectors, mitigating risks to borrower and lender resilience. But increased global fragmentation means that debt issuance could become more challenging for UK corporates in high yield and leveraged lending markets, which are largely reliant on international investors (Section 2).
 
@@ -346,7 +346,7 @@ Previous economic downturns such as the GFC were accompanied by a sharp fall in 
 
 Such scenarios pose risks to lenders through higher losses on household lending portfolios, and to borrowers through greater debt-servicing difficulties and potential repossessions. Such debt build-ups can also lead to debt overhangs and make it more likely that households cut spending and consumption sharply during a stress, which could amplify the stress and its impact on households and businesses further.
 
-To provide insurance against a marked and unsustainable loosening in underwriting standards and a further significant increase in the number of very highly indebted households, the FPC introduced mortgage market measures in 2014. These measures included a 15% flow limit on new UK mortgage lending to borrowers with high LTI ratios (at or greater than 4.5). footnote [7] In addition to the FPC's LTI flow limit, the FCA also has Responsible Lending ( Mortgage Conduct of Business 11 , MCOB) rules to protect consumers from unaffordable mortgage debt.
+To provide insurance against a marked and unsustainable loosening in underwriting standards and a further significant increase in the number of very highly indebted households, the FPC introduced mortgage market measures in 2014. These measures included a 15% flow limit on new UK mortgage lending to borrowers with high LTI ratios (at or greater than 4.5). In addition to the FPC's LTI flow limit, the FCA also has Responsible Lending ( Mortgage Conduct of Business 11 , MCOB) rules to protect consumers from unaffordable mortgage debt.
 
 While they have different objectives, FPC measures and FCA rules reduce risks to financial stability that could come from credit-fuelled housing bubbles. The FPC's measure was calibrated to target the point beyond which the aggregate build-up of indebtedness would be unsustainable in the long run. FPC measures and FCA rules have helped keep aggregate DSRs and arrears below the high levels seen in the GFC, even in the recent period of rising interest rates (Section 3).
 
@@ -384,7 +384,7 @@ In November 2024, the Chancellor asked the FPC to undertake work on how the UK f
 
 The financial sector makes an important contribution to sustainable economic growth by providing vital services to households and businesses.
 
-Financial institutions provide vital services to households and businesses, which in turn support economic activity, including funding, saving, insurance and payment services. footnote [8] These allow households and businesses to make transactions and manage and take risks, supporting investment, innovation and technological progress. footnote [9] For example, businesses rely on a range of services - including bank lending, market-based finance, and hedging - to make investments and manage risk, which supports productivity and economic growth. Similarly, households rely on financial services such as payments, bank lending, and insurance services to facilitate their consumption, purchase assets and manage their exposure to risk.
+Financial institutions provide vital services to households and businesses, which in turn support economic activity, including funding, saving, insurance and payment services. These allow households and businesses to make transactions and manage and take risks, supporting investment, innovation and technological progress. For example, businesses rely on a range of services - including bank lending, market-based finance, and hedging - to make investments and manage risk, which supports productivity and economic growth. Similarly, households rely on financial services such as payments, bank lending, and insurance services to facilitate their consumption, purchase assets and manage their exposure to risk.
 
 In providing vital financial services, banks, insurers and asset managers rely on a range of services from other markets and institutions that do not always interact directly with households and businesses but are nevertheless essential to the efficient provision of services to them. These include liquidity supply, risk management products (such as derivatives), financing (such as interbank loans), asset management, transactions, settlement, and custody.
 
@@ -396,15 +396,15 @@ Since the GFC, UK GDP and productivity growth have been relatively weak. Annual 
 
 This slowdown was, in part, driven by high levels of borrower indebtedness and insufficient resilience on the part of lenders before the GFC, which created systemic vulnerabilities that amplified economic and financial shocks. The FPC was established to address this. The UK household debt to income ratio averaged 182% in 2007 - well above the 1990s average of 109%. Similarly, the corporate net debt to earnings ratio averaged 202% in 2007, compared to 121% in the 1990s. Banks also held significantly less loss-absorbing capital; major UK banks' average CET1 ratio was around 4% in 2007, over three times less than the 14.4% held in 2025 Q1. These weaknesses exacerbated the crisis and caused economic scarring through four main channels:
 
-- Highly indebted households, impacted by higher unemployment and a fall in house prices from high levels, reduced consumption to service their debts even as Bank Rate was cut. This weighed on the demand for goods and services. footnote [10]
+- Highly indebted households, impacted by higher unemployment and a fall in house prices from high levels, reduced consumption to service their debts even as Bank Rate was cut. This weighed on the demand for goods and services.
 
-- Highly indebted corporates deleveraged and became more risk averse. This reduced the level of research and development, investment and technology adoption, slowing the rate of economic recovery. footnote [11]
+- Highly indebted corporates deleveraged and became more risk averse. This reduced the level of research and development, investment and technology adoption, slowing the rate of economic recovery.
 
 - Weaknesses in bank balance sheets - exacerbated by a loss of confidence and funding - caused lenders to restrict credit to households and businesses. In particular, banks were focused on their own financial health and so were reticent to lend to some credit-worthy borrowers. Bank of England research suggests that this could explain around a third of the post-GFC slowdown.
 
 - Government relief packages to support the financial sector and the wider economy, while necessary in the short term, may have reduced public spending on productive investment in the longer term.
 
-Other factors have also impacted UK productivity growth such as a mid-2000s slowdown in US productivity, which also impacted other advanced economies. footnote [12] Since the GFC, weak investment has further weighed on productivity growth. footnote [13] Additional shocks, including the UK's decision to leave the European Union, the Covid pandemic, and the significant rise in energy prices in 2022 following Russia's invasion of Ukraine, have compounded these effects.
+Other factors have also impacted UK productivity growth such as a mid-2000s slowdown in US productivity, which also impacted other advanced economies. Since the GFC, weak investment has further weighed on productivity growth. Additional shocks, including the UK's decision to leave the European Union, the Covid pandemic, and the significant rise in energy prices in 2022 following Russia's invasion of Ukraine, have compounded these effects.
 
 There cannot be sustainable growth over the medium to long term without financial stability (Figure 4.1). Financial stability underpins the continued provision of vital financial services and contributes to a stable and predictable economic environment, including by avoiding the negative consequences of financial crises. These in turn support consumer and business confidence, facilitate investment that drives long-term productivity growth, make the UK an attractive place to do business for international investors, and support UK firms' ability to compete abroad.
 
@@ -416,7 +416,7 @@ The long-term economic costs of financial instability mean that robust domestic 
 
 The FPC is undertaking work in response to the Chancellor's commission in the November 2024 remit letter to identify areas where the financial sector could contribute more to sustainable growth without compromising financial stability.
 
-As set out in the Committee's April 2025 Record , the FPC agrees it should focus on improvements to the long-term productive growth capacity of the economy. This is beneficial for long-run economic welfare - and therefore financial stability - and distinct from short-term increases in output, which risk creating unsustainable and destabilising bubbles that could fuel financial crises with material scarring impacts on the economy. footnote [14]
+As set out in the Committee's April 2025 Record , the FPC agrees it should focus on improvements to the long-term productive growth capacity of the economy. This is beneficial for long-run economic welfare - and therefore financial stability - and distinct from short-term increases in output, which risk creating unsustainable and destabilising bubbles that could fuel financial crises with material scarring impacts on the economy.
 
 The Committee is focused on actions which could support the provision of vital services to the real economy by the financial services sector and thereby support economic activity and promote welfare. These include considering potential barriers to access to external finance for SMEs (Box B), sources and allocation of long-term capital, and safe adoption of innovative technology. The Bank can support the sector's ability to contribute to growth through four main policy levers (aqua boxes in Figure 4.1):
 
@@ -428,11 +428,11 @@ The Committee is focused on actions which could support the provision of vital s
 
 - Productive finance - identifying and removing barriers to the efficient allocation of capital to productive investment that increases the capacity of the economy.
 
-These policy levers contribute to the growth of the overall economy by affecting how attractive the UK is as a location for foreign firms choosing where to locate parts of their business ( ability to attract channel). They also affect regulated firms' ability to compete in international markets, and thereby their ability to undertake cross-border activities ( ability to sell channel). These benefit the financial sector's customers by improving the availability and diversity of financial services and products. In addition, they support the financial system in facilitating growth by providing financial services and productive credit to the real economy efficiently ( capital allocation channel), reducing frictions between financial sector firms and their end-customers. footnote [15] This includes through enabling the efficient and effective management of risk in the system.
+These policy levers contribute to the growth of the overall economy by affecting how attractive the UK is as a location for foreign firms choosing where to locate parts of their business ( ability to attract channel). They also affect regulated firms' ability to compete in international markets, and thereby their ability to undertake cross-border activities ( ability to sell channel). These benefit the financial sector's customers by improving the availability and diversity of financial services and products. In addition, they support the financial system in facilitating growth by providing financial services and productive credit to the real economy efficiently ( capital allocation channel), reducing frictions between financial sector firms and their end-customers. This includes through enabling the efficient and effective management of risk in the system.
 
 The FPC has already taken some steps to support sustainable economic growth, and is considering potential further actions.
 
-The Committee recognises that financial resilience is not costless, and is committed to seeking every opportunity to make prudential regulation more efficient and effective. footnote [16] Some examples of actions the Committee has already taken to support economic growth include:
+The Committee recognises that financial resilience is not costless, and is committed to seeking every opportunity to make prudential regulation more efficient and effective. Some examples of actions the Committee has already taken to support economic growth include:
 
 - Reducing the frequency of its main Bank Capital Stress Tests to every other year to ensure the burden placed on participating banks is proportionate and supports the UK banking sector's competitiveness and growth. In alternate years, these can be supplemented through stress testing in a number of ways that are less burdensome for banks, for example through desk-based exercises.
 
@@ -468,7 +468,7 @@ The Committee intends to publish conclusions of its work on how the financial se
 
 Small and medium sized enterprises (SMEs) account for the majority of UK employment. And larger SMEs make a substantial contribution to UK economic growth.
 
-SMEs are businesses with fewer than 250 employees or turnover of less than or equal to £44 million. They represent 99.9% of the UK's 5.5 million private sector firms and are responsible for around 60% of employment and 40% of business investment. Typically, SMEs account for over half of private sector output growth per year, and larger SMEs contribute significantly to productivity growth. Evidence also suggests high-growth and young SMEs make an outsized contribution to employment growth in the UK and globally. footnote [17]
+SMEs are businesses with fewer than 250 employees or turnover of less than or equal to £44 million. They represent 99.9% of the UK's 5.5 million private sector firms and are responsible for around 60% of employment and 40% of business investment. Typically, SMEs account for over half of private sector output growth per year, and larger SMEs contribute significantly to productivity growth. Evidence also suggests high-growth and young SMEs make an outsized contribution to employment growth in the UK and globally.
 
 The financial system plays a key role in supporting SMEs through the provision of vital services, in turn supporting their contribution to economic growth.
 
@@ -478,11 +478,11 @@ SMEs face greater barriers to accessing credit than larger firms, and some SMEs 
 
 The stock of SME debt as a share of UK GDP has fallen over the past 15 years, from 13% in 2011 Q4 to 8% in 2024 Q4. In 2025 Q1, net lending to SMEs remained negative as Covid guaranteed loans continue to be paid down, in contrast to net lending to large corporates which was positive. However, the 2025 Q2 Credit Conditions Survey indicated credit availability for small and medium firms increased slightly in Q2, and intelligence from the Bank's agency network suggests SME financing conditions are close to what they would consider normal.
 
-Lower SME lending as a share of GDP may reflect both small shares of SMEs seeking external finance and longstanding barriers these firms face in accessing external financing. footnote [18] Previous Bank work has found that access to finance is a critical factor that hinders SME growth and ability to invest. And research suggests that obtaining finance is a particular barrier for small firms, especially following financial crises. Compared to large businesses, SMEs are typically required to publish less financial information, lack long credit histories, and may need to rely on personal assets to act as collateral against borrowing. This means that lenders have often been unable to assess an SME's ability to repay or offer finance at an affordable interest rate. These barriers may in part be addressed by initiatives, including the Bank's work on the future of finance , to boost the availability of data and improve relevant technology.
+Lower SME lending as a share of GDP may reflect both small shares of SMEs seeking external finance and longstanding barriers these firms face in accessing external financing. Previous Bank work has found that access to finance is a critical factor that hinders SME growth and ability to invest. And research suggests that obtaining finance is a particular barrier for small firms, especially following financial crises. Compared to large businesses, SMEs are typically required to publish less financial information, lack long credit histories, and may need to rely on personal assets to act as collateral against borrowing. This means that lenders have often been unable to assess an SME's ability to repay or offer finance at an affordable interest rate. These barriers may in part be addressed by initiatives, including the Bank's work on the future of finance , to boost the availability of data and improve relevant technology.
 
 SMEs looking to scale-up use more specialised forms of finance, some of which can be challenging to access.
 
-Bank of England survey evidence suggests that many SMEs do not intend to expand their business, and around 70% would prefer slow growth over taking on debt. But other survey evidence also suggests SMEs looking to scale up are much more likely to seek external finance than the micro SME population. The same survey suggests that firms using external finance are more likely to grow quickly - and the Scale-Up Institute estimates that while 'scale-ups' comprise only 0.6% of the SME population, they contribute more than half of UK SME turnover. footnote [19]
+Bank of England survey evidence suggests that many SMEs do not intend to expand their business, and around 70% would prefer slow growth over taking on debt. But other survey evidence also suggests SMEs looking to scale up are much more likely to seek external finance than the micro SME population. The same survey suggests that firms using external finance are more likely to grow quickly - and the Scale-Up Institute estimates that while 'scale-ups' comprise only 0.6% of the SME population, they contribute more than half of UK SME turnover.
 
 These 'scale-up' SMEs are likely to demand forms of finance such as seed funding, venture capital and private equity, which are more specialised than bank debt. These businesses often lack physical assets - instead having intangible assets particularly in sectors such as manufacturing and, information and communications technology - and are often loss making in early years. This makes traditional bank debt less suitable for them. British Business Bank evidence shows that over recent years, the availability of alternative sources of finance for SMEs - such as venture capital and peer-to-peer lending - has increased. The UK has the third largest venture capital market in the world, although volumes of venture capital financing fell in 2023 and 2024 from 2021-22 highs. Research also suggests that the UK's venture debt market has grown in recent years, although its adoption rate is half that of the US.
 
@@ -518,13 +518,13 @@ UK bank profitability has supported increased valuations.
 
 Major UK banks reported returns on tangible equity (RoTE) of 13.5% for 2024. Consensus expectations are for earnings to remain around their current levels in aggregate over the next three years. The margins that banks earn on their lending are expected to rise a little above current levels but to remain close to long-term averages (Chart 5.1).
 
-Banks' valuations have risen, with the FTSE 350 bank index up by 27% since the November FSR to around post-Covid highs, having recovered from a drop after the 2 April US tariff announcements. Reflecting that, UK banks' average price to tangible book (PtTB) ratio has increased since the November FSR to around 1.2, up from Covid-era lows of around 0.5. In general, a PtTB ratio of one indicates that investors expect RoTE to be at or around the level needed to compensate them for the perceived riskiness of those returns (referred to as the 'cost of equity'). footnote [20]
+Banks' valuations have risen, with the FTSE 350 bank index up by 27% since the November FSR to around post-Covid highs, having recovered from a drop after the 2 April US tariff announcements. Reflecting that, UK banks' average price to tangible book (PtTB) ratio has increased since the November FSR to around 1.2, up from Covid-era lows of around 0.5. In general, a PtTB ratio of one indicates that investors expect RoTE to be at or around the level needed to compensate them for the perceived riskiness of those returns (referred to as the 'cost of equity').
 
 Some lenders continue to face uncertainty over the potential for redress payments in respect of past motor finance commission arrangements. A Court of Appeal ruling in October 2024 - that it was unlawful for car dealers to receive commission from motor finance lenders unless it had been appropriately disclosed to the customer and they had given informed consent - is currently subject to an appeal to the Supreme Court. In March, the FCA stated that it will confirm within six weeks of the Supreme Court's decision if it is proposing a redress scheme, and in June it set out key considerations around a possible redress scheme. The Bank's 2024 desk-based stress test incorporated a stressed level of misconduct costs in both of the scenarios tested, and the UK banking system's aggregate capital ratio remained well above its hurdle rate under both of them.
 
 UK banks have continued to adjust to the normalisation of central bank balance sheets, increasing their use of Bank of England standing lending facilities.
 
-Central banks globally continue to unwind the extraordinary measures put in place in response to the Global Financial Crisis and the Covid pandemic. The Bank of England is continuing to unwind its Asset Purchase Facility holdings and the Term Funding Scheme with additional incentives for SMEs is also winding down. As a result, the level of aggregate Bank reserves has been declining. footnote [21]
+Central banks globally continue to unwind the extraordinary measures put in place in response to the Global Financial Crisis and the Covid pandemic. The Bank of England is continuing to unwind its Asset Purchase Facility holdings and the Term Funding Scheme with additional incentives for SMEs is also winding down. As a result, the level of aggregate Bank reserves has been declining.
 
 UK banks' liquidity coverage ratios have remained broadly unchanged throughout this period of adjustment, remaining well above minimum levels (Table 5.A). As part of this adjustment, the share of major UK banks' high quality liquid assets (HQLA) held as central bank reserves has declined (from 52% in May 2024 to 48% in May 2025) while the share of HQLA held as government bonds has increased (from 28% to 35% in the same period).
 
@@ -590,7 +590,7 @@ UK banks must ensure appropriate risk management of their growing exposures to h
 
 In December 2024, the Basel Committee on Banking Supervision published updated guidelines to strengthen banks' management of counterparty credit risks, including from NBFIs. The guidance emphasised the importance of continued monitoring, robust credit risk mitigation strategies, and the use of diverse exposure metrics and stress testing. The PRA and FCA previously set out their expectations on required risk management enhancements related to prime brokerage in a joint letter to banks operating in the UK following a supervisory review of global equity finance businesses and in a second joint letter following a supervisory review of fixed-income financing. Supervisors continue to monitor firms' progress in meeting these expectations.
 
-Another important aspect of risk management in this area is consideration of risks from opaque and 'contingent' leverage. Contingent leverage refers to the potential for a firm's leverage exposure measure (LEM) to rise in a stress event. footnote [22] Supervisory Statement SS31/15 sets out how firms should assess these risks.
+Another important aspect of risk management in this area is consideration of risks from opaque and 'contingent' leverage. Contingent leverage refers to the potential for a firm's leverage exposure measure (LEM) to rise in a stress event. Supervisory Statement SS31/15 sets out how firms should assess these risks.
 
 The PRA and the FPC will continue to monitor this source of risk to banks and to the financial system more widely.
 
@@ -598,13 +598,13 @@ The PRA and the FPC will continue to monitor this source of risk to banks and to
 
 ### 6.1: Developments in vulnerabilities in market-based finance
 
-Market-based finance (MBF) is an interconnected system of markets, market infrastructure (such as central counterparties (CCPs)) and non-bank financial institutions (NBFIs) such as insurers, hedge funds and private finance firms. Well-functioning UK core markets are central to that system because they act as a benchmark for the pricing of other financial instruments, and as a source of funding supporting the ability of the financial system to absorb rather than amplify fluctuations in liquidity demand and supply. footnote [23]
+Market-based finance (MBF) is an interconnected system of markets, market infrastructure (such as central counterparties (CCPs)) and non-bank financial institutions (NBFIs) such as insurers, hedge funds and private finance firms. Well-functioning UK core markets are central to that system because they act as a benchmark for the pricing of other financial instruments, and as a source of funding supporting the ability of the financial system to absorb rather than amplify fluctuations in liquidity demand and supply.
 
 Despite periods of significant price movement and high volumes since November, UK core markets have continued to function in an orderly way.
 
-During the period of market volatility in early April, gilt trading volumes reached their highest levels since the September 2022 liability-driven investment (LDI) episode. footnote [24] Sales of gilts over the seven-day period following US tariff announcements on 2 April were comparable to activity during past periods of high volatility (Chart 6.1), while changes in net gilt holdings were smaller than in the March 2020 'dash for cash' and the LDI episode. Funding markets also remained stable throughout this period, with gilt repo rates staying near recent average spreads to Bank Rate (Chart 1.4). Similarly robust functioning in these markets was observed during a short-lived period of rapid increases in gilt yields in early January. Box D provides more detail on the toolkit the Bank is developing to analyse the potential systemic impact of such market moves.
+During the period of market volatility in early April, gilt trading volumes reached their highest levels since the September 2022 liability-driven investment (LDI) episode. Sales of gilts over the seven-day period following US tariff announcements on 2 April were comparable to activity during past periods of high volatility (Chart 6.1), while changes in net gilt holdings were smaller than in the March 2020 'dash for cash' and the LDI episode. Funding markets also remained stable throughout this period, with gilt repo rates staying near recent average spreads to Bank Rate (Chart 1.4). Similarly robust functioning in these markets was observed during a short-lived period of rapid increases in gilt yields in early January. Box D provides more detail on the toolkit the Bank is developing to analyse the potential systemic impact of such market moves.
 
-LDI and pension funds were most affected by variation margin calls. But they managed increased liquidity demands without taking actions that might have amplified market volatility. Liquidity buffers remained stable and recapitalisations proceeded smoothly. This was consistent with funds having increased their levels of resilience following the FPC's LDI fund recommendations. footnote [25] Market intelligence also suggests some leveraged market participants had de-risked prior to the US tariff announcement, limiting the impact of the rise in volatility.
+LDI and pension funds were most affected by variation margin calls. But they managed increased liquidity demands without taking actions that might have amplified market volatility. Liquidity buffers remained stable and recapitalisations proceeded smoothly. This was consistent with funds having increased their levels of resilience following the FPC's LDI fund recommendations. Market intelligence also suggests some leveraged market participants had de-risked prior to the US tariff announcement, limiting the impact of the rise in volatility.
 
 Trading activity across other asset classes remained orderly. Although there were net sales of sterling corporate bonds by pension funds, LDI funds and asset managers, these were within normal ranges of activity for the market. Likewise, money market fund (MMF) redemptions remained limited, showing no significant deviation from usual patterns.
 
@@ -622,21 +622,21 @@ Historically, pension schemes and LDI funds had been the largest buyers of gilts
 
 Since the November FSR, hedge fund net repo borrowing has risen to £77 billion (as of early June 2025), its highest level since data collection began in 2016. This represents the largest increase in borrowing across all NBFI sectors over that period (Chart 6.2). Bilateral repo activity is most often conducted at zero or near-zero haircuts, reflecting both competitive pressures and the ability of dealers to net counterparty credit exposures .
 
-Increasing gilt supply has pushed gilt valuations lower relative to other assets classes such as swaps and credit instruments. This, in addition to higher interest rates more generally, has made gilts more attractive to global asset managers seeking higher returns, with a preference for investing in futures over cash gilts. Futures offer greater liquidity allowing for positions to be adjusted more efficiently. UK EMIR data footnote [26] show that asset managers have increased their positions in gilt futures, with hedge funds taking the other side of these positions and intermediating between cash gilt supply and rising futures demand.
+Increasing gilt supply has pushed gilt valuations lower relative to other assets classes such as swaps and credit instruments. This, in addition to higher interest rates more generally, has made gilts more attractive to global asset managers seeking higher returns, with a preference for investing in futures over cash gilts. Futures offer greater liquidity allowing for positions to be adjusted more efficiently. UK EMIR data show that asset managers have increased their positions in gilt futures, with hedge funds taking the other side of these positions and intermediating between cash gilt supply and rising futures demand.
 
-Excessive leverage, particularly when combined with other macrofinancial vulnerabilities such as market concentration, crowded positions and opacity, increases the risk of a disorderly unwind of positions and a sudden jump to illiquidity. footnote [27]
+Excessive leverage, particularly when combined with other macrofinancial vulnerabilities such as market concentration, crowded positions and opacity, increases the risk of a disorderly unwind of positions and a sudden jump to illiquidity.
 
 Concentration in UK core markets is pronounced; for example, a small number of hedge funds accounts for 90% of net gilt repo borrowing. This concentration means that a rapid unwind of leveraged positions by a few key players could amplify shocks during periods of high volatility.
 
 Crowded positioning could also amplify stress. Past episodes, including the LDI episode and the dash for cash, demonstrated how simultaneous deleveraging by large numbers of similarly positioned funds could trigger forced selling and feedback loops.
 
-Finally, opacity can impede effective monitoring and risk assessment of leveraged strategies. For example, UK authorities lack visibility of some derivatives market activity where trades do not involve a UK-domiciled clearing member. Similarly, prime brokers who provide leverage do not have a full view of their clients' portfolios across counterparties. This lack of transparency was one contributing factor in the Archegos episode, where concentrated leveraged exposures went undetected until losses crystallised. footnote [28] footnote [29]
+Finally, opacity can impede effective monitoring and risk assessment of leveraged strategies. For example, UK authorities lack visibility of some derivatives market activity where trades do not involve a UK-domiciled clearing member. Similarly, prime brokers who provide leverage do not have a full view of their clients' portfolios across counterparties. This lack of transparency was one contributing factor in the Archegos episode, where concentrated leveraged exposures went undetected until losses crystallised.
 
 Events in April underline the importance of resilience in MBF as well as the importance of monitoring and transparency to support financial stability.
 
 While UK core markets continued to function through the volatility, in a more prolonged disruption, the existence of highly leveraged trades combined with other vulnerabilities such as opacity, concentration and correlation, could have intensified market corrections and led to tighter financial conditions across the UK economy.
 
-The FPC has previously judged that vulnerabilities in private markets - especially those related to interconnectedness, concentration and opacity around valuation and high leverage - could create risks to financial stability. footnote [30] Box E explores how the current risk environment could interact with these vulnerabilities, and the potential implications of that for UK financial stability.
+The FPC has previously judged that vulnerabilities in private markets - especially those related to interconnectedness, concentration and opacity around valuation and high leverage - could create risks to financial stability. Box E explores how the current risk environment could interact with these vulnerabilities, and the potential implications of that for UK financial stability.
 
 ### 6.2: Improving the resilience of market-based finance
 
@@ -662,7 +662,7 @@ This box explores some of the strategies underpinning this rise in leverage and 
 
 These trading strategies can be grouped into three broad categories:
 
-UK markets are therefore not unique in this regard. footnote [33] Similar strategies have emerged in other markets, where increased sovereign bond issuance has led to greater hedge fund activity. Many hedge funds operate across multiple jurisdictions and asset classes, underscoring their global footprint. This increases the risk that stress in one market could spill over into others through shared exposures or correlated deleveraging.
+UK markets are therefore not unique in this regard. Similar strategies have emerged in other markets, where increased sovereign bond issuance has led to greater hedge fund activity. Many hedge funds operate across multiple jurisdictions and asset classes, underscoring their global footprint. This increases the risk that stress in one market could spill over into others through shared exposures or correlated deleveraging.
 
 Although the nature and scale of risks will vary across different leveraged strategies, all can be vulnerable to sudden shifts in financing conditions or sudden spikes in margin.
 
@@ -706,13 +706,13 @@ Recent yield curve moves have not been parallel. Instead, long rates have tended
 
 Yields rose again between end-January and end-March, depleting buffers within LDI funds and increasing the size of potential capital calls. In April, another sharp rise in yields triggered further recapitalisation activity. However, by the end of the month, the combination of additional capital raised and a fall in yields brought the estimated recapitalisation need back down to £1 billion-£2 billion for a similar range of yield curve moves.
 
-Despite the severity of the April volatility, LDI funds remained resilient. Their recapitalisation activity did not disrupt market functioning, reflecting the effectiveness of the FPC's recommendations to strengthen the sector's resilience. footnote [34]
+Despite the severity of the April volatility, LDI funds remained resilient. Their recapitalisation activity did not disrupt market functioning, reflecting the effectiveness of the FPC's recommendations to strengthen the sector's resilience.
 
 The Bank is continuing to use lessons from the SWES to enhance its suite of surveillance tools.
 
 The desktop modelling tool developed for LDI funds marks a significant step forward in the Bank's ability to monitor systemic risk in near real time. It provides a practical and scalable way to assess the potential impact of interest rate shocks on the LDI sector and their possible transmission to other parts of the financial system. While the model currently focuses on parallel shifts in the yield curve, Bank staff are working to extend its functionality to better account for a wider range of market dynamics, including different patterns of yield curve movement. This will help ensure the tool remains relevant across a broader set of scenarios.
 
-More broadly, leveraging the lessons learned from SWES, the Bank is continuing to invest in a suite of tools to support its market surveillance objectives. This includes work to better understand the behaviour of other key market participants such as open-ended funds and hedge funds in times of stress. It will be possible to use that analysis and those sector-specific models in combination to understand interactions between sectors. This will improve the FPC's understanding of how the collective actions of firms could impact core UK financial markets and the implications for financial stability. As part of this broader toolkit, Bank staff have also built a dashboard that flags large and fast-growing derivative positions as a potential indicator of emerging risk, and built tools to simulate margin calls on derivatives in a range of market scenarios. footnote [35] footnote [36] Staff are steadily expanding this margin calls toolkit to cover more instruments for more classes of derivatives. Further work to expand the Bank's toolkit includes a framework for tracking systemic vulnerabilities in leveraged non-bank financial institutions, and a fund monitoring tool that applies a unified risk framework across key fund types. As with LDI funds, Bank staff expect to complement these tools with structured industry engagement to improve understanding of behavioural dynamics that may not be captured by models.
+More broadly, leveraging the lessons learned from SWES, the Bank is continuing to invest in a suite of tools to support its market surveillance objectives. This includes work to better understand the behaviour of other key market participants such as open-ended funds and hedge funds in times of stress. It will be possible to use that analysis and those sector-specific models in combination to understand interactions between sectors. This will improve the FPC's understanding of how the collective actions of firms could impact core UK financial markets and the implications for financial stability. As part of this broader toolkit, Bank staff have also built a dashboard that flags large and fast-growing derivative positions as a potential indicator of emerging risk, and built tools to simulate margin calls on derivatives in a range of market scenarios. Staff are steadily expanding this margin calls toolkit to cover more instruments for more classes of derivatives. Further work to expand the Bank's toolkit includes a framework for tracking systemic vulnerabilities in leveraged non-bank financial institutions, and a fund monitoring tool that applies a unified risk framework across key fund types. As with LDI funds, Bank staff expect to complement these tools with structured industry engagement to improve understanding of behavioural dynamics that may not be captured by models.
 
 These efforts are closely aligned with the FPC's approach to assessing and mitigating risks in market-based finance, as set out in the October 2023 Financial Stability in Focus . That approach emphasises the importance of improving data, modelling, and surveillance capabilities. These objectives also align with international efforts led by the Financial Stability Board to improve the surveillance of non-bank financial intermediation globally.
 
@@ -730,7 +730,7 @@ In the UK, private markets have become an increasingly important source of fundi
 
 Private equity (PE) backed corporates account for around 15% of total UK corporate debt and 10% of UK private sector employment (over two million jobs). UK PE-backed corporates have secured financing through private capital across a diverse range of sectors (Chart B).
 
-PE provides long-term capital that helps businesses scale, innovate, and invest in productivity-enhancing initiatives. Venture capital in particular funds small and medium-sized enterprises (SMEs) that may struggle to access traditional financing (Box B). And as set out in the June 2024 FSR , from a macroprudential perspective, the long-term nature of private capital allows and incentivises fund managers to act less cyclically, which can reduce the volatility of financing flows in macroeconomic downturns. Some economic literature also indicates that PE buyouts can increase firm-level productivity through greater capital expenditures. footnote [37]
+PE provides long-term capital that helps businesses scale, innovate, and invest in productivity-enhancing initiatives. Venture capital in particular funds small and medium-sized enterprises (SMEs) that may struggle to access traditional financing (Box B). And as set out in the June 2024 FSR , from a macroprudential perspective, the long-term nature of private capital allows and incentivises fund managers to act less cyclically, which can reduce the volatility of financing flows in macroeconomic downturns. Some economic literature also indicates that PE buyouts can increase firm-level productivity through greater capital expenditures.
 
 A large proportion of PE-backed corporates have high levels of debt and are financed from riskier credit markets like private credit and leveraged loans, making PE-backed corporates relatively more exposed to higher interest rates and deteriorations in investor risk sentiment. The Bank has also previously highlighted credit risk from the weakening in underwriting standards in these markets in the years following the GFC. Examples include the increasing share of leveraged loan deals with weaker covenants, a rise in the use of earning add-backs to reduce headline leverage multiples, and looser documentation standards.
 
@@ -832,148 +832,6 @@ Other FPC activities since the November 2024 Report not included elsewhere in th
 
 - Abbreviations ABS - Annual Business Survey. AI - artificial intelligence. AUM - assets under management. CAPE - cyclically-adjusted price-to-earnings. CCPs - central counterparties. CCS - Credit Conditions Survey. CCyB - countercyclical capital buffer. CET1 - Common Equity Tier 1. CFTC - Commodity Futures Trading Commission. CLOs - collateralised loan obligations. CNRF - Contingent NBFI Repo Facility. COLA-DSRs - cost of living adjusted mortgage debt-servicing ratios. CRE - commercial real estate. CST24 - Cyber Stress Test 2024. DLT - Distributed Ledger Technology. DP - discussion paper. DSR - debt-servicing ratio. DXY - US Dollar index. EMIR - European Market Infrastructure Regulation. EU - European Union. FCA - Financial Conduct Authority. FPC - Financial Policy Committee. FSB - Financial Stability Board. FSR - Financial Stability Report. FTBs - first-time buyers. FX - foreign exchange. G7 - Canada, France, Germany, Italy, Japan, the United Kingdom and the United States. GC - general collateral. GDP - gross domestic product. GFC - global financial crisis HM Treasury - His Majesty's Treasury. HQLA - high-quality liquid asset. ICE - Intercontinental Exchange. ICR - interest coverage ratio. IFRS - International Financial Reporting Standard. ILTR - Indexed Long-Term Repo. IMF - International Monetary Fund. IOSCO - International Organization of Securities Commissions. LDI - liability-driven investment. LEM - leverage exposure measure. LL - leveraged loan. LTI - loan to income. LTV - loan to value. MBF - market-based finance. MCOB - Mortgage Conduct of Business. MiFID - Markets in Financial Instruments Directive. MMF - money market fund. MOVE - Merrill Lynch Option Volatility Estimate. MPR - Monetary Policy Report. NAV - net asset value. NBFI - non-bank financial institution. OECD - Organisation for Economic Co-operation and Development. OEF - open-ended fund. OIS - overnight index swap. ONS - Office for National Statistics. O-SII - other systemically important institution. PE - private equity. PFE - Potential Future Exposure. PPP - purchasing power parity. PRA - Prudential Regulation Authority. PtTB - price to tangible book. RoTE - return on tangible equity. RV - relative value. SME - small and medium-sized enterprise. SMF - Sterling Monetary Framework. SMMD - sterling money market data. STR - Short-Term Repo. SWES - system-wide exploratory scenario. TPR - The Pensions Regulator. VIX Index - Cboe Volatility Index.
 
-### Abbreviations
-
-ABS - Annual Business Survey.
-
-AI - artificial intelligence.
-
-AUM - assets under management.
-
-CAPE - cyclically-adjusted price-to-earnings.
-
-CCPs - central counterparties.
-
-CCS - Credit Conditions Survey.
-
-CCyB - countercyclical capital buffer.
-
-CET1 - Common Equity Tier 1.
-
-CFTC - Commodity Futures Trading Commission.
-
-CLOs - collateralised loan obligations.
-
-CNRF - Contingent NBFI Repo Facility.
-
-COLA-DSRs - cost of living adjusted mortgage debt-servicing ratios.
-
-CRE - commercial real estate.
-
-CST24 - Cyber Stress Test 2024.
-
-DLT - Distributed Ledger Technology.
-
-DP - discussion paper.
-
-DSR - debt-servicing ratio.
-
-DXY - US Dollar index.
-
-EMIR - European Market Infrastructure Regulation.
-
-EU - European Union.
-
-FCA - Financial Conduct Authority.
-
-FPC - Financial Policy Committee.
-
-FSB - Financial Stability Board.
-
-FSR - Financial Stability Report.
-
-FTBs - first-time buyers.
-
-FX - foreign exchange.
-
-G7 - Canada, France, Germany, Italy, Japan, the United Kingdom and the United States.
-
-GC - general collateral.
-
-GDP - gross domestic product.
-
-GFC - global financial crisis
-
-HM Treasury - His Majesty's Treasury.
-
-HQLA - high-quality liquid asset.
-
-ICE - Intercontinental Exchange.
-
-ICR - interest coverage ratio.
-
-IFRS - International Financial Reporting Standard.
-
-ILTR - Indexed Long-Term Repo.
-
-IMF - International Monetary Fund.
-
-IOSCO - International Organization of Securities Commissions.
-
-LDI - liability-driven investment.
-
-LEM - leverage exposure measure.
-
-LL - leveraged loan.
-
-LTI - loan to income.
-
-LTV - loan to value.
-
-MBF - market-based finance.
-
-MCOB - Mortgage Conduct of Business.
-
-MiFID - Markets in Financial Instruments Directive.
-
-MMF - money market fund.
-
-MOVE - Merrill Lynch Option Volatility Estimate.
-
-MPR - Monetary Policy Report.
-
-NAV - net asset value.
-
-NBFI - non-bank financial institution.
-
-OECD - Organisation for Economic Co-operation and Development.
-
-OEF - open-ended fund.
-
-OIS - overnight index swap.
-
-ONS - Office for National Statistics.
-
-O-SII - other systemically important institution.
-
-PE - private equity.
-
-PFE - Potential Future Exposure.
-
-PPP - purchasing power parity.
-
-PRA - Prudential Regulation Authority.
-
-PtTB - price to tangible book.
-
-RoTE - return on tangible equity.
-
-RV - relative value.
-
-SME - small and medium-sized enterprise.
-
-SMF - Sterling Monetary Framework.
-
-SMMD - sterling money market data.
-
-STR - Short-Term Repo.
-
-SWES - system-wide exploratory scenario.
-
-TPR - The Pensions Regulator.
-
-VIX Index - Cboe Volatility Index.
-
 See Private equity financing and firm productivity , The productivity institute, Lavery et al (2024a) and Do private equity owned firms have better management practices? , American Economic Review, Bloom et al (2015).
 
 For more details please refer to the Bank Overground, Monitoring collateral calls .
@@ -1062,8 +920,6 @@ See A system-wide approach to system-wide resilience: CCPs and their users − s
 
 [CHART: Chart 2.2: Average global government debt-to-GDP is expected to continue to rise]
 
-[CHART: Table 2.A: Recent fiscal policy developments in selected major economies]
-
 [CHART: Chart 3.1: It would take a large decrease in incomes and increase in lending spreads for household DSRs to reach GFC peaks]
 
 [CHART: Chart 3.2: Around 4 in 10 mortgages are expected to see payment increases by mid-2028]
@@ -1084,8 +940,6 @@ See A system-wide approach to system-wide resilience: CCPs and their users − s
 
 [CHART: Chart B: The fastest growing SMEs typically use more sophisticated sources of finance]
 
-[CHART: Table 5.A: Selected indicators of banking sector resilience]
-
 [CHART: Chart 5.1: Major UK banks' average loan margins are expected to remain close to their long-run average]
 
 [CHART: Chart 5.2: Total lending volumes increased in the first quarter of 2025]
@@ -1097,8 +951,6 @@ See A system-wide approach to system-wide resilience: CCPs and their users − s
 [CHART: Chart 6.1: UK core markets continued to function in an orderly way, with gilt trading volumes reaching their highest levels since the LDI episode]
 
 [CHART: Chart 6.2: Hedge fund net gilt repo borrowing continues to rise, outpacing other sectors and highlighting the growing role of leverage in core markets]
-
-[CHART: Table 6.A: Overview of progress on building resilience against key vulnerabilities in MBF domestically and internationally ( a )]
 
 [CHART: Chart A: Hedge fund net gilt repo borrowing has grown alongside an increase in futures open interest over the same period. This parallel movement suggests an expansion in cash-futures basis trades]
 

@@ -75,21 +75,13 @@ def _process_document(
     out_dir: Path,
     default_title: str,
 ) -> ManifestRow:
-    """Fetch, scrape, save, and return manifest metadata for one document."""
+    """Fetch, scrape, save, and return manifest metadata for one document.
+
+    Always fetches HTML (cached hits are ~free) and re-runs the scraper so that
+    manifest rows are consistent between first-run and re-run. The only
+    side-effect we skip on re-run is re-writing the .txt output.
+    """
     output_path = out_dir / filename
-    if output_path.exists():
-        text = output_path.read_text(encoding="utf-8")
-        word_count = len(text.split())
-        logger.info("Skipping %s (already processed)", filename)
-        return ManifestRow(
-            filename=filename,
-            document_type=str(document_type),
-            date=date,
-            title=default_title,
-            source_url=url,
-            word_count=word_count,
-            status="ok",
-        )
 
     html = fetch_page(url, Paths.HTML_CACHE)
     if html is None:
@@ -106,10 +98,17 @@ def _process_document(
 
     text, metadata = scraper.scrape(html)
     title = metadata.get("title") or default_title
-    out_dir.mkdir(parents=True, exist_ok=True)
-    output_path.write_text(text, encoding="utf-8")
-    word_count = len(text.split())
-    logger.info("Wrote %s (%d words)", filename, word_count)
+
+    if output_path.exists():
+        existing = output_path.read_text(encoding="utf-8")
+        word_count = len(existing.split())
+        logger.info("Skipping write for %s (already on disk)", filename)
+    else:
+        out_dir.mkdir(parents=True, exist_ok=True)
+        output_path.write_text(text, encoding="utf-8")
+        word_count = len(text.split())
+        logger.info("Wrote %s (%d words)", filename, word_count)
+
     return ManifestRow(
         filename=filename,
         document_type=str(document_type),

@@ -132,8 +132,6 @@ The Committee will continue to monitor the accumulation of evidence from a broad
 
 There also remain risks in both directions around world export price, and hence UK import price inflation. This includes the possibility of increased trade restrictions and greater trade fragmentation (Box C), although there is significant uncertainty around the size and the direction of any net effect on UK inflation.
 
-### Table 1.D: Indicative projections consistent with the MPC's forecast ( a ) ( b )
-
 - Sources: Bank of England, Bloomberg Finance L.P., Department for Energy Security and Net Zero, Eurostat, IMF World Economic Outlook, National Bureau of Statistics of China, ONS, US Bureau of Economic Analysis and Bank calculations.
 
 - ( a) The profiles in this table should be viewed as broadly consistent with the MPC's projections for GDP growth, CPI inflation and unemployment (as presented in the fan charts).
@@ -682,7 +680,7 @@ In recent years the MPC has identified several factors which are judged to be we
 
 The MPC previously judged that the long-run effects of Brexit would leave the level of potential productivity 31⁄4% lower than otherwise. Having reviewed the latest evidence from trade data, firm-level reporting, and recent research ( Freeman et al (2024) ), the MPC judges that the impact of Brexit on the level of potential productivity is evolving broadly as expected based on its previous assessment (Section 3 of the February 2024 Report).
 
-The latest data published in Blue Book 2024 suggest that the supply-side effects of the pandemic on the market sector have also dissipated as expected. At the time of the February 2024 Report, the evidence suggested that there had been no significant drag on productivity due to the recent energy price shock. footnote [1] Updated analysis continues to support this conclusion.
+The latest data published in Blue Book 2024 suggest that the supply-side effects of the pandemic on the market sector have also dissipated as expected. At the time of the February 2024 Report, the evidence suggested that there had been no significant drag on productivity due to the recent energy price shock. Updated analysis continues to support this conclusion.
 
 One contributing factor to weakness in measured productivity may be the increasing share of employment accounted for by areas where the public sector is the predominant employer such as education, health and public administration. Employment in these sectors has risen significantly since 2019, particularly in health-related activities, but these sectors have also seen significant declines in their measured productivity per hour. This means that the shift in the composition of total employment towards these areas will have weighed on total productivity.
 
@@ -794,153 +792,19 @@ CPI inflation was expected to be 2.5% in 2026 Q1, below the MPC's projection of 
 
 - Glossary of selected data and instruments AWE - average weekly earnings. CPI - consumer prices index. CPI inflation - inflation measured by the consumer prices index. CPIH - consumer prices index including owner-occupiers' housing costs. DMP - Decision Maker Panel. ERI - exchange rate index. GDP - gross domestic product. HICP - harmonised index of consumer prices. LFS - Labour Force Survey. M4 - UK non-bank, non-building society private sector's holdings of sterling notes and coin, and their sterling deposits (including certificates of deposit, holdings of commercial paper and other short-term instruments and claims arising from repos) held at UK banks and building societies. OIS - overnight index swap. PCE - personal consumption expenditure. PMI - purchasing managers' index. RPI - retail prices index.
 
-### Glossary of selected data and instruments
-
-AWE - average weekly earnings.
-
-CPI - consumer prices index.
-
-CPI inflation - inflation measured by the consumer prices index.
-
-CPIH - consumer prices index including owner-occupiers' housing costs.
-
-DMP - Decision Maker Panel.
-
-ERI - exchange rate index.
-
-GDP - gross domestic product.
-
-HICP - harmonised index of consumer prices.
-
-LFS - Labour Force Survey.
-
-M4 - UK non-bank, non-building society private sector's holdings of sterling notes and coin, and their sterling deposits (including certificates of deposit, holdings of commercial paper and other short-term instruments and claims arising from repos) held at UK banks and building societies.
-
-OIS - overnight index swap.
-
-PCE - personal consumption expenditure.
-
-PMI - purchasing managers' index.
-
-RPI - retail prices index.
-
 - Abbreviations AI - artificial intelligence. ASHE - Annual Survey of Hours and Earnings. BCC - British Chambers of Commerce. BICS - Business Insights and Conditions Survey. BVAR - Bayesian vector autoregression. CBI - Confederation of British Industry. CFO - chief financial officer. CIPS - Chartered Institute of Purchasing and Supply. DFM - dynamic factor model. ECB - European Central Bank. EPR - Extended Producer Responsibility. FCA - Financial Conduct Authority. FNAB - food and non-alcoholic beverages. FTSE - Financial Times Stock Exchange. GfK - Gesellschaft für Konsumforschung, Great Britain Ltd. HMRC - His Majesty's Revenue and Customs. ICAEW - Institute of Chartered Accountants in England and Wales. ILO - International Labour Organization. IMF - International Monetary Fund. IoD - Institute of Directors. LTV - loan to value. MIDAS - mixed-data sampling. MPC - Monetary Policy Committee. MTIC - missing trader intra-community. NICs - National Insurance contributions. NIOFC - non-intermediate other financial corporation. NLW - National Living Wage. NPP - National Population Projection. OBR - Office for Budget Responsibility. Ofgem - Office of Gas and Electricity Markets. ONS - Office for National Statistics. OPEC - Organization of the Petroleum Exporting Countries. PAYE - Pay As You Earn. PPP - purchasing power parity. PNFC - private non-financial corporation. REC - Recruitment and Employment Confederation. RLW - real living wage. RTI - Real-Time Information. S&P - Standard & Poor's. SME - small and medium-sized enterprise. UN - United Nations. WEO - IMF World Economic Outlook.
-
-### Abbreviations
-
-AI - artificial intelligence.
-
-ASHE - Annual Survey of Hours and Earnings.
-
-BCC - British Chambers of Commerce.
-
-BICS - Business Insights and Conditions Survey.
-
-BVAR - Bayesian vector autoregression.
-
-CBI - Confederation of British Industry.
-
-CFO - chief financial officer.
-
-CIPS - Chartered Institute of Purchasing and Supply.
-
-DFM - dynamic factor model.
-
-ECB - European Central Bank.
-
-EPR - Extended Producer Responsibility.
-
-FCA - Financial Conduct Authority.
-
-FNAB - food and non-alcoholic beverages.
-
-FTSE - Financial Times Stock Exchange.
-
-GfK - Gesellschaft für Konsumforschung, Great Britain Ltd.
-
-HMRC - His Majesty's Revenue and Customs.
-
-ICAEW - Institute of Chartered Accountants in England and Wales.
-
-ILO - International Labour Organization.
-
-IMF - International Monetary Fund.
-
-IoD - Institute of Directors.
-
-LTV - loan to value.
-
-MIDAS - mixed-data sampling.
-
-MPC - Monetary Policy Committee.
-
-MTIC - missing trader intra-community.
-
-NICs - National Insurance contributions.
-
-NIOFC - non-intermediate other financial corporation.
-
-NLW - National Living Wage.
-
-NPP - National Population Projection.
-
-OBR - Office for Budget Responsibility.
-
-Ofgem - Office of Gas and Electricity Markets.
-
-ONS - Office for National Statistics.
-
-OPEC - Organization of the Petroleum Exporting Countries.
-
-PAYE - Pay As You Earn.
-
-PPP - purchasing power parity.
-
-PNFC - private non-financial corporation.
-
-REC - Recruitment and Employment Confederation.
-
-RLW - real living wage.
-
-RTI - Real-Time Information.
-
-S&P - Standard & Poor's.
-
-SME - small and medium-sized enterprise.
-
-UN - United Nations.
-
-WEO - IMF World Economic Outlook.
 
 - Symbols and conventions Except where otherwise stated, the source of the data used in charts and tables is the Bank of England or the Office for National Statistics (ONS) and all data, apart from financial markets data and results from the Decision Maker Panel (DMP) Survey, are seasonally adjusted. n.a. = not available. Because of rounding, the sum of the separate items may sometimes differ from the total shown. On the horizontal axes of graphs, larger ticks denote the first observation within the relevant period, eg data for the first quarter of the year.
 
-### Symbols and conventions
-
-Except where otherwise stated, the source of the data used in charts and tables is the Bank of England or the Office for National Statistics (ONS) and all data, apart from financial markets data and results from the Decision Maker Panel (DMP) Survey, are seasonally adjusted.
-
-n.a. = not available.
-
-Because of rounding, the sum of the separate items may sometimes differ from the total shown.
-
-On the horizontal axes of graphs, larger ticks denote the first observation within the relevant period, eg data for the first quarter of the year.
-
 Note that this sentence was corrected on 6 March 2025.
 
-[CHART: Table 1.A: Forecast summary ( a ) ( b )]
-
 [CHART: Chart 1.1: CPI inflation and CPI inflation excluding energy ( a )]
-
-[CHART: Table 1.B: Conditioning assumptions ( a ) ( b )]
 
 [CHART: Chart 1.2: GDP growth projection based on market interest rate expectations, other policy measures as announced]
 
 [CHART: Chart 1.3: Unemployment rate projection based on market interest rate expectations, other policy measures as announced]
 
 [CHART: Chart 1.4: CPI inflation projection based on market interest rate expectations, other policy measures as announced]
-
-[CHART: Table 1.C: The quarterly projection for CPI inflation based on market rate expectations ( a )]
-
-[CHART: Table 1: Potential drivers of a change in R* since 2018]
 
 [CHART: Chart 2.1: In the MPC's latest projections, GDP growth remains weak in the near term, the unemployment rate edges higher and CPI inflation rises]
 
@@ -998,8 +862,6 @@ Note that this sentence was corrected on 6 March 2025.
 
 [CHART: Chart 2.28: Five year ahead inflation compensation based on swap rates fell over 2024]
 
-[CHART: Table 1: Potential effects of US tariffs on the UK]
-
 [CHART: Chart A: The percentage increase in labour costs is higher in the lower end of the pay distribution and for more consumer-facing sectors]
 
 [CHART: Chart B: Firms plan to use a variety of margins of adjustment as a response to the NICs increase]
@@ -1007,8 +869,6 @@ Note that this sentence was corrected on 6 March 2025.
 [CHART: Chart C: Business survey measures suggest a recent easing in employment intentions]
 
 [CHART: Chart A: The estimated population, employment and participation are all higher after recent revisions]
-
-[CHART: Table 1: Decomposition of estimated potential supply growth ( a )]
 
 [CHART: Chart B: Potential productivity is now estimated to have been much weaker 2024]
 

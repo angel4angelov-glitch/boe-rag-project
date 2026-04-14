@@ -26,7 +26,7 @@ But let's still be clear on the progress we have made so far. Inflation has fall
 
 In my academic work, I often draw on lessons from economic history, and I will probably talk about that more in future speeches. In that vein, let me describe the historical backdrop very quickly with a focus on institutional details.
 
-At a time of inflationary challenges, the most relevant era to look back to is the 1970s (which some of us are old enough to remember): the greatest peacetime inflation in history, not just for the UK economy but also for most other advanced economies. The main thing in common with the 1970s is the origin of the shock - an energy price shock that is, to first approximation, completely external to the UK economy. However, the nature of the energy shock was different this time: in the 1970s, repeated and large oil-price shocks that largely persisted. In recent years, a large upward spike in oil and natural gas prices that have now fallen back towards more normal levels, in relative terms, although still not completely. footnote [1]
+At a time of inflationary challenges, the most relevant era to look back to is the 1970s (which some of us are old enough to remember): the greatest peacetime inflation in history, not just for the UK economy but also for most other advanced economies. The main thing in common with the 1970s is the origin of the shock - an energy price shock that is, to first approximation, completely external to the UK economy. However, the nature of the energy shock was different this time: in the 1970s, repeated and large oil-price shocks that largely persisted. In recent years, a large upward spike in oil and natural gas prices that have now fallen back towards more normal levels, in relative terms, although still not completely.
 
 There are also many differences with the 1970s, including the evolution of the global economy and the international integration of supply chains. But on today's topic, for me a key difference with the 1970s is the macroeconomic policy regime, with changes to both the fiscal rules and the monetary regime, in the UK as in many other countries. Many of my colleagues on the MPC, past and present, have remarked on this, including former Deputy Governor Ben Broadbent in his final MPC speech . The current UK monetary regime, with the independence of the central bank and a formal inflation targeting remit established in 1997, stands us in great stead. And for the Bank, the remit set by the government for the MPC is clear on our duty: primarily a credible commitment and a policy objective to dampen inflation dynamics and keep inflation expectations anchored, while still being alert to potential trade-offs so as to avoid undue volatility in output.
 
@@ -40,21 +40,13 @@ That longer-run institutional context sets the stage for an analysis of the curr
 
 The initial increase in inflation in 2021 was a surprise, with prior forecasts (up to May 2021) not showing any meaningful increase in inflation. While accounts differ, I think it is clear that the initial burst of inflation was driven by a combination of factors: a rebound in global demand after the pandemic (especially in the US, with a large fiscal impetus), combined with still impaired supply (notably in China, but also more broadly), leading to a sharp increase in the price of certain types of goods, energy, and commodities. This alone would probably have been transitory. The Bank's forecasts from August 2021 to February 2022 embody this period.
 
-- Source: ONS, Bank of England.
-
-- (a) Outturn CPI data at quarterly frequency from 2020 Q1 to 2024 Q3. Forecasts each have a three-year horizon. Selected forecasts shown in coloured lines, others in thin grey lines.
-
-The Russian invasion of Ukraine in February 2022 compounded the problem and led inflation to peak higher and last longer. The MPC's May 2022 forecast is the first to incorporate this dramatic shift in circumstances, and it turns out to have quickly adjusted forecast paths to something that actually closely resembles the eventual shape of inflation that we've experienced. Given the importance of energy prices in driving inflation up and back down, differences in the conditioning path for energy prices had material bearing on the forecast errors around this time, a topic I will return to in a moment. As such, there is some natural variation in the forecasts from May 2022 onwards reflecting differences in the conditioning assumptions for energy. But from that point on footnote [2] , forecast errors have been much smaller and more two-sided, in contrast to the larger and one-sided misses prior to that point.
+The Russian invasion of Ukraine in February 2022 compounded the problem and led inflation to peak higher and last longer. The MPC's May 2022 forecast is the first to incorporate this dramatic shift in circumstances, and it turns out to have quickly adjusted forecast paths to something that actually closely resembles the eventual shape of inflation that we've experienced. Given the importance of energy prices in driving inflation up and back down, differences in the conditioning path for energy prices had material bearing on the forecast errors around this time, a topic I will return to in a moment. As such, there is some natural variation in the forecasts from May 2022 onwards reflecting differences in the conditioning assumptions for energy. But from that point on , forecast errors have been much smaller and more two-sided, in contrast to the larger and one-sided misses prior to that point.
 
 More recently, in 2024, inflation has turned out somewhat below prior Bank forecasts, with inflation falling sharply to near (or even, briefly, below) the 2% target quite recently on account of a fall in energy prices and so-called base effects. The November 2024 MPR forecast sees a rebound in inflation over 2025 as the drag from falling energy prices fade, and as various one-time tax shocks hit, before inflation returns close to target in 2026-27. That rebound serves as a caution, and reminds us of how bumpy the last half mile of the road can be.
 
 Chart 2 shows inflation rates for different parts of the CPI basket: energy, food and       non-alcoholic drinks, other goods, and services. This illustrates clearly the different waves of inflation seen in different parts of the CPI basket over recent years - first energy and other goods, then food, then services. This was also noted by my MPC colleague Deputy Governor Dave Ramsden in his speech here in Leeds in November 2024 .
 
 Services inflation is still well-above pre-pandemic averages and target-consistent rates, but now appears to be returning slowly to those levels. Meanwhile inflation for energy, food, and other goods have all returned to roughly normal levels.
-
-- Source: ONS, Bank of England.
-
-- (a) Energy plotted against left axis; others against right axis. Energy includes household electricity and gas, and petrol and diesel. Food includes non-alcoholic beverages. Alcohol and tobacco included in other goods.
 
 One might ask: why should an energy price shock, such as the one we saw in 2021 and 2022, lead to higher inflation of food, goods, and services? There are several possible mechanisms, which are set out as follows.
 
@@ -78,23 +70,13 @@ Let us start with a stylised example, which I'll then test with some data. Chart
 
 At the beginning, immediately after the shock, the aggregate response (dashed line) rises rapidly, since all the products (solid lines) are responding to some degree. Later, as some products finish their arch, the aggregate response gets smaller. But the aggregate response doesn't get back to zero until the last product - the one with the slowest response - gets back to zero.
 
-- (a) Illustrative only. Aggregate inflation response in dashed line, individual product responses in solid lines.
-
 What the path of these arches are in practice is an empirical question, on which I hope to now offer some insights. Using UK CPI data since 1988, aggregated into different categories which we might intuitively think should respond at different speeds, we can estimate the response 'arch' of different parts of the CPI basket.
 
 To do this, we estimate local projections ( Jordà, 2005 ) of the response of different categories of CPI products to an energy price shock. Here, we use CPI energy inflation as the shock, instrumented by the annual changes in monthly spot crude oil prices (Brent crude). More details are in an Appendix, including some robustness checks. The results here are robust to starting the sample in 1992 (the start of the inflation targeting era) and a few other breakdowns of the CPI basket.
 
 Chart 4 shows the results for different types of products and are intuitive. After an energy price shock at time zero, consumer energy prices (left panel) react sharply before turning negative after around two years. However, the shock continues to pass through to other components of the CPI. Food prices react strongly and fairly quickly (right panel), with a peak impact on annual inflation 16 months after the initial shock, while goods prices react less strongly but still relatively quickly, the impact peaking after 18 months. The impact of the energy shock on food and goods prices is short-lived, fully fading after around 30 months (21⁄2 years). In contrast, services and wages exhibit a longer-lasting pass-through, peaking at 17 and 18 months, respectively, and not fully receding for over three years. Interestingly, the estimated responses of services and wages are robust to using a         pre-pandemic sample (see Appendix) so in that sense the stickiest inflation components, which have come to be of greatest concern during this inflationary episode, do not seem to be behaving very differently in recent years.
 
-- Source: ONS, US Energy Information Administration, author's calculations.
-
-- (a) Estimates from a local projection model, responses of year-on-year inflation and annual wage growth on a rolling monthly basis, to an energy price shock in period 0. Given the limited time series and usual noisiness of these estimates, we take a three-month average of the left-hand side variables in the regressions. Energy includes fuels and lubricants, electricity, gas and other fuels; food includes food and non-alcoholic beverages; wages is private sector regular pay from Average Weekly Earnings. Data sample from January 1988 to September 2024. See Appendix for details of the local projections model.
-
 A different cut of the CPI data by import-intensity, which could be interpreted as a measure of how domestic a product is - i.e. low import-intensity means higher domestic content - is shown in Chart 5 . Products with the lowest import-intensity (i.e. those with higher domestic content), which partially overlap with certain services, respond much more slowly than products with higher import-intensity. This suggests that an external energy price shock will continue to have an impact on headline CPI inflation for at least three years. There are numerous other ways to cut the CPI data, some of which are shown in the Appendix.
-
-- Source: ONS, US Energy Information Administration, author's calculations.
-
-- (a) Estimates from a local projection model, responses of year-on-year inflation rates grouped by          import-intensity on a rolling monthly basis, to an energy price shock in period 0. Import intensity from ONS (2024) ; see ONS (2018) for further details. Data sample from January 1988 to September 2024. See Appendix for details of the local projections model.
 
 To sum up, this analysis suggests to me that much of the increase in core and services inflation over the past couple of years was the predictable propagation of an energy price shock in line with dynamics seen over a longer sample period. This is consistent with a range of other recent research, some of which is summarised in the Appendix.
 
@@ -130,14 +112,6 @@ Statistical approaches to estimating underlying or 'core' inflation also exist, 
 
 Looking to independent calculations is also useful as a check. Here, a good example is the new composite core inflation measure constructed by Chris Giles and Joel Suss for the Financial Times, which they call "FT core inflation". This seeks to amalgamate various other 'core' indicators in a statistically optimal way. Chart 6 reproduces the FT core measure for the UK, measured on a 12-month (annual), six-month annualised, and     three-month annualised basis. Here some progress on normalisation can be noted: while the 12-month and six-month inflation measures sit just outside the inter-quartile range, the latest three-month reading has now fallen within that putatively normal range, where that range is computed on the pre-pandemic sample that covers the inflation targeting era from 1992 to 2019. The trend towards 2% across these time horizons is also clear.
 
-- Source: ONS, reproduction from Financial Times .
-
-- (a) "Headline" is CPI, "Core" is CPI excluding energy, food, alcohol and tobacco, "FT core" is a statistical combination of various core measures produced by Chris Giles and Joel Suss at the Financial Times. "12m" is annual inflation, "6m" is six-month annualised inflation, "3m" is three-month annualised inflation.
-
-- (b) Boxes show the inter-quartile range and median of data outturns for relevant measure over January 1992 to December 2019. Whiskers placed at 1.5 times the inter-quartile range, with outliers in hollow circles outside the whiskers. Some extreme outliers omitted. Latest data (November 2024) in solid aqua dots.
-
-- (c) Chart reproduced from the Financial Times with the kind permission and help of Chris Giles and           Joel Suss.
-
 What about the outlook of other economic indicators?
 
 The November 2024 MPR forecast for unemployment rises very modestly to 4.4% by 2027, which would be an increase of only around 0.2pp from current rates (see Chart 1.3 in the November 2024 MPR). The unemployment rate is currently hard to determine due to well-known issues with the Labour Force Survey. But looking through recent volatility and drawing on other data sources, it is clear that the unemployment rate remains historically low as of now. Nonetheless, recent disappointing data outturns, such as 0% GDP growth in Q3 2024, as well as a variety of survey data on sentiment of a forward-looking nature (hiring and investment intentions, etc.), point to rising concerns here.
@@ -166,19 +140,7 @@ But right now is quite different, and with the recent flow of data and sentiment
 
 We know the economy has been slowing progressively as 2024 unfolded, coming to halt by Q3. But there are important signs that this is to a large extent driven by faltering demand. The simplest intuitive sign here is that activity has softened at the same time as inflation, both headline and core, has moderated. A more technical analysis, using a model that identifies demand and supply shocks statistically based on output-price correlations, can translate this intuition into a decomposition of implied demand and supply shocks. In her recent speech , Deputy Governor Sarah Breeden highlighted the gradual shift in the estimated shocks from this analysis over the last 12 months, where the distribution of demand shocks has been gradually sliding into negative territory over the course of the past year. Chart 7 replicates that chart, but splits the shocks into UK domestic demand shocks (left panel) and global demand shocks hitting the UK (right panel). In the UK, a demand softening seems to have been under way; the key question then is how far it might go.
 
-- Source: Bank of England.
-
-- (a) Chart shows the estimated distribution of the demand shocks that have hit the UK economy in 2024 Q3 (aqua line), 2024 Q2 (orange line) and 2024 Q1 (purple line). Left panel: UK demand shocks; right panel: global demand shocks (hitting the UK). These shocks are derived from a SVAR model for the UK economy, estimated using Bayesian techniques on data from 1992 Q1 to 2024 Q3. The shocks are identified through zero and sign restrictions. Among various shocks, the SVAR identifies both global and domestic demand shocks. See this speech by Huw Pill for further details on the model, and see Chart 7 in this speech by Sarah Breeden for a pooled version of these shocks.
-
 Now let me translate all of that into policy space and the prospective path of interest rates. Chart 8 shows some illustrative paths for Bank Rate under the three cases described above, as well as a downside scenario path which I will discuss shortly. I will stress that these paths are my own views and not those of the committee, and are indicative rather than commitments, intended to show broadly how different scenarios could play out.
-
-- Source: Author.
-
-- (a) Illustrative paths for Bank Rate under my interpretation of the three cases used by the MPC, as set out in Box B of the November 2024 MPR. These assume no further shocks to the economy, which is unlikely, so should not be interpreted as commitments. The path labelled "downside scenario" assumes an alternative scenario as described in text, and is also illustrative.
-
-- (b) Illustrative rates at December 2025: case 1 path - 3.25%, case 2 path - 3.75%, case 3 path - 4.25%.
-
-- (c) Illustrative rates at December 2027 (consistent with illustrative r* assumptions and inflation of 2%): case 1 path - 2.75%, case 2 path - 2.75%, case 3 path - 3.75%.
 
 Looking to the current calendar year, the middle case, case 2, has been identified (by many observers) with a "gradual" pace of interest rate cuts of one per quarter, or 100 basis points by December 2025. In that sense case 2 has also been viewed (by some) as the central case. As Chart 8 illustrates, I would judge around 100 basis points of cuts by the end of 2025 to be appropriate under case 2, the central case, and I expressed this view of "gradual" at the Treasury Select Committee hearing in November .
 
@@ -193,10 +155,6 @@ Of course, there are other risks. We could end up with case 1 policies in a case
 Many of these unwelcome bumps are familiar and foreshadowed - some arise from lumpy administered price changes (such as electricity and other utilities) or unexpected one-time tax measures that phase in (like, VAT and NICs changes) or don't phase out as expected (like, fuel duty). Some bumps may be large in the context of a 2% inflation target, as the November MPR forecast indicated. Indeed, we could possibly end up in uncomfortable trade-off territory very soon, if the economy weakens while inflation bumps up.
 
 Chart 9 (reproduced from the November 2024 MPR) shows the impact of the Autumn Budget 2024 on the Bank's inflation forecast, via both taxes and spare capacity. A lot of noise in the future inflation path comes from these sources, but we should be careful not to confuse those disturbances with underlying inflation. And for that, as I have argued, the path remains slowly but steadily down towards target. It does so in line with historical norms, and is forecast to converge smoothly without going too far into an undershoot.
-
-- Source: Chart B from Box B in the November 2024 MPR .
-
-- (a) The 'other Budget effects' bars account for the effects of the rise in the cap on single bus fares, the rise in vehicle excise duty, the introduction of VAT on private school fees and Bank staff's estimates for the CPI impact of the change in employer's NICs. The 'fuel duty' bars account for the extension of the freeze and the 5p cut to fuel duty rates, followed by the assumption that the 5p cut will expire and fuel duty will rise in line with RPI from 2026 Q2. The 'spare capacity' bars capture the impact on inflation of changes to excess supply as a result of fiscal policy.
 
 As to where policy rates finally end up - the neutral level - under each of the cases, time is short and that is a topic for another day. But I will make a few comments here, where I base my view on r*, defined as the long-run real natural rate that prevails when all disturbances, real and nominal, have subsided and the economy is back at its               non-inflationary and equilibrium-employment steady state.
 

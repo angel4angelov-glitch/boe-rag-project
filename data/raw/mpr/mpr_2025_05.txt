@@ -690,139 +690,11 @@ CPI inflation was expected to be 2.1% in 2026 Q2, below the MPC's projection of 
 
 - Glossary of selected data and instruments AWE - average weekly earnings. CPI - consumer prices index. CPI inflation - inflation measured by the consumer prices index. DMP - Decision Maker Panel. ERI - exchange rate index. GDP - gross domestic product. HICP - harmonised index of consumer prices. LFS - Labour Force Survey. M4 - UK non-bank, non-building society private sector's holdings of sterling notes and coin, and their sterling deposits (including certificates of deposit, holdings of commercial paper and other short-term instruments and claims arising from repos) held at UK banks and building societies. OIS - overnight index swap. PCE - personal consumption expenditure. PMI - purchasing managers' index. RPI - retail prices index.
 
-### Glossary of selected data and instruments
-
-AWE - average weekly earnings.
-
-CPI - consumer prices index.
-
-CPI inflation - inflation measured by the consumer prices index.
-
-DMP - Decision Maker Panel.
-
-ERI - exchange rate index.
-
-GDP - gross domestic product.
-
-HICP - harmonised index of consumer prices.
-
-LFS - Labour Force Survey.
-
-M4 - UK non-bank, non-building society private sector's holdings of sterling notes and coin, and their sterling deposits (including certificates of deposit, holdings of commercial paper and other short-term instruments and claims arising from repos) held at UK banks and building societies.
-
-OIS - overnight index swap.
-
-PCE - personal consumption expenditure.
-
-PMI - purchasing managers' index.
-
-RPI - retail prices index.
-
 - Abbreviations BCC - British Chambers of Commerce. BICS - Business Insights and Conditions Survey. CBI - Confederation of British Industry. CFO - chief financial officer. CIPD - Chartered Institute of Personnel and Development. CIPS - Chartered Institute of Purchasing and Supply. ECB - European Central Bank. FNAB - food and non-alcoholic beverages. FPC - Financial Policy Committee. FTSE - Financial Times Stock Exchange. GfK - Gesellschaft für Konsumforschung, Great Britain Ltd. HMRC - His Majesty's Revenue and Customs. IAS - Inflation Attitudes Survey. ILO - International Labour Organization. IMF - International Monetary Fund. IT - information technology. KITE - Kiel Institute's Trade Policy Evaluation. LTV - loan to value. MIDAS - mixed-data sampling. MPC - Monetary Policy Committee. MPR - Monetary Policy Report. MTIC - missing trader intra-community. NICs - National Insurance contributions. NIOFC - non-intermediate other financial corporation. NLW - National Living Wage. OBR - Office for Budget Responsibility. OECD - Organisation for Economic Co-operation and Development. Ofgem - Office of Gas and Electricity Markets. ONS - Office for National Statistics. OPEC - Organization of the Petroleum Exporting Countries. PAYE - Pay As You Earn. PNFC - private non-financial corporation. PPP - purchasing power parity. QT - quantitative tightening. REC - Recruitment and Employment Confederation. RTI - Real-Time Information. S&P - Standard & Poor's. SME - small and medium-sized enterprise. SVAR - structural vector autoregressive. TFSME - Term Funding Scheme with additional incentives for SMEs. USMCA - United States, Mexico and Canada. VAT - Value Added Tax.
-
-### Abbreviations
-
-BCC - British Chambers of Commerce.
-
-BICS - Business Insights and Conditions Survey.
-
-CBI - Confederation of British Industry.
-
-CFO - chief financial officer.
-
-CIPD - Chartered Institute of Personnel and Development.
-
-CIPS - Chartered Institute of Purchasing and Supply.
-
-ECB - European Central Bank.
-
-FNAB - food and non-alcoholic beverages.
-
-FPC - Financial Policy Committee.
-
-FTSE - Financial Times Stock Exchange.
-
-GfK - Gesellschaft für Konsumforschung, Great Britain Ltd.
-
-HMRC - His Majesty's Revenue and Customs.
-
-IAS - Inflation Attitudes Survey.
-
-ILO - International Labour Organization.
-
-IMF - International Monetary Fund.
-
-IT - information technology.
-
-KITE - Kiel Institute's Trade Policy Evaluation.
-
-LTV - loan to value.
-
-MIDAS - mixed-data sampling.
-
-MPC - Monetary Policy Committee.
-
-MPR - Monetary Policy Report.
-
-MTIC - missing trader intra-community.
-
-NICs - National Insurance contributions.
-
-NIOFC - non-intermediate other financial corporation.
-
-NLW - National Living Wage.
-
-OBR - Office for Budget Responsibility.
-
-OECD - Organisation for Economic Co-operation and Development.
-
-Ofgem - Office of Gas and Electricity Markets.
-
-ONS - Office for National Statistics.
-
-OPEC - Organization of the Petroleum Exporting Countries.
-
-PAYE - Pay As You Earn.
-
-PNFC - private non-financial corporation.
-
-PPP - purchasing power parity.
-
-QT - quantitative tightening.
-
-REC - Recruitment and Employment Confederation.
-
-RTI - Real-Time Information.
-
-S&P - Standard & Poor's.
-
-SME - small and medium-sized enterprise.
-
-SVAR - structural vector autoregressive.
-
-TFSME - Term Funding Scheme with additional incentives for SMEs.
-
-USMCA - United States, Mexico and Canada.
-
-VAT - Value Added Tax.
 
 - Symbols and conventions Except where otherwise stated, the source of the data used in charts and tables is the Bank of England or the Office for National Statistics (ONS) and all data, apart from financial markets data and results from the Decision Maker Panel (DMP) Survey, are seasonally adjusted. n.a. = not available. Because of rounding, the sum of the separate items may sometimes differ from the total shown. On the horizontal axes of graphs, larger ticks denote the first observation within the relevant period, eg data for the first quarter of the year.
 
-### Symbols and conventions
-
-Except where otherwise stated, the source of the data used in charts and tables is the Bank of England or the Office for National Statistics (ONS) and all data, apart from financial markets data and results from the Decision Maker Panel (DMP) Survey, are seasonally adjusted.
-
-n.a. = not available.
-
-Because of rounding, the sum of the separate items may sometimes differ from the total shown.
-
-On the horizontal axes of graphs, larger ticks denote the first observation within the relevant period, eg data for the first quarter of the year.
-
-[CHART: Table 1.A: Baseline forecast summary ( a ) ( b )]
-
 [CHART: Chart 1.1: CPI inflation and CPI inflation excluding energy ( a )]
-
-[CHART: Table 1.B: Conditioning assumptions ( a ) ( b )]
 
 [CHART: Chart 1.2: GDP growth projection based on market interest rate expectations, other policy measures as announced]
 
@@ -830,17 +702,9 @@ On the horizontal axes of graphs, larger ticks denote the first observation with
 
 [CHART: Chart 1.4: CPI inflation projection based on market interest rate expectations, other policy measures as announced]
 
-[CHART: Table 1.C: The quarterly baseline projection for CPI inflation based on market rate expectations ( a )]
-
-[CHART: Table 1.D: Indicative projections consistent with the MPC's baseline forecast ( a ) ( b )]
-
 [CHART: Chart A: UK households and businesses face material uncertainty, partly driven by higher trade policy uncertainty]
 
-[CHART: Table 1: Evolution of key variables in Bank staff's weaker demand scenario conditioned on the market path of interest rates, relative to the baseline projections ( a )]
-
 [CHART: Chart B: CPI inflation is expected to increase in the near term]
-
-[CHART: Table 2: Evolution of key variables in Bank staff's inflation persistence scenario conditioned on the market path of interest rates, relative to the baseline projections ( a )]
 
 [CHART: Chart 2.1: In the MPC's latest projections, headline GDP growth rises in 2025 Q1 while underlying GDP growth remains weak, the unemployment rate edges higher, and CPI inflation picks up from 2025 Q2]
 

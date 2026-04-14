@@ -10,9 +10,25 @@ so we extract it via _extract_page_metadata before narrowing to content.
 
 from __future__ import annotations
 
+import re
+
 from bs4 import BeautifulSoup, Tag
 
-from boe_rag.scraper.base import BaseScraper
+from boe_rag.scraper.base import BaseScraper, is_in_ancestor
+
+# Chart caption list items that leak from <ul> blocks adjacent to chart images.
+# Example lines: "Source: ONS, Bank of England.", "(a) Outturn CPI data...",
+# "Notes: ...", "Sources: BoE, ONS.". These are chart apparatus, not prose.
+_CAPTION_PATTERNS: tuple[re.Pattern[str], ...] = (
+    re.compile(r"^\s*Sources?\s*:", re.IGNORECASE),
+    re.compile(r"^\s*Notes?\s*:", re.IGNORECASE),
+    re.compile(r"^\s*\([a-z]\)\s"),  # "(a) ", "(b) ", etc.
+)
+
+
+def _is_chart_caption(text: str) -> bool:
+    """True if text looks like a chart caption/footnote line, not prose."""
+    return any(pat.match(text) for pat in _CAPTION_PATTERNS)
 
 
 # Selected from bankofengland.co.uk/sitemap/speeches on 2026-04-14.
@@ -50,7 +66,7 @@ class SpeechScraper(BaseScraper):
         speaker = speaker_el.get_text(" ", strip=True) if speaker_el else ""
 
         date_el = soup.select_one("div.published-date")
-        # Collapse multi-line whitespace to single spaces
+        # Collapse multi-line whitespace to single spaces.
         date = " ".join(date_el.get_text(" ", strip=True).split()) if date_el else ""
 
         return {"title": title, "speaker": speaker, "published_date": date}
@@ -79,11 +95,7 @@ class SpeechScraper(BaseScraper):
 
             name = el.name
 
-            if name == "h1":
-                text = el.get_text(" ", strip=True)
-                if text:
-                    lines.append(f"## {text}")
-            elif name == "h2":
+            if name in ("h1", "h2"):
                 text = el.get_text(" ", strip=True)
                 if text:
                     lines.append(f"## {text}")
@@ -92,15 +104,14 @@ class SpeechScraper(BaseScraper):
                 if text:
                     lines.append(f"### {text}")
             elif name == "p":
-                parent = el.parent
-                if parent is not None and parent.name == "li":
+                if is_in_ancestor(el, tag_name="li"):
                     continue
                 text = el.get_text(" ", strip=True)
-                if text:
+                if text and not _is_chart_caption(text):
                     lines.append(text)
             elif name == "li":
                 text = el.get_text(" ", strip=True)
-                if text:
+                if text and not _is_chart_caption(text):
                     lines.append(f"- {text}")
 
         return "\n\n".join(lines)

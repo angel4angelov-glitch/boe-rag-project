@@ -474,137 +474,15 @@ In the weaker demand scenario, based on the policy rules shown in Chart 3.7, Ban
 
 - Annex 1: Model-based policy simulations Annex 1: Model-based policy simulations .
 
-### Annex 1: Model-based policy simulations
-
-Annex 1: Model-based policy simulations .
-
 - Annex 2: Monetary policy since the August 2025 Report At its meeting ending on 17 September 2025, the MPC voted by a majority of 7-2 to maintain Bank Rate at 4%. Two members voted to reduce Bank Rate by 0.25 percentage points, to 3.75%. The Committee voted by a majority of 7-2 to reduce the stock of UK government bond purchases held for monetary policy purposes, and financed by the issuance of central bank reserves, by £70 billion over the next 12 months, to a total of £488 billion. There had been substantial disinflation over the past two and a half years, following previous external shocks, supported by the restrictive stance of monetary policy. That progress had allowed for reductions in Bank Rate over the past year. The Committee remained focused on squeezing out any existing or emerging persistent inflationary pressures, to return inflation sustainably to its 2% target in the medium term. Underlying disinflation had generally continued, although with greater progress in easing wage pressures than prices. Twelve-month CPI inflation had been 3.8% in August, and had been expected to increase slightly in September, before falling towards the 2% target thereafter. The Committee remained alert to the risk that the temporary increase in inflation could put additional upward pressure on the wage and price-setting process. Pay growth remained elevated, but had fallen and was expected to slow significantly over the rest of the year. Services consumer price inflation had been broadly flat over recent months. Upside risks around medium-term inflationary pressures remained prominent in the Committee's assessment of the outlook. Underlying UK GDP growth had remained subdued, consistent with a continued, gradual loosening in the labour market, as well as a margin of slack in the economy. Downside domestic and geopolitical risks around economic activity remained.
-
-### Annex 2: Monetary policy since the August 2025 Report
-
-At its meeting ending on 17 September 2025, the MPC voted by a majority of 7-2 to maintain Bank Rate at 4%. Two members voted to reduce Bank Rate by 0.25 percentage points, to 3.75%. The Committee voted by a majority of 7-2 to reduce the stock of UK government bond purchases held for monetary policy purposes, and financed by the issuance of central bank reserves, by £70 billion over the next 12 months, to a total of £488 billion.
-
-There had been substantial disinflation over the past two and a half years, following previous external shocks, supported by the restrictive stance of monetary policy. That progress had allowed for reductions in Bank Rate over the past year. The Committee remained focused on squeezing out any existing or emerging persistent inflationary pressures, to return inflation sustainably to its 2% target in the medium term.
-
-Underlying disinflation had generally continued, although with greater progress in easing wage pressures than prices. Twelve-month CPI inflation had been 3.8% in August, and had been expected to increase slightly in September, before falling towards the 2% target thereafter. The Committee remained alert to the risk that the temporary increase in inflation could put additional upward pressure on the wage and price-setting process. Pay growth remained elevated, but had fallen and was expected to slow significantly over the rest of the year. Services consumer price inflation had been broadly flat over recent months. Upside risks around medium-term inflationary pressures remained prominent in the Committee's assessment of the outlook.
-
-Underlying UK GDP growth had remained subdued, consistent with a continued, gradual loosening in the labour market, as well as a margin of slack in the economy. Downside domestic and geopolitical risks around economic activity remained.
 
 ## Glossary and other information
 
 - Glossary of selected data and instruments ASBC - Agents' summary of business conditions. AWE - average weekly earnings. CCS - Credit Conditions Survey. COMPASS - Central Organising Model for Projection Analysis and Scenario Simulation. CPI - consumer prices index. CPI inflation - inflation measured by the consumer prices index. DMP - Decision Maker Panel. GDP - gross domestic product. GSCI - Goldman Sachs Commodity Index. LFS - Labour Force Survey. MaPS - Market Participants Survey. OIS - overnight index swap. RPI - retail prices index. SET-BVAR - Bayesian vector autoregressive.
 
-### Glossary of selected data and instruments
-
-ASBC - Agents' summary of business conditions.
-
-AWE - average weekly earnings.
-
-CCS - Credit Conditions Survey.
-
-COMPASS - Central Organising Model for Projection Analysis and Scenario Simulation.
-
-CPI - consumer prices index.
-
-CPI inflation - inflation measured by the consumer prices index.
-
-DMP - Decision Maker Panel.
-
-GDP - gross domestic product.
-
-GSCI - Goldman Sachs Commodity Index.
-
-LFS - Labour Force Survey.
-
-MaPS - Market Participants Survey.
-
-OIS - overnight index swap.
-
-RPI - retail prices index.
-
-SET-BVAR - Bayesian vector autoregressive.
-
 - Abbreviations AI - artificial intelligence. BCC - British Chambers of Commerce. CBI - Confederation of British Industry. DGSE - dynamic stochastic general equilibrium. ECB - European Central Bank. EU - European Union. FCA - Financial Conduct Authority. FPC - Financial Policy Committee. FTSE - Financial Times Stock Exchange. G7 - Canada, France, Germany, Italy, Japan, the United Kingdom and the United States. GfK - Gesellschaft für Konsumforschung, Great Britain Ltd. HANK - Heterogeneous Agent New Keynesian. HMRC - His Majesty's Revenue and Customs. ILO - International Labour Organization. LSEG - London Stock Exchange Group. LTI - loan to income. LTV - loan to value. MIDAS - mixed-data sampling. MPC - Monetary Policy Committee. NAIRU - non-accelerating inflation rate of unemployment. NICs - National Insurance contributions. NLW - National Living Wage. NPISH - non-profit institutions serving households. OECD - Organisation for Economic Co-operation and Development. Ofgem - Office of Gas and Electricity Markets. ONS - Office for National Statistics. OPP - optimal policy projection. REC - Recruitment and Employment Confederation. RPI - retail prices index. RTI - Real-Time Information. S&P - Standard & Poor's. SME - small and medium-sized enterprise. V/U - vacancies to unemployment.
 
-### Abbreviations
-
-AI - artificial intelligence.
-
-BCC - British Chambers of Commerce.
-
-CBI - Confederation of British Industry.
-
-DGSE - dynamic stochastic general equilibrium.
-
-ECB - European Central Bank.
-
-EU - European Union.
-
-FCA - Financial Conduct Authority.
-
-FPC - Financial Policy Committee.
-
-FTSE - Financial Times Stock Exchange.
-
-G7 - Canada, France, Germany, Italy, Japan, the United Kingdom and the United States.
-
-GfK - Gesellschaft für Konsumforschung, Great Britain Ltd.
-
-HANK - Heterogeneous Agent New Keynesian.
-
-HMRC - His Majesty's Revenue and Customs.
-
-ILO - International Labour Organization.
-
-LSEG - London Stock Exchange Group.
-
-LTI - loan to income.
-
-LTV - loan to value.
-
-MIDAS - mixed-data sampling.
-
-MPC - Monetary Policy Committee.
-
-NAIRU - non-accelerating inflation rate of unemployment.
-
-NICs - National Insurance contributions.
-
-NLW - National Living Wage.
-
-NPISH - non-profit institutions serving households.
-
-OECD - Organisation for Economic Co-operation and Development.
-
-Ofgem - Office of Gas and Electricity Markets.
-
-ONS - Office for National Statistics.
-
-OPP - optimal policy projection.
-
-REC - Recruitment and Employment Confederation.
-
-RPI - retail prices index.
-
-RTI - Real-Time Information.
-
-S&P - Standard & Poor's.
-
-SME - small and medium-sized enterprise.
-
-V/U - vacancies to unemployment.
-
 - Symbols and conventions Except where otherwise stated, the source of the data used in charts and tables is the Bank of England or the Office for National Statistics (ONS) and all data, apart from financial markets data and results from the Decision Maker Panel (DMP) Survey, are seasonally adjusted. n.a. = not available. Because of rounding, the sum of the separate items may sometimes differ from the total shown. On the horizontal axes of graphs, larger ticks denote the first observation within the relevant period, eg data for the first quarter of the year.
-
-### Symbols and conventions
-
-Except where otherwise stated, the source of the data used in charts and tables is the Bank of England or the Office for National Statistics (ONS) and all data, apart from financial markets data and results from the Decision Maker Panel (DMP) Survey, are seasonally adjusted.
-
-n.a. = not available.
-
-Because of rounding, the sum of the separate items may sometimes differ from the total shown.
-
-On the horizontal axes of graphs, larger ticks denote the first observation within the relevant period, eg data for the first quarter of the year.
 
 [CHART: Chart 1.1: CPI inflation was 3.8% in September]
 
@@ -665,8 +543,6 @@ On the horizontal axes of graphs, larger ticks denote the first observation with
 [CHART: Chart F.3: The NAIRU is estimated to have risen after the pandemic, while a broad range of unemployment measures have picked up over recent quarters]
 
 [CHART: Chart 3.1: CPI inflation is expected to decline and GDP growth to rise modestly in the medium term, while the unemployment rate picks up to just above 5% by mid-2026]
-
-[CHART: Table 3.A: Forecast summary ( a ) ( b )]
 
 [CHART: Chart 3.2: The household saving ratio has risen in recent years]
 

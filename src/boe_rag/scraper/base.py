@@ -8,6 +8,7 @@ the steps that differ per document type.
 from __future__ import annotations
 
 import logging
+import re
 import time
 import unicodedata
 from abc import ABC, abstractmethod
@@ -19,6 +20,11 @@ from bs4 import BeautifulSoup, Tag
 from boe_rag.config import SCRAPE_DELAY_SECONDS, SCRAPE_TIMEOUT, SCRAPE_USER_AGENT
 
 logger = logging.getLogger(__name__)
+
+# Inline footnote references like " footnote [1]" or " footnote [12]" left over
+# after div.footnotes-container is stripped. Leading space is part of the match
+# so the reference is removed cleanly without leaving a stranded space.
+_FOOTNOTE_REF_RE = re.compile(r"\s*footnote\s*\[\d+\]")
 
 
 class ScraperError(Exception):
@@ -99,7 +105,30 @@ def normalise_text(text: str) -> str:
     }
     for old, new in replacements.items():
         text = text.replace(old, new)
+    text = _FOOTNOTE_REF_RE.sub("", text)
     return unicodedata.normalize("NFKC", text)
+
+
+def has_class(el: Tag, cls: str) -> bool:
+    """Return True if el has the given CSS class."""
+    classes = el.get("class") or []
+    return cls in classes
+
+
+def is_in_ancestor(el: Tag, *, tag_name: str | None = None, class_name: str | None = None) -> bool:
+    """Check whether el has an ancestor matching tag_name and/or class_name.
+
+    Used to avoid double-emission: e.g. skip a <p> that will already be rendered
+    as part of its <li> or <div class='box-highlight'> ancestor.
+    """
+    for parent in el.parents:
+        if not isinstance(parent, Tag):
+            continue
+        if tag_name is not None and parent.name == tag_name:
+            return True
+        if class_name is not None and has_class(parent, class_name):
+            return True
+    return False
 
 
 class BaseScraper(ABC):

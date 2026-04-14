@@ -130,7 +130,7 @@ Productivity growth is a key driver of economic growth. Over the past 15 years, 
 
 In the long term, GDP growth is driven by changes to an economy's supply capacity, which is determined by the amount of labour and capital available, and the efficiency with which these factors can be combined - known as total factor productivity. Labour productivity - measured as output per hour worked - is the main driver of living standards in the long run. Since 2010, UK labour productivity has been low by historical standards and relative to the US. From 2010-19, it was also low relative to other advanced economies (Chart 1.1).
 
-In the 1990s, total factor productivity growth in most western economies was high, driven by the diffusion of information and communications technologies such as the internet, which have the characteristics of a General-Purpose Technology (GPT). Past GPTs have been shown to boost productivity for long periods of time, as discussed in a recent speech by Andrew Bailey . footnote [1] Evidence shows that productivity growth slowed in the US in the mid-2000s, as it did in other countries including the UK. footnote [2] And Adler et al (2017) find that population ageing, slowing human capital accumulation, and lower global trade all contributed to this slowdown.
+In the 1990s, total factor productivity growth in most western economies was high, driven by the diffusion of information and communications technologies such as the internet, which have the characteristics of a General-Purpose Technology (GPT). Past GPTs have been shown to boost productivity for long periods of time, as discussed in a recent speech by Andrew Bailey . Evidence shows that productivity growth slowed in the US in the mid-2000s, as it did in other countries including the UK. And Adler et al (2017) find that population ageing, slowing human capital accumulation, and lower global trade all contributed to this slowdown.
 
 As set out in the July 2025 Financial Stability Report , the global financial crisis (GFC) of 2008-09 negatively impacted the provision of vital services including bank lending (Box B), weighing on output and productivity growth. Additional shocks, including the UK's decision to leave the European Union, the Covid pandemic, and the significant rise in energy prices in 2022 following Russia's invasion of Ukraine, have compounded these effects although recent data suggest that the productivity effects of the pandemic have dissipated and there is no longer a significant drag due to the energy price shock. Other G7 countries have seen a similar slowdown in recent years, except the US where productivity growth has picked up since 2020 (Chart 1.1). US productivity growth has increased since the pandemic. There might be a range of reasons for that, but Bank analysis suggests it may partly reflect reallocation of activity and labour towards more productive sectors, and the strength of the US technology sector.
 
@@ -260,7 +260,7 @@ This covers four distinct periods: (1) the build-up to, and recovery from, the e
 
 UK bank lending in the 1980s and early 1990s grew rapidly as deregulation led to an expansion beyond traditional business lending, which increased the banking sector's size but created vulnerabilities.
 
-The 1980s and early 1990s marked a structural shift in the UK banking sector driven by deregulation and increased competition. The removal of credit controls, exchange restrictions, and reforms such as the abolition of the 'corset' in 1980, enabled banks to expand beyond business lending into mortgage finance and investment banking. footnote [4] Banks' share of mortgage lending increased as a result. Rapid credit growth and loosening of underwriting standards during this period increased vulnerabilities that resulted in the early 1990s small banks' crisis .
+The 1980s and early 1990s marked a structural shift in the UK banking sector driven by deregulation and increased competition. The removal of credit controls, exchange restrictions, and reforms such as the abolition of the 'corset' in 1980, enabled banks to expand beyond business lending into mortgage finance and investment banking. Banks' share of mortgage lending increased as a result. Rapid credit growth and loosening of underwriting standards during this period increased vulnerabilities that resulted in the early 1990s small banks' crisis .
 
 In aggregate, household and non-financial corporate debt doubled relative to GDP during the 1980s. Between 1985 and 1989 residential property prices increased by nearly 80% and commercial real estate (CRE) prices by almost 90%. The early 1990s recession led to many repossessions, business failures - especially among SMEs - and high impairment rates on banks' lending. The aftermath of the recession saw a reduction in the reliance of SMEs on bank financing , with the proportion of small businesses seeking external finance falling from 65% between 1987-90, to around 40% between 1995-97. The corporate sector deleveraged a little after the recession. Household debt was stable throughout much of the 1990s between 60%-65% of GDP, reflecting the subdued housing market that followed the 1990s recession as rates rose and house prices fell (Chart A).
 
@@ -334,7 +334,7 @@ Notably, equity market valuations for technology companies focused on artificial
 
 Equity indices, including the FTSE 100 index and S&P 500 index, reached all-time highs in the second half of this year. Equity valuations on some measures (for example the excess cyclically-adjusted price-to-earnings (CAPE) yield) look stretched relative to historical levels across jurisdictions, especially in the US where, on some measures, they are close to levels not seen since the dot-com bubble (Chart 2.2). On a three year forward basis - ie accounting for projected earnings growth over the next three years - excess earnings yield over inflation-protected government bonds in the US is also close to levels not seen since the dot-com bubble.
 
-The equity prices of some large US technology companies focused on AI have continued to increase since the July FSR, although have fallen in recent weeks. The size of these companies has increased concentration in the S&P 500 index to historical highs, with the 'Magnificent 7' accounting for over a third of the index. footnote [5]
+The equity prices of some large US technology companies focused on AI have continued to increase since the July FSR, although have fallen in recent weeks. The size of these companies has increased concentration in the S&P 500 index to historical highs, with the 'Magnificent 7' accounting for over a third of the index.
 
 Some of these firms are trading at price-multiples that imply high levels of future earnings growth. Whether these earnings will be realised, or even prove underestimates, is uncertain. These prices are exposed to a sharp correction if the prospects for AI development, or for the companies to monetise and generate profits from the use of AI, are revised. Given the concentration of the market, investors exposed to the aggregate index will face a high level of pass through from any sharp correction in AI-focused firms.
 
@@ -356,7 +356,7 @@ While the impact of these specific defaults has been limited, they have intensif
 
 These potential weaknesses in riskier credit markets, such as leveraged loans, collateralised loan obligations and private credit, include high leverage, weak underwriting standards, opacity, complex structures, and the degree of reliance on credit rating agencies. These weaknesses illustrate how corporate defaults could impact bank resilience and credit markets simultaneously.
 
-Further defaults could follow if some of these weaknesses are more widespread. Notably, the opacity and complex corporate structures in these two entities may have been a contributing factor that allowed significant alleged fraud to be undetected for a period. In both of these cases, as well as some other recently disclosed losses, there have been reports that the collateral against which lending was secured was misrepresented or even fraudulent. This could be indicative of weaknesses in underwriting standards. footnote [6] The weaknesses exposed by these defaults is discussed in more detail in Section 6.
+Further defaults could follow if some of these weaknesses are more widespread. Notably, the opacity and complex corporate structures in these two entities may have been a contributing factor that allowed significant alleged fraud to be undetected for a period. In both of these cases, as well as some other recently disclosed losses, there have been reports that the collateral against which lending was secured was misrepresented or even fraudulent. This could be indicative of weaknesses in underwriting standards. The weaknesses exposed by these defaults is discussed in more detail in Section 6.
 
 These defaults also reflect a potential weakening in credit quality among the lower end of the US income distribution. Subprime auto loans, such as those originated by Tricolor, are typically among the first asset classes to experience distress in a deteriorating macroeconomic environment. The US consumer appears resilient in aggregate - the proportion of mortgages in arrears remains relatively low by historical standards and household debt-to-GDP has continued to fall - but there are vulnerabilities among households at the lower end of the income distribution. 90+ day arrear rates on different forms of US consumer credit have increased markedly over the past three years (Chart 2.3).
 
@@ -574,7 +574,7 @@ The UK banking system remains well capitalised, and UK banks' aggregate Common E
 
 Major UK banks continued to report robust earnings, their asset quality remains strong, and they have been returning capital to shareholders.
 
-Major UK banks reported underlying return on tangible equity (RoTE) of 14.7% in Q3 2025, and consensus expectations are for aggregate RoTE to rise a little above its current level over the coming years. footnote [7] Several banks upgraded their earnings guidance for 2025 in Q3, and there was a broad-based upgrade to consensus estimates following Q3 earnings. Major UK banks continued to return capital to shareholders through buybacks and dividends, totalling £8.6 billion in Q3.
+Major UK banks reported underlying return on tangible equity (RoTE) of 14.7% in Q3 2025, and consensus expectations are for aggregate RoTE to rise a little above its current level over the coming years. Several banks upgraded their earnings guidance for 2025 in Q3, and there was a broad-based upgrade to consensus estimates following Q3 earnings. Major UK banks continued to return capital to shareholders through buybacks and dividends, totalling £8.6 billion in Q3.
 
 Major UK banks' asset quality remained strong in Q3, with little change in aggregate relative to the July FSR (Table 4.A), despite some banks increasing impairments on specific portfolios. Nevertheless, two recent high-profile corporate defaults in the US highlighted a number of potential weaknesses in risky credit markets previously flagged by the FPC. These include high leverage, weak underwriting standards, opacity, complex structures, and the degree of reliance on credit rating agencies, and illustrate how corporate defaults could impact bank resilience and credit markets simultaneously. UK banks' direct and indirect exposures to First Brands and Tricolor are limited. The Bank's second system-side exploratory scenario (SWES) exercise will explore risks and dynamics associated with the private markets ecosystem, including interlinkages between banks and non-bank financial institutions (NBFIs) active in those markets, under a stress scenario (Section 6).
 
@@ -582,9 +582,9 @@ Some lenders continue to face the potential for redress payments in respect of p
 
 UK bank valuations are near post-GFC highs, supported by a decline in their cost of equity and an increase in expected RoTE.
 
-UK banks' average price to tangible book (PtTB) ratios have increased further above one since the July FSR, up from Covid-era lows of around 0.5. footnote [8] As set out in the June 2024 FSR , PtTB ratios are an indicator of expected future shareholder returns relative to their cost of equity (the compensation investors require for the perceived riskiness of those returns). Valuations of major UK banks have increased due to both an increase in expected aggregate RoTE and a decrease in their cost of equity in recent years.
+UK banks' average price to tangible book (PtTB) ratios have increased further above one since the July FSR, up from Covid-era lows of around 0.5. As set out in the June 2024 FSR , PtTB ratios are an indicator of expected future shareholder returns relative to their cost of equity (the compensation investors require for the perceived riskiness of those returns). Valuations of major UK banks have increased due to both an increase in expected aggregate RoTE and a decrease in their cost of equity in recent years.
 
-While UK bank PtTB valuations remain below those of US banks (Chart 4.1), the difference between the one-year forward price-to-earnings ratios of major UK banks and US banks is broadly in line with that for other sectors. footnote [9] This suggests that market-wide factors continue to be a significant driver of UK banks' valuations relative to those of US banks, as set out in the June 2024 FSR .
+While UK bank PtTB valuations remain below those of US banks (Chart 4.1), the difference between the one-year forward price-to-earnings ratios of major UK banks and US banks is broadly in line with that for other sectors. This suggests that market-wide factors continue to be a significant driver of UK banks' valuations relative to those of US banks, as set out in the June 2024 FSR .
 
 UK banks have high levels of liquidity and have continued to adjust to the normalisation of the Bank's balance sheet.
 
@@ -624,7 +624,7 @@ Principal Trading Firms (PTFs) are a type of NBFI that typically uses low latenc
 
 Banks provide PTFs with market access, execution, clearing, settlement and financing services. As PTF activities often involve high volumes of intraday trading, this can result in banks' intraday exposures, through their PTF clients, exceeding end-of day positions. Given the sophistication needed to measure and manage these exposures, PTF counterparty exposures are primarily concentrated amongst banks who specialise in this area. Should there be simultaneous defaults across multiple major PTFs, this could lead to losses for these banks, though collateral mitigates some of this risk. As PTFs have grown in scale and market footprint, there has been broadening in their financial resources and financing providers. As new banks enter this space and others expand the services they provide to PTFs, they must appropriately manage these unique counterparty risk exposures.
 
-It is important that UK banks ensure appropriate risk management of their exposures to NBFIs, including PTFs. The PRA's 2025 list of priorities for UK Deposit Takers raised counterparty credit risk as a continued area of focus, in particular exposures to NBFIs. footnote [10] The Basel Committee on Banking Supervision has previously set out guidelines to strengthen banks' management of counterparty credit risks, including from NBFIs. footnote [11]
+It is important that UK banks ensure appropriate risk management of their exposures to NBFIs, including PTFs. The PRA's 2025 list of priorities for UK Deposit Takers raised counterparty credit risk as a continued area of focus, in particular exposures to NBFIs. The Basel Committee on Banking Supervision has previously set out guidelines to strengthen banks' management of counterparty credit risks, including from NBFIs.
 
 [BOX START: Box D: The FPC's assessment of bank capital requirements]
 
@@ -640,7 +640,7 @@ Banks also account for around 85% of lending to UK households and just under hal
 
 Given the significance of these activities, a key objective of the FPC is to ensure that the banking system is appropriately capitalised to support sustainable growth over the long term. This will ensure that it can support households and businesses in good and bad times.
 
-The FPC first assessed the appropriate level of capital requirements for the banking system in 2015, drawing on published analysis of the macroeconomic costs and benefits of capital by Bank staff. The FPC judged that the appropriate benchmark level for system-wide Tier 1 capital requirements was around 14% of risk-weighted assets (RWAs), once gaps and shortcomings in the measurement of RWAs and the neutral rate for the UK component of the countercyclical capital buffer (henceforth UK CCyB) were accounted for. footnote [12] This was lower than other estimates of the optimal level of capital, and in many cases, materially so. In large part, that reflected key judgements relating to the effectiveness of post-crisis reforms, including on the credibility and effectiveness of the bank resolution regime, effective supervision and structural reform, and the Committee's intention to use the CCyB actively, without which the FPC's assessment of the appropriate level of capital would have been materially higher. In 2019, the FPC reaffirmed its 14% benchmark.
+The FPC first assessed the appropriate level of capital requirements for the banking system in 2015, drawing on published analysis of the macroeconomic costs and benefits of capital by Bank staff. The FPC judged that the appropriate benchmark level for system-wide Tier 1 capital requirements was around 14% of risk-weighted assets (RWAs), once gaps and shortcomings in the measurement of RWAs and the neutral rate for the UK component of the countercyclical capital buffer (henceforth UK CCyB) were accounted for. This was lower than other estimates of the optimal level of capital, and in many cases, materially so. In large part, that reflected key judgements relating to the effectiveness of post-crisis reforms, including on the credibility and effectiveness of the bank resolution regime, effective supervision and structural reform, and the Committee's intention to use the CCyB actively, without which the FPC's assessment of the appropriate level of capital would have been materially higher. In 2019, the FPC reaffirmed its 14% benchmark.
 
 The FPC has revisited its assessment of the appropriate capital requirements for the banking system from the perspective of the costs and benefits to growth.
 
@@ -694,7 +694,7 @@ The capital framework has a number of constituent parts, intended to address dif
 
 Developments over the past decade, lessons on how the bank capital framework operates in stress, and feedback provided by industry and other stakeholders, suggest there are ways in which some parts of the capital framework could be adjusted to support growth while maintaining appropriate resilience.
 
-To that end, significant steps are already being taken to address feedback and improve the efficiency and proportionality of the framework. These include: the Bank reducing the frequency of its main stress tests of capital resilience from annual to biennial; the finalisation of Basel 3.1 reforms; steps taken by the PRA to enhance the proportionality of the framework for smaller lenders, including through the recently published Strong and Simple framework; and the uprating of some regulatory thresholds. footnote [13]
+To that end, significant steps are already being taken to address feedback and improve the efficiency and proportionality of the framework. These include: the Bank reducing the frequency of its main stress tests of capital resilience from annual to biennial; the finalisation of Basel 3.1 reforms; steps taken by the PRA to enhance the proportionality of the framework for smaller lenders, including through the recently published Strong and Simple framework; and the uprating of some regulatory thresholds.
 
 The FPC has approached the present assessment of capital requirements proactively and has identified further broad, material categories of issues in which it supports further work to assess whether changes could make the capital framework more effective, efficient and proportionate. The FPC would expect banks to use any such changes as a means to increase their support of households and businesses in the real economy.
 
@@ -742,7 +742,7 @@ The 2025 Bank Capital Stress Test assesses UK banks' ability to support the econ
 
 In line with the Bank's updated approach to stress testing the UK banking system , the 2025 Bank Capital Stress Test assesses the resilience of the UK banking system to a hypothetical scenario that includes a severe but plausible combination of macroeconomic and financial shocks. The exercise helps to ensure the UK banking system can continue supporting households and businesses even in a macroeconomic downturn. Stress testing plays an important role in ensuring a stable financial system which supports long-term sustainable growth by helping ensure banks can absorb rather than amplify shocks.
 
-The largest and most systemic UK banks and building societies footnote [14] - representing around 75% of the sector's lending to the UK real economy - participate in the test. They submit their estimates of the impact of the scenario, which is considered together with the Bank's own analysis to produce the final results. The test supports the FPC's and Prudential Regulation Committee's (PRC's) monitoring of the resilience of the banking system, and can be used to inform banking-system wide and individual bank capital-setting.
+The largest and most systemic UK banks and building societies - representing around 75% of the sector's lending to the UK real economy - participate in the test. They submit their estimates of the impact of the scenario, which is considered together with the Bank's own analysis to produce the final results. The test supports the FPC's and Prudential Regulation Committee's (PRC's) monitoring of the resilience of the banking system, and can be used to inform banking-system wide and individual bank capital-setting.
 
 As set out in this chapter, the results of the test indicate that the banking system has the capacity to continue supporting households and businesses even if economic and financial conditions turned out materially worse than expected.
 
@@ -768,7 +768,7 @@ Modelling and analysis by participating banks provides an in-depth view of each 
 
 As in previous tests and as per the Guidance on the 2025 stress test for participants , participating banks submit the management actions they consider they would undertake in the scenario, such as reducing their dividend payments, reducing variable remuneration (such as bonuses) and cutting costs. The Bank considers each proposed management action in the stress individually, including how realistic the action is in the context of the scenario. For example, any action proposed must be executable in practice with no material impediments envisaged. Unless otherwise specified, banks' results incorporate the application of those management actions judged acceptable by the Bank.
 
-The 2025 Bank Capital Stress Test is the first exercise involving bank submissions of stressed projections since the 2022/23 Annual Cyclical Scenario (ACS) test, therefore most comparisons in this chapter are made to that exercise. footnote [15]
+The 2025 Bank Capital Stress Test is the first exercise involving bank submissions of stressed projections since the 2022/23 Annual Cyclical Scenario (ACS) test, therefore most comparisons in this chapter are made to that exercise.
 
 ...and are supported by sensitivity analysis.
 
@@ -804,7 +804,7 @@ The FPC and PRC do not oblige banks to maintain buffers in excess of regulatory 
 
 No individual bank is required to strengthen its capital position as a result of the test.
 
-The results of the test indicate that no individual bank would fall below its CET1 capital or Tier 1 leverage ratio minima (Table 5.A). footnote [16] This means that major UK banks would be able to withstand the severe macroeconomic stress in this scenario, while still having the capacity to support UK households and businesses throughout the stress. All banks would also have remained above the sum of their regulatory minima and systemic risk buffers, which is the hurdle rate the Bank expects to return to using in future tests.
+The results of the test indicate that no individual bank would fall below its CET1 capital or Tier 1 leverage ratio minima (Table 5.A). This means that major UK banks would be able to withstand the severe macroeconomic stress in this scenario, while still having the capacity to support UK households and businesses throughout the stress. All banks would also have remained above the sum of their regulatory minima and systemic risk buffers, which is the hurdle rate the Bank expects to return to using in future tests.
 
 The stress affects capital positions through several channels, notably credit impairments and net interest income.
 
@@ -824,7 +824,7 @@ Table 5.C provides a breakdown of these impairments by asset class. This section
 
 Retail impairments increase as unemployment rises, house prices fall, and interest rates and the cost-of-living increase.
 
-The impact of the stress on UK retail portfolios is similar to that in the 2022/23 ACS, reflecting several offsetting factors. There is a reduced impact from the affordability stress in this exercise reflecting the improvement in the underlying outlook for real incomes. footnote [17] This is offset by deteriorating asset quality.
+The impact of the stress on UK retail portfolios is similar to that in the 2022/23 ACS, reflecting several offsetting factors. There is a reduced impact from the affordability stress in this exercise reflecting the improvement in the underlying outlook for real incomes. This is offset by deteriorating asset quality.
 
 - UK mortgage impairments are £12.3 billion which is higher than in the 2022/23 ACS. Asset quality has deteriorated since the 2022/23 ACS as higher interest rates have increased debt servicing costs, while house prices have remained stable. This has pushed average loan to value (LTV) ratios higher, reducing the value of collateral against loans, which increases the loss when a loan defaults. The impairment rate for buy-to-let (BTL) mortgages is almost three times that of owner-occupied mortgages.
 
@@ -938,7 +938,7 @@ All else equal, the earlier recognition of losses in a stress under IFRS 9 leads
 
 The change in accounting standard does not change the cumulative losses banks incur during any given stress episode. The losses will, however, be provided for earlier in the stress. All else equal, bank capital, as measured under IFRS 9, is likely to fall more sharply in the early part of a stress as capital is drawn down earlier to raise provisions.
 
-The results of a Bank Capital Stress Test allow an assessment of whether the banking system and individual banks are sufficiently capitalised and have adequate regulatory capital buffers to be able to absorb losses in the stress scenario, and continue to provide essential services to the real economy. The results of a stress test are one input - alongside a range of other factors - to inform the setting of system-wide and individual bank capital buffers, such as the countercyclical capital buffer (CCyB) and the PRA buffer respectively. footnote [18] By default, the earlier recognition of losses under IFRS 9 would mean that capital buffers implied by the stress test would need to be larger to withstand the same stress scenario.
+The results of a Bank Capital Stress Test allow an assessment of whether the banking system and individual banks are sufficiently capitalised and have adequate regulatory capital buffers to be able to absorb losses in the stress scenario, and continue to provide essential services to the real economy. The results of a stress test are one input - alongside a range of other factors - to inform the setting of system-wide and individual bank capital buffers, such as the countercyclical capital buffer (CCyB) and the PRA buffer respectively. By default, the earlier recognition of losses under IFRS 9 would mean that capital buffers implied by the stress test would need to be larger to withstand the same stress scenario.
 
 In 2018, the FPC announced that it would seek an enduring treatment for IFRS 9 in the stress test that avoided an unwarranted increase in capital requirements.
 
@@ -950,7 +950,7 @@ The Bank has sought to follow three guiding principles as it incorporates IFRS 9
 
 This year the Bank has made changes to the stress-testing framework that have made the stress test simpler to deliver and ensure that the resilience that comes with earlier provisioning is recognised, consistent with the intention underlying IFRS 9.
 
-In the Key elements of the 2025 Bank Capital Stress Test , the Bank set out its updated approach to stress-test calibration and PRA buffer setting. footnote [19] This has resulted in a number of changes relative to previous concurrent stress tests, which the Bank has judged to be appropriate to make alongside the earlier provisioning under the IFRS 9 accounting standard:
+In the Key elements of the 2025 Bank Capital Stress Test , the Bank set out its updated approach to stress-test calibration and PRA buffer setting. This has resulted in a number of changes relative to previous concurrent stress tests, which the Bank has judged to be appropriate to make alongside the earlier provisioning under the IFRS 9 accounting standard:
 
 The FPC judges that changes to the stress-testing framework set out in this box are consistent with an unchanged risk tolerance for the resilience of the UK banking system and have avoided an unwarranted increase in capital requirements.
 
@@ -966,11 +966,11 @@ As well as avoiding an unwarranted increase in capital requirements, the changes
 
 The Bank previously set out its intention to use the 2025 Bank Capital Stress Test to assess the impact of the framework changes and IFRS 9 to inform the appropriate benchmark against which to assess banks in future stress tests. Given this intention, and as indicated in March, bank-specific low points in the scenario have been published alongside minimum requirements in Annex 2. All banks also remain above the sum of their minimum requirements and systemic risk buffers throughout the stress scenario.
 
-In line with international standards, and consistent with the framework set in 2018 by the FPC, systemic banks should be expected to withstand a stress that is more severe than non-systemic banks, which is reflected in their systemic risk buffers. footnote [23] As such, in future stress tests the Bank expects to return to assessing the resilience of individual firms against the sum of minimum capital requirements and systemic risk buffers. Systemic risk buffers are, like all other capital buffers, useable to absorb losses in a real stress.
+In line with international standards, and consistent with the framework set in 2018 by the FPC, systemic banks should be expected to withstand a stress that is more severe than non-systemic banks, which is reflected in their systemic risk buffers. As such, in future stress tests the Bank expects to return to assessing the resilience of individual firms against the sum of minimum capital requirements and systemic risk buffers. Systemic risk buffers are, like all other capital buffers, useable to absorb losses in a real stress.
 
 The changes to the stress test support the FPC's and PRA's respective primary and secondary statutory objectives.
 
-These changes to the test ensure that the Bank Capital Stress Test will allow an assessment of the resilience of the UK banking system to a severe but plausible scenario, consistent with the FPC's primary financial stability objective and the PRA's primary objective for safety and soundness. footnote [24]
+These changes to the test ensure that the Bank Capital Stress Test will allow an assessment of the resilience of the UK banking system to a severe but plausible scenario, consistent with the FPC's primary financial stability objective and the PRA's primary objective for safety and soundness.
 
 Using the stress test to ensure banks can absorb severe but plausible shocks and continue to lend to the UK economy, while taking action to avoid an unwarranted increase in capital requirements, supports the FPC's secondary objective and the PRA's secondary growth and competitiveness objective.
 
@@ -996,13 +996,13 @@ As context, the major UK banks are in the process of improving their capabilitie
 
 UK banks are estimated to have £173 billion of banking book exposures to private market funds and corporates backed by financial sponsors, including private equity funds.
 
-Of that, the Bank estimates that UK banks have £136 billion of direct banking book exposures to private market funds. This value represents the Bank's best estimate of the size of committed limits that funds might draw on in a stress, based on the information available. footnote [25] The exact exposure in a stress will be based on the drawn amount during the scenario. These numbers will likely evolve over time given work by participating banks to improve the quality of data collection on these exposures.
+Of that, the Bank estimates that UK banks have £136 billion of direct banking book exposures to private market funds. This value represents the Bank's best estimate of the size of committed limits that funds might draw on in a stress, based on the information available. The exact exposure in a stress will be based on the drawn amount during the scenario. These numbers will likely evolve over time given work by participating banks to improve the quality of data collection on these exposures.
 
 Most of these exposures are to investor-recourse facilities (£95 billion), commonly known as subscription credit lines or capital call facilities. These are lending facilities to private market funds backed by the contractual commitments of investors to provide capital to the fund, rather than the underlying assets of a fund. From a fund management perspective, these facilities provide operational flexibility, allowing fund managers to bridge the timing between investment deployment and capital calls.
 
 The rest of the direct exposures to private market funds are asset-backed facilities (£41 billion), such as net asset value (NAV) financing. These are typically secured against a defined pool of portfolio assets, with borrowing capacity linked to their appraised value. If asset values fall below agreed thresholds, funds may need to post additional collateral or repay part of the loan to maintain compliance with covenants of the loan agreement.
 
-In addition, banks reported committed limits of £37 billion to UK corporates which are majority-owned by financial sponsors, including private equity funds. In the stress test, these are assessed as part of banks' leveraged lending portfolios. footnote [26] This lending tends to be riskier than other types of lending to businesses due to high levels of debt on the underlying corporates' balance sheets.
+In addition, banks reported committed limits of £37 billion to UK corporates which are majority-owned by financial sponsors, including private equity funds. In the stress test, these are assessed as part of banks' leveraged lending portfolios. This lending tends to be riskier than other types of lending to businesses due to high levels of debt on the underlying corporates' balance sheets.
 
 Together, UK banks are estimated to have £173 billion of banking book exposures to private market funds and to highly leveraged corporates backed by financial sponsors. As noted above, this value represents the Bank's best estimate of the size of committed limits that might be drawn on in a stress. This is equivalent to 8% of UK banks' total committed limits across their wholesale portfolios, or 67% of aggregate CET1%. The composition of banks' exposures to these portfolios is set out in Table 1.
 
@@ -1054,17 +1054,17 @@ Hedge fund net gilt repo borrowing has continued to increase since the July FSR,
 
 Net borrowing in gilt repo markets by hedge funds is concentrated and heavily driven by international firms.
 
-Hedge fund leveraged positions in the gilt repo market are predominantly driven by entities that are managed outside the UK, with hedge funds managed by US managers accounting for around 60% of hedge funds' total net gilt repo borrowing (Chart 6.3). footnote [27] More long-standing participants in the gilt market such as pension and LDI funds are mostly managed from within the UK, even though a large proportion of pooled LDI funds are domiciled in Ireland and Luxembourg. The growing role of multinational NBFIs is also evident in other sovereign debt markets (Section 2). This increases cross-border spillover risk, as well as opacity for regulators' domestic risk assessments, highlighting the importance of international co-operation and data sharing.
+Hedge fund leveraged positions in the gilt repo market are predominantly driven by entities that are managed outside the UK, with hedge funds managed by US managers accounting for around 60% of hedge funds' total net gilt repo borrowing (Chart 6.3). More long-standing participants in the gilt market such as pension and LDI funds are mostly managed from within the UK, even though a large proportion of pooled LDI funds are domiciled in Ireland and Luxembourg. The growing role of multinational NBFIs is also evident in other sovereign debt markets (Section 2). This increases cross-border spillover risk, as well as opacity for regulators' domestic risk assessments, highlighting the importance of international co-operation and data sharing.
 
 Data suggest that the increase in activity and leveraged borrowing by hedge funds in the gilt repo market is related, at least in part, to the popularity of the cash-futures basis trade among these firms (Chart 6.4).
 
-The cash-futures basis trade is one example of a leveraged strategy set out in the July 2025 Financial Stability Report . Data suggest this trade has been a driver of growth in gilt repo borrowing by hedge funds. At present, the cash-futures basis trade is one where hedge funds purchase gilts (financed via repo, typically provided by banks) and sell gilt futures contracts, taking advantage of the discrepancy of the forward price of the gilt and the price of the futures contract into which it can be delivered, and therefore benefiting from the small price differential. As the return on this trade is small, it is often done at high levels of leverage to boost overall returns. The repo leg of this trade can often be done at a zero haircut, sometimes because dealers are able to net with margins of the offsetting futures, or other positions, in the same client portfolio. footnote [28] Hedge fund gilt repo borrowing is often done at short maturities, often overnight, and so requires regular refinancing to maintain positions.
+The cash-futures basis trade is one example of a leveraged strategy set out in the July 2025 Financial Stability Report . Data suggest this trade has been a driver of growth in gilt repo borrowing by hedge funds. At present, the cash-futures basis trade is one where hedge funds purchase gilts (financed via repo, typically provided by banks) and sell gilt futures contracts, taking advantage of the discrepancy of the forward price of the gilt and the price of the futures contract into which it can be delivered, and therefore benefiting from the small price differential. As the return on this trade is small, it is often done at high levels of leverage to boost overall returns. The repo leg of this trade can often be done at a zero haircut, sometimes because dealers are able to net with margins of the offsetting futures, or other positions, in the same client portfolio. Hedge fund gilt repo borrowing is often done at short maturities, often overnight, and so requires regular refinancing to maintain positions.
 
 UK EMIR trade repository data indicates that the cash-futures basis trade is heavily populated by hedge funds, with data showing funds are increasingly short in gilt futures, and therefore likely exposed to the cash-futures basis. This activity is heavily concentrated: a small number of hedge funds account for more than 90% of all net gilt repo borrowing by hedge funds.
 
 Relatively high use of leverage by a small number of firms taking crowded positions increases vulnerabilities and the risk of a disorderly unwind of positions and a jump to illiquidity in core UK markets.
 
-These vulnerabilities, in the context of compressed risk premia, in a highly uncertain global environment, increase the risk of sharp moves (Section 2). The small number of funds running crowded and heavily leveraged trades in the gilt repo market increases the potential risk of sharp moves as funds could need simultaneously to deleverage in response to a shock. The July 2025 Financial Stability Report outlined four common triggers that could lead to forced or widespread deleveraging of leveraged trades. footnote [29]
+These vulnerabilities, in the context of compressed risk premia, in a highly uncertain global environment, increase the risk of sharp moves (Section 2). The small number of funds running crowded and heavily leveraged trades in the gilt repo market increases the potential risk of sharp moves as funds could need simultaneously to deleverage in response to a shock. The July 2025 Financial Stability Report outlined four common triggers that could lead to forced or widespread deleveraging of leveraged trades.
 
 Forced or widespread deleveraging would have the result of amplifying initial moves and potentially triggering a feedback loop of further forced selling, especially if funding conditions tightened to the extent that refinancing became unavailable or prohibitively expensive. Banks' potential unwillingness to roll repo financing due to counterparty concerns or balance sheet constraints, was a key finding of last year's SWES. This reinforces the need for market participants to risk-manage their positions to take account of potential shocks, including correlation shifts outside historical norms.
 
@@ -1088,7 +1088,7 @@ Markets have broadly seen the defaults of First Brands and Tricolor as driven by
 
 Both First Brands and Tricolor had complex and opaque funding arrangements and were highly leveraged, including through use of off-balance sheet debt. First Brands funded itself via syndicated term loans, often purchased by collateralised loan obligations (CLOs), and use of asset-backed lending and factoring. Tricolor provided sub-prime auto loans to consumers which it then securitised and sold as asset-backed securities (ABS), using warehousing facilities from lenders as a 'bridge' until it had enough loans to securitise. Lenders were not fully aware of the level of off balance sheet debt, nor the overall levels of leverage operated by the companies, suggesting potential opacity in financial disclosures.
 
-The opacity and complex structures may have been a contributing factor that allowed significant alleged fraud to go undetected for a period. There have been reports in both cases, as well as some other recently publicly disclosed losses, that the collateral against which lending was secured was misrepresented or even fraudulent. footnote [30] These episodes reinforce the need for lenders to maintain high-quality underwriting standards and collateral verification when lending to opaque and complex structures. The number and variety of lenders affected, and the inability to detect alleged fraud or off balance sheet exposures, highlight potential weaknesses in underwriting standards as previously highlighted by the FPC during the low rates era. Weaknesses previously highlighted include the increasing share of leveraged loan deals with weaker covenants, a rise in the use of earnings add-backs to reduce headline leverage multiples, and looser documentation standards.
+The opacity and complex structures may have been a contributing factor that allowed significant alleged fraud to go undetected for a period. There have been reports in both cases, as well as some other recently publicly disclosed losses, that the collateral against which lending was secured was misrepresented or even fraudulent. These episodes reinforce the need for lenders to maintain high-quality underwriting standards and collateral verification when lending to opaque and complex structures. The number and variety of lenders affected, and the inability to detect alleged fraud or off balance sheet exposures, highlight potential weaknesses in underwriting standards as previously highlighted by the FPC during the low rates era. Weaknesses previously highlighted include the increasing share of leveraged loan deals with weaker covenants, a rise in the use of earnings add-backs to reduce headline leverage multiples, and looser documentation standards.
 
 This episode demonstrated the complexity and interconnectedness of the broader risky credit ecosystem, with a significant range of banks, insurers and NBFIs facing losses and uncertainty over where risk was held. Interconnections across financial markets may heighten systemic vulnerabilities, particularly under stress conditions, by reinforcing correlations and amplifying shocks. A shock to risky corporates could be amplified by these interconnections, with losses and the impact on risk appetite potentially spilling across several markets and sectors.
 
@@ -1108,7 +1108,7 @@ Unlike public markets, such as corporate bonds, where liquid secondary markets c
 
 There has been increased use of confidential rating assessments in recent years, both in the form of Private Letter Ratings (PLRs) and through less comprehensive assessments via credit opinions (or estimates) - an informal, point-in-time assessment of credit worthiness. In both cases the rating is confidential, increasing opacity. Data on the use of these private assessments is limited but BIS research has highlighted the growing use of PLRs in parts of the US insurance market (23% of PE-linked insurers and 8% of non PE-linked investments used PLRs at end-2024). One example of the growing use of credit estimates is S&P, who have reported the volume of credit estimates they provide has more than doubled since 2021, with growth especially among CLO managers.
 
-There has been an increase in the number of small CRAs in recent years, footnote [31] and some market speculation that competitive pressures could provide incentives for some CRAs to provide ratings that are designed to win custom. Smaller CRAs can in some instances provide ratings more quickly and for a lower cost than larger CRAs which can be beneficial, but only if the quality and rigour of the rating is not compromised.
+There has been an increase in the number of small CRAs in recent years, and some market speculation that competitive pressures could provide incentives for some CRAs to provide ratings that are designed to win custom. Smaller CRAs can in some instances provide ratings more quickly and for a lower cost than larger CRAs which can be beneficial, but only if the quality and rigour of the rating is not compromised.
 
 Given the importance of ratings provided by CRAs in the financial system, a loss of confidence in the accuracy of credit ratings could undermine confidence in financial institutions and markets where CRAs play a prominent role, and ultimately impact the supply of finance to the real economy. This underscores the risks of firms over-relying on credit ratings providers as a substitute to carrying out appropriate due diligence.
 
@@ -1116,11 +1116,11 @@ Given the importance of ratings provided by CRAs in the financial system, a loss
 
 Private markets have grown significantly in the UK and are an important source of funding for corporates.
 
-Over the past two decades, the amount of capital deployed in private markets has grown substantially; estimates put the total assets under management employed in private markets strategies at over $15 trillion globally. footnote [32] Private markets encompass various forms of financing, including private equity, venture capital, and private credit, spanning infrastructure, real estate, other real assets, and corporate lending.
+Over the past two decades, the amount of capital deployed in private markets has grown substantially; estimates put the total assets under management employed in private markets strategies at over $15 trillion globally. Private markets encompass various forms of financing, including private equity, venture capital, and private credit, spanning infrastructure, real estate, other real assets, and corporate lending.
 
 In the UK, private markets have become an increasingly important source of finance for corporates. UK corporates that are backed by private equity investors account for up to 15% of total UK corporate debt and 10% of private sector employment (over 2 million employees).
 
-The growth of private markets is beneficial for businesses and the wider economy. It has broadened the types of capital available to the real economy, bringing benefits from greater competition and diversification. A variety of providers of capital, with a wider range of risk appetites, has generated greater availability of finance for businesses, and greater capacity to take a longer-term perspective or to support challenging business plans such as turnarounds. Some academic literature finds evidence that private equity ownership enhances portfolio firms' operational efficiency, driving innovation, investment, and financial performance. footnote [33]
+The growth of private markets is beneficial for businesses and the wider economy. It has broadened the types of capital available to the real economy, bringing benefits from greater competition and diversification. A variety of providers of capital, with a wider range of risk appetites, has generated greater availability of finance for businesses, and greater capacity to take a longer-term perspective or to support challenging business plans such as turnarounds. Some academic literature finds evidence that private equity ownership enhances portfolio firms' operational efficiency, driving innovation, investment, and financial performance.
 
 While resilient to date, the private market ecosystem has not been tested through a broad-based macroeconomic stress at its current size.
 
@@ -1176,7 +1176,7 @@ Heightened geopolitical tensions and continued advances in technology have under
 
 In March 2024, the FPC set out its macroprudential approach to operational resilience , which highlighted the growing risks to financial stability from operational issues and the importance of system-wide resilience (in addition to the resilience of individual firms).
 
-Since then, risks to operational resilience have continued to grow. footnote [34] A record share of respondents to the Bank of England's Systemic Risk Survey cited cyberattacks (86%) and operational risks (36%) in their top five risks to the UK financial system in 2025 H2. In 2025, the National Cyber Security Centre (NCSC) reported over 200 nationally-significant cyber incidents, up from 62 in 2023. The significance of these risks - and their potential to affect activity, revenues and valuations severely - has been highlighted by major incidents affecting national infrastructure, UK retailers and vehicle manufacturers this year.
+Since then, risks to operational resilience have continued to grow. A record share of respondents to the Bank of England's Systemic Risk Survey cited cyberattacks (86%) and operational risks (36%) in their top five risks to the UK financial system in 2025 H2. In 2025, the National Cyber Security Centre (NCSC) reported over 200 nationally-significant cyber incidents, up from 62 in 2023. The significance of these risks - and their potential to affect activity, revenues and valuations severely - has been highlighted by major incidents affecting national infrastructure, UK retailers and vehicle manufacturers this year.
 
 This increase in risk reflects increased geopolitical tensions and advances in technology. Elevated geopolitical tensions have been associated with an increase in cyberattacks globally. New technologies such as AI and Distributed Ledger Technology (DLT) provide benefits to some firms, and increased automation may reduce operational risks. But they may also introduce new operational risks related to speed, explainability, insufficient controls, and outsourcing including to critical third parties. New technologies may also increase the capabilities of cyberattackers. In future, development of large-scale quantum computing could undermine the security of public key cryptography, upon which many computer systems, including financial software, are dependent. The NCSC has therefore set out recommended timelines to migrate to post-quantum cryptography (PQC). Preparing and planning for PQC migration now - including mapping the software and hardware needed to provide key services, and dependencies between them - will mean firms and FMIs can migrate securely and in an orderly fashion, before quantum-based cyberattacks become widespread.
 
@@ -1228,7 +1228,7 @@ The FPC welcomes work by the Bank to propose a regulatory regime for sterling-de
 
 The development of new financial products such as stablecoins and tokenised deposits present both opportunities and risks to the UK financial system. The FPC recognises the transformative potential of technology associated with stablecoins and the importance of ensuring that the public can have the same trust in new forms of money as they do in existing ones. It also notes the potential for growth in funding directly from financial markets and NBFIs to support the provision of credit to UK household and businesses, even if deposits move from the banking system to stablecoins. The FPC therefore takes action to support the responsible adoption of innovative technology by the financial sector, in line with its secondary objective (Section 1 and Box A).
 
-In the UK, the Bank and FCA are developing regimes for systemic and non-systemic stablecoins to ensure appropriate resilience. Other jurisdictions, including the US, are also in the process of designing and finalising their regimes. The FCA consulted on their regime earlier this year, aimed at supporting the sustainable, long-term growth of crypto in the UK while delivering appropriate levels of market integrity and consumer protection. footnote [35] In addition, the Bank has recently published a consultation paper on its proposed regulatory regime for sterling-denominated systemic stablecoins, and an accompanying Financial Stability Paper which sets out the role of holding limits for sterling-denominated systemic stablecoins and a potential digital pound. The FPC welcomes this work, recognising both the transformative potential of technology associated with stablecoins and that there is a risk of reduced lending to businesses and households as the economy adjusts to these new forms of money.
+In the UK, the Bank and FCA are developing regimes for systemic and non-systemic stablecoins to ensure appropriate resilience. Other jurisdictions, including the US, are also in the process of designing and finalising their regimes. The FCA consulted on their regime earlier this year, aimed at supporting the sustainable, long-term growth of crypto in the UK while delivering appropriate levels of market integrity and consumer protection. In addition, the Bank has recently published a consultation paper on its proposed regulatory regime for sterling-denominated systemic stablecoins, and an accompanying Financial Stability Paper which sets out the role of holding limits for sterling-denominated systemic stablecoins and a potential digital pound. The FPC welcomes this work, recognising both the transformative potential of technology associated with stablecoins and that there is a risk of reduced lending to businesses and households as the economy adjusts to these new forms of money.
 
 The FPC will also continue to monitor the interactions between stablecoins (including systemic stablecoins) and the wider financial system. Uptake of new stablecoin instruments in the UK could have consequences for other systemically important parts of the financial system. For example:
 
@@ -1260,11 +1260,11 @@ If investors were to reprice financial assets rapidly to reflect climate-related
 
 Previous Bank work has highlighted that climate-related risks are only partially priced into the value of corporate and sovereign bonds. As set out in Sarah Breeden's speech, climate-related risks could pose challenges to financial stability in the near term if investors suddenly priced in the costs of transitioning to net zero or the increase in physical risks resulting from persistently high emissions - known as a 'Climate Minsky Moment'.
 
-Financial assets prices could be affected if investors priced in the expected impacts of physical and transition risk-focused scenarios on corporate and government debt sustainability, as well as the related macroeconomic impacts which could include higher inflation, interest rates, and risk premia. footnote [36] In the transition risk-focused scenario, higher inflation associated with higher carbon prices and other climate policies leads central banks to raise policy rates, pushing down on the price of both corporate and government debt. Higher carbon prices also increase corporate credit risks due to higher costs and lower expected revenues for businesses. In the physical risk-focused scenario, losses are driven by the increased frequency and severity of extreme weather events as global temperatures rise, which would have a severe negative impact on GDP and corporate earnings.
+Financial assets prices could be affected if investors priced in the expected impacts of physical and transition risk-focused scenarios on corporate and government debt sustainability, as well as the related macroeconomic impacts which could include higher inflation, interest rates, and risk premia. In the transition risk-focused scenario, higher inflation associated with higher carbon prices and other climate policies leads central banks to raise policy rates, pushing down on the price of both corporate and government debt. Higher carbon prices also increase corporate credit risks due to higher costs and lower expected revenues for businesses. In the physical risk-focused scenario, losses are driven by the increased frequency and severity of extreme weather events as global temperatures rise, which would have a severe negative impact on GDP and corporate earnings.
 
 Staff estimates are based on the severe but plausible assumption that markets fully price in one of these two illustrative scenarios within a short period. But it is of course not possible precisely to estimate the likelihood of these scenarios occurring, nor the likelihood that a rapid repricing might occur.
 
-If investors were to price the future impacts of these scenarios into today's asset prices, the resulting move in asset prices could be comparable to those moves seen in recent market stress episodes (Chart 7.1). For example, a severe macro shock associated with transition risks could lead to a 16% fall in government bond prices. This effect would be larger for countries with a longer-dated maturity profile, shifting more of the interest rate risk from governments to investors. footnote [37] The physical risk-focused scenario leads to a smaller fall in government bond prices of around 8%, largely because there is limited interest rate risk in the scenario used - even though the negative GDP impact of the physical risk-focused scenario is much larger than in the transition risk-focused scenario.
+If investors were to price the future impacts of these scenarios into today's asset prices, the resulting move in asset prices could be comparable to those moves seen in recent market stress episodes (Chart 7.1). For example, a severe macro shock associated with transition risks could lead to a 16% fall in government bond prices. This effect would be larger for countries with a longer-dated maturity profile, shifting more of the interest rate risk from governments to investors. The physical risk-focused scenario leads to a smaller fall in government bond prices of around 8%, largely because there is limited interest rate risk in the scenario used - even though the negative GDP impact of the physical risk-focused scenario is much larger than in the transition risk-focused scenario.
 
 Corporate bond and equity prices could also fall as these scenarios are priced in, with UK corporate bond prices falling by 12% and the FTSE All-Share index falling in value by around 24% under the transition risk scenario. These impacts would be particularly large for firms in sectors such as mining and oil and gas, which could be particularly affected by higher carbon prices and other climate policies (Chart 7.2). For example, corporate bonds issued by firms in the transport and mining and quarrying sectors could fall in value by as much as 60% as investors price in lower cash flows and higher costs related to transition policies. By contrast, firms in less energy-intensive sectors such as arts and entertainment and food and accommodation would see smaller falls in bond prices. The scenario would likely benefit other corporates with transition aligned business plans, including those which are not currently listed, or which have not issued corporate bonds.
 
@@ -1276,7 +1276,7 @@ In addition, UK banks could face climate-related credit losses over coming years
 
 As well as market risks from sudden asset repricing, firms could also face climate-related credit losses on their lending to households and businesses. The Bank's Climate Biennial Exploratory Scenario , published in 2022, showed that UK banks could face material credit losses from their exposures to physical and transition risks, but there was substantial uncertainty around the magnitude of these risks.
 
-A recent data collection by the Bank and the PRA shows the presence of climate risks in major UK banks' current wholesale and residential real estate exposures would lead to financial losses. Major UK banks provide substantial financing to agriculture-related activities, transportation including manufacture, and real estate. footnote [38] These climate-sensitive sectors account for close to 23% of major UK banks' wholesale credit exposures, as measured by risk-weighted assets. And around 13% of major UK banks' lending to businesses and financial institutions is to sectors currently covered by Emissions Trading Schemes (ETSs). These businesses are vulnerable to increases in carbon prices, which can occur as a result of government policy, but also in response to increases in gas prices . Therefore, they are more highly exposed to transition-related cost headwinds which could adversely affect their ability to repay their debts.
+A recent data collection by the Bank and the PRA shows the presence of climate risks in major UK banks' current wholesale and residential real estate exposures would lead to financial losses. Major UK banks provide substantial financing to agriculture-related activities, transportation including manufacture, and real estate. These climate-sensitive sectors account for close to 23% of major UK banks' wholesale credit exposures, as measured by risk-weighted assets. And around 13% of major UK banks' lending to businesses and financial institutions is to sectors currently covered by Emissions Trading Schemes (ETSs). These businesses are vulnerable to increases in carbon prices, which can occur as a result of government policy, but also in response to increases in gas prices . Therefore, they are more highly exposed to transition-related cost headwinds which could adversely affect their ability to repay their debts.
 
 Similarly, around half of banks' high loan to value (LTV) mortgage lending is to properties with Energy Performance Certificate (EPC) bands D or below. Banks could face losses on their lending secured on buy-to-let properties as an EPC rating of 'C' or above could become a minimum requirement for rentability as early as 2028. Further, households in less energy efficient properties are more exposed to sharp increases in energy prices, potentially affecting their ability to repay their mortgage debts. In aggregate, banks' exposures to losses from physical risks in the residential real estate portfolio appears to be more limited: only 5% of high-LTV mortgage exposures are estimated to be at severe but plausible risk of a flood event. Losses to banks from flooding are also mitigated by the high availability of flood insurance, including due to the presence of Flood Re (more information below).
 
@@ -1288,7 +1288,7 @@ Climate-related risks to household and corporate lending may result in credit lo
 
 As physical risks from climate change continue to increase over the longer term, lower insurance coverage could transfer risks to households, businesses, banks and governments. Supporting insurability through investments in resilience to physical risks from climate change would be beneficial to UK financial stability.
 
-As set out in the November 2024 Financial Stability Report , the shorter-term financial impact of flooding on households is likely to be limited due to strong flood insurance coverage and affordability relative to other countries. This is in part due to Flood Re - a joint reinsurance initiative between the Government and the insurance industry, which promotes the affordability and availability of insurance for households at high risk of flooding. footnote [39] Credit risks to banks from physical hazards are also currently mitigated by high insurance coverage.
+As set out in the November 2024 Financial Stability Report , the shorter-term financial impact of flooding on households is likely to be limited due to strong flood insurance coverage and affordability relative to other countries. This is in part due to Flood Re - a joint reinsurance initiative between the Government and the insurance industry, which promotes the affordability and availability of insurance for households at high risk of flooding. Credit risks to banks from physical hazards are also currently mitigated by high insurance coverage.
 
 But recent estimates by the Environment Agency suggest that the number of households at risk of flooding could increase from 6.3 million in 2024 to 8 million by 2050. Further, Flood Re is due to end in 2039 and has a statutory objective to manage the insurance market's transition to a post-Flood Re pricing model. Taken together, these changes could lead to decreases in insurance coverage due to insurers withdrawing from certain regions, or pricing becoming unaffordable for households. This could pose financial stability risks in the long term by negatively affecting:
 
@@ -1378,13 +1378,11 @@ The results also include a projection of how banks' RWAs will change in stress, 
 
 The impact of stressed losses is partly offset by the income that banks generate over the stress projection. The main source of income for participating banks is net interest income, which is affected by higher rates and pricing assumptions (Section 5.5 of the FSR contains further details).
 
-Management actions played an important role in mitigating stress impacts. Banks included business-as-usual measures in their submissions, for example cost reduction actions. Banks also submitted Strategic Management Actions (SMAs) including reductions in lending and trading exposures, and further reductions in cost and distribution beyond business-as-usual measures. SMAs have been included in the banks' results where the PRC judged them credible, consistent with our guidance footnote [40] and proportionate to the impact of the stress. No banks paid ordinary dividends up to the low point of the scenario (Table A2.2). Nationwide continued distributions on its Core Capital Deferred Shares throughout the stress.
+Management actions played an important role in mitigating stress impacts. Banks included business-as-usual measures in their submissions, for example cost reduction actions. Banks also submitted Strategic Management Actions (SMAs) including reductions in lending and trading exposures, and further reductions in cost and distribution beyond business-as-usual measures. SMAs have been included in the banks' results where the PRC judged them credible, consistent with our guidance and proportionate to the impact of the stress. No banks paid ordinary dividends up to the low point of the scenario (Table A2.2). Nationwide continued distributions on its Core Capital Deferred Shares throughout the stress.
 
 The low points for CET1 ratios and leverage ratios after the impact of strategic management actions occurred in year 1 for all banks except Santander UK, for whom the low point occurred in year 2 for both ratios.
 
 The PRC judged that this stress test did not reveal any capital inadequacies and that no bank is required to submit a revised capital plan.
-
-### Table A2.1: Projected CET1 capital ratios and Tier 1 leverage ratios in the stress scenario ( a ) ( b ) ( c ) ( d ) ( e ) ( f ) ( g ) ( h )
 
 - Sources: Participating banks' published accounts and STDF data submissions, Bank analysis and calculations.
 
@@ -1404,8 +1402,6 @@ The PRC judged that this stress test did not reveal any capital inadequacies and
 
 - ( h) To produce aggregate results in a single currency, the Bank converts the results of HSBC and Standard Chartered - which report in US dollars - into sterling at a rate consistent with the scenario.
 
-### Table A2.2: Dividends, variable remuneration, AT1 coupons and other distributions in the 2025 Bank Capital Stress Test
-
 - Sources: Participating banks' STDF data submissions, Bank analysis and calculations.
 
 - ( a) Ordinary dividends paid in respect of the year up until the noted period end.
@@ -1421,8 +1417,6 @@ The PRC judged that this stress test did not reveal any capital inadequacies and
 - ( f) Aggregate is the sum of all firms with HSBC and Standard Chartered converted to sterling using exchange rates consistent with the stress scenario.
 
 ### Barclays plc
-
-### Table A2.3: Projected consolidated solvency ratios in the stress scenario
 
 - Sources: Participating banks' published accounts and STDF data submissions, Bank analysis and calculations.
 
@@ -1442,8 +1436,6 @@ The PRC judged that this stress test did not reveal any capital inadequacies and
 
 ### HSBC Holdings plc
 
-### Table A2.4: Projected consolidated solvency ratios in the stress scenario
-
 - Sources: Participating banks' published accounts and STDF data submissions, Bank analysis and calculations.
 
 - ( a) The low points for the CET1 ratio and leverage ratio shown in the table do not necessarily occur in the same year of the stress scenario and correspond to the year where the minimum stressed ratio is calculated after strategic management actions. There is no conversion of banks' AT1 instruments in the stress.
@@ -1461,8 +1453,6 @@ The PRC judged that this stress test did not reveal any capital inadequacies and
 - ( g) Corresponds to the same year as the minimum leverage ratio over the stress scenario after strategic management actions.
 
 ### Lloyds Banking Group
-
-### Table A2.5: Projected consolidated solvency ratios in the stress scenario
 
 - Sources: Participating banks' published accounts and STDF data submissions, Bank analysis and calculations.
 
@@ -1482,8 +1472,6 @@ The PRC judged that this stress test did not reveal any capital inadequacies and
 
 ### Nationwide
 
-### Table A2.6: Projected consolidated solvency ratios in the stress scenario
-
 - Sources: Participating banks' published accounts and STDF data submissions, Bank analysis and calculations.
 
 - ( a) The low points for the CET1 ratio and leverage ratio shown in the table do not necessarily occur in the same year of the stress scenario and correspond to the year where the minimum stressed ratio is calculated after strategic management actions. There is no conversion of banks' AT1 instruments in the stress.
@@ -1501,8 +1489,6 @@ The PRC judged that this stress test did not reveal any capital inadequacies and
 - ( g) Corresponds to the same year as the minimum leverage ratio over the stress scenario after strategic management actions.
 
 ### NatWest Group
-
-### Table A2.7: Projected consolidated solvency ratios in the stress scenario
 
 - Sources: Participating banks' published accounts and STDF data submissions, Bank analysis and calculations.
 
@@ -1522,8 +1508,6 @@ The PRC judged that this stress test did not reveal any capital inadequacies and
 
 ### Santander UK Group Holdings plc
 
-### Table A2.8: Projected consolidated solvency ratios in the stress scenario
-
 - Sources: Participating banks' published accounts and STDF data submissions, Bank analysis and calculations.
 
 - ( a) The low points for the CET1 ratio and leverage ratio shown in the table do not necessarily occur in the same year of the stress scenario and correspond to the year where the minimum stressed ratio is calculated after strategic management actions. There is no conversion of banks' AT1 instruments in the stress.
@@ -1541,8 +1525,6 @@ The PRC judged that this stress test did not reveal any capital inadequacies and
 - ( g) Corresponds to the same year as the minimum leverage ratio over the stress scenario after strategic management actions.
 
 ### Standard Chartered plc
-
-### Table A2.9: Projected consolidated solvency ratios in the stress scenario
 
 - Sources: Participating banks' published accounts and STDF data submissions, Bank analysis and calculations.
 
@@ -1565,208 +1547,6 @@ The PRC judged that this stress test did not reveal any capital inadequacies and
 ## Glossary
 
 - Abbreviations ABS - asset-backed securities. ACS - annual cyclical scenario. AI - artificial intelligence. AT1 - Additional Tier 1. BBB - British Business Bank. BTL - buy-to-let. CAPE - cyclically-adjusted price-to-earnings. CCoB - Capital Conservation Buffer. CCPs - central counterparties. CCS - Credit Conditions Survey. CCyB - countercyclical capital buffer. CET1 - Common Equity Tier 1. CLOs - collateralised loan obligations. CMORG - Cross Market Operational Resilience Group. CNRF - Contingent NBFI Repo Facility. CORST - Cyber and Operational Resilience Stress Test. CRA - credit rating agencies. CRE - commercial real estate. CRR - Capital Requirements Regulation. CTP - Critical Third Parties. DC - defined contribution. DLT - distributed ledger technology. DSIT - Department for Science, Innovation and Technology. DSR - debt-servicing ratio. EMIR - European Market Infrastructure Regulation. EMIR-TR - European Market Infrastructure Regulation trade repository. EPC - Energy Performance Certificate. ERP - equity risk premia. ETS - Emissions Trading Scheme. FCA - Financial Conduct Authority. FMI - financial market infrastructure. FPC - Financial Policy Committee. FSB - Financial Stability Board. FSR - Financial Stability Report. FTSE - Financial Times Stock Exchange. G7 - Canada, France, Germany, Italy, Japan, the United Kingdom and the United States. GDP - gross domestic product. GFC - global financial crisis. GLEIF - Global Legal Entity Identifier Foundation. GPT - General-Purpose Technology. HGF - high-growth firms. HMG - HM Government. HM Treasury - His Majesty's Treasury. ICE - Intercontinental Exchange. ICR - interest coverage ratio. IFRS - International Financial Reporting Standard. IG - investment grade. ILTR - Indexed Long-Term Repo. IMF - International Monetary Fund. IOSCO - International Organization of Securities Commissions. IP - intellectual property. LCD - Leveraged Commentary & Data. LCR - liquidity coverage ratio. LDI - liability-driven investment. LL - leveraged loan. LSEG - London Stock Exchange Group. LTI - loan to income. LTV - loan to value. MA - Matching Adjustment. MAIA - Matching Adjustment Investment Accelerator. MBF - market-based finance. MCOB - Mortgage Conduct of Business. MiFID - Markets in Financial Instruments Directive. MMF - money market fund. MPR - Monetary Policy Report. NAV - net asset value. NBFI - non-bank financial institution. NCSC - National Cyber Security Centre. NGFS - Network for Greening the Financial System. NIC - National Insurance Contributions. OECD - Organisation for Economic Co-operation and Development. OEF - open-ended fund. OIS - overnight index swap. ONS - Office for National Statistics. O-SII - other systemically important institution. OTC - over-the-counter. PE - private equity. PLR - Private Letter Rating. PNFC - private non-financial corporation. PPP - purchasing power parity. PQC - post-quantum cryptography. PRA - Prudential Regulation Authority. PRC - Prudential Regulation Committee. PTFs - Principal Trading Firms. PtTB - price to tangible book. RoTE - return on tangible equity. RWA - risk-weighted asset. SDDT - Small Domestic Deposit Taker. SMA - Strategic Management Action. SME - small and medium-sized enterprise. SMF - Sterling Monetary Framework. SMMD - sterling money market data. STDF - Stress Testing Data Framework. STR - Short-Term Repo. SWES - system-wide exploratory scenario. TFSME - Term Funding scheme with additional incentives for Small and Medium-sized enterprises. TPR - The Pensions Regulator. VC - venture capital. VIX Index - Chicago Board Options Exchange Volatility Index. YTD - year to date.
-
-### Abbreviations
-
-ABS - asset-backed securities.
-
-ACS - annual cyclical scenario.
-
-AI - artificial intelligence.
-
-AT1 - Additional Tier 1.
-
-BBB - British Business Bank.
-
-BTL - buy-to-let.
-
-CAPE - cyclically-adjusted price-to-earnings.
-
-CCoB - Capital Conservation Buffer.
-
-CCPs - central counterparties.
-
-CCS - Credit Conditions Survey.
-
-CCyB - countercyclical capital buffer.
-
-CET1 - Common Equity Tier 1.
-
-CLOs - collateralised loan obligations.
-
-CMORG - Cross Market Operational Resilience Group.
-
-CNRF - Contingent NBFI Repo Facility.
-
-CORST - Cyber and Operational Resilience Stress Test.
-
-CRA - credit rating agencies.
-
-CRE - commercial real estate.
-
-CRR - Capital Requirements Regulation.
-
-CTP - Critical Third Parties.
-
-DC - defined contribution.
-
-DLT - distributed ledger technology.
-
-DSIT - Department for Science, Innovation and Technology.
-
-DSR - debt-servicing ratio.
-
-EMIR - European Market Infrastructure Regulation.
-
-EMIR-TR - European Market Infrastructure Regulation trade repository.
-
-EPC - Energy Performance Certificate.
-
-ERP - equity risk premia.
-
-ETS - Emissions Trading Scheme.
-
-FCA - Financial Conduct Authority.
-
-FMI - financial market infrastructure.
-
-FPC - Financial Policy Committee.
-
-FSB - Financial Stability Board.
-
-FSR - Financial Stability Report.
-
-FTSE - Financial Times Stock Exchange.
-
-G7 - Canada, France, Germany, Italy, Japan, the United Kingdom and the United States.
-
-GDP - gross domestic product.
-
-GFC - global financial crisis.
-
-GLEIF - Global Legal Entity Identifier Foundation.
-
-GPT - General-Purpose Technology.
-
-HGF - high-growth firms.
-
-HMG - HM Government.
-
-HM Treasury - His Majesty's Treasury.
-
-ICE - Intercontinental Exchange.
-
-ICR - interest coverage ratio.
-
-IFRS - International Financial Reporting Standard.
-
-IG - investment grade.
-
-ILTR - Indexed Long-Term Repo.
-
-IMF - International Monetary Fund.
-
-IOSCO - International Organization of Securities Commissions.
-
-IP - intellectual property.
-
-LCD - Leveraged Commentary & Data.
-
-LCR - liquidity coverage ratio.
-
-LDI - liability-driven investment.
-
-LL - leveraged loan.
-
-LSEG - London Stock Exchange Group.
-
-LTI - loan to income.
-
-LTV - loan to value.
-
-MA - Matching Adjustment.
-
-MAIA - Matching Adjustment Investment Accelerator.
-
-MBF - market-based finance.
-
-MCOB - Mortgage Conduct of Business.
-
-MiFID - Markets in Financial Instruments Directive.
-
-MMF - money market fund.
-
-MPR - Monetary Policy Report.
-
-NAV - net asset value.
-
-NBFI - non-bank financial institution.
-
-NCSC - National Cyber Security Centre.
-
-NGFS - Network for Greening the Financial System.
-
-NIC - National Insurance Contributions.
-
-OECD - Organisation for Economic Co-operation and Development.
-
-OEF - open-ended fund.
-
-OIS - overnight index swap.
-
-ONS - Office for National Statistics.
-
-O-SII - other systemically important institution.
-
-OTC - over-the-counter.
-
-PE - private equity.
-
-PLR - Private Letter Rating.
-
-PNFC - private non-financial corporation.
-
-PPP - purchasing power parity.
-
-PQC - post-quantum cryptography.
-
-PRA - Prudential Regulation Authority.
-
-PRC - Prudential Regulation Committee.
-
-PTFs - Principal Trading Firms.
-
-PtTB - price to tangible book.
-
-RoTE - return on tangible equity.
-
-RWA - risk-weighted asset.
-
-SDDT - Small Domestic Deposit Taker.
-
-SMA - Strategic Management Action.
-
-SME - small and medium-sized enterprise.
-
-SMF - Sterling Monetary Framework.
-
-SMMD - sterling money market data.
-
-STDF - Stress Testing Data Framework.
-
-STR - Short-Term Repo.
-
-SWES - system-wide exploratory scenario.
-
-TFSME - Term Funding scheme with additional incentives for Small and Medium-sized enterprises.
-
-TPR - The Pensions Regulator.
-
-VC - venture capital.
-
-VIX Index - Chicago Board Options Exchange Volatility Index.
-
-YTD - year to date.
 
 Stress testing the UK banking system: Guidance on the 2025 stress test for participants .
 
@@ -1894,8 +1674,6 @@ Refer to Crafts (2004) , Crafts (2021) , Crafts and Harley (1992) , Crafts and W
 
 [CHART: Chart 3.4: Refinancing walls are steeper for riskier credit markets, like leveraged loans and private credit]
 
-[CHART: Table 4.A: Selected indicators of banking sector resilience ( a ) ( b )]
-
 [CHART: Chart 4.1: Major UK banks' aggregate PtTB ratio has continued to rise since the July FSR, and is at a similar level to that of euro-area banks but lower than US banks]
 
 [CHART: Chart 4.2: A fall in gross lending volumes from banks and building societies in 2025 Q2 reflected the impact of mortgage activity brought forward to the first quarter. Lending volumes then recovered in the third quarter]
@@ -1906,12 +1684,6 @@ Refer to Crafts (2004) , Crafts (2021) , Crafts and Harley (1992) , Crafts and W
 
 [CHART: Chart 5.1: The UK banking system is resilient to support the economy, with the aggregate capital ratio remaining well above minima at the low point of the stress test scenario]
 
-[CHART: Table 5.A: All banks remain above their CET1 capital ratio and Tier 1 leverage ratio minima]
-
-[CHART: Table 5.B: Credit impairments and traded risk are key drivers of lower capital ratios in the stress]
-
-[CHART: Table 5.C: Impairments are estimated at £112 billion over the five years of the Bank Capital Stress Test]
-
 [CHART: Chart 5.2: Sensitivity analysis suggests increasing the size of the UK house price shock would have a non-linear impact on credit losses]
 
 [CHART: Chart 5.3: Loan margins rise over the stress scenario]
@@ -1919,8 +1691,6 @@ Refer to Crafts (2004) , Crafts (2021) , Crafts and Harley (1992) , Crafts and W
 [CHART: Chart 5.4:  Changes in the assumed sterling deposit pass-through rate would impact the aggregate CET1 capital ratio]
 
 [CHART: Chart A: The impact of IFRS 9 and changes made to the stress test are broadly neutral on the level of capital needed to absorb losses in the stress scenario]
-
-[CHART: Table 1: The Bank estimates that UK banks have £173 billion of banking book exposures to private market funds and corporates backed by financial sponsors, including private equity funds.]
 
 [CHART: Chart 6.1: The gilt market has continued to function in an orderly way]
 
@@ -1930,21 +1700,9 @@ Refer to Crafts (2004) , Crafts (2021) , Crafts and Harley (1992) , Crafts and W
 
 [CHART: Chart 6.4: Data suggest that hedge fund net gilt repo borrowing is related, at least in part, to the popularity of the cash-futures basis trade]
 
-[CHART: Table 6.A: Overview of progress on building resilience against key vulnerabilities in MBF domestically and internationally ( a )]
-
 [CHART: Chart 7.1: If investors were to reprice financial assets rapidly to reflect climate-related risks, the resulting move in asset prices could be comparable to those moves seen in recent market stress episodes]
 
 [CHART: Chart 7.2: Falls in asset prices related to transition risks would be largest in sectors particularly affected by higher carbon prices and other climate policies]
-
-[CHART: Table A3.1: Projected cumulative five-year impairment charge rates on UK lending in the stress scenario ( a ) ( b ) ( c )]
-
-[CHART: Table A3.2: Projected cumulative five‐year impairment charges on UK lending in the stress scenario ( a ) ( b )]
-
-[CHART: Table A3.3: Projected cumulative five-year impairment charge rates in the stress scenario ( a ) ( b ) ( c ) ( d ) ( e )]
-
-[CHART: Table A3.4: Projected cumulative five-year impairment charges in the stress scenario ( a ) ( b ) ( c ) ( d )]
-
-[CHART: Table A3.5: Projected traded risk losses 2025 of the stress scenario ( a ) ( b )]
 
 [TABLE: Table 4.A: Selected indicators of banking sector resilience ( a ) ( b )]
                                                                                                                 Unnamed: 0                    Latest             July 2025 FSR
