@@ -61,3 +61,53 @@ def test_manifest_title_on_rerun_reflects_extracted_title(cached_html: Path) -> 
     assert row.status == "ok"
     # Word count still measured from the existing file, not a re-write.
     assert row.word_count == len("pre-existing content".split())
+
+
+class _SpeechStubScraper(BaseScraper):
+    """Returns a speech-style metadata dict (title + speaker)."""
+
+    def scrape(self, html: str) -> tuple[str, dict]:  # type: ignore[override]
+        return "speech body", {
+            "title": "Test Speech Title",
+            "speaker": "Professor Alan Taylor",
+        }
+
+    def _walk_content_tree(self, content, charts, tables):
+        return ""
+
+
+def test_manifest_row_includes_normalised_speaker_for_speech(cached_html: Path) -> None:
+    """Speech manifest rows carry speaker normalised to 'FirstName LastName'."""
+    url = "https://www.bankofengland.co.uk/test/2025/november-2025"
+    out_dir = cached_html / "out"
+    out_dir.mkdir()
+
+    row = _process_document(
+        scraper=_SpeechStubScraper(),
+        date="2025-01",
+        url=url,
+        document_type=DocumentType.SPEECH,
+        filename="speech_taylor_2025_01.txt",
+        out_dir=out_dir,
+        default_title="default",
+    )
+    assert row.speaker == "Alan Taylor", row
+    # Non-speech rows use empty string so manifest.csv has a stable schema.
+    assert "speaker" in row.__dataclass_fields__
+
+
+def test_manifest_row_empty_speaker_for_non_speech(cached_html: Path) -> None:
+    url = "https://www.bankofengland.co.uk/test/2025/november-2025"
+    out_dir = cached_html / "out"
+    out_dir.mkdir()
+
+    row = _process_document(
+        scraper=_StubScraper(),
+        date="2025-11",
+        url=url,
+        document_type=DocumentType.MPC_MINUTES,
+        filename="mpc_2025_11.txt",
+        out_dir=out_dir,
+        default_title="November 2025 MPC Minutes",
+    )
+    assert row.speaker == ""

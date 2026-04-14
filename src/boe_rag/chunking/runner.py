@@ -78,6 +78,9 @@ def chunk_all() -> ChunkingSummary:
             text = text_path.read_text(encoding="utf-8")
 
             doc_id = text_path.stem  # e.g. mpc_2025_11
+            # Speaker column was added to the manifest after spec 03 shipped;
+            # fall back to empty so older manifests without the column still work.
+            manifest_speaker = row.get("speaker", "") or None
             enhanced_chunks = chunk_document(
                 text=text,
                 document_type=doc_type,
@@ -85,6 +88,7 @@ def chunk_all() -> ChunkingSummary:
                 source_url=row["source_url"],
                 title=row["title"],
                 doc_id=doc_id,
+                speaker=manifest_speaker,
             )
             baseline_chunks = chunk_document_baseline(text, doc_id)
 

@@ -21,7 +21,7 @@ from dataclasses import dataclass, field
 
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
-from boe_rag.chunking.metadata import assign_category, count_tokens
+from boe_rag.chunking.metadata import assign_category, count_tokens, normalise_speaker
 from boe_rag.config import ENHANCED_MAX_CHUNK, ENHANCED_MIN_CHUNK, ENHANCED_OVERLAP
 from boe_rag.models import Chunk, ChunkMetadata, DocumentType, SectionCategory
 
@@ -187,6 +187,7 @@ def chunk_document(
     source_url: str,
     title: str,
     doc_id: str | None = None,
+    speaker: str | None = None,
 ) -> list[Chunk]:
     """Build section-aware Chunk objects from a processed document text.
 
@@ -246,12 +247,14 @@ def chunk_document(
             else:
                 para_range = _paragraph_range(cs, document_type, local_idx, len(pieces))
 
-            speaker = cs.raw.speaker
+            chunk_speaker = _resolve_chunk_speaker(
+                cs, document_type=document_type, manifest_speaker=speaker
+            )
             metadata = ChunkMetadata(
                 document_type=document_type,
                 date=date,
                 section_category=cs.category,
-                speaker=speaker,
+                speaker=chunk_speaker,
                 source_url=source_url,
                 paragraph_range=para_range,
                 title=title,
@@ -533,6 +536,30 @@ def _subsection_ref(h3: str) -> str:
     if (m := _SUBSECTION_NUM_RE.match(h3)) is not None:
         return f"s{m.group(1)}"
     return ""
+
+
+def _resolve_chunk_speaker(
+    cs: _CategorisedSection,
+    *,
+    document_type: DocumentType,
+    manifest_speaker: str | None,
+) -> str | None:
+    """Return the canonical speaker string (or None) for a chunk.
+
+    Resolution rules:
+      * MPC member statements take the speaker from the parsed
+        ``**Name:**`` marker, normalised to "FirstName LastName".
+      * All other MPC chunks (vote headers, discussion) have no speaker.
+      * Every chunk from a SPEECH document inherits the manifest's speaker
+        — even sub-sections (``### Where have we come from?``) belong to
+        the same speaker. The manifest value is normalised upstream.
+      * MPR / FSR chunks never carry a speaker.
+    """
+    if cs.raw.section_type == "member" and cs.raw.speaker:
+        return normalise_speaker(cs.raw.speaker)
+    if document_type is DocumentType.SPEECH and manifest_speaker:
+        return manifest_speaker
+    return None
 
 
 def _chunk_id(

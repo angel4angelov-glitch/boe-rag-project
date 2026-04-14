@@ -94,6 +94,58 @@ def test_chunk_ids_include_doc_id_for_cross_doc_uniqueness() -> None:
     assert all(c.chunk_id.startswith("speech_mann_2025_02_") for c in chunks_b)
 
 
+def test_speech_chunks_carry_canonical_speaker_metadata() -> None:
+    """Speech chunks must have metadata.speaker populated from the manifest.
+
+    Without this, the enhanced pipeline cannot run
+    ``where={"speaker":"Alan Taylor", "document_type":"speech"}`` queries —
+    the whole reason we added the field to the manifest.
+    """
+    text = (
+        "## Speech\n\nHero summary.\n\n"
+        "### Where have we come from?\n\n"
+        "Historical context paragraph with enough length to survive. " * 10
+    )
+    chunks = chunk_document(
+        text,
+        document_type=DocumentType.SPEECH,
+        date="2025-01",
+        source_url="https://example.com/taylor",
+        title="Taylor speech",
+        doc_id="speech_taylor_2025_01",
+        speaker="Alan Taylor",
+    )
+    assert chunks, "expected at least one chunk"
+    assert all(c.metadata.speaker == "Alan Taylor" for c in chunks), [
+        c.metadata.speaker for c in chunks
+    ]
+
+
+def test_mpc_member_statement_speaker_is_normalised() -> None:
+    """'Catherine L Mann' in MPC markers must be stored as 'Catherine Mann'."""
+    text = (
+        "### The immediate policy decision\n\n"
+        "**Votes to maintain Bank Rate at 4%**\n\n"
+        "Five members voted.\n\n"
+        "**Catherine L Mann:** My rationale extends to inflation persistence concerns. " * 4
+    )
+    chunks = chunk_document(
+        text,
+        document_type=DocumentType.MPC_MINUTES,
+        date="2025-11",
+        source_url="x",
+        title="Nov 2025 MPC",
+        doc_id="mpc_2025_11",
+    )
+    member_chunks = [
+        c for c in chunks if c.metadata.section_category is SectionCategory.INDIVIDUAL_STATEMENT
+    ]
+    assert member_chunks, "expected at least one member-statement chunk"
+    assert all(c.metadata.speaker == "Catherine Mann" for c in member_chunks), [
+        c.metadata.speaker for c in member_chunks
+    ]
+
+
 def test_empty_heading_only_sections_are_dropped() -> None:
     """A bare '## Heading' with no body must not become a sub-15-token chunk."""
     text = (

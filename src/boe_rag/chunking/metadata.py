@@ -31,6 +31,49 @@ def count_tokens(text: str) -> int:
     return len(_ENCODER.encode(text))
 
 
+# Honorifics to strip from speaker names so the canonical form is just
+# "FirstName LastName". Lower-case comparison, period-stripped on input.
+_SPEAKER_HONORIFICS: frozenset[str] = frozenset(
+    {"professor", "prof", "dr", "doctor", "mr", "mrs", "ms", "sir", "dame"}
+)
+
+
+def normalise_speaker(name: str) -> str:
+    """Reduce a speaker string to its canonical "FirstName LastName" form.
+
+    BoE chunks come from two sources with inconsistent styling:
+      * MPC minutes emit "Catherine L Mann", "Huw Pill", etc. from the
+        ``**Name:**`` markers (middle initials included).
+      * Speech sidebars emit "Professor Alan Taylor" (title prefix included).
+
+    Retrieval queries in natural language say "Catherine Mann" or "Alan
+    Taylor" — no honorific, no middle initial. For ChromaDB's exact-match
+    ``where`` filter to work at all, we must normalise BOTH storage and
+    queries to the same form. This function defines that canonical form:
+    first name + last name, honorifics and middle initials dropped.
+
+    Args:
+        name: Raw speaker string (may be empty or whitespace).
+
+    Returns:
+        Canonical "FirstName LastName" string, or empty string if ``name``
+        contains nothing after stripping.
+    """
+    if not name or not name.strip():
+        return ""
+
+    # Strip periods (e.g. "Catherine L." -> "Catherine L") then split.
+    parts = name.replace(".", "").split()
+
+    parts = [p for p in parts if p.lower() not in _SPEAKER_HONORIFICS]
+
+    if len(parts) >= 2:
+        return f"{parts[0]} {parts[-1]}"
+    if len(parts) == 1:
+        return parts[0]
+    return ""
+
+
 # Ordered (substring, category) rules — first match wins.
 # All keys are lowercase; compared against heading.lower().
 _MPR_RULES: tuple[tuple[str, SectionCategory], ...] = (

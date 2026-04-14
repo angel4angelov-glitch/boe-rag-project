@@ -2,8 +2,37 @@
 
 from __future__ import annotations
 
-from boe_rag.chunking.metadata import assign_category, count_tokens
+from boe_rag.chunking.metadata import assign_category, count_tokens, normalise_speaker
 from boe_rag.models import DocumentType, SectionCategory
+
+
+# ── Speaker normalisation ───────────────────────────────────
+
+
+def test_normalise_speaker_drops_middle_initial() -> None:
+    assert normalise_speaker("Catherine L Mann") == "Catherine Mann"
+    assert normalise_speaker("Catherine L. Mann") == "Catherine Mann"
+
+
+def test_normalise_speaker_drops_honorifics() -> None:
+    assert normalise_speaker("Professor Alan Taylor") == "Alan Taylor"
+    assert normalise_speaker("Dr Sarah Breeden") == "Sarah Breeden"
+    assert normalise_speaker("Prof. Megan Greene") == "Megan Greene"
+
+
+def test_normalise_speaker_passes_simple_names_through() -> None:
+    assert normalise_speaker("Andrew Bailey") == "Andrew Bailey"
+    assert normalise_speaker("Huw Pill") == "Huw Pill"
+
+
+def test_normalise_speaker_handles_empty_and_whitespace() -> None:
+    assert normalise_speaker("") == ""
+    assert normalise_speaker("   ") == ""
+
+
+def test_normalise_speaker_keeps_hyphenated_surnames_intact() -> None:
+    """Hyphenated last names must not lose their hyphen during normalisation."""
+    assert normalise_speaker("Mary Smith-Jones") == "Mary Smith-Jones"
 
 
 # ── Token counting ──────────────────────────────────────────

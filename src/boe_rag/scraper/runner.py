@@ -13,6 +13,7 @@ import logging
 from dataclasses import dataclass
 from pathlib import Path
 
+from boe_rag.chunking.metadata import normalise_speaker
 from boe_rag.config import Paths
 from boe_rag.models import DocumentType
 from boe_rag.scraper.base import BaseScraper, fetch_page
@@ -61,6 +62,7 @@ class ManifestRow:
     source_url: str
     word_count: int
     status: str  # "ok" | "missing"
+    speaker: str = ""  # canonical "FirstName LastName" for speeches; "" otherwise
 
 
 # ── Document processing ─────────────────────────────────────
@@ -98,6 +100,8 @@ def _process_document(
 
     text, metadata = scraper.scrape(html)
     title = metadata.get("title") or default_title
+    raw_speaker = metadata.get("speaker", "") if document_type is DocumentType.SPEECH else ""
+    speaker = normalise_speaker(raw_speaker) if raw_speaker else ""
 
     if output_path.exists():
         existing = output_path.read_text(encoding="utf-8")
@@ -117,6 +121,7 @@ def _process_document(
         source_url=url,
         word_count=word_count,
         status="ok",
+        speaker=speaker,
     )
 
 
@@ -213,9 +218,9 @@ def scrape_all() -> list[ManifestRow]:
             ))
             continue
 
-        speaker = metadata.get("speaker", "")
+        raw_speaker = metadata.get("speaker", "")
         title = metadata.get("title", "")
-        filename = f"speech_{_speaker_slug(speaker)}_{year}_{month_num}.txt"
+        filename = f"speech_{_speaker_slug(raw_speaker)}_{year}_{month_num}.txt"
         output_path = speech_dir / filename
 
         if output_path.exists():
@@ -225,7 +230,9 @@ def scrape_all() -> list[ManifestRow]:
             speech_dir.mkdir(parents=True, exist_ok=True)
             output_path.write_text(text, encoding="utf-8")
             word_count = len(text.split())
-            logger.info("Wrote %s (%d words, speaker=%s)", filename, word_count, speaker)
+            logger.info(
+                "Wrote %s (%d words, speaker=%s)", filename, word_count, raw_speaker
+            )
 
         rows.append(ManifestRow(
             filename=filename,
@@ -235,6 +242,7 @@ def scrape_all() -> list[ManifestRow]:
             source_url=url,
             word_count=word_count,
             status="ok",
+            speaker=normalise_speaker(raw_speaker),
         ))
 
     _write_manifest(rows, Paths.DATA_RAW / "manifest.csv")
@@ -247,11 +255,20 @@ def _write_manifest(rows: list[ManifestRow], path: Path) -> None:
     with path.open("w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
         writer.writerow(
-            ["filename", "document_type", "date", "title", "source_url", "word_count", "status"]
+            [
+                "filename",
+                "document_type",
+                "date",
+                "title",
+                "source_url",
+                "word_count",
+                "status",
+                "speaker",
+            ]
         )
         for row in rows:
             writer.writerow([
                 row.filename, row.document_type, row.date, row.title,
-                row.source_url, row.word_count, row.status,
+                row.source_url, row.word_count, row.status, row.speaker,
             ])
     logger.info("Wrote manifest with %d rows to %s", len(rows), path)
