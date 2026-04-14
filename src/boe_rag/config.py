@@ -34,6 +34,13 @@ class Paths:
 # ── Model configuration ───────────────────────────────────────
 
 GENERATION_MODEL = "claude-sonnet-4-20250514"
+# Measured: Haiku 4.5 rejected chunks that Sonnet correctly marked
+# relevant (e.g. the Box D chunk on a Box-D-specific query), producing
+# false abstains. Classification quality matters here — the delta
+# between "chunk 015 is relevant" (Sonnet) and "all chunks irrelevant"
+# (Haiku) collapses the whole retrieval stage. Keep grading on Sonnet;
+# the TPM issue is handled via per-call retry+backoff and context
+# truncation in the grading node, not by model downgrade.
 GRADING_MODEL = "claude-sonnet-4-20250514"
 EMBEDDING_MODEL = "text-embedding-3-small"
 RERANK_MODEL = "rerank-v3.5"

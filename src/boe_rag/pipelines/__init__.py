@@ -2,6 +2,7 @@
 
 from boe_rag.pipelines.base import BasePipeline
 from boe_rag.pipelines.baseline import BaselinePipeline
+from boe_rag.pipelines.enhanced import EnhancedPipeline
 from boe_rag.pipelines.prompts import BASELINE_PROMPT, ENHANCED_GENERATION_PROMPT
 
 __all__ = [
@@ -9,4 +10,5 @@ __all__ = [
     "ENHANCED_GENERATION_PROMPT",
     "BasePipeline",
     "BaselinePipeline",
+    "EnhancedPipeline",
 ]

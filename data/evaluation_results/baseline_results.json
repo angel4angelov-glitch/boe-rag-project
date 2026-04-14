@@ -1,0 +1,1077 @@
+{
+  "q01": {
+    "question": "What was the MPC vote split in February 2026?",
+    "category": "simple_factual",
+    "answer": "Based on the context provided, in February 2026 the MPC vote split was **5-4 to maintain Bank Rate at 3.75%**.\n\nSpecifically:\n- **5 members voted to maintain Bank Rate at 3.75%**: Andrew Bailey, Megan Greene, Clare Lombardelli, Catherine L Mann, and Huw Pill\n- **4 members voted to reduce Bank Rate by 0.25 percentage points to 3.5%**: Sarah Breeden, Swati Dhingra, Dave Ramsden, and Alan Taylor\n\nThis information is clearly stated in both the Monetary Policy Summary and the detailed voting records in paragraphs 16, 17, and 19 of the minutes.",
+    "pipeline_name": "baseline",
+    "chunks_retrieved": 5,
+    "chunks_used": 5,
+    "crag_rewrites": 0,
+    "hallucination_retries": 0,
+    "is_grounded": null,
+    "metadata_filters_used": null,
+    "pipeline_trace": [
+      "retrieve",
+      "generate"
+    ],
+    "sources": [
+      {
+        "chunk_id": "baseline_mpc_2026_02_005",
+        "score": 0.5284,
+        "text_preview": "16: Five members (Andrew Bailey, Megan Greene, Clare Lombardelli, Catherine L Mann and Huw Pill) preferred to maintain Bank Rate at 3.75% at this meeting. These members recognised that progress in dis"
+      },
+      {
+        "chunk_id": "baseline_mpc_2025_09_012",
+        "score": 0.5145,
+        "text_preview": "47: One member preferred to slow the pace of QT to \u00a362 billion, retaining \u00a313 billion of sales, having been informed that in this case the Bank would maintain equal proportions of sales across maturit"
+      },
+      {
+        "chunk_id": "baseline_mpc_2025_09_013",
+        "score": 0.5061,
+        "text_preview": "54: At this meeting, the MPC had voted to reduce the stock of UK government bond purchases held for monetary policy purposes by \u00a370 billion over the 12-month period from October 2025 to September 2026"
+      },
+      {
+        "chunk_id": "baseline_mpc_2026_03_008",
+        "score": 0.5058,
+        "text_preview": "29: Members agreed that developments over the next six weeks could shed light on the likely scale and duration of the conflict, as well as providing some early evidence on the likely propagation of th"
+      },
+      {
+        "chunk_id": "baseline_mpc_2026_02_001",
+        "score": 0.5019,
+        "text_preview": "## Monetary Policy Summary, February 2026\n\nAt its meeting ending on 4 February 2026, the Monetary Policy Committee voted by a majority of 5-4 to maintain Bank Rate at 3.75%. Four members voted to redu"
+      }
+    ]
+  },
+  "q02": {
+    "question": "What was Brent crude price cited in the March 2026 MPC minutes?",
+    "category": "simple_factual",
+    "answer": "Based on the context provided, the Brent crude oil price cited in the March 2026 MPC minutes was **over $100 per barrel**.\n\nSpecifically, the document states: \"The Brent crude spot price in the run-up to the MPC meeting on 18 March had been over $100 per barrel. This was around 60% higher than at the time of the February Report and the highest level since 2022, when oil prices had last increased by a comparable magnitude.\"",
+    "pipeline_name": "baseline",
+    "chunks_retrieved": 5,
+    "chunks_used": 5,
+    "crag_rewrites": 0,
+    "hallucination_retries": 0,
+    "is_grounded": null,
+    "metadata_filters_used": null,
+    "pipeline_trace": [
+      "retrieve",
+      "generate"
+    ],
+    "sources": [
+      {
+        "chunk_id": "baseline_mpc_2026_03_002",
+        "score": 0.6125,
+        "text_preview": "3: Oil prices had increased significantly since the previous MPC meeting. The Brent crude spot price in the run-up to the MPC meeting on 18 March had been over $100 per barrel. This was around 60% hig"
+      },
+      {
+        "chunk_id": "baseline_mpr_2025_08_053",
+        "score": 0.5415,
+        "text_preview": "CPI inflation has risen by a little more than expected in recent months and household inflation expectations remain elevated. With inflation likely to reach 4% briefly in the second half of this year "
+      },
+      {
+        "chunk_id": "baseline_mpc_2026_03_006",
+        "score": 0.5411,
+        "text_preview": "19: It was too early to assess the full impact of recent developments in the Middle East on bank lending conditions in the United Kingdom. Term Overnight Indexed Swap rates had increased to levels pre"
+      },
+      {
+        "chunk_id": "baseline_mpr_2025_05_027",
+        "score": 0.5265,
+        "text_preview": "Since the February Report, spot Brent crude oil prices have fallen and oil futures prices have also shifted lower (Chart 2.4). In the 15 UK working days to 29 April, spot prices had fallen by around 1"
+      },
+      {
+        "chunk_id": "baseline_mpc_2026_03_004",
+        "score": 0.5245,
+        "text_preview": "10: There had been only limited news in the near-term domestic outlook prior to the Middle East conflict. Twelve-month UK CPI inflation had fallen to 3.0% in January from 3.4% in December. This was 0."
+      }
+    ]
+  },
+  "q03": {
+    "question": "What was the judgement on CPI inflation cited in the November 2025 MPC minutes?",
+    "category": "simple_factual",
+    "answer": "Based on the December 2025 MPC minutes, the judgement on CPI inflation from the November 2025 meeting included the following key points:\n\n1. **Near-term projection**: The November Report projected that CPI inflation would increase further in the near term, to around 2\u00be% by the second half of 2025.\n\n2. **Revised expectations**: However, by the December meeting, headline inflation was now expected to rise more sharply than previously forecast, to 3.7% in 2025 Q3, largely due to:\n   - Recent developments in global energy costs\n   - Regulated price changes\n   - Impact of government policies announced in Autumn Budget 2024\n\n3. **Energy price impact**: The direct energy price contribution to 12-month CPI inflation was expected to increase from -0.6 to a positive contribution of 0.4 percentage points in 2025 Q3, reflecting increases in wholesale gas futures and oil prices since the November Report.\n\n4. **Medium-term outlook**: Despite the near-term pickup, the Committee judged that this would not lead to additional second-round effects on underlying domestic inflationary pressures, and it had not changed its judgement on the speed with which overall excess domestic inflationary pressures were expected to dissipate.\n\nThe November judgement was essentially that inflation would continue rising in the near term but remain on a path back toward the 2% target, though subsequent developments led to upward revisions to the near-term inflation outlook by December.",
+    "pipeline_name": "baseline",
+    "chunks_retrieved": 5,
+    "chunks_used": 5,
+    "crag_rewrites": 0,
+    "hallucination_retries": 0,
+    "is_grounded": null,
+    "metadata_filters_used": null,
+    "pipeline_trace": [
+      "retrieve",
+      "generate"
+    ],
+    "sources": [
+      {
+        "chunk_id": "baseline_mpc_2025_12_001",
+        "score": 0.6915,
+        "text_preview": "## Monetary Policy Summary, December 2025\n\nAt its meeting ending on 17 December 2025, the Monetary Policy Committee voted by a majority of 5-4 to reduce Bank Rate by 0.25 percentage points, to 3.75%. "
+      },
+      {
+        "chunk_id": "baseline_mpr_2025_02_006",
+        "score": 0.6882,
+        "text_preview": "The November Report projection was for CPI inflation to increase further in the near term, to around 23\u20444% by the second half of 2025. Headline inflation is now expected to rise more sharply, to 3.7% "
+      },
+      {
+        "chunk_id": "baseline_mpc_2025_12_006",
+        "score": 0.682,
+        "text_preview": "20: The MPC's approach to setting Bank Rate outlined in the November Monetary Policy Report had been based on two key policy judgements. First, that underlying domestic wage and price pressures were c"
+      },
+      {
+        "chunk_id": "baseline_mpc_2025_08_004",
+        "score": 0.6783,
+        "text_preview": "9: CPI inflation was expected to rise a little further, to just over 33\u20444% in 2025 Q3, before falling back towards the 2% target. The return of inflation towards target would be supported by an expect"
+      },
+      {
+        "chunk_id": "baseline_mpc_2025_12_002",
+        "score": 0.6778,
+        "text_preview": "3: Services consumer price inflation was 4.4% in November, compared with the most recent peak of 5.4% in April. Measures of underlying services price inflation had pointed to the disinflation process "
+      }
+    ]
+  },
+  "q04": {
+    "question": "When did the MPC last cut Bank Rate before March 2026?",
+    "category": "simple_factual",
+    "answer": "Based on the context provided, the MPC last cut Bank Rate before March 2026 at their meeting ending on August 6, 2025, when they reduced Bank Rate to 4%.\n\nThe document shows a sequence of meetings where:\n- June 18, 2025: Bank Rate maintained at 4.25%\n- August 6, 2025: Bank Rate reduced to 4% \n- September 17, 2025: Bank Rate maintained at 4%\n\nThe text states \"At this meeting, the Committee voted to reduce Bank Rate to 4%\" when referring to the August meeting, indicating this was when the most recent rate cut occurred before March 2026.",
+    "pipeline_name": "baseline",
+    "chunks_retrieved": 5,
+    "chunks_used": 5,
+    "crag_rewrites": 0,
+    "hallucination_retries": 0,
+    "is_grounded": null,
+    "metadata_filters_used": null,
+    "pipeline_trace": [
+      "retrieve",
+      "generate"
+    ],
+    "sources": [
+      {
+        "chunk_id": "baseline_mpc_2026_02_004",
+        "score": 0.6745,
+        "text_preview": "13: Some members were most concerned that cutting rates too quickly risked inadvertently making policy too accommodative if inflationary pressures did not recede, and that it might be costly to change"
+      },
+      {
+        "chunk_id": "baseline_mpr_2025_11_042",
+        "score": 0.659,
+        "text_preview": "- Annex 2: Monetary policy since the August 2025 Report At its meeting ending on 17 September 2025, the MPC voted by a majority of 7-2 to maintain Bank Rate at 4%. Two members voted to reduce Bank Rat"
+      },
+      {
+        "chunk_id": "baseline_mpc_2025_08_002",
+        "score": 0.6565,
+        "text_preview": "At this meeting, the Committee voted to reduce Bank Rate to 4%. A gradual and careful approach to the further withdrawal of monetary policy restraint remains appropriate. The restrictiveness of moneta"
+      },
+      {
+        "chunk_id": "baseline_mpr_2025_08_029",
+        "score": 0.6555,
+        "text_preview": "At its September meeting the MPC will vote on the target for the reduction in the stock of UK government bonds held for monetary policy purposes over the 12-month period from October 2025 to September"
+      },
+      {
+        "chunk_id": "baseline_mpr_2025_02_022",
+        "score": 0.6523,
+        "text_preview": "Bank staff assess the restrictiveness of the monetary policy stance on a continuing basis, using a range of tools such as financial conditions indices, the measures of restrictiveness discussed in Box"
+      }
+    ]
+  },
+  "q05": {
+    "question": "What was the household saving ratio cited in the November 2025 MPR?",
+    "category": "simple_factual",
+    "answer": "Based on the context provided, I cannot find a specific household saving ratio figure that is explicitly cited as being from the November 2025 MPR. \n\nThe context mentions several saving ratio figures from different time periods:\n- 11.6% by the end of 2024\n- A fall of 1 percentage point in 2025 Q1 (which would suggest around 10.6%)\n- A cash-based saving ratio of 9.1% in Q2 2025\n\nHowever, none of these are specifically attributed to the November 2025 Monetary Policy Report. The context does reference \"Box E of the November 2024 Monetary Policy Report\" but does not provide the specific saving ratio figure from the November 2025 MPR that the question is asking about.",
+    "pipeline_name": "baseline",
+    "chunks_retrieved": 5,
+    "chunks_used": 5,
+    "crag_rewrites": 0,
+    "hallucination_retries": 0,
+    "is_grounded": null,
+    "metadata_filters_used": null,
+    "pipeline_trace": [
+      "retrieve",
+      "generate"
+    ],
+    "sources": [
+      {
+        "chunk_id": "baseline_mpr_2025_05_035",
+        "score": 0.6399,
+        "text_preview": "Much of the rise in the saving ratio since 2022 reflects the restrictive stance of monetary policy, as well as households choosing to smooth through rises in their real incomes following previous incr"
+      },
+      {
+        "chunk_id": "baseline_speech_mann_2025_10_004",
+        "score": 0.5978,
+        "text_preview": "Consumption and the saving ratio are two sides of the same coin - revisions to consumption also imply a revised understanding of households' saving behavior in the economy. The household saving ratio "
+      },
+      {
+        "chunk_id": "baseline_mpr_2025_08_040",
+        "score": 0.5843,
+        "text_preview": "Household consumption grew by 0.3% in 2025 Q1, 0.1 percentage points lower than expected in the May Report. Consumption growth has been weaker than growth in real household incomes, such that the hous"
+      },
+      {
+        "chunk_id": "baseline_speech_mann_2025_10_024",
+        "score": 0.556,
+        "text_preview": "Survey results from the Bank of England/NMG Survey of Household Finances show that in response to higher costs of living, households who have spent more have predominantly saved less to fund these ext"
+      },
+      {
+        "chunk_id": "baseline_mpr_2025_11_039",
+        "score": 0.5514,
+        "text_preview": "In the central projection, household consumption picks up and the saving ratio falls back. But several mechanisms could give rise to a weaker path for consumption. Households may want to save more to "
+      }
+    ]
+  },
+  "q06": {
+    "question": "How did the February 2026 MPR near-term inflation projection differ from November 2025?",
+    "category": "comparative",
+    "answer": "I cannot answer this question based on the provided context. The context discusses inflation projections and includes tables showing CPI inflation forecasts, but it does not contain information comparing a February 2026 MPR (Monetary Policy Report) projection with a November 2025 projection.\n\nThe context mentions:\n- The November 2024 MPR forecast\n- The May Report projection (which appears to be from 2025 based on the quarterly projections shown)\n- References to the February Report (in the context of wholesale energy prices)\n\nHowever, there is no specific information about a February 2026 MPR or how it might differ from a November 2025 projection in terms of near-term inflation forecasts.",
+    "pipeline_name": "baseline",
+    "chunks_retrieved": 5,
+    "chunks_used": 5,
+    "crag_rewrites": 0,
+    "hallucination_retries": 0,
+    "is_grounded": null,
+    "metadata_filters_used": null,
+    "pipeline_trace": [
+      "retrieve",
+      "generate"
+    ],
+    "sources": [
+      {
+        "chunk_id": "baseline_speech_taylor_2025_01_005",
+        "score": 0.6269,
+        "text_preview": "The initial increase in inflation in 2021 was a surprise, with prior forecasts (up to May 2021) not showing any meaningful increase in inflation. While accounts differ, I think it is clear that the in"
+      },
+      {
+        "chunk_id": "baseline_mpr_2025_02_073",
+        "score": 0.5958,
+        "text_preview": "[TABLE: Table 1.C: The quarterly projection for CPI inflation based on market rate expectations ( a )]\nUnnamed: 0_level_0 2025 Q1 2025 Q2 2025 Q3 2025 Q4 Unnamed: 5_level_0\nUnnamed: 0_level_1 2026 Q1 "
+      },
+      {
+        "chunk_id": "baseline_mpr_2025_05_069",
+        "score": 0.5922,
+        "text_preview": "[TABLE: Table 1.C: The quarterly baseline projection for CPI inflation based on market rate expectations ( a )]\nUnnamed: 0_level_0 2025 Q2 2025 Q3 2025 Q4 2026 Q1 Unnamed: 5_level_0\nUnnamed: 0_level_1"
+      },
+      {
+        "chunk_id": "baseline_mpr_2025_08_079",
+        "score": 0.5889,
+        "text_preview": "[TABLE: Table 1.C: The quarterly baseline projection for CPI inflation based on market rate expectations ( a )]\nUnnamed: 0_level_0 2025 Q3 2025 Q4 2026 Q1 2026 Q2 Unnamed: 5_level_0\nUnnamed: 0_level_1"
+      },
+      {
+        "chunk_id": "baseline_mpr_2025_05_006",
+        "score": 0.5741,
+        "text_preview": "The MPC monitors a range of indicators from households, businesses and financial markets to make a joint assessment of whether inflation expectations remain consistent with meeting the 2% inflation ta"
+      }
+    ]
+  },
+  "q07": {
+    "question": "How did the MPC's language on inflation persistence change between November 2025 and February 2026?",
+    "category": "comparative",
+    "answer": "Based on the context provided, I cannot find information about the MPC's language on inflation persistence between November 2025 and February 2026. \n\nThe document contains information about various time periods, including:\n- November (referenced in paragraph 20-21 about policy judgements)\n- February 2025 (mentioned in relation to global trade policy uncertainty and GDP growth)\n- August 2025 (the main Monetary Policy Summary)\n- September 2025 (Annex 2 about monetary policy decisions)\n\nHowever, there is no specific content comparing the MPC's language on inflation persistence between November 2025 and February 2026. The document does not contain sufficient information to answer this question about that particular time period comparison.",
+    "pipeline_name": "baseline",
+    "chunks_retrieved": 5,
+    "chunks_used": 5,
+    "crag_rewrites": 0,
+    "hallucination_retries": 0,
+    "is_grounded": null,
+    "metadata_filters_used": null,
+    "pipeline_trace": [
+      "retrieve",
+      "generate"
+    ],
+    "sources": [
+      {
+        "chunk_id": "baseline_mpc_2025_12_006",
+        "score": 0.6743,
+        "text_preview": "20: The MPC's approach to setting Bank Rate outlined in the November Monetary Policy Report had been based on two key policy judgements. First, that underlying domestic wage and price pressures were c"
+      },
+      {
+        "chunk_id": "baseline_mpr_2025_08_003",
+        "score": 0.6563,
+        "text_preview": "The margin of spare capacity in the economy is expected to act against some continuing persistence in domestic prices and wages in order for CPI inflation to fall back to around the 2% target in the m"
+      },
+      {
+        "chunk_id": "baseline_mpr_2025_11_042",
+        "score": 0.6558,
+        "text_preview": "- Annex 2: Monetary policy since the August 2025 Report At its meeting ending on 17 September 2025, the MPC voted by a majority of 7-2 to maintain Bank Rate at 4%. Two members voted to reduce Bank Rat"
+      },
+      {
+        "chunk_id": "baseline_mpr_2025_05_022",
+        "score": 0.6535,
+        "text_preview": "Since the MPC's February 2025 meeting, global trade policy uncertainty had intensified, and the United States had made a range of tariff announcements, to which some governments had responded. Other g"
+      },
+      {
+        "chunk_id": "baseline_mpc_2025_08_001",
+        "score": 0.6511,
+        "text_preview": "## Monetary Policy Summary, August 2025\n\nThe Monetary Policy Committee (MPC) sets monetary policy to meet the 2% inflation target, and in a way that helps to sustain growth and employment. The MPC ado"
+      }
+    ]
+  },
+  "q08": {
+    "question": "Compare voting patterns across November 2025, December 2025 and February 2026 MPC meetings",
+    "category": "comparative",
+    "answer": "I cannot provide a comparison of voting patterns across November 2025, December 2025, and February 2026 MPC meetings based on the provided context. \n\nThe context contains information about MPC meetings and decisions from 2024 and early-to-mid 2025, but does not include any details about voting patterns or decisions from the specific meetings you asked about (November 2025, December 2025, and February 2026).\n\nThe most recent specific voting information mentioned in the context is from the June 18, 2025 meeting, where the MPC voted 6-3 to maintain Bank Rate at 4.25%, with three members preferring to reduce it by 0.25 percentage points to 4%.\n\nTo answer your question about the later 2025 and early 2026 meetings, I would need additional context that includes the relevant MPC meeting records or reports from those specific time periods.",
+    "pipeline_name": "baseline",
+    "chunks_retrieved": 5,
+    "chunks_used": 5,
+    "crag_rewrites": 0,
+    "hallucination_retries": 0,
+    "is_grounded": null,
+    "metadata_filters_used": null,
+    "pipeline_trace": [
+      "retrieve",
+      "generate"
+    ],
+    "sources": [
+      {
+        "chunk_id": "baseline_speech_taylor_2025_01_012",
+        "score": 0.5524,
+        "text_preview": "The November 2024 MPR forecast for unemployment rises very modestly to 4.4% by 2027, which would be an increase of only around 0.2pp from current rates (see Chart 1.3 in the November 2024 MPR). The un"
+      },
+      {
+        "chunk_id": "baseline_speech_ramsden_2025_06_008",
+        "score": 0.5481,
+        "text_preview": "Before finalising my vote I challenged myself on whether sequential cuts in Bank Rate in May and June would be appropriate if it subsequently became clear that risks to inflation were actually weighte"
+      },
+      {
+        "chunk_id": "baseline_mpc_2025_06_004",
+        "score": 0.5466,
+        "text_preview": "### Monetary and financial conditions\n\n9: Some measures of global financial market volatility had fallen back since the MPC's previous meeting, although they had remained elevated overall in light of "
+      },
+      {
+        "chunk_id": "baseline_mpr_2025_08_029",
+        "score": 0.5446,
+        "text_preview": "At its September meeting the MPC will vote on the target for the reduction in the stock of UK government bonds held for monetary policy purposes over the 12-month period from October 2025 to September"
+      },
+      {
+        "chunk_id": "baseline_mpr_2025_05_022",
+        "score": 0.5395,
+        "text_preview": "Since the MPC's February 2025 meeting, global trade policy uncertainty had intensified, and the United States had made a range of tariff announcements, to which some governments had responded. Other g"
+      }
+    ]
+  },
+  "q09": {
+    "question": "How did the BoE's assessment of global risks evolve between July 2025 and December 2025 FSRs?",
+    "category": "comparative",
+    "answer": "Based on the context provided, I cannot find information about the December 2025 FSR to make a comparison with the July 2025 FSR. The document appears to be from a Financial Stability Report that references developments \"since the July FSR\" and \"since the November FSR,\" but doesn't contain content from a December 2025 FSR.\n\nWhat I can tell you is how risks evolved from July 2025 to the current report (which appears to be from around mid-2025):\n\n**Since the July FSR, the Bank of England noted:**\n\n1. **Geopolitical risks remained elevated** with continued trade policy uncertainty around China's rare-earth export controls and ongoing legal challenges to US tariffs\n\n2. **Some positive developments** including announcements of bilateral trade deals between the US and partners, and a trade deal agreement between the US and UK\n\n3. **New risk factors emerged** such as additional sanctions on Russian oil due to the continued war in Ukraine\n\n4. **Market conditions showed mixed signals** - stock market volatility fell since April and was below long-term averages, but some risky asset prices increased and risk premia remained compressed\n\n5. **Overall risk assessment worsened** - the BoE stated that \"risks to global growth and inflation are higher than they were in November 2024\"\n\nTo provide an accurate comparison with the December 2025 FSR, I would need access to that specific document.",
+    "pipeline_name": "baseline",
+    "chunks_retrieved": 5,
+    "chunks_used": 5,
+    "crag_rewrites": 0,
+    "hallucination_retries": 0,
+    "is_grounded": null,
+    "metadata_filters_used": null,
+    "pipeline_trace": [
+      "retrieve",
+      "generate"
+    ],
+    "sources": [
+      {
+        "chunk_id": "baseline_fsr_2025_12_029",
+        "score": 0.6731,
+        "text_preview": "Geopolitical risk remains high. Trade policy uncertainty has remained elevated with the escalation and subsequent de-escalation around China's rare-earth export controls, and the US Supreme Court is c"
+      },
+      {
+        "chunk_id": "baseline_fsr_2025_07_003",
+        "score": 0.6709,
+        "text_preview": "Risks to global growth and inflation are higher than they were in November 2024. The US continues to negotiate with many jurisdictions on trade tariffs, although it has agreed to implement a trade dea"
+      },
+      {
+        "chunk_id": "baseline_fsr_2025_07_009",
+        "score": 0.6398,
+        "text_preview": "Since the November FSR, there have been significant global developments in the stablecoin industry. In Q2, the FPC discussed feedback from the FCA and Bank of England's stablecoin discussion paper. Th"
+      },
+      {
+        "chunk_id": "baseline_fsr_2025_07_068",
+        "score": 0.6398,
+        "text_preview": "Financial stability at your service - speech by Sarah Breeden and Picking what matters - speech by Nathana\u00ebl Benjamin .\n\nThe FPC also introduced an affordability test recommendation, which was subsequ"
+      },
+      {
+        "chunk_id": "baseline_fsr_2025_12_007",
+        "score": 0.6309,
+        "text_preview": "That judgement is consistent with the evolution in the financial system since the FPC's first assessment in 2015, including a fall in banks' average risk weights, a reduction in the systemic importanc"
+      }
+    ]
+  },
+  "q10": {
+    "question": "What changed in Catherine Mann's policy stance between November 2025 and February 2026?",
+    "category": "comparative",
+    "answer": "Based on the context provided, I cannot find any statements from Catherine Mann dated November 2025 or February 2026. The document appears to contain statements from different time periods, but the specific dates for November 2025 and February 2026 are not present in the text.\n\nThe context shows several statements from Catherine Mann at different points in time, showing an evolution in her thinking:\n\n1. **Earlier period**: She voted to hold rates, citing concerns about inflation persistence, elevated household inflation expectations, and the need for policy to remain restrictive.\n\n2. **Later period**: She indicated that \"New analysis and current developments have moved the appropriate time for a cut in Bank Rate closer,\" suggesting a shift toward considering rate cuts while still maintaining caution about the timing.\n\nHowever, without specific statements dated November 2025 and February 2026, I cannot definitively describe what changed in her policy stance between those exact months. The context suggests a general evolution from a more hawkish stance focused on maintaining restrictive policy to a more balanced view considering the possibility of rate cuts, but the specific timing and details of changes between November 2025 and February 2026 are not available in the provided text.",
+    "pipeline_name": "baseline",
+    "chunks_retrieved": 5,
+    "chunks_used": 5,
+    "crag_rewrites": 0,
+    "hallucination_retries": 0,
+    "is_grounded": null,
+    "metadata_filters_used": null,
+    "pipeline_trace": [
+      "retrieve",
+      "generate"
+    ],
+    "sources": [
+      {
+        "chunk_id": "baseline_mpc_2025_12_013",
+        "score": 0.4842,
+        "text_preview": "**Catherine L Mann:** My decision was quite finely balanced, and made more challenging by the effect of various policies on wage and price dynamics. Two key judgements underpin my decision. First, des"
+      },
+      {
+        "chunk_id": "baseline_mpc_2025_11_007",
+        "score": 0.4532,
+        "text_preview": "**Catherine L Mann:** The inflation persistence scenario is my central case. Price dynamics are unlikely to follow the rapid deceleration shown in the central projection. Administered prices could jum"
+      },
+      {
+        "chunk_id": "baseline_mpc_2026_03_011",
+        "score": 0.4262,
+        "text_preview": "**Clare Lombardelli:** The conflict in the Middle East will be damaging for the UK economy, increasing inflation and reducing output. We are early in the process of assessment. The shock will have dir"
+      },
+      {
+        "chunk_id": "baseline_mpc_2026_02_007",
+        "score": 0.416,
+        "text_preview": "**Clare Lombardelli:** Overallthedatacontinuebroadly toshowstrengthinwagesand underlying inflation, weak activity and softening employment. While the near-term fall in CPI inflation should reduce seco"
+      },
+      {
+        "chunk_id": "baseline_speech_mann_2025_10_021",
+        "score": 0.4117,
+        "text_preview": "Jord\u00e0, \u00d2., Singh, S. R. and Taylor, A. M. (2022). ' Longer-Run Economic Consequences of Pandemics ', The Review of Economics and Statistics , 104 (1), pp. 166-175.\n\nK\u00e4nzig, D. R. (2021). ' The Macroec"
+      }
+    ]
+  },
+  "q11": {
+    "question": "What specific consumption weakness scenario did Box D in the November 2025 MPR describe?",
+    "category": "deep_context",
+    "answer": "Based on the context provided, Box D in the November 2025 MPR described a consumption weakness scenario with the following specific elements:\n\n**Key Components of the Lower Demand Scenario:**\n\n1. **Persistent shift in household saving behavior** - Households continuing to save at elevated levels rather than spending, with the saving rate remaining higher than the baseline projection expects\n\n2. **Precautionary savings increase** - Households maintaining higher savings due to:\n   - Lasting effects from the cost-of-living crisis experience\n   - Increased concerns about employment prospects\n   - Desire to rebuild wealth that has been eroded in real terms\n\n3. **Consumption remaining weak despite income recovery** - Even though real household incomes have recovered, consumption growth stays stagnant as households choose to save rather than spend\n\n4. **Trade policy uncertainty effects** - The \"chilling effect\" of trade policy uncertainty having a greater impact on both UK investment and consumption than expected\n\n5. **Delayed major purchases** - Households holding back on significant spending, particularly major purchases, due to uncertainty about the economic outlook and their income/job prospects\n\n**Economic Implications:**\n- This scenario would create a \"materially greater margin of economic slack\"\n- Result in weaker inflationary pressures than the baseline\n- Inflation would be 0.3 percentage points lower at the three-year forecast horizon\n- Would likely require looser monetary policy than otherwise anticipated\n\nThe scenario essentially explored the risk that the elevated household saving rate (around 10\u00bd%) would not fall to the expected 8\u00bd% level after three years, but would instead persist at higher levels due to structural changes in household behavior following recent economic shocks.",
+    "pipeline_name": "baseline",
+    "chunks_retrieved": 5,
+    "chunks_used": 5,
+    "crag_rewrites": 0,
+    "hallucination_retries": 0,
+    "is_grounded": null,
+    "metadata_filters_used": null,
+    "pipeline_trace": [
+      "retrieve",
+      "generate"
+    ],
+    "sources": [
+      {
+        "chunk_id": "baseline_mpr_2025_11_024",
+        "score": 0.5094,
+        "text_preview": "As CPI inflation is now judged to have peaked at 3.8%, it may be the case that inflation dynamics return quickly to more normal patterns as inflation falls below the identified threshold. However, nea"
+      },
+      {
+        "chunk_id": "baseline_speech_lombardelli_2025_05_004",
+        "score": 0.5036,
+        "text_preview": "The first scenario explores the risk that demand weakens more than expected. This could be because the chilling effect of trade policy uncertainty has a greater impact on UK investment and consumption"
+      },
+      {
+        "chunk_id": "baseline_speech_mann_2025_10_002",
+        "score": 0.4976,
+        "text_preview": "In my last speech ( Mann, 2025b ), I introduced a new model produced by Bank staff using a quantile MIDAS regression approach that incorporates different types of activity data to quantify the likelih"
+      },
+      {
+        "chunk_id": "baseline_mpr_2025_11_035",
+        "score": 0.4935,
+        "text_preview": "Several pieces of analysis summarised in this Report suggest that elevated inflation expectations pose a risk of greater inflation persistence than in the central projection (Section 3.1). A non-linea"
+      },
+      {
+        "chunk_id": "baseline_mpr_2025_05_018",
+        "score": 0.4919,
+        "text_preview": "Overall, the lower demand scenario implies a materially greater margin of economic slack and weaker inflation than in the baseline projection. Inflation is 0.3 percentage points lower at the three-yea"
+      }
+    ]
+  },
+  "q12": {
+    "question": "What structural labour market changes did Clare Lombardelli highlight in November 2025?",
+    "category": "deep_context",
+    "answer": "Based on the context provided, I cannot find any specific mention of Clare Lombardelli or statements she made in November 2025. \n\nThe document does discuss structural changes in the labour market since the pandemic in Box F, which mentions:\n\n1. **A fall in labour force participation** - with references to Bailey (2025) and Greene (2025)\n2. **A rise in the non-accelerating inflation rate of unemployment (NAIRU)** - with reference to Pill (2025)\n\nThe document notes that these structural developments have had persistent inflationary impacts, as \"negative labour supply shocks tend to have persistent inflationary impacts, so past developments may still be adding to pressures in wage and price inflation.\"\n\nHowever, these points are not attributed to Clare Lombardelli specifically, and there's no direct quote or reference to her November 2025 statements in the provided context. To accurately answer what Clare Lombardelli highlighted in November 2025, I would need additional context that specifically references her comments from that time period.",
+    "pipeline_name": "baseline",
+    "chunks_retrieved": 5,
+    "chunks_used": 5,
+    "crag_rewrites": 0,
+    "hallucination_retries": 0,
+    "is_grounded": null,
+    "metadata_filters_used": null,
+    "pipeline_trace": [
+      "retrieve",
+      "generate"
+    ],
+    "sources": [
+      {
+        "chunk_id": "baseline_mpr_2025_11_028",
+        "score": 0.5539,
+        "text_preview": "Weaker SME cash-flow positions may also mean that firms' employment decisions become more sensitive to changes in consumer demand, increasing the risk of a sharper rise in unemployment, especially if "
+      },
+      {
+        "chunk_id": "baseline_mpr_2025_05_038",
+        "score": 0.5405,
+        "text_preview": "In addition to concerns around the broader economic outlook, firms have cited April's increase in employer NICs as a reason for weakness in employment growth. Survey evidence suggests that firms are u"
+      },
+      {
+        "chunk_id": "baseline_mpr_2025_08_043",
+        "score": 0.536,
+        "text_preview": "Looking ahead, Bank staff project the unemployment rate to rise slightly further, to around 4.8% by 2025 Q3. This is broadly consistent with softening employment intentions and relatively stable redun"
+      },
+      {
+        "chunk_id": "baseline_mpr_2025_02_064",
+        "score": 0.5182,
+        "text_preview": "An increasing number of contacts intend to reduce headcount, primarily through attrition. There has also been a slight increase in those expecting to make redundancies. Some firms, mostly in business "
+      },
+      {
+        "chunk_id": "baseline_mpr_2025_08_070",
+        "score": 0.5102,
+        "text_preview": "Commercial construction projects continue to be delayed or shelved, alongside a more general slowing in commercial activity. Contacts reported delays to public sector projects ahead of the Spending Re"
+      }
+    ]
+  },
+  "q13": {
+    "question": "What risks from US corporate defaults did the December 2025 FSR identify?",
+    "category": "deep_context",
+    "answer": "Based on the context provided, the December 2025 FSR identified several key risks from US corporate defaults:\n\n## Specific Default Cases and Their Implications\n\nThe FSR highlighted two high-profile US corporate defaults that occurred in September:\n- **First Brands Group** (automotive parts supplier)\n- **Tricolor** (subprime auto loan provider)\n\n## Key Risks Identified\n\n### 1. **Systemic Market Risks**\n- Potential for **spillovers to interconnected markets** and other forms of risky credit\n- Risk of reduced investor confidence and **widening credit spreads**\n- Possibility of **tightening financing conditions** for businesses globally\n- Could lead to **higher borrowing costs for UK households and businesses**\n- Risk of **lower liquidity in UK corporate bond and leveraged loan markets**\n\n### 2. **Structural Weaknesses in Credit Markets**\nThe defaults exposed several concerning weaknesses:\n- **High leverage** among borrowers\n- **Weak underwriting standards**\n- **Opacity and complex corporate structures** that may hide problems\n- **Over-reliance on credit rating agencies** (ratings remained stable until close to default)\n- **Fraudulent or misrepresented collateral** in lending arrangements\n\n### 3. **Broader Economic Vulnerabilities**\n- **Weakening credit quality** among lower-income US households, particularly in subprime lending\n- **Rising arrears rates** on various forms of US consumer credit over the past three years\n- **Corporate cost pressures** from tariff impositions, especially affecting manufacturing sectors\n- **Increased default rates** on speculative grade debt (leveraged loans and high-yield bonds)\n\n### 4. **Potential for Contagion**\nThe FSR warned that if economic conditions worsen, further defaults could trigger a **wider reassessment of credit quality by global markets**, potentially affecting financial stability beyond the US.\n\nWhile markets initially treated these defaults as company-specific issues rather than systemic problems, the FSR emphasized the importance of learning lessons from these events to assess wider risks to global financial stability.",
+    "pipeline_name": "baseline",
+    "chunks_retrieved": 5,
+    "chunks_used": 5,
+    "crag_rewrites": 0,
+    "hallucination_retries": 0,
+    "is_grounded": null,
+    "metadata_filters_used": null,
+    "pipeline_trace": [
+      "retrieve",
+      "generate"
+    ],
+    "sources": [
+      {
+        "chunk_id": "baseline_fsr_2025_07_003",
+        "score": 0.6568,
+        "text_preview": "Risks to global growth and inflation are higher than they were in November 2024. The US continues to negotiate with many jurisdictions on trade tariffs, although it has agreed to implement a trade dea"
+      },
+      {
+        "chunk_id": "baseline_fsr_2025_12_033",
+        "score": 0.6237,
+        "text_preview": "Further defaults could follow if some of these weaknesses are more widespread. Notably, the opacity and complex corporate structures in these two entities may have been a contributing factor that allo"
+      },
+      {
+        "chunk_id": "baseline_fsr_2025_12_091",
+        "score": 0.6051,
+        "text_preview": "In September, the Bank, in close consultation with the FCA, and with input from HM Treasury and the UK Debt Management Office, published a discussion paper evaluating the effectiveness and impact of a"
+      },
+      {
+        "chunk_id": "baseline_fsr_2025_12_032",
+        "score": 0.5872,
+        "text_preview": "In addition, tariffs pose specific challenges for exposed corporate sectors in affected jurisdictions. The imposition of tariffs could potentially lead to lower profits for firms through higher costs "
+      },
+      {
+        "chunk_id": "baseline_fsr_2025_12_008",
+        "score": 0.5731,
+        "text_preview": "Leveraged borrowing by hedge funds in gilt repo markets remains elevated, reaching close to \u00a3100 billion in November. Data suggests this activity is related, at least in part, to the popularity of the"
+      }
+    ]
+  },
+  "q14": {
+    "question": "What was the MPC's assessment of second-round effects from the Middle East energy shock in March 2026?",
+    "category": "deep_context",
+    "answer": "Based on the March 2026 MPC meeting minutes, the Committee's assessment of second-round effects from the Middle East energy shock included several key concerns:\n\n## Increased Risk of Domestic Inflationary Pressures\n\nThe MPC was \"alert to the increased risk of domestic inflationary pressures through second-round effects in wage and price-setting.\" They noted that this risk would be **greater the longer higher energy prices persisted**.\n\n## Heightened Sensitivity to Inflation\n\nThe Committee assessed that households and businesses could have **heightened sensitivity** to the new inflationary shock, given the \"successive negative supply shocks in recent times.\" This increased sensitivity could lead to **self-perpetuating behavior in wage and price dynamics**, which could embed domestic inflationary pressures.\n\n## Salient Price Categories\n\nEnergy and food prices were identified as **particularly salient for households' formation of inflation expectations**, making second-round effects more likely to materialize through these channels.\n\n## Mitigating Factors\n\nHowever, the MPC also noted some factors that could **constrain second-round effects**:\n\n- The shock was occurring when **growth was below potential** and the economy had **spare capacity**\n- Higher energy costs would **squeeze real incomes** and potentially lead to deteriorating confidence\n- This could result in **rising unemployment** and a wider output gap\n- These demand-weakening effects could help limit the propagation of inflationary pressures\n\nThe Committee emphasized they would continue monitoring these dynamics closely, as the balance between inflationary second-round effects and demand-dampening effects would be crucial for determining the appropriate monetary policy response.",
+    "pipeline_name": "baseline",
+    "chunks_retrieved": 5,
+    "chunks_used": 5,
+    "crag_rewrites": 0,
+    "hallucination_retries": 0,
+    "is_grounded": null,
+    "metadata_filters_used": null,
+    "pipeline_trace": [
+      "retrieve",
+      "generate"
+    ],
+    "sources": [
+      {
+        "chunk_id": "baseline_mpc_2026_03_002",
+        "score": 0.6584,
+        "text_preview": "3: Oil prices had increased significantly since the previous MPC meeting. The Brent crude spot price in the run-up to the MPC meeting on 18 March had been over $100 per barrel. This was around 60% hig"
+      },
+      {
+        "chunk_id": "baseline_mpc_2026_03_001",
+        "score": 0.648,
+        "text_preview": "## Monetary Policy Summary, March 2026\n\nAt its meeting ending on 18 March 2026, the Monetary Policy Committee (MPC) voted unanimously to maintain Bank Rate at 3.75%.\n\nConflict in the Middle East has c"
+      },
+      {
+        "chunk_id": "baseline_mpc_2026_03_006",
+        "score": 0.6255,
+        "text_preview": "19: It was too early to assess the full impact of recent developments in the Middle East on bank lending conditions in the United Kingdom. Term Overnight Indexed Swap rates had increased to levels pre"
+      },
+      {
+        "chunk_id": "baseline_mpc_2026_03_007",
+        "score": 0.6231,
+        "text_preview": "24: The first-round impact on inflation from global factors would depend on the scale and duration of the conflict, and its impact on energy and other commodities markets. The Committee noted that eve"
+      },
+      {
+        "chunk_id": "baseline_mpr_2025_08_053",
+        "score": 0.6197,
+        "text_preview": "CPI inflation has risen by a little more than expected in recent months and household inflation expectations remain elevated. With inflation likely to reach 4% briefly in the second half of this year "
+      }
+    ]
+  },
+  "q15": {
+    "question": "What asymmetric policy risk argument did Lombardelli make in November 2025?",
+    "category": "deep_context",
+    "answer": "Based on the context provided, Lombardelli made an asymmetric policy risk argument in November 2025 centered around the risk of being \"too late\" rather than \"too early\" with monetary policy easing.\n\nSpecifically, Lombardelli argued that:\n\n1. **The risk of undershooting is greater than overshooting**: If policymakers misjudge the economic situation or are too slow to recognize that a demand-stalling scenario (case 1) is developing, they would end up \"using case 2 policies in a case 1 world.\"\n\n2. **Consequences of being too restrictive are severe**: This policy mistake would risk:\n   - Undershooting the inflation target\n   - Falling into an unwanted recession\n   - Potentially high costs including longer-run damage to the economy\n   - A \"hard landing\"\n   - New stabilization challenges for monetary policy in future years\n\n3. **More aggressive easing may be needed**: Under the pessimistic demand-stalling scenario, Lombardelli suggested \"we could then need a more accelerated pace of rate cuts, perhaps 125 or 150 basis points in the coming year.\"\n\nThe asymmetric nature of the argument is that the costs of being too slow to ease monetary policy (risking recession and long-term economic damage) outweigh the costs of easing too quickly, particularly given that monetary policy would still be restrictive at 4.25% and could continue to provide anti-inflationary pressure even after cuts.",
+    "pipeline_name": "baseline",
+    "chunks_retrieved": 5,
+    "chunks_used": 5,
+    "crag_rewrites": 0,
+    "hallucination_retries": 0,
+    "is_grounded": null,
+    "metadata_filters_used": null,
+    "pipeline_trace": [
+      "retrieve",
+      "generate"
+    ],
+    "sources": [
+      {
+        "chunk_id": "baseline_fsr_2025_12_029",
+        "score": 0.5069,
+        "text_preview": "Geopolitical risk remains high. Trade policy uncertainty has remained elevated with the escalation and subsequent de-escalation around China's rare-earth export controls, and the US Supreme Court is c"
+      },
+      {
+        "chunk_id": "baseline_fsr_2025_07_068",
+        "score": 0.48,
+        "text_preview": "Financial stability at your service - speech by Sarah Breeden and Picking what matters - speech by Nathana\u00ebl Benjamin .\n\nThe FPC also introduced an affordability test recommendation, which was subsequ"
+      },
+      {
+        "chunk_id": "baseline_speech_lombardelli_2025_05_008",
+        "score": 0.4745,
+        "text_preview": "Applying the analysis to the policy decision, it's consistent with the view that the 25bps reduction to Bank Rate would not lead to large regrets if the economy evolves as in either of the two scenari"
+      },
+      {
+        "chunk_id": "baseline_speech_bailey_2025_02_007",
+        "score": 0.467,
+        "text_preview": "- Fourth, opacity and limited visibility in certain markets tends to lead to crowded trades, impairs risk management, and is more likely to prompt a rush to the exit in times of stress.  We have seen "
+      },
+      {
+        "chunk_id": "baseline_speech_taylor_2025_01_015",
+        "score": 0.4585,
+        "text_preview": "However, my own view, with the probability of case 1 rising, and the risk of demand stalling, is that we could then need a more accelerated pace of rate cuts, perhaps 125 or 150 basis points in the co"
+      }
+    ]
+  },
+  "q16": {
+    "question": "What was the central argument of Alan Taylor's 'last half mile' speech at Leeds in January 2025?",
+    "category": "deep_context",
+    "answer": "Based on the context provided, Alan Taylor's central argument in his \"last half mile\" speech at Leeds in January 2025 was that **the UK had made substantial progress on bringing inflation down and was approaching the final stage of the journey back to the 2% target, but with the economy weakening, it was time to reduce interest rates more actively to ensure a \"soft landing.\"**\n\nHis key points were:\n\n1. **Progress on inflation**: Inflation had moderated faster than expected in 2024, and despite some temporary upward pressures expected in 2025 (from tax shocks and base effects), the underlying trend was on track toward the 2% target.\n\n2. **Economic risks shifting**: The risks had shifted over the previous 12 months from inflation concerns to economic weakness, with:\n   - GDP growth grinding to a halt in the second half of 2024\n   - The labor market loosening at pace\n   - Business confidence and expectations turning pessimistic\n   - Risks now skewed to the downside\n\n3. **Policy implication**: Given this shift in the risk balance, he argued for \"a more activist, more rapid withdrawal of monetary policy restrictiveness\" - essentially cutting interest rates more quickly to get them \"back toward normal\" and prevent the economy from deteriorating further.\n\n4. **The \"last half mile\" metaphor**: While acknowledging there would be \"turbulence and cross winds\" in this final phase, he emphasized the need to \"keep the touchdown smooth\" - maintaining the soft landing that had been achieved so far without letting the economy slip into a more serious downturn.\n\nHis argument was fundamentally about the timing and pace of monetary policy normalization in the face of changing economic conditions.",
+    "pipeline_name": "baseline",
+    "chunks_retrieved": 5,
+    "chunks_used": 5,
+    "crag_rewrites": 0,
+    "hallucination_retries": 0,
+    "is_grounded": null,
+    "metadata_filters_used": null,
+    "pipeline_trace": [
+      "retrieve",
+      "generate"
+    ],
+    "sources": [
+      {
+        "chunk_id": "baseline_speech_taylor_2025_01_001",
+        "score": 0.4375,
+        "text_preview": "## Speech\n\nGood evening. It's a pleasure to be here at Leeds University Business School and I'd like to thank the university, the school, and the organizers for making this event possible.\n\nThis is my"
+      },
+      {
+        "chunk_id": "baseline_speech_taylor_2025_01_002",
+        "score": 0.4093,
+        "text_preview": "However, the most recent data and forward-looking activity indicators present an increasingly gloomy outlook for 2025. The labour market is near balance, but is still loosening at pace, GDP growth app"
+      },
+      {
+        "chunk_id": "baseline_mpc_2025_12_011",
+        "score": 0.4038,
+        "text_preview": "**Alan Taylor:** Recent developments align with my stated view of the medium-term trajectory: the two key trends are steadily mounting downside risks and inflation firmly on track towards target. The "
+      },
+      {
+        "chunk_id": "baseline_speech_mann_2025_02_001",
+        "score": 0.3913,
+        "text_preview": "## Speech\n\nI am delighted to be here at Leeds Beckett giving the economic prospects lecture, a feature here for 20 years now. I feel quite at home having been a tenured professor at the International "
+      },
+      {
+        "chunk_id": "baseline_mpc_2026_02_010",
+        "score": 0.3883,
+        "text_preview": "**Alan Taylor:** This is a substantial forecast revision, but the continued drift is more notable. Since February 2025, cumulative revisions for 2026-27 have delivered lower central paths for inflatio"
+      }
+    ]
+  },
+  "q17": {
+    "question": "What did Andrew Bailey's February 2025 Chicago Booth speech argue about the scope of central-bank liquidity provision?",
+    "category": "deep_context",
+    "answer": "Based on the context provided, I cannot find any reference to Andrew Bailey giving a February 2025 Chicago Booth speech. The context includes various sections about central banking policy, liquidity provision, and monetary policy decisions, but none of these sections are identified as being from a February 2025 Chicago Booth speech by Andrew Bailey.\n\nThe context does contain discussions about central bank liquidity provision, including points about:\n- Central banks acting as ultimate providers of liquidity to banking systems\n- The traditional approach of transacting with banks as conduits for policy transmission\n- The introduction of contingent liquidity facilities for certain non-banks\n- The principle that standing facilities are available to banks because they create money, while non-banks only need contingent facilities during market dysfunction\n\nHowever, without being able to identify which specific content, if any, comes from the February 2025 Chicago Booth speech you're asking about, I cannot provide a definitive answer about what that particular speech argued regarding the scope of central-bank liquidity provision.",
+    "pipeline_name": "baseline",
+    "chunks_retrieved": 5,
+    "chunks_used": 5,
+    "crag_rewrites": 0,
+    "hallucination_retries": 0,
+    "is_grounded": null,
+    "metadata_filters_used": null,
+    "pipeline_trace": [
+      "retrieve",
+      "generate"
+    ],
+    "sources": [
+      {
+        "chunk_id": "baseline_speech_bailey_2025_02_002",
+        "score": 0.578,
+        "text_preview": "Third, central banking policy making has to incorporate a substantial global context.  Ultimately, the policies are national ones, but they have to reflect and incorporate global risks and events.  Th"
+      },
+      {
+        "chunk_id": "baseline_speech_bailey_2025_02_001",
+        "score": 0.5644,
+        "text_preview": "## Speech\n\nI am going to spend most of the time today setting out the scale and significance of changes in financial market activity in recent years, and what this means for financial stability. My ma"
+      },
+      {
+        "chunk_id": "baseline_speech_lombardelli_2025_05_008",
+        "score": 0.557,
+        "text_preview": "Applying the analysis to the policy decision, it's consistent with the view that the 25bps reduction to Bank Rate would not lead to large regrets if the economy evolves as in either of the two scenari"
+      },
+      {
+        "chunk_id": "baseline_speech_bailey_2025_02_013",
+        "score": 0.5387,
+        "text_preview": "Both standing facilities and contingent facilities are available to banks because they create money and we need to ensure its singleness both in normal times and in times of severe market dysfunction "
+      },
+      {
+        "chunk_id": "baseline_mpc_2025_11_005",
+        "score": 0.5374,
+        "text_preview": "Members are listed alphabetically under each vote grouping. References in parentheses relate to boxes and sections of the November 2025 Monetary Policy Report. References to scenarios relate to those "
+      }
+    ]
+  },
+  "q18": {
+    "question": "What did Catherine Mann identify as the main driver of the UK's 'consumption gap' in her October 2025 speech?",
+    "category": "deep_context",
+    "answer": "Based on the context provided, Catherine Mann identified **high and volatile inflation** as the main driver of the UK's consumption gap in her October 2025 speech.\n\nSpecifically, she concluded that \"the role for high and volatile inflation to scar consumers, raise savings, and lower consumption growth dominates and continues to be in the empirical evidence.\" \n\nMann explained that increased inflation volatility matters because it creates uncertainty about future purchasing power, leading households to engage in precautionary saving behavior - building savings buffers to protect against volatility in their purchasing power. This results in reduced consumption as households become more uncertain about their future incomes and lower their consumption expectations.\n\nShe noted that this effect is particularly driven by households with high incomes and liquid assets, who can more easily adjust their spending in response to inflation uncertainty. Since the top half of the income distribution accounts for two-thirds of total household expenditure, their consumption behavior significantly impacts aggregate consumption.\n\nThis finding led her to conclude that while the consumption gap alone might warrant looser monetary policy, the role of high inflation in causing the gap actually supports maintaining restrictive monetary policy for longer to bring inflation back to target and restore the stable price environment needed for normal consumption patterns.",
+    "pipeline_name": "baseline",
+    "chunks_retrieved": 5,
+    "chunks_used": 5,
+    "crag_rewrites": 0,
+    "hallucination_retries": 0,
+    "is_grounded": null,
+    "metadata_filters_used": null,
+    "pipeline_trace": [
+      "retrieve",
+      "generate"
+    ],
+    "sources": [
+      {
+        "chunk_id": "baseline_speech_mann_2025_10_003",
+        "score": 0.6439,
+        "text_preview": "A key question about the gap is that real incomes (shown in the gold line on the right panel of Chart 2 ) - the most fundamental driver of consumption - have recently grown at rates similar to, or eve"
+      },
+      {
+        "chunk_id": "baseline_speech_mann_2025_10_016",
+        "score": 0.5911,
+        "text_preview": "Why does increased inflation volatility matter? Fischer et al. (2025) use a UK household survey to implement a randomized controlled trial with information about inflation forecasts to study the effec"
+      },
+      {
+        "chunk_id": "baseline_speech_mann_2025_10_024",
+        "score": 0.5818,
+        "text_preview": "Survey results from the Bank of England/NMG Survey of Household Finances show that in response to higher costs of living, households who have spent more have predominantly saved less to fund these ext"
+      },
+      {
+        "chunk_id": "baseline_speech_mann_2025_10_018",
+        "score": 0.5745,
+        "text_preview": "In considering these themes to explain the consumption gap, the role for high and volatile inflation to scar consumers, raise savings, and lower consumption growth dominates and continues to be in the"
+      },
+      {
+        "chunk_id": "baseline_speech_mann_2025_10_001",
+        "score": 0.5655,
+        "text_preview": "## Speech\n\n### Introduction\n\nThe risks to the outlook for the UK economy are two-fold. Inflation remains persistently persistent and the outlook for growth remains modest. As a monetary policymaker I "
+      }
+    ]
+  },
+  "q19": {
+    "question": "What did Swati Dhingra argue about trade fragmentation in her February 2025 Dow Lecture?",
+    "category": "deep_context",
+    "answer": "Based on the context provided, this appears to be from Swati Dhingra's Dow Lecture at NIESR, but the document doesn't show a February 2025 date. From the content available, here are the key arguments Dhingra made about trade fragmentation:\n\n## Main Arguments on Trade Fragmentation:\n\n**1. Trade Diversion as a Central Concern:**\n- Dhingra focused heavily on \"trade diversion\" - where changes in trade policy (tariffs, quotas, barriers) incentivize exporters to redirect goods to different markets when usual ones become more expensive to access\n- She argued this is \"an almost certain outcome\" of current global trade policy actions, with the only question being the magnitude\n\n**2. Global Economic Costs:**\n- She argued that when \"the dust settles, the world as a whole is almost surely worse off\" from trade fragmentation\n- Tariffs divert activity away from lowest-cost producers toward less competitive suppliers, creating inefficient resource allocation\n- In the near term, tariffs tend to be inflationary for countries imposing them and deflationary for partner countries\n\n**3. Historical Parallels and Gradual Effects:**\n- Drawing lessons from the 1930s, she warned that trade diversion effects \"can be large\" and \"can take time to gradually materialize\"\n- She noted that today's tariff levels are of \"not dissimilar magnitude\" to the 1930s, potentially causing \"gradual but substantial rearrangement of today's world trade flows\"\n\n**4. UK as \"Innocent Bystander\":**\n- She positioned the UK as essentially a third country that would be affected by trade disruption between other major economies, assuming the UK doesn't erect major new trade barriers itself\n\nThe lecture appears to warn about the significant economic disruptions that current trade fragmentation trends could cause globally.",
+    "pipeline_name": "baseline",
+    "chunks_retrieved": 5,
+    "chunks_used": 5,
+    "crag_rewrites": 0,
+    "hallucination_retries": 0,
+    "is_grounded": null,
+    "metadata_filters_used": null,
+    "pipeline_trace": [
+      "retrieve",
+      "generate"
+    ],
+    "sources": [
+      {
+        "chunk_id": "baseline_speech_dhingra_2025_02_001",
+        "score": 0.5193,
+        "text_preview": "## Speech\n\nI am delighted to deliver the Dow lecture. Last time I was here at NIESR, there were significant events occurring in international trade. Today, I am going to revisit some of them and discu"
+      },
+      {
+        "chunk_id": "baseline_speech_taylor_2025_10_002",
+        "score": 0.4979,
+        "text_preview": "I want to focus on one very important issue: the dramatic and disruptive developments we are now witnessing in international trade, and how they may impact the world and especially the UK economy in t"
+      },
+      {
+        "chunk_id": "baseline_speech_dhingra_2025_02_004",
+        "score": 0.4977,
+        "text_preview": "The premise that free trade enhances economic prosperity is being challenged, as many integrated economies have seen inequality increase since about the 1980s. The gap between the winners and losers o"
+      },
+      {
+        "chunk_id": "baseline_speech_taylor_2025_10_010",
+        "score": 0.4953,
+        "text_preview": "Trade diversion showed itself on a large scale in the 1930s - just not immediately, but slowly and inexorably as exporters and importers adjusted over a period of years. The first historical lesson he"
+      },
+      {
+        "chunk_id": "baseline_speech_dhingra_2025_02_003",
+        "score": 0.4785,
+        "text_preview": "With digital technology enabling remote work across borders, the end of globalisation may still be far off. But public sentiment and policy attitudes toward globalisation have become less favourable, "
+      }
+    ]
+  },
+  "q20": {
+    "question": "What did Dave Ramsden emphasise in his June 2025 labour market speech?",
+    "category": "deep_context",
+    "answer": "I cannot find any information about a speech by Dave Ramsden in June 2025 regarding the labour market in the provided context. The context contains detailed analysis of UK labour market conditions from what appears to be Bank of England monetary policy reports and meeting minutes, but it does not mention Dave Ramsden or any specific speech he gave in June 2025.\n\nThe context does provide extensive information about labour market developments, including discussions of employment growth, unemployment rates, job vacancies, and labour market slack, but these appear to be from official Bank of England publications rather than from a specific speech by Dave Ramsden.",
+    "pipeline_name": "baseline",
+    "chunks_retrieved": 5,
+    "chunks_used": 5,
+    "crag_rewrites": 0,
+    "hallucination_retries": 0,
+    "is_grounded": null,
+    "metadata_filters_used": null,
+    "pipeline_trace": [
+      "retrieve",
+      "generate"
+    ],
+    "sources": [
+      {
+        "chunk_id": "baseline_mpr_2025_05_038",
+        "score": 0.5852,
+        "text_preview": "In addition to concerns around the broader economic outlook, firms have cited April's increase in employer NICs as a reason for weakness in employment growth. Survey evidence suggests that firms are u"
+      },
+      {
+        "chunk_id": "baseline_mpc_2025_06_007",
+        "score": 0.5726,
+        "text_preview": "21: Several indicators of labour demand and firms' hiring intentions had softened further in recent months. The ONS/HMRC PAYE estimate of payrolled employees had fallen by 0.4% in the three months to "
+      },
+      {
+        "chunk_id": "baseline_mpr_2025_05_037",
+        "score": 0.5692,
+        "text_preview": "Measures announced in the Government's Spring Statement 2025 are expected to have very little impact on the fiscal stance, and hence on projected GDP growth, over the three-year forecast period. Gover"
+      },
+      {
+        "chunk_id": "baseline_mpr_2025_08_043",
+        "score": 0.568,
+        "text_preview": "Looking ahead, Bank staff project the unemployment rate to rise slightly further, to around 4.8% by 2025 Q3. This is broadly consistent with softening employment intentions and relatively stable redun"
+      },
+      {
+        "chunk_id": "baseline_mpr_2025_02_038",
+        "score": 0.567,
+        "text_preview": "Analysis by Bank staff supports the MPC's judgement that the labour market has returned to a broadly balanced position. This analysis examines the difference between the observed ratio of vacancies to"
+      }
+    ]
+  },
+  "q21": {
+    "question": "What is the Federal Reserve's view on interest rates?",
+    "category": "edge_case_out_of_scope",
+    "answer": "Based on the context provided, the Federal Reserve's view on interest rates can be inferred from their recent actions and market expectations:\n\n**Recent Actions:**\n- The Federal Reserve maintained the target range for the federal funds rate at 4.25%-4.5% at its March meeting\n- They announced a slower pace for their quantitative tightening programme\n\n**Market Expectations of Fed Policy:**\n- Markets initially expected the Federal Reserve would keep rates higher in the near term to counteract expected inflationary pressures from:\n  - Fiscal stimulus\n  - Trade restrictions \n  - Dollar depreciation\n\n- However, market expectations shifted significantly after weak US labor market data in early August, with the market-implied path for US policy rates falling materially\n\n**Longer-term Outlook:**\n- The effective federal funds rate is expected by markets to stand at 3.5% in three years' time\n- Based on April 2025 data, 85 basis points of cuts were priced into US curves over the remainder of that year\n\nThe document suggests the Federal Reserve is taking a cautious approach, maintaining rates at current levels while being responsive to economic data, particularly around inflation pressures from fiscal and trade policies, as well as labor market conditions. However, this represents market interpretation and expectations rather than direct statements from the Federal Reserve itself.",
+    "pipeline_name": "baseline",
+    "chunks_retrieved": 5,
+    "chunks_used": 5,
+    "crag_rewrites": 0,
+    "hallucination_retries": 0,
+    "is_grounded": null,
+    "metadata_filters_used": null,
+    "pipeline_trace": [
+      "retrieve",
+      "generate"
+    ],
+    "sources": [
+      {
+        "chunk_id": "baseline_mpc_2026_02_004",
+        "score": 0.4735,
+        "text_preview": "13: Some members were most concerned that cutting rates too quickly risked inadvertently making policy too accommodative if inflationary pressures did not recede, and that it might be costly to change"
+      },
+      {
+        "chunk_id": "baseline_mpr_2025_08_035",
+        "score": 0.4575,
+        "text_preview": "The market-implied path for US policy rates, based on the 15 working day average to 29 July, was around 45 basis points higher over the remainder of 2025 than the 15 working day average to 29 April. T"
+      },
+      {
+        "chunk_id": "baseline_mpr_2025_05_025",
+        "score": 0.4536,
+        "text_preview": "There have been some quite sharp movements in government bond markets in the past three months. In the 15 UK working days to 29 April, 10-year UK gilt and US treasury yields were 10 basis points and 3"
+      },
+      {
+        "chunk_id": "baseline_mpc_2025_08_007",
+        "score": 0.4459,
+        "text_preview": "19: Four members preferred to hold Bank Rate at 4.25% at this meeting. The disinflationary process had slowed and the risk of inflation expectations feeding through to second-round effects had risen. "
+      },
+      {
+        "chunk_id": "baseline_mpr_2025_05_026",
+        "score": 0.4426,
+        "text_preview": "Based on the 15-day averages to 29 April 2025, 85 basis points and 65 basis points of cuts were priced into the US and euro-area curves, respectively, over the remainder of this year. For the euro are"
+      }
+    ]
+  },
+  "q22": {
+    "question": "What does the BoE think about cryptocurrency regulation?",
+    "category": "edge_case_ambiguous",
+    "answer": "Based on the context provided, the Bank of England (BoE) has a nuanced view on cryptocurrency regulation, particularly focused on stablecoins:\n\n## Key BoE Positions on Cryptocurrency Regulation:\n\n**1. Supportive of Innovation with Proper Safeguards**\n- The BoE recognizes the \"transformative potential\" of stablecoin technology and distributed ledger technology (DLT)\n- They support innovation that can deliver faster, cheaper payments with greater functionality\n- However, they emphasize that efficiency gains should not come \"at the expense of the resilience of the financial system\"\n\n**2. Active Regulatory Development**\n- The BoE is actively developing regulatory regimes for both systemic and non-systemic stablecoins\n- They recently published a consultation paper on sterling-denominated systemic stablecoins\n- The goal is to ensure \"appropriate resilience\" while supporting sustainable growth\n\n**3. Risk Management Focus**\n- The BoE is concerned about potential risks including:\n  - Bank disintermediation (deposits moving from banks to stablecoins)\n  - Reduced lending to businesses and households\n  - Market disruption from stablecoin issuer activities in government debt markets\n  - Systemic vulnerabilities from widespread adoption of public permissionless platforms\n\n**4. Proactive Intervention Approach**\n- The BoE believes \"proactive intervention by central banks\" is necessary to prevent private sector adoption that could \"undermine financial stability\"\n- They are \"actively engaging on DLT adoption\" and \"intervening where necessary to support responsible adoption\"\n\n**5. Trust and Equivalence Standards**\n- The BoE emphasizes \"the importance of ensuring that the public can have the same trust in new forms of money as they do in existing ones\"\n\nOverall, the BoE appears to take a balanced approach - embracing the potential benefits of cryptocurrency technology while ensuring robust regulatory frameworks are in place to maintain financial stability.",
+    "pipeline_name": "baseline",
+    "chunks_retrieved": 5,
+    "chunks_used": 5,
+    "crag_rewrites": 0,
+    "hallucination_retries": 0,
+    "is_grounded": null,
+    "metadata_filters_used": null,
+    "pipeline_trace": [
+      "retrieve",
+      "generate"
+    ],
+    "sources": [
+      {
+        "chunk_id": "baseline_fsr_2025_12_105",
+        "score": 0.5696,
+        "text_preview": "In the UK, the Bank and FCA are developing regimes for systemic and non-systemic stablecoins to ensure appropriate resilience. Other jurisdictions, including the US, are also in the process of designi"
+      },
+      {
+        "chunk_id": "baseline_fsr_2025_12_104",
+        "score": 0.5257,
+        "text_preview": "The FPC recognises that DLT and tokenisation have the potential to change how the financial system operates. DLT enables the creation of common shared ledgers which can be updated near-simultaneously "
+      },
+      {
+        "chunk_id": "baseline_fsr_2025_12_009",
+        "score": 0.522,
+        "text_preview": "### Structural changes in the UK financial system\n\nHeightened geopolitical tensions and continued advances in technology have underlined the critical importance of operational resilience to the provis"
+      },
+      {
+        "chunk_id": "baseline_fsr_2025_07_035",
+        "score": 0.5,
+        "text_preview": "- Reducing the frequency of its main Bank Capital Stress Tests to every other year to ensure the burden placed on participating banks is proportionate and supports the UK banking sector's competitiven"
+      },
+      {
+        "chunk_id": "baseline_fsr_2025_07_008",
+        "score": 0.4982,
+        "text_preview": "The role and size of private equity and private credit has grown significantly over the past 15 years, including in the UK. These markets provide long-term capital that helps businesses scale, innovat"
+      }
+    ]
+  },
+  "q23": {
+    "question": "Summarise the entire November 2025 MPR",
+    "category": "edge_case_too_broad",
+    "answer": "Based on the provided context, here is a summary of the November 2025 Monetary Policy Report (MPR):\n\n## Key Policy Decision\nThe Monetary Policy Committee voted 5-4 to maintain Bank Rate at 4.0%, with four members favoring a 0.25 percentage point cut to 3.75%.\n\n## Economic Outlook\n**Inflation Progress**: CPI inflation is judged to have peaked, with underlying disinflation continuing. This is supported by:\n- Easing pay growth and services price inflation\n- The still restrictive stance of monetary policy\n\n**Economic Growth**: The economy shows signs of weakness with:\n- Subdued economic growth continuing\n- Building slack in the labor market\n- GDP remaining flat since early 2024\n\n## Risk Assessment\nThe MPC noted a shift in the balance of risks:\n- **Reduced risk**: Inflation persistence has become less pronounced\n- **Increased risk**: Weaker demand poses greater threat to medium-term inflation\n- Overall risks are now viewed as more balanced, though more evidence is needed\n\n## Policy Outlook\n- The restrictiveness of monetary policy has decreased as Bank Rate has been reduced\n- Further rate cuts will depend on inflation outlook evolution\n- If disinflation progress continues, Bank Rate is likely to follow a gradual downward path\n\n## Global Context\n- Trade policy uncertainty has reached record highs since the US presidential election\n- Gas futures prices are higher than November but remain well below 2022 levels\n- Long-term government bond yields in UK and US are around global financial crisis highs\n\nThe overall assessment suggests the UK is navigating toward a potential \"soft landing\" with controlled inflation and avoiding recession, though economic weakness remains a concern.",
+    "pipeline_name": "baseline",
+    "chunks_retrieved": 5,
+    "chunks_used": 5,
+    "crag_rewrites": 0,
+    "hallucination_retries": 0,
+    "is_grounded": null,
+    "metadata_filters_used": null,
+    "pipeline_trace": [
+      "retrieve",
+      "generate"
+    ],
+    "sources": [
+      {
+        "chunk_id": "baseline_speech_taylor_2025_01_012",
+        "score": 0.5583,
+        "text_preview": "The November 2024 MPR forecast for unemployment rises very modestly to 4.4% by 2027, which would be an increase of only around 0.2pp from current rates (see Chart 1.3 in the November 2024 MPR). The un"
+      },
+      {
+        "chunk_id": "baseline_mpc_2025_11_001",
+        "score": 0.4471,
+        "text_preview": "## Monetary Policy Summary, November 2025\n\nAt its meeting ending on 5 November 2025, the Monetary Policy Committee voted by a majority of 5-4 to maintain Bank Rate at 4%. Four members voted to reduce "
+      },
+      {
+        "chunk_id": "baseline_speech_taylor_2025_01_015",
+        "score": 0.4462,
+        "text_preview": "However, my own view, with the probability of case 1 rising, and the risk of demand stalling, is that we could then need a more accelerated pace of rate cuts, perhaps 125 or 150 basis points in the co"
+      },
+      {
+        "chunk_id": "baseline_speech_mann_2025_02_007",
+        "score": 0.445,
+        "text_preview": "I would like to thank, in particular, Lennart Brandt and Natalie Burr for their help in the preparation of this speech, as well as Andrew Bailey, Jamie Barber, Phil Bunn, Fabrizio Cadamagnani, Alan Ca"
+      },
+      {
+        "chunk_id": "baseline_mpr_2025_02_069",
+        "score": 0.4397,
+        "text_preview": "[CHART: Chart 1.1: CPI inflation and CPI inflation excluding energy ( a )]\n\n[CHART: Chart 1.2: GDP growth projection based on market interest rate expectations, other policy measures as announced]\n\n[C"
+      }
+    ]
+  },
+  "q24": {
+    "question": "What was the exact GDP growth figure for Q3 2025 cited on page 23 of the November MPR?",
+    "category": "edge_case_numerical",
+    "answer": "I cannot find the specific GDP growth figure for Q3 2025 that was cited on page 23 of the November MPR in the provided context. \n\nThe context does mention that \"GDP growth had eased to 0.1% in 2025 Q3, slightly below the rate expected in the November Report,\" but it doesn't specify what the exact figure cited in the November Report was - only that the actual 0.1% growth was \"slightly below\" that expectation.\n\nTo answer your question about the exact figure from page 23 of the November MPR, I would need access to that specific document and page.",
+    "pipeline_name": "baseline",
+    "chunks_retrieved": 5,
+    "chunks_used": 5,
+    "crag_rewrites": 0,
+    "hallucination_retries": 0,
+    "is_grounded": null,
+    "metadata_filters_used": null,
+    "pipeline_trace": [
+      "retrieve",
+      "generate"
+    ],
+    "sources": [
+      {
+        "chunk_id": "baseline_mpr_2025_02_034",
+        "score": 0.6238,
+        "text_preview": "Having grown solidly in the first half of the year, GDP growth was flat in 2024 Q3, 0.2 percentage points below the projection in the November Report. Household consumption grew by around 1\u20442% on the "
+      },
+      {
+        "chunk_id": "baseline_mpr_2025_08_007",
+        "score": 0.6226,
+        "text_preview": "UK quarterly GDP growth is estimated to have been 0.1% in 2025 Q2, on both a headline and underlying basis (Section 2.3). Growth is expected to pick up a little in the near term, reflecting a modest i"
+      },
+      {
+        "chunk_id": "baseline_mpr_2025_05_062",
+        "score": 0.6211,
+        "text_preview": "On average, external forecasters expected GDP to rise by 1.1% over the four quarters to 2026 Q2, with four-quarter growth of 1.4% in 2027 Q2 and 2028 Q2 (Chart A, left panel). The average external for"
+      },
+      {
+        "chunk_id": "baseline_mpr_2025_05_009",
+        "score": 0.6176,
+        "text_preview": "The MPC judges that the current stance of monetary policy remains restrictive. Under the latest market-implied path for interest rates, including its expected impact on broader financial conditions, m"
+      },
+      {
+        "chunk_id": "baseline_mpc_2025_12_004",
+        "score": 0.6009,
+        "text_preview": "10: GDP growth had eased to 0.1% in 2025 Q3, slightly below the rate expected in the November Report. Bank staff analysis had suggested that some of this softening was erratic, with underlying quarter"
+      }
+    ]
+  },
+  "q25": {
+    "question": "What did Sarah Breeden argue in her January 2025 Edinburgh speech about identifying shocks?",
+    "category": "deep_context",
+    "answer": "Based on the speech context provided, Sarah Breeden made several key arguments about identifying shocks in her Edinburgh speech:\n\n## The Critical Importance of Shock Identification\n\nBreeden emphasized that **identifying which shocks are hitting the economy is crucial for monetary policy** because \"attributing data news to the 'wrong' shocks can have material implications for our understanding of the evolution of the economy in the future, and therefore what we should do with monetary policy.\"\n\n## The Challenge of Real-Time Identification\n\nShe highlighted that **it's extremely difficult to identify shocks in real time**, noting that \"reasonable people could take different views on the shocks that explain the same set of data.\" For example, when economic activity falls, it could indicate lower domestic demand, reduced foreign demand, or decreased supply capacity - each requiring different policy responses.\n\n## The Need for Multiple Analytical Tools\n\nBreeden argued that the Bank should draw on **\"a wide range of hard and soft data, reports from people closer to the ground...and a large set of modelling and analytical techniques\"** to better identify shocks, rather than relying on any single approach.\n\n## Systematic Improvements Needed\n\nShe proposed three systematic improvements to shock identification:\n\n1. **Enhanced forecast evaluation** to learn from past shock identification mistakes\n2. **Using multiple models** to help identify shocks and build shock uncertainty into scenario analysis  \n3. **Routinely explaining publicly** how monetary policy would change if they're wrong about the nature of current shocks\n\nBreeden's core message was that monetary policymakers are \"always reading between the lines\" and must constantly discuss and revise their views on which shocks best explain economic developments.",
+    "pipeline_name": "baseline",
+    "chunks_retrieved": 5,
+    "chunks_used": 5,
+    "crag_rewrites": 0,
+    "hallucination_retries": 0,
+    "is_grounded": null,
+    "metadata_filters_used": null,
+    "pipeline_trace": [
+      "retrieve",
+      "generate"
+    ],
+    "sources": [
+      {
+        "chunk_id": "baseline_speech_breeden_2025_01_001",
+        "score": 0.4661,
+        "text_preview": "## Speech\n\nIt has been a little over a year since I joined the Monetary Policy Committee (MPC). Lots has happened over that period. I'm going to use this speech to review what we have learned and wher"
+      },
+      {
+        "chunk_id": "baseline_speech_breeden_2025_01_013",
+        "score": 0.4639,
+        "text_preview": "The output gap captures the difference between the level of actual output relative to potential.\n\nAs Dr Bernanke emphasised in his review into our forecasting, many of these shocks were global in natu"
+      },
+      {
+        "chunk_id": "baseline_speech_breeden_2025_01_012",
+        "score": 0.4485,
+        "text_preview": "This is based on calculations by Bank staff . The estimated carbon cost faced by UK gas-fired power producers in 2024 is around \u00a340 per tCO2e (UK ETS price) + \u00a318 per tCO2e (UK CPS)] x 0.4 tCO2e per M"
+      },
+      {
+        "chunk_id": "baseline_speech_breeden_2025_01_006",
+        "score": 0.4253,
+        "text_preview": "Given the potential significance of these developments, Bank staff have analysed both how much recent energy price increases have reflected carbon pricing and if the specific source of energy price sh"
+      },
+      {
+        "chunk_id": "baseline_speech_breeden_2025_01_011",
+        "score": 0.4161,
+        "text_preview": "I would like to thank Danny Walker for his assistance in drafting these remarks. I would also like to thank Lennart Brandt, Natalie Burr, Hannah Copeland and Boromeus Wanengkirtyo for their work on th"
+      }
+    ]
+  }
+}
