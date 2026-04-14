@@ -28,6 +28,7 @@ import chromadb
 from chromadb.utils.embedding_functions import OpenAIEmbeddingFunction
 from dotenv import load_dotenv
 
+from boe_rag.chunking.metadata import count_tokens
 from boe_rag.config import (
     BASELINE_COLLECTION,
     DISTANCE_METRIC,
@@ -36,6 +37,12 @@ from boe_rag.config import (
     ENHANCED_COLLECTION,
     Paths,
 )
+
+# OpenAI tier-1 tokens-per-minute limit for text-embedding-3-small is 40 000.
+# Cap each upsert call below this so a single batch cannot overflow the TPM
+# budget, with head-room for the OpenAI server's own token counting which is
+# slightly looser than tiktoken for some documents.
+_EMBEDDING_TOKEN_BUDGET_PER_BATCH = 30_000
 
 logger = logging.getLogger(__name__)
 
@@ -188,8 +195,12 @@ def index_collection(
 
     include_metadata = "metadata" in records[0]
 
-    for i in range(0, expected, batch_size):
-        batch = records[i : i + batch_size]
+    processed = 0
+    for batch in _token_budgeted_batches(
+        records,
+        max_records=batch_size,
+        max_tokens=_EMBEDDING_TOKEN_BUDGET_PER_BATCH,
+    ):
         kwargs = {
             "ids": [r["id"] for r in batch],
             "documents": [r["text"] for r in batch],
@@ -197,12 +208,46 @@ def index_collection(
         if include_metadata:
             kwargs["metadatas"] = [r["metadata"] for r in batch]
         collection.upsert(**kwargs)
+        processed += len(batch)
         logger.info(
             "Indexed %d/%d chunks into '%s'",
-            min(i + batch_size, expected),
+            processed,
             expected,
             collection.name,
         )
+
+
+def _token_budgeted_batches(
+    records: list[dict], *, max_records: int, max_tokens: int
+):
+    """Yield batches of records bounded by BOTH a record count and a token budget.
+
+    OpenAI's per-request tokens-per-minute limit (40 000 on tier-1 for
+    text-embedding-3-small) can be blown by a single batch containing even
+    a handful of long box-analysis chunks. Switching from fixed-count
+    batching to a token-budgeted strategy keeps each upsert call under the
+    limit regardless of chunk-size distribution.
+
+    Pre-computes per-record token counts once so the cl100k_base encoder
+    is not hit inside the hot loop.
+    """
+    batch: list[dict] = []
+    batch_tokens = 0
+    for record in records:
+        record_tokens = count_tokens(record["text"])
+        # A single oversized record still gets its own batch (nothing we can
+        # do about it here — chunk splitting upstream already caps at 1200).
+        if batch and (
+            len(batch) >= max_records or batch_tokens + record_tokens > max_tokens
+        ):
+            yield batch
+            batch = [record]
+            batch_tokens = record_tokens
+        else:
+            batch.append(record)
+            batch_tokens += record_tokens
+    if batch:
+        yield batch
 
 
 def build_index(force: bool = False) -> dict[str, int]:

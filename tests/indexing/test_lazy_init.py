@@ -26,14 +26,17 @@ def test_import_does_not_create_client_or_lookup_api_key(
 
 
 def test_get_embedding_fn_raises_without_api_key(monkeypatch) -> None:
-    """First call surfaces a clear error when OPENAI_API_KEY is missing."""
+    """First call surfaces a clear error when OPENAI_API_KEY is missing.
+
+    Neutralises load_dotenv so the real project-root .env (which exists in
+    normal development) does not silently satisfy the check and mask the
+    error path.
+    """
     sys.modules.pop("boe_rag.indexing.chroma_store", None)
     monkeypatch.delenv("OPENAI_API_KEY", raising=False)
-    # load_dotenv reads .env files — point it at an empty dir so nothing
-    # auto-populates the missing key.
-    monkeypatch.chdir(os.path.dirname(os.path.abspath(__file__)))
 
     module = importlib.import_module("boe_rag.indexing.chroma_store")
+    monkeypatch.setattr(module, "load_dotenv", lambda *a, **kw: None)
 
     import pytest
     with pytest.raises(RuntimeError, match="OPENAI_API_KEY"):

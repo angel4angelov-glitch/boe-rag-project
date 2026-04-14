@@ -127,6 +127,27 @@ def test_index_collection_passes_metadata_when_records_have_some() -> None:
     assert col.upsert_calls[0]["metadatas"][0] == {"date": "2025-11", "idx": 0}
 
 
+def test_index_collection_splits_batches_by_token_budget() -> None:
+    """A batch exceeding the OpenAI per-request token budget must split.
+
+    Simulates mixing long (box-sized) and short records; with max_records=100
+    but per-chunk ~900 tokens, token budget (30 000) binds first.
+    """
+    col = _FakeCollection()
+    # 60 records, ~900 tokens each (simulating box-heavy mix).
+    long_text = "word " * 900  # count_tokens ≈ 900
+    records = [{"id": f"c_{i:03d}", "text": long_text} for i in range(60)]
+
+    index_collection(col, records, batch_size=100)
+
+    # 60 * ~900 = 54 000 tokens total. Budget 30 000 per batch → 2 batches.
+    assert len(col.upsert_calls) >= 2, (
+        f"expected token-budget split, got {len(col.upsert_calls)} batches"
+    )
+    # All records got indexed exactly once.
+    assert sum(len(call["ids"]) for call in col.upsert_calls) == 60
+
+
 def test_index_collection_empty_records_does_nothing() -> None:
     col = _FakeCollection()
     index_collection(col, [])
