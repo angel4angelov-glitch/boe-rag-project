@@ -1,0 +1,39 @@
+{
+  "run_metadata": {
+    "timestamp": "2026-04-14T23:47:56.543233+00:00",
+    "git_sha": "024f73fc98d7de6c87b361300442d0afe4061ccf",
+    "git_dirty": true,
+    "ragas_version": "0.4.3",
+    "scipy_version": "1.17.1",
+    "generation_model": "claude-sonnet-4-20250514",
+    "grading_model": "claude-sonnet-4-20250514",
+    "embedding_model": "text-embedding-3-small",
+    "rerank_model": "rerank-v3.5",
+    "evaluator_model": "gpt-4o-mini",
+    "evaluator_temperature": 0.0,
+    "n_queries": 25,
+    "test_set_hash": "sha256:1b441d3a22f22c19791c264d6768aab829b93f47858e2dd0c650ab58a7dfa00b"
+  },
+  "metrics": {
+    "n": 25,
+    "rewrite_trigger_rate": 0.2,
+    "rewrite_recovery_rate": 0.4,
+    "hallucination_flag_rate": 0.04,
+    "hallucination_recovery_rate": 0.8,
+    "metadata_filter_rate": 0.84,
+    "mean_chunks_retrieved": 8.32,
+    "mean_chunks_used": 2.76,
+    "rerank_top1_change_rate": 0.5454545454545454,
+    "abstain_rate": 0.12,
+    "abstain_correctness": 0.0,
+    "abstain_ids": [
+      "q06",
+      "q10",
+      "q24"
+    ],
+    "correct_abstain_ids": [],
+    "missed_abstain_ids": [
+      "q21"
+    ]
+  }
+}

@@ -35,6 +35,7 @@ dependencies = [
     "python-dotenv",
     "pandas",
     "tqdm",
+    "scipy",
 ]
 
 [project.optional-dependencies]

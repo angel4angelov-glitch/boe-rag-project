@@ -248,6 +248,8 @@ class EnhancedPipeline(BasePipeline):
                 is_grounded=None,
                 metadata_filters_used=None,
                 pipeline_trace=("error",),
+                pre_rerank_ids=(),
+                post_rerank_ids=(),
             )
 
         return _state_to_pipeline_result(final_state)
@@ -284,4 +286,6 @@ def _state_to_pipeline_result(state: RAGState) -> PipelineResult:
         is_grounded=state.get("is_grounded"),
         metadata_filters_used=state.get("initial_metadata_filters") or state.get("metadata_filters"),
         pipeline_trace=tuple(state.get("pipeline_trace", [])),
+        pre_rerank_ids=tuple(state.get("pre_rerank_ids", []) or []),
+        post_rerank_ids=tuple(state.get("post_rerank_ids", []) or []),
     )

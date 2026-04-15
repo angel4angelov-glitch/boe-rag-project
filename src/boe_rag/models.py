@@ -79,3 +79,8 @@ class PipelineResult:
     is_grounded: bool | None  # None for baseline
     metadata_filters_used: dict | None
     pipeline_trace: Sequence[str]
+    # Rerank ordering — populated by the enhanced pipeline to let
+    # evaluation quantify reranker impact. Both empty on baseline,
+    # both empty on enhanced when rerank was skipped (≤1 graded doc).
+    pre_rerank_ids: Sequence[str] = ()
+    post_rerank_ids: Sequence[str] = ()

@@ -29,8 +29,15 @@ def _result_to_dict(result) -> dict:
         "is_grounded": result.is_grounded,
         "metadata_filters_used": result.metadata_filters_used,
         "pipeline_trace": list(result.pipeline_trace),
+        "pre_rerank_ids": list(result.pre_rerank_ids),
+        "post_rerank_ids": list(result.post_rerank_ids),
         "sources": [
-            {"chunk_id": d.chunk_id, "score": d.score, "text_preview": d.text[:200]}
+            {
+                "chunk_id": d.chunk_id,
+                "score": d.score,
+                "text": d.text,
+                "text_preview": d.text[:200],
+            }
             for d in result.sources
         ],
     }

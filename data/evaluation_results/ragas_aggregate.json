@@ -1,0 +1,98 @@
+{
+  "run_metadata": {
+    "timestamp": "2026-04-14T23:47:56.543233+00:00",
+    "git_sha": "024f73fc98d7de6c87b361300442d0afe4061ccf",
+    "git_dirty": true,
+    "ragas_version": "0.4.3",
+    "scipy_version": "1.17.1",
+    "generation_model": "claude-sonnet-4-20250514",
+    "grading_model": "claude-sonnet-4-20250514",
+    "embedding_model": "text-embedding-3-small",
+    "rerank_model": "rerank-v3.5",
+    "evaluator_model": "gpt-4o-mini",
+    "evaluator_temperature": 0.0,
+    "n_queries": 25,
+    "test_set_hash": "sha256:1b441d3a22f22c19791c264d6768aab829b93f47858e2dd0c650ab58a7dfa00b"
+  },
+  "per_metric": {
+    "faithfulness": {
+      "metric": "faithfulness",
+      "n_scored_baseline": 25,
+      "n_scored_enhanced": 22,
+      "baseline_mean_all": 0.9478492063492063,
+      "enhanced_mean_all": 0.8707007705603963,
+      "baseline_mean_answered": 0.9688762626262626,
+      "enhanced_mean_answered": 0.8707007705603963,
+      "delta_answered": -0.09817549206586638,
+      "wilcoxon_statistic": 190.5,
+      "p_raw": 0.9818888997016524,
+      "n_pairs": 22,
+      "ci95_delta_low": -0.22414612587295252,
+      "ci95_delta_high": -0.037221797289721345,
+      "ci_method": "BCa_paired_10k",
+      "p_holm": 1.0
+    },
+    "answer_relevancy": {
+      "metric": "answer_relevancy",
+      "n_scored_baseline": 25,
+      "n_scored_enhanced": 25,
+      "baseline_mean_all": 0.522417304763031,
+      "enhanced_mean_all": 0.423635522513078,
+      "baseline_mean_answered": 0.593656028139808,
+      "enhanced_mean_answered": 0.48140400285577045,
+      "delta_answered": -0.11225202528403756,
+      "wilcoxon_statistic": 173.5,
+      "p_raw": 0.9367313074966443,
+      "n_pairs": 22,
+      "ci95_delta_low": -0.31973157182439516,
+      "ci95_delta_high": 0.11528561776083335,
+      "ci_method": "BCa_paired_10k",
+      "p_holm": 1.0
+    },
+    "context_precision_with_reference": {
+      "metric": "context_precision_with_reference",
+      "n_scored_baseline": 25,
+      "n_scored_enhanced": 22,
+      "baseline_mean_all": 0.6354999999707347,
+      "enhanced_mean_all": 0.8073232322700084,
+      "baseline_mean_answered": 0.6357954545158349,
+      "enhanced_mean_answered": 0.8073232322700084,
+      "delta_answered": 0.17152777775417352,
+      "wilcoxon_statistic": 86.0,
+      "p_raw": 0.09420586970500011,
+      "n_pairs": 22,
+      "ci95_delta_low": 0.019462457768472212,
+      "ci95_delta_high": 0.3746409243185622,
+      "ci_method": "BCa_paired_10k",
+      "p_holm": 0.37682347882000045
+    },
+    "context_recall": {
+      "metric": "context_recall",
+      "n_scored_baseline": 25,
+      "n_scored_enhanced": 22,
+      "baseline_mean_all": 0.7333333333333333,
+      "enhanced_mean_all": 0.75,
+      "baseline_mean_answered": 0.7575757575757577,
+      "enhanced_mean_answered": 0.75,
+      "delta_answered": -0.007575757575757577,
+      "wilcoxon_statistic": 133.5,
+      "p_raw": 0.5921607672150566,
+      "n_pairs": 22,
+      "ci95_delta_low": -0.19318181818181818,
+      "ci95_delta_high": 0.18560606060606058,
+      "ci_method": "BCa_paired_10k",
+      "p_holm": 1.0
+    }
+  },
+  "abstains": {
+    "baseline": [],
+    "enhanced": [
+      "q06",
+      "q10",
+      "q24"
+    ],
+    "should_abstain_ids": [
+      "q21"
+    ]
+  }
+}
