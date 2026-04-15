@@ -1,6 +1,7 @@
 # Large data (recreatable via notebooks)
 data/html_cache/
 chroma_db/
+.cache/
 
 # Secrets
 .env
