@@ -19,13 +19,11 @@ from pathlib import Path
 
 from ragas import SingleTurnSample
 
-
-# Keep this string in sync with _ABSTAIN_MESSAGE in boe_rag/pipelines/nodes.py.
-# Tested via is_abstain(); a future refactor that renames the message
-# would silently break abstain-skip handling.
-ABSTAIN_MESSAGE = (
-    "This question does not appear to be answerable from the Bank of England document corpus."
-)
+# Single source of truth — imported verbatim from the pipeline so the
+# abstain-detection string can never drift between producer and consumer.
+# A unit test (test_abstain_message_single_source_of_truth) pins the
+# identity.
+from boe_rag.pipelines.nodes import ABSTAIN_MESSAGE
 
 # Query IDs where an abstain is the correct answer. Currently only q21
 # (the Federal Reserve out-of-corpus question). Keep this explicit rather

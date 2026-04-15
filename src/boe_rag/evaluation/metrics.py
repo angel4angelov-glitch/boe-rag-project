@@ -203,6 +203,11 @@ def compute_crag_metrics(
         "rerank_top1_change_rate": (top1_changed / len(rerank_rows)) if rerank_rows else None,
         "abstain_rate": len(abstains) / n,
         "abstain_correctness": (correct_abstains / len(abstains)) if abstains else None,
+        # B1: recall over the should-abstain set. Precision (above) punishes
+        # false-positive abstains; recall measures whether we caught the
+        # true-positives. For the report's scope-check narrative, recall is
+        # the cleaner single-metric story (1/1 = 1.0 when q21 is caught).
+        "should_abstain_recall": (correct_abstains / len(should)) if should else None,
         "abstain_ids": abstains,
         "correct_abstain_ids": [qid for qid in abstains if qid in should],
         "missed_abstain_ids": [qid for qid in should if qid not in abstains],

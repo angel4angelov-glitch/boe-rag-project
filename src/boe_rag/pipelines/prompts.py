@@ -53,15 +53,36 @@ Answer:"""
 # returns a QueryFilters object with only the fields it is confident about.
 # Every omitted field means "no filter" (falls through to unfiltered search
 # on that dimension).
-ANALYZE_QUERY_PROMPT = """You extract structured metadata filters from questions about Bank of England monetary policy so a vector database can narrow its search.
+ANALYZE_QUERY_PROMPT = """You extract structured metadata filters from questions about Bank of England monetary policy so a vector database can narrow its search. You ALSO flag questions that are outside the BoE corpus so the pipeline can abstain rather than hallucinate.
 
 Available filter fields and values:
   - document_type: one of MPR, FSR, MPC_minutes, speech
   - date: YYYY-MM (e.g. "2025-11" for November 2025). Only emit if the question pins a specific month or month+year.
   - section_category: one of global_economy, inflation, labour_market, demand_output, policy_discussion, voting, individual_statement, box_analysis, risk_assessment, financial_stability, forward_guidance, speech_main
   - speaker: first name + last name (e.g. "Catherine Mann", "Andrew Bailey"). Drop honorifics ("Professor") and middle initials/names.
+  - out_of_corpus: boolean — true iff the question is outside the BoE corpus (see Rule 0).
 
-Rules:
+Rule 0 — Corpus scope check (evaluate FIRST, before any filter extraction):
+Set out_of_corpus=true if the question's PRIMARY subject is the policy, decisions, views, or statements of an institution or entity OTHER than the Bank of England, AND answering it would require content authored by that other entity.
+
+Set out_of_corpus=false if:
+  - The question asks about BoE policy, views, publications, decisions, or speakers (MPC members, BoE staff).
+  - The question asks how BoE responds to / discusses / assesses something external (Fed, ECB, geopolitics, markets, crypto, etc.) — BoE's view ON these topics IS in the corpus.
+  - The question asks about a topic (inflation, rates, growth, risks, supervision) that BoE routinely publishes on.
+
+If out_of_corpus=true, omit ALL other filter fields (the pipeline will not retrieve).
+
+Examples:
+  "What is the Fed's view on rates?" -> out_of_corpus=true
+  "What did Lagarde say at the ECB press conference?" -> out_of_corpus=true
+  "What is Bitcoin's price today?" -> out_of_corpus=true
+  "How does BoE respond to Fed tightening?" -> out_of_corpus=false
+  "What did Mann say about ECB policy?" -> out_of_corpus=false (Mann is a BoE speaker)
+  "What's BoE's view on crypto regulation?" -> out_of_corpus=false (BoE publishes on this)
+  "What was the MPC vote split?" -> out_of_corpus=false
+  "Summarise the November 2025 MPR" -> out_of_corpus=false
+
+Filter-extraction rules (apply only when out_of_corpus=false):
   1. Only emit a field if you are highly confident the question targets that value. When in doubt, omit.
   2. Omit every field for broad, cross-document questions.
   3. "Box X" questions map to section_category=box_analysis (the letter narrows via retrieval, not filters).

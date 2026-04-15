@@ -13,8 +13,10 @@ from typing import Any
 import pytest
 
 from boe_rag.pipelines.nodes import (
+    ABSTAIN_MESSAGE,
     QueryFilters,
     make_abstain_node,
+    make_abstain_out_of_corpus_node,
     make_analyze_query_node,
     make_check_hallucination_node,
     make_generate_node,
@@ -22,6 +24,7 @@ from boe_rag.pipelines.nodes import (
     make_rerank_node,
     make_retrieve_node,
     make_rewrite_query_node,
+    route_after_analyze_query,
     route_after_grading,
     route_after_hallucination,
 )
@@ -168,6 +171,125 @@ def test_analyze_query_handles_llm_error_as_no_filters() -> None:
     out = node(_starter_state())
     assert out["metadata_filters"] is None
     assert out["pipeline_trace"][-1] == "analyze_query"
+    # Transient error must NOT default to abstaining — could strand legitimate
+    # queries. out_of_corpus key may be absent or False, never True.
+    assert out.get("out_of_corpus") is not True
+
+
+# ── analyze_query: corpus-scope detection (B1) ─────────────
+
+
+def test_analyze_query_out_of_corpus_fed_short_circuits() -> None:
+    """Fed-only question → out_of_corpus=True, filters cleared."""
+    llm = _StubStructuredLLM(QueryFilters(out_of_corpus=True))
+    node = make_analyze_query_node(llm)
+    out = node(_starter_state(question="What is the Fed's view on rates?"))
+    assert out["out_of_corpus"] is True
+    assert out["metadata_filters"] is None
+
+
+def test_analyze_query_out_of_corpus_lagarde() -> None:
+    """Non-BoE speaker → out_of_corpus=True."""
+    llm = _StubStructuredLLM(QueryFilters(out_of_corpus=True))
+    node = make_analyze_query_node(llm)
+    out = node(_starter_state(question="What did Lagarde say at the ECB press conference?"))
+    assert out["out_of_corpus"] is True
+
+
+def test_analyze_query_out_of_corpus_market_data() -> None:
+    """Market data unrelated to BoE → out_of_corpus=True."""
+    llm = _StubStructuredLLM(QueryFilters(out_of_corpus=True))
+    node = make_analyze_query_node(llm)
+    out = node(_starter_state(question="What is Bitcoin's price today?"))
+    assert out["out_of_corpus"] is True
+
+
+def test_analyze_query_in_corpus_vote_split() -> None:
+    """Core BoE question → out_of_corpus=False, filters proceed normally."""
+    llm = _StubStructuredLLM(
+        QueryFilters(out_of_corpus=False, document_type="MPC_minutes", date="2026-02")
+    )
+    node = make_analyze_query_node(llm)
+    out = node(_starter_state(question="What was the Feb 2026 MPC vote?"))
+    assert out["out_of_corpus"] is False
+    # metadata_filters should carry the two-field filter, NOT be dropped by scope check
+    assert out["metadata_filters"] == {
+        "$and": [{"document_type": "MPC_minutes"}, {"date": "2026-02"}]
+    }
+
+
+def test_analyze_query_in_corpus_boe_discussing_fed() -> None:
+    """BoE's response to Fed policy is in-corpus — MPC routinely comments."""
+    llm = _StubStructuredLLM(QueryFilters(out_of_corpus=False))
+    node = make_analyze_query_node(llm)
+    out = node(_starter_state(question="How does BoE respond to Fed tightening?"))
+    assert out["out_of_corpus"] is False
+
+
+def test_analyze_query_in_corpus_mann_on_ecb() -> None:
+    """Mann is a BoE MPC member — her speech is in-corpus even if topic is ECB."""
+    llm = _StubStructuredLLM(QueryFilters(out_of_corpus=False, speaker="Catherine Mann"))
+    node = make_analyze_query_node(llm)
+    out = node(_starter_state(question="What did Mann say about ECB policy?"))
+    assert out["out_of_corpus"] is False
+    assert out["metadata_filters"] == {"speaker": "Catherine Mann"}
+
+
+def test_analyze_query_in_corpus_boe_crypto() -> None:
+    """BoE publishes crypto/stablecoin views in FSR — in-corpus."""
+    llm = _StubStructuredLLM(QueryFilters(out_of_corpus=False))
+    node = make_analyze_query_node(llm)
+    out = node(_starter_state(question="What's BoE's view on crypto regulation?"))
+    assert out["out_of_corpus"] is False
+
+
+def test_analyze_query_out_of_corpus_wins_over_spurious_filter() -> None:
+    """If Claude emits out_of_corpus=True AND a filter, scope check wins."""
+    llm = _StubStructuredLLM(
+        QueryFilters(out_of_corpus=True, document_type="MPR")  # contradictory
+    )
+    node = make_analyze_query_node(llm)
+    out = node(_starter_state())
+    assert out["out_of_corpus"] is True
+    assert out["metadata_filters"] is None  # spurious filter dropped
+
+
+def test_abstain_message_single_source_of_truth() -> None:
+    """nodes.ABSTAIN_MESSAGE and adapters.ABSTAIN_MESSAGE must be identical."""
+    from boe_rag.evaluation.adapters import ABSTAIN_MESSAGE as ADAPTERS_MSG
+    assert ABSTAIN_MESSAGE == ADAPTERS_MSG
+
+
+# ── route_after_analyze_query (B1) ─────────────────────────
+
+
+def test_route_after_analyze_query_out_of_corpus() -> None:
+    assert route_after_analyze_query({"out_of_corpus": True}) == "abstain_out_of_corpus"
+
+
+def test_route_after_analyze_query_in_corpus() -> None:
+    assert route_after_analyze_query({"out_of_corpus": False}) == "retrieve"
+
+
+def test_route_after_analyze_query_missing_key_defaults_to_retrieve() -> None:
+    """Transient analyze_query failure → retrieve, NOT abstain.
+
+    Defaulting to abstain on missing key would strand every query
+    whose analyze_query LLM call timed out — wrong behaviour.
+    """
+    assert route_after_analyze_query({}) == "retrieve"
+
+
+# ── abstain_out_of_corpus node (B1) ─────────────────────────
+
+
+def test_abstain_out_of_corpus_node_sets_abstain_state() -> None:
+    node = make_abstain_out_of_corpus_node()
+    out = node({"pipeline_trace": ["analyze_query"]})
+    assert out["answer"] == ABSTAIN_MESSAGE
+    assert out["reranked_documents"] == []
+    assert out["is_grounded"] is None
+    assert out["pipeline_trace"] == ["analyze_query", "abstain_out_of_corpus"]
 
 
 # ── retrieve ────────────────────────────────────────────────

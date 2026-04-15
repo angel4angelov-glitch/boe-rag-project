@@ -54,13 +54,13 @@
       },
       {
         "chunk_id": "mpc_2026_02_policy_discussion_014",
-        "score": 0.5481178,
+        "score": 0.5482629,
         "text": "### Operational considerations\n\n21: On 4 February, the stock of UK government bonds held for monetary policy purposes was \u00a3531 billion.\n\n22: The following members of the Committee were present:\n\n- Andrew Bailey, Chair\n\n- Sarah Breeden\n\n- Swati Dhingra\n\n- Megan Greene\n\n- Clare Lombardelli\n\n- Catherine L Mann\n\n- Huw Pill\n\n- Dave Ramsden\n\n- Alan Taylor\n\nJames Bowler was present as the Treasury representative.\n\nCorrection made on 24 February 2026. This sentence was originally: \"Instead, the median respondent to the Market Participants Survey expected Bank Rate to fall to 3.25% and stay there.\"",
         "text_preview": "### Operational considerations\n\n21: On 4 February, the stock of UK government bonds held for monetary policy purposes was \u00a3531 billion.\n\n22: The following members of the Committee were present:\n\n- And"
       },
       {
         "chunk_id": "mpc_2026_02_individual_statement_010",
-        "score": 0.28193215,
+        "score": 0.28228074,
         "text": "**Huw Pill:** I do not see a need to reduce Bank Rate further at this meeting. This follows from distinguishing between the underlying disinflation process, which remains intact but incomplete, and the risks around that process, which shift through time but have on balance been in the direction of slower disinflation than expected a year or eighteen months ago. In explaining this slowing, I would emphasise the role of structural changes in wage-bargaining and productivity - notwithstanding the conclusions in Box B, where I draw different implications from the careful and important analysis - and a monetary policy stance that has been overly accommodative since the withdrawal of restriction started in August 2024. While I draw comfort about the medium-term inflation outlook from longer-term market inflation expectations and low-frequency broad money dynamics, I remain concerned that inflationary pressures stemming from an overly rapid withdrawal of policy restriction over the past two years still need to be contained and eliminated. In that light, I continue to favour a cautious withdrawal of policy restriction, guided by longer\u2010term trends rather than short\u2010term news.\n\nVote to reduce Bank rate by 0.25 percentage points, to 3.5%",
         "text_preview": "**Huw Pill:** I do not see a need to reduce Bank Rate further at this meeting. This follows from distinguishing between the underlying disinflation process, which remains intact but incomplete, and th"
       }
@@ -112,7 +112,64 @@
   "q03": {
     "question": "What was the judgement on CPI inflation cited in the November 2025 MPC minutes?",
     "category": "simple_factual",
-    "answer": "According to the November 2025 MPC minutes, paragraph 4: \"CPI inflation was judged to have peaked.\"\n\nThe minutes further explain that \"The increase in headline inflation over the course of this year had been accounted for by base effects in energy prices, as well as one-off factors such as supply disruptions in specific food components and increases in administered prices.\"\n\nThis judgement is also reflected in the Monetary Policy Summary from November 2025, which states: \"CPI inflation is judged to have peaked. Progress on underlying disinflation continues, supported by the still restrictive stance of monetary policy.\"",
+    "answer": "According to the November 2025 MPC minutes, the Committee made several key judgements about CPI inflation:\n\n**Near-term outlook:** The MPC projected that \"CPI inflation is projected to rise slightly further, to around 3\u00be% over the second half of this year, with a peak of 4.0% in September\" (Section 1.2). This represented \"a slightly higher profile than in the May Report.\"\n\n**Recent performance:** The minutes note that \"Twelve-month CPI inflation averaged 3.5% in 2025 Q2. This was 0.1 percentage points above expectations at the time of the May Report and an increase from 2.8% in Q1\" (Section 1.2).\n\n**Temporary nature of increase:** The Committee judged that \"the near-term strength in CPI inflation is still expected to be temporary\" and maintained \"the baseline projection assumes that this will not lead to additional second-round effects on domestic inflationary pressures\" (Section 1.2).\n\n**Risk assessment:** The MPC noted that \"there remains significant uncertainty around these judgements, however, and the MPC judges that the upside risks around medium-term inflationary pressures have moved slightly higher since May\" (Section 1.2).\n\n**Underlying factors:** The pickup in CPI inflation was attributed to \"some near-term upward pressure on inflation from energy, food and services prices, offset by a slight decline in projected core goods inflation\" (Section 1.2).\n\nThe Committee emphasized that despite the near-term rise, they expected this to be temporary and not lead to persistent second-round effects on domestic inflationary pressures.",
+    "pipeline_name": "enhanced",
+    "chunks_retrieved": 10,
+    "chunks_used": 2,
+    "crag_rewrites": 1,
+    "hallucination_retries": 0,
+    "is_grounded": true,
+    "metadata_filters_used": {
+      "$and": [
+        {
+          "document_type": "MPC_minutes"
+        },
+        {
+          "date": "2025-11"
+        },
+        {
+          "section_category": "inflation"
+        }
+      ]
+    },
+    "pipeline_trace": [
+      "analyze_query",
+      "retrieve",
+      "grade_documents",
+      "rewrite_query",
+      "retrieve",
+      "grade_documents",
+      "rerank",
+      "generate",
+      "check_hallucination"
+    ],
+    "pre_rerank_ids": [
+      "mpc_2025_11_policy_discussion_002",
+      "mpr_2025_08_forward_guidance_004"
+    ],
+    "post_rerank_ids": [
+      "mpc_2025_11_policy_discussion_002",
+      "mpr_2025_08_forward_guidance_004"
+    ],
+    "sources": [
+      {
+        "chunk_id": "mpc_2025_11_policy_discussion_002",
+        "score": 0.8036831,
+        "text": "## Minutes of the Monetary Policy Committee meeting ending on 5 November 2025\n\n1: Before turning to its immediate policy decision, the Monetary Policy Committee (MPC) discussed key economic developments and its judgements around them, as well as its views on monetary policy strategy. The latest data and analysis underpinning these topics were set out in the accompanying November 2025 Monetary Policy Report .",
+        "text_preview": "## Minutes of the Monetary Policy Committee meeting ending on 5 November 2025\n\n1: Before turning to its immediate policy decision, the Monetary Policy Committee (MPC) discussed key economic developmen"
+      },
+      {
+        "chunk_id": "mpr_2025_08_forward_guidance_004",
+        "score": 0.7730283,
+        "text": "### 1.2: Key judgement 1\n\nThe path of disinflation in underlying domestic price and wage pressures has generally continued, albeit to different degrees. While headline inflation is projected to rise slightly further in the near term, to around 33\u20444% over the second half of this year, the baseline projection assumes that this will not lead to additional second-round effects on domestic inflationary pressures.\n\nThere has been substantial disinflation over the past two and a half years, following previous external shocks, supported by the restrictive stance of monetary policy. That progress has allowed for reductions in Bank Rate over the past year. The Committee remains focused on squeezing out any existing or emerging persistent inflationary pressures.\n\nTwelve-month CPI inflation averaged 3.5% in 2025 Q2. This was 0.1 percentage points above expectations at the time of the May Report and an increase from 2.8% in Q1 (Section 2.5). Around half of this rise in the second quarter was accounted for by an expected reduction in the extent to which energy prices have been dragging on headline inflation. The contribution of administered prices to inflation has increased, while food price inflation has also picked up by more than anticipated (Box E).\n\nThe latest accumulation of evidence suggests disinflation in underlying domestic price and wage pressures has generally continued, although with greater signs of progress in declining pay growth than in developments in services price inflation. CPI inflation excluding energy picked up slightly to around 33\u20444% in Q2 (Chart 1.1).\n\nServices consumer price inflation has remained at around 4.7% over recent months, slightly higher than expected at the time of the May Report. The still-elevated rate of services inflation reflects past strength in wage growth as well as temporary upward pressure from one-off increases in administered prices and the increase in employer NICs. Underlying services price inflation has continued to moderate across a range of measures, although progress in recent months has been slower than last year according to a measure excluding indexed and volatile components, rents and foreign holidays (Chart 2.20). Even after accounting for respective administered price changes recently, UK services inflation has remained significantly higher than services inflation in the euro area (Section 2.5), suggesting that price-setting in the UK has not yet fully normalised to a target-consistent path.\n\nWage growth has declined further recently, to around 5%. Annual private sector regular average weekly earnings growth fell to 4.9% in the three months to May, weaker than expected in the May Report. This is now broadly in line with Bank staff's estimate of the underlying rate of pay growth. Nevertheless, pay growth has remained higher than can be explained by its usual economic determinants.\n\nPrivate sector regular pay growth is expected to slow further by the end of 2025, to 33\u20444%. In contrast, annual services inflation is projected to rise slightly over the remainder of the year, in part reflecting continued upward pressure from non-wage labour costs, before falling back in 2026.\n\nThere is uncertainty around the path of services inflation over coming quarters, including the extent to which weaker pay growth will over time feed through to lower services inflation, and the extent to which services inflation may continue to be boosted by other factors such as administered prices. There is little evidence so far that the empirical relationship between services inflation and wages has broken down, or that aggregate measures of profit margins are increasing. However, consumer-facing services businesses responding to the Decision Maker Panel (DMP) Survey continue to expect some increase in price inflation over the year ahead. And DMP firms' own-price expectations have remained more sensitive to changes in aggregate CPI inflation than prior to 2022. The near-term rise in headline inflation could therefore affect price-setting behaviour, even while a weaker labour market means wage-setting is unaffected.\n\nIn the August Report baseline projection, CPI inflation is projected to rise slightly further, to around 33\u20444% over the second half of this year, with a peak of 4.0% in September, which is a slightly higher profile than in the May Report. This pickup reflects some near-term upward pressure on inflation from energy, food and services prices, offset by a slight decline in projected core goods inflation.\n\nThe near-term strength in CPI inflation is still expected to be temporary. This in part reflects the Committee's continuing judgement in the baseline forecast that recent developments are assumed not to lead to additional second-round effects on underlying domestic inflationary pressures, beyond those that would typically be expected to occur and in contrast to the more persistent dynamics in the inflation generating process that occurred following the very large shocks in 2021-22. In this forecast, the Committee has also maintained its judgement on the speed with which overall excess domestic inflationary pressures are expected to dissipate in the medium term (Key judgement 3). There remains significant uncertainty around these judgements, however, and the MPC judges that the upside risks around medium-term inflationary pressures have moved slightly higher since May.",
+        "text_preview": "### 1.2: Key judgement 1\n\nThe path of disinflation in underlying domestic price and wage pressures has generally continued, albeit to different degrees. While headline inflation is projected to rise s"
+      }
+    ]
+  },
+  "q04": {
+    "question": "When did the MPC last cut Bank Rate before March 2026?",
+    "category": "simple_factual",
+    "answer": "According to the provided source documents, the MPC last cut Bank Rate in December 2025, before March 2026.\n\nAccording to the Monetary Policy Summary for December 2025, \"At its meeting ending on 17 December 2025, the Monetary Policy Committee voted by a majority of 5-4 to reduce Bank Rate by 0.25 percentage points, to 3.75%.\"\n\nAfter this December 2025 cut, the February 2026 Monetary Policy Summary shows that \"At its meeting ending on 4 February 2026, the Monetary Policy Committee voted by a majority of 5-4 to maintain Bank Rate at 3.75%,\" indicating no change from the December level.\n\nTherefore, the December 2025 meeting (ending 17 December 2025) was when the MPC last cut Bank Rate before March 2026.",
     "pipeline_name": "enhanced",
     "chunks_retrieved": 10,
     "chunks_used": 5,
@@ -125,7 +182,7 @@
           "document_type": "MPC_minutes"
         },
         {
-          "date": "2025-11"
+          "section_category": "policy_discussion"
         }
       ]
     },
@@ -138,88 +195,21 @@
       "check_hallucination"
     ],
     "pre_rerank_ids": [
-      "mpc_2025_11_policy_discussion_002",
-      "mpc_2025_11_policy_discussion_001",
-      "mpc_2025_11_policy_discussion_003",
-      "mpc_2025_11_individual_statement_009",
-      "mpc_2025_11_policy_discussion_005"
-    ],
-    "post_rerank_ids": [
-      "mpc_2025_11_policy_discussion_001",
-      "mpc_2025_11_policy_discussion_002",
-      "mpc_2025_11_policy_discussion_003",
-      "mpc_2025_11_policy_discussion_005",
-      "mpc_2025_11_individual_statement_009"
-    ],
-    "sources": [
-      {
-        "chunk_id": "mpc_2025_11_policy_discussion_001",
-        "score": 0.9287263,
-        "text": "## Monetary Policy Summary, November 2025\n\nAt its meeting ending on 5 November 2025, the Monetary Policy Committee voted by a majority of 5-4 to maintain Bank Rate at 4%. Four members voted to reduce Bank Rate by 0.25 percentage points, to 3.75%.\n\nCPI inflation is judged to have peaked. Progress on underlying disinflation continues, supported by the still restrictive stance of monetary policy. This is reflected in an easing of pay growth and services price inflation. Underlying disinflation is being underpinned by subdued economic growth and building slack in the labour market.\n\nMonetary policy is being set to balance the risks around meeting the 2% inflation target sustainably. The risk from greater inflation persistence has become less pronounced recently, and the risk to medium-term inflation from weaker demand more apparent, such that overall the risks are now more balanced. But more evidence is needed on both.\n\nThe restrictiveness of monetary policy has fallen as Bank Rate has been reduced. The extent of further reductions will therefore depend on the evolution of the outlook for inflation. If progress on disinflation continues, Bank Rate is likely to continue on a gradual downward path.",
-        "text_preview": "## Monetary Policy Summary, November 2025\n\nAt its meeting ending on 5 November 2025, the Monetary Policy Committee voted by a majority of 5-4 to maintain Bank Rate at 4%. Four members voted to reduce "
-      },
-      {
-        "chunk_id": "mpc_2025_11_policy_discussion_002",
-        "score": 0.62687886,
-        "text": "## Minutes of the Monetary Policy Committee meeting ending on 5 November 2025\n\n1: Before turning to its immediate policy decision, the Monetary Policy Committee (MPC) discussed key economic developments and its judgements around them, as well as its views on monetary policy strategy. The latest data and analysis underpinning these topics were set out in the accompanying November 2025 Monetary Policy Report .",
-        "text_preview": "## Minutes of the Monetary Policy Committee meeting ending on 5 November 2025\n\n1: Before turning to its immediate policy decision, the Monetary Policy Committee (MPC) discussed key economic developmen"
-      },
-      {
-        "chunk_id": "mpc_2025_11_policy_discussion_003",
-        "score": 0.48499045,
-        "text": "### The Committee's discussions\n\n2: The Committee's policy discussions covered: the extent to which disinflation was continuing; the degree of slack emerging in the economy and the extent to which this slack was sufficient to counteract any remaining persistence in underlying inflation; and the extent to which these developments reflected the restrictive stance of monetary policy, both currently and prospectively.\n\n3: Progress on underlying disinflation had continued. Services consumer price inflation had eased. Continued moderation in wage growth was likely to feed through to lower services price inflation, although members continued to take different views on the degree of this pass-through.\n\n4: CPI inflation was judged to have peaked. The increase in headline inflation over the course of this year had been accounted for by base effects in energy prices, as well as one-off factors such as supply disruptions in specific food components and increases in administered prices. In the central projection, this increase in headline inflation did not lead to additional second-round effects on domestic inflationary pressures. However, the Committee was mindful of recent increases in household inflation expectations, and some members continued to place weight on the possibility that structural shifts in wage and price-setting would exacerbate the persistence of underlying inflation.\n\n5: In one scenario set out in Section 3 of the November Monetary Policy Report, inflation was more persistent than assumed in the central projection, as past inflation outturns continued to influence domestic price and wage-setting over the medium term. Among those members who placed weight on upside risks from inflation persistence more generally, there were different views on the most likely mechanism.\n\n6: Looking ahead, contemporaneous indicators of slack, labour costs and services inflation, together with indications of prospective pay settlements and the likely pricing power of firms, would provide important information on the evolution of risks associated with returning CPI inflation to the 2% target sustainably. The Committee would evaluate the accumulation of evidence over time, alongside key upcoming data releases. The Budget would be announced on 26 November.\n\n7: For most members, global developments had not played a large role in their policy deliberations at this meeting, but these would continue to be assessed closely.\n\n8: Underlying disinflation was being underpinned by subdued economic growth and building slack in the labour market. Members had a range of views around the margin of spare capacity that had already emerged and was likely to emerge over time. The labour market was continuing to loosen gradually. For some members, weak growth in consumption and employment indicated the emergence of additional spare capacity. For other members, structural changes in the labour market implied that the margin of spare capacity, its likely evolution, and its implications for nominal dynamics, might prove insufficient to return inflation to target sustainably.\n\n9: In a second scenario set out in the November Report, domestic inflationary pressure faded more quickly than was assumed in the central projection, reflecting more pronounced weakness in household consumption. Most members placed some weight on this scenario.\n\n10: Reflecting the usual lags associated with monetary policy, past restrictiveness was assessed to be weighing on the current level of aggregate demand. This policy restraint was contributing to ongoing disinflation. For those members placing greater weight on downside risks to activity, the combined degree of past and current restrictiveness evident in the latest data risked an inflation undershoot in the medium term. For those members who were more concerned about the persistence of underlying inflationary pressures, there was less evidence that the cumulative restrictiveness imparted by policy to date would generate additional slack in the real economy. All members concurred that the stance of monetary policy had become less restrictive as the level of Bank Rate had been reduced.\n\n11: In considering its approach to the potential removal of remaining policy restrictiveness, the Committee was weighing various considerations. These included the costs associated with loosening policy too quickly or too slowly, and the value in waiting for additional evidence before reducing Bank Rate further. Those considerations reflected different views on the restrictiveness of current monetary policy and on the extent to which incremental news would help resolve uncertainty about the persistence of inflation.\n\n12: Different members placed different weights on how precisely an equilibrium, or neutral, level of Bank Rate could be identified. For some members, the evolution of inflation and other conjunctural data, including what these could reveal about slack, could offer guidance on the restrictiveness of monetary policy. Other members put more weight on quantitative estimates of equilibrium interest rates. There was broad agreement, however, that as Bank Rate approached neutral, the contribution of monetary policy to underlying disinflation would become harder to discern, making the case for further policy easing more finely balanced.\n\n13: Taken together, the recent data suggested that the risk from greater inflation persistence had become less pronounced, and the risk to medium-term inflation from weaker demand more apparent, such that overall the risks were now more balanced. But more evidence was needed on both, and different members placed different weights on these risks.",
-        "text_preview": "### The Committee's discussions\n\n2: The Committee's policy discussions covered: the extent to which disinflation was continuing; the degree of slack emerging in the economy and the extent to which thi"
-      },
-      {
-        "chunk_id": "mpc_2025_11_policy_discussion_005",
-        "score": 0.28148755,
-        "text": "### MPC members' views\n\n20: Members set out the rationale underpinning their individual votes on Bank Rate.\n\nMembers are listed alphabetically under each vote grouping. References in parentheses relate to boxes and sections of the November 2025 Monetary Policy Report. References to scenarios relate to those set out in Section 3 of the November Report.",
-        "text_preview": "### MPC members' views\n\n20: Members set out the rationale underpinning their individual votes on Bank Rate.\n\nMembers are listed alphabetically under each vote grouping. References in parentheses relat"
-      },
-      {
-        "chunk_id": "mpc_2025_11_individual_statement_009",
-        "score": 0.11821217,
-        "text": "**Clare Lombardelli:** While I expect headline inflation to continue to fall, I worry there may be more underlying inflationary pressure in the economy than embodied in the central projection. Despite recent softer-than-expected data, forward-looking indicators of inflation have been less benign, particularly around pay settlements next year. Structural changes in the labour market (Box F) may mean there is less slack in the economy, leading to more persistent inflationary pressures. Higher inflation expectations and associated threshold effects (Box B and Box C) may have changed wage and price-setting behaviour. In such a scenario, we would need a longer period of restrictive monetary policy to bring inflation sustainably back to target. And it is uncertain how restrictive policy is currently. While I find the ongoing weaker consumption scenario compelling (Box D), we have plenty of policy space to lower Bank Rate should it be necessary, while a policy reversal would be costly for the MPC's credibility.",
-        "text_preview": "**Clare Lombardelli:** While I expect headline inflation to continue to fall, I worry there may be more underlying inflationary pressure in the economy than embodied in the central projection. Despite"
-      }
-    ]
-  },
-  "q04": {
-    "question": "When did the MPC last cut Bank Rate before March 2026?",
-    "category": "simple_factual",
-    "answer": "According to the Monetary Policy Summary for December 2025, the MPC last cut Bank Rate at its meeting ending on 17 December 2025, when it \"voted by a majority of 5-4 to reduce Bank Rate by 0.25 percentage points, to 3.75%.\"\n\nThe February 2026 Monetary Policy Summary confirms that Bank Rate remained at this level, stating that \"the Monetary Policy Committee voted by a majority of 5-4 to maintain Bank Rate at 3.75%.\"\n\nTherefore, the last Bank Rate cut before March 2026 was in December 2025.",
-    "pipeline_name": "enhanced",
-    "chunks_retrieved": 10,
-    "chunks_used": 5,
-    "crag_rewrites": 0,
-    "hallucination_retries": 0,
-    "is_grounded": true,
-    "metadata_filters_used": null,
-    "pipeline_trace": [
-      "analyze_query",
-      "retrieve",
-      "grade_documents",
-      "rerank",
-      "generate",
-      "check_hallucination"
-    ],
-    "pre_rerank_ids": [
-      "mpr_2025_08_policy_discussion_001",
       "mpc_2026_02_policy_discussion_001",
       "mpc_2025_08_policy_discussion_001",
       "mpc_2025_09_policy_discussion_001",
       "mpc_2025_12_policy_discussion_001",
-      "speech_ramsden_2025_06_speech_main_008",
-      "mpr_2025_11_policy_discussion_001",
-      "mpr_2025_11_policy_discussion_023",
-      "mpr_2025_11_policy_discussion_002"
+      "mpc_2025_06_policy_discussion_001",
+      "mpc_2025_08_policy_discussion_004",
+      "mpc_2025_09_policy_discussion_004",
+      "mpc_2025_11_policy_discussion_001"
     ],
     "post_rerank_ids": [
       "mpc_2025_12_policy_discussion_001",
       "mpc_2025_08_policy_discussion_001",
       "mpc_2025_09_policy_discussion_001",
-      "mpr_2025_08_policy_discussion_001",
-      "mpc_2026_02_policy_discussion_001"
+      "mpc_2026_02_policy_discussion_001",
+      "mpc_2025_11_policy_discussion_001"
     ],
     "sources": [
       {
@@ -236,21 +226,21 @@
       },
       {
         "chunk_id": "mpc_2025_09_policy_discussion_001",
-        "score": 0.8506799,
+        "score": 0.85097736,
         "text": "## Monetary Policy Summary, September 2025\n\nThe Monetary Policy Committee (MPC) sets monetary policy to meet the 2% inflation target, and in a way that helps to sustain growth and employment. The MPC adopts a medium-term and forward-looking approach to determine the monetary stance required to achieve the inflation target sustainably.\n\nAt its meeting ending on 17 September 2025, the MPC voted by a majority of 7-2 to maintain Bank Rate at 4%. Two members voted to reduce Bank Rate by 0.25 percentage points, to 3.75%. The Committee voted by a majority of 7-2 to reduce the stock of UK government bond purchases held for monetary policy purposes, and financed by the issuance of central bank reserves, by \u00a370 billion over the next 12 months, to a total of \u00a3488 billion.\n\nThere has been substantial disinflation over the past two and a half years, following previous external shocks, supported by the restrictive stance of monetary policy. That progress has allowed for reductions in Bank Rate over the past year. The Committee remains focused on squeezing out any existing or emerging persistent inflationary pressures, to return inflation sustainably to its 2% target in the medium term.\n\nUnderlying disinflation has generally continued, although with greater progress in easing wage pressures than prices. Twelve-month CPI inflation was 3.8% in August, and is expected to increase slightly in September, before falling towards the 2% target thereafter. The Committee remains alert to the risk that this temporary increase in inflation could put additional upward pressure on the wage and price-setting process. Pay growth remains elevated, but has fallen and is expected to slow significantly over the rest of the year. Services consumer price inflation has been broadly flat over recent months. Upside risks around medium-term inflationary pressures remain prominent in the Committee's assessment of the outlook.\n\nUnderlying UK GDP growth has remained subdued, consistent with a continued, gradual loosening in the labour market, as well as a margin of slack in the economy. Downside domestic and geopolitical risks around economic activity remain.\n\nAt this meeting, the Committee voted to maintain Bank Rate at 4%. A gradual and careful approach to the further withdrawal of monetary policy restraint remains appropriate. The restrictiveness of monetary policy has fallen as Bank Rate has been reduced. The timing and pace of future reductions in the restrictiveness of policy will depend on the extent to which underlying disinflationary pressures continue to ease. Monetary policy is not on a pre-set path, and the Committee will remain responsive to the accumulation of evidence.",
         "text_preview": "## Monetary Policy Summary, September 2025\n\nThe Monetary Policy Committee (MPC) sets monetary policy to meet the 2% inflation target, and in a way that helps to sustain growth and employment. The MPC "
       },
       {
-        "chunk_id": "mpr_2025_08_policy_discussion_001",
-        "score": 0.8396422,
-        "text": "## Monetary Policy Summary\n\nThe Monetary Policy Committee (MPC) sets monetary policy to meet the 2% inflation target, and in a way that helps to sustain growth and employment. The MPC adopts a medium-term and forward-looking approach to determine the monetary stance required to achieve the inflation target sustainably.\n\nAt its meeting ending on 6 August 2025, the MPC voted by a majority of 5-4 to reduce Bank Rate by 0.25 percentage points, to 4%, rather than maintaining it at 4.25%.\n\nThere has been substantial disinflation over the past two and a half years, following previous external shocks, supported by the restrictive stance of monetary policy. That progress has allowed for reductions in Bank Rate over the past year. The Committee remains focused on squeezing out any existing or emerging persistent inflationary pressures, to return inflation sustainably to its 2% target in the medium term.\n\nThe path of disinflation in underlying domestic price and wage pressures has generally continued, albeit to different degrees. Twelve-month CPI inflation increased to 3.5% in 2025 Q2, owing to developments in energy, food and administered prices. Pay growth remains elevated, but has declined further recently, and is still expected to slow significantly over the rest of the year. Services consumer price inflation has been broadly flat over recent months. The Committee continues to be vigilant about the extent to which easing pay pressures will feed through to consumer price inflation.\n\nCPI inflation is forecast to increase slightly further to peak at 4.0% in September. Inflation is expected to fall back thereafter towards the 2% target, although the Committee remains alert to the risk that this temporary increase in inflation could put additional upward pressure on the wage and price-setting process. Overall, the MPC judges that the upside risks around medium-term inflationary pressures have moved slightly higher since May.\n\nUnderlying UK GDP growth has remained subdued, consistent with a continued, gradual loosening in the labour market. A margin of slack is judged to have emerged in the economy. Downside domestic and geopolitical risks around economic activity remain, although trade policy uncertainty has diminished somewhat.\n\nAt this meeting, the Committee voted to reduce Bank Rate to 4%. A gradual and careful approach to the further withdrawal of monetary policy restraint remains appropriate. The restrictiveness of monetary policy has fallen as Bank Rate has been reduced. The timing and pace of future reductions in the restrictiveness of policy will depend on the extent to which underlying disinflationary pressures continue to ease. Monetary policy is not on a pre-set path, and the Committee will remain responsive to the accumulation of evidence.",
-        "text_preview": "## Monetary Policy Summary\n\nThe Monetary Policy Committee (MPC) sets monetary policy to meet the 2% inflation target, and in a way that helps to sustain growth and employment. The MPC adopts a medium-"
-      },
-      {
         "chunk_id": "mpc_2026_02_policy_discussion_001",
-        "score": 0.8358192,
+        "score": 0.83549726,
         "text": "## Monetary Policy Summary, February 2026\n\nAt its meeting ending on 4 February 2026, the Monetary Policy Committee voted by a majority of 5-4 to maintain Bank Rate at 3.75%. Four members voted to reduce Bank Rate by 0.25 percentage points, to 3.5%.\n\nAlthough above the 2% target currently, CPI inflation is expected to fall back to around the target from April, owing to developments in energy prices including from Budget 2025. Reflecting the impact of monetary policy, and consistent with evidence of subdued economic growth and building slack in the labour market, pay growth and services price inflation have generally continued to ease. The risk from greater inflation persistence has continued to become less pronounced, while some risks to inflation from weaker demand and a loosening labour market remain.\n\nMonetary policy is being set to ensure that CPI inflation not only reaches 2% but remains sustainably at that level in the medium term, which involves balancing the risks around achieving this. The restrictiveness of policy has fallen as Bank Rate has been reduced by 150 basis points since August 2024. On the basis of the current evidence, Bank Rate is likely to be reduced further. Judgements around further policy easing will become a closer call. The extent and timing of further easing in monetary policy will depend on the evolution of the outlook for inflation.",
         "text_preview": "## Monetary Policy Summary, February 2026\n\nAt its meeting ending on 4 February 2026, the Monetary Policy Committee voted by a majority of 5-4 to maintain Bank Rate at 3.75%. Four members voted to redu"
+      },
+      {
+        "chunk_id": "mpc_2025_11_policy_discussion_001",
+        "score": 0.82492816,
+        "text": "## Monetary Policy Summary, November 2025\n\nAt its meeting ending on 5 November 2025, the Monetary Policy Committee voted by a majority of 5-4 to maintain Bank Rate at 4%. Four members voted to reduce Bank Rate by 0.25 percentage points, to 3.75%.\n\nCPI inflation is judged to have peaked. Progress on underlying disinflation continues, supported by the still restrictive stance of monetary policy. This is reflected in an easing of pay growth and services price inflation. Underlying disinflation is being underpinned by subdued economic growth and building slack in the labour market.\n\nMonetary policy is being set to balance the risks around meeting the 2% inflation target sustainably. The risk from greater inflation persistence has become less pronounced recently, and the risk to medium-term inflation from weaker demand more apparent, such that overall the risks are now more balanced. But more evidence is needed on both.\n\nThe restrictiveness of monetary policy has fallen as Bank Rate has been reduced. The extent of further reductions will therefore depend on the evolution of the outlook for inflation. If progress on disinflation continues, Bank Rate is likely to continue on a gradual downward path.",
+        "text_preview": "## Monetary Policy Summary, November 2025\n\nAt its meeting ending on 5 November 2025, the Monetary Policy Committee voted by a majority of 5-4 to maintain Bank Rate at 4%. Four members voted to reduce "
       }
     ]
   },
@@ -324,7 +314,14 @@
     "hallucination_retries": 0,
     "is_grounded": null,
     "metadata_filters_used": {
-      "document_type": "MPR"
+      "$and": [
+        {
+          "document_type": "MPR"
+        },
+        {
+          "section_category": "inflation"
+        }
+      ]
     },
     "pipeline_trace": [
       "analyze_query",
@@ -342,19 +339,25 @@
   "q07": {
     "question": "How did the MPC's language on inflation persistence change between November 2025 and February 2026?",
     "category": "comparative",
-    "answer": "I cannot answer this question about how the MPC's language on inflation persistence changed between November 2025 and February 2026 because I only have access to the February 2026 Monetary Policy Summary. \n\nThe February 2026 document states that \"The risk from greater inflation persistence has continued to become less pronounced,\" but without the November 2025 MPC documents, I cannot make any comparison of how the language evolved between these two meetings.\n\nTo properly answer this question, I would need access to the November 2025 MPC minutes or Monetary Policy Summary to compare the specific language used regarding inflation persistence risks.",
+    "answer": "I cannot fully answer this question because the provided source documents do not include the November 2025 MPC minutes or policy summary that would show the previous language on inflation persistence.\n\nHowever, I can tell you what the MPC said about inflation persistence in February 2026 and how they characterized the change from their previous assessment:\n\nAccording to the February 2026 MPC minutes, paragraph 10: \"On balance, the Committee judged that the risk from greater inflation persistence had continued to become less pronounced, while some risks to inflation from weaker demand and a loosening labour market remained.\"\n\nThe February 2026 Monetary Policy Summary also states: \"The risk from greater inflation persistence has continued to become less pronounced, while some risks to inflation from weaker demand and a loosening labour market remain.\"\n\nThe use of the word \"continued\" in both documents suggests that the MPC had already begun to view inflation persistence risks as diminishing prior to February 2026, but without the November 2025 documents, I cannot specify exactly how the language evolved or what the previous assessment stated.\n\nTo provide a complete comparison of how the MPC's language on inflation persistence changed between these two meetings, I would need access to the November 2025 MPC minutes and/or Monetary Policy Summary.",
     "pipeline_name": "enhanced",
     "chunks_retrieved": 10,
-    "chunks_used": 1,
-    "crag_rewrites": 1,
+    "chunks_used": 2,
+    "crag_rewrites": 0,
     "hallucination_retries": 0,
     "is_grounded": true,
-    "metadata_filters_used": null,
+    "metadata_filters_used": {
+      "$and": [
+        {
+          "document_type": "MPC_minutes"
+        },
+        {
+          "section_category": "policy_discussion"
+        }
+      ]
+    },
     "pipeline_trace": [
       "analyze_query",
-      "retrieve",
-      "grade_documents",
-      "rewrite_query",
       "retrieve",
       "grade_documents",
       "rerank",
@@ -362,15 +365,23 @@
       "check_hallucination"
     ],
     "pre_rerank_ids": [
+      "mpc_2026_02_policy_discussion_002",
       "mpc_2026_02_policy_discussion_001"
     ],
     "post_rerank_ids": [
+      "mpc_2026_02_policy_discussion_002",
       "mpc_2026_02_policy_discussion_001"
     ],
     "sources": [
       {
+        "chunk_id": "mpc_2026_02_policy_discussion_002",
+        "score": 0.87113565,
+        "text": "## Minutes of the Monetary Policy Committee meeting ending on 4 February 2026\n\n1: Before turning to its immediate policy decision, the Monetary Policy Committee (MPC) discussed key economic developments and its judgements around them, as well as its views on monetary policy strategy. The latest data and analysis underpinning these topics were set out in the accompanying February 2026 Monetary Policy Report . The Committee's discussions\n\n2: The Committee's policy discussions at this meeting focused on: the near-term outlook for inflation, and its implications for underlying price and wage pressures; the role of slack in the economy in helping to keep inflation at the target in the medium term; and the appropriate response of monetary policy, taking into account these factors as well as broader strategic considerations.\n\n3: CPI inflation had fallen from 3.8% in September last year to 3.4% in December. Reflecting the impact of monetary policy, wage growth and services price inflation had generally continued to ease, albeit remaining above target-consistent levels. CPI inflation was expected to fall back to around the 2% target from April. This mainly reflected developments in energy prices, including the impact of measures announced in Budget 2025. This near-term outlook was notably lower than had been expected in the November Monetary Policy Report, although there had been less news relative to the MPC's December meeting.\n\n4: UK import prices were also contributing slightly to the projected decline in CPI inflation this year, including as US tariffs and previous energy price falls were weighing on global export price growth. Uncertainty around the global outlook remained.\n\n5: All members of the Committee continued to stress the importance of inflation not only reaching but remaining sustainably at the 2% target in the medium term. Members had different views on the extent to which the near-term reduction in headline inflation, which predominantly reflected one-off factors, would be sufficient to curb remaining risks of persistence in underlying inflationary pressures.\n\n6: For some members, the prospective reduction in headline inflation, particularly in categories such as energy and food that remained salient for households, could feed through quickly to inflation expectations and lead to continued normalisation of wage and price-setting. These members also pointed to pay settlements in the Agents' pay survey slowing to 3.4% this year, close to target-consistent levels. However, other members were more concerned about still-elevated inflation expectations and a range of future wage indicators, despite disinflation to date. If such inflationary pressures persisted, monetary policy would need to remain more restrictive to avoid inflation settling above the target in the medium term. Most members put some weight on Bank staff analysis that had found little evidence of structural changes in wage bargaining over the recent period.\n\n7: The extent to which remaining excess domestic inflationary pressures would fall would crucially also be influenced by developments in the labour market and the degree to which economic slack acted against these pressures in the coming years. Underlying GDP growth had remained below estimates of potential, and Agents' intelligence pointed to a subdued outlook for demand. The labour market had continued to loosen, with the unemployment rate having picked up to just over 5% recently. As a result, the February Report central projection incorporated a slightly wider output gap over the forecast period than had been expected in November.\n\n8: Most members judged that there remained some downside risks around this already weaker outlook, which could widen the output gap further and result in an undershoot in inflation, in the absence of looser monetary policy. Households might remain cautious about spending, with a risk that the saving rate would not fall back as expected. Demand could remain weak and unemployment could increase by more than expected.\n\n9: Other members noted signs of a slowing in the pace of labour market loosening as, for example, vacancies had started to tick up. Weak productivity growth could keep unit labour cost growth elevated and contribute to a narrower output gap than otherwise estimated. And growth in bank lending and broad money had both edged higher, suggesting that monetary policy was not overly restrictive.\n\n10: On balance, the Committee judged that the risk from greater inflation persistence had continued to become less pronounced, while some risks to inflation from weaker demand and a loosening labour market remained. In making this assessment, members had generally been influenced more by new Bank staff analysis, including that published in the February Report, than by the most recent data releases.\n\n11: In considering how monetary policy should be set to balance these risks around inflation settling sustainably at the target, the Committee judged that, on the basis of the current evidence, Bank Rate was likely to be reduced further, although there were different views on the timing and extent. Judgements around further policy easing would become a closer call. With uncertainty around how precisely a neutral level of Bank Rate could be estimated, slowing the pace of further easing could provide space to gain assurance about how the risks were evolving.\n\n12: Across possible inflation scenarios, the MPC considered how well different monetary policy paths could insure against adverse economic outcomes.\n\n13: Some members were most concerned that cutting rates too quickly risked inadvertently making policy too accommodative if inflationary pressures did not recede, and that it might be costly to change course in that event. If downside risks were instead to materialise, Bank Rate could still be reduced faster then. Other members were concerned that holding Bank Rate at a restrictive level for too long could require a sharper adjustment in monetary policy later on. Finding clear evidence that structural changes had occurred in the economy would always take a long time to become evident in the data. And waiting too long to change policy in the meantime could come at the cost of a sharper downturn in activity and a significant undershoot in inflation.",
+        "text_preview": "## Minutes of the Monetary Policy Committee meeting ending on 4 February 2026\n\n1: Before turning to its immediate policy decision, the Monetary Policy Committee (MPC) discussed key economic developmen"
+      },
+      {
         "chunk_id": "mpc_2026_02_policy_discussion_001",
-        "score": 0.6413,
+        "score": 0.8390101,
         "text": "## Monetary Policy Summary, February 2026\n\nAt its meeting ending on 4 February 2026, the Monetary Policy Committee voted by a majority of 5-4 to maintain Bank Rate at 3.75%. Four members voted to reduce Bank Rate by 0.25 percentage points, to 3.5%.\n\nAlthough above the 2% target currently, CPI inflation is expected to fall back to around the target from April, owing to developments in energy prices including from Budget 2025. Reflecting the impact of monetary policy, and consistent with evidence of subdued economic growth and building slack in the labour market, pay growth and services price inflation have generally continued to ease. The risk from greater inflation persistence has continued to become less pronounced, while some risks to inflation from weaker demand and a loosening labour market remain.\n\nMonetary policy is being set to ensure that CPI inflation not only reaches 2% but remains sustainably at that level in the medium term, which involves balancing the risks around achieving this. The restrictiveness of policy has fallen as Bank Rate has been reduced by 150 basis points since August 2024. On the basis of the current evidence, Bank Rate is likely to be reduced further. Judgements around further policy easing will become a closer call. The extent and timing of further easing in monetary policy will depend on the evolution of the outlook for inflation.",
         "text_preview": "## Monetary Policy Summary, February 2026\n\nAt its meeting ending on 4 February 2026, the Monetary Policy Committee voted by a majority of 5-4 to maintain Bank Rate at 3.75%. Four members voted to redu"
       }
@@ -387,14 +398,7 @@
     "hallucination_retries": 0,
     "is_grounded": true,
     "metadata_filters_used": {
-      "$and": [
-        {
-          "document_type": "MPC_minutes"
-        },
-        {
-          "section_category": "policy_discussion"
-        }
-      ]
+      "document_type": "MPC_minutes"
     },
     "pipeline_trace": [
       "analyze_query",
@@ -491,7 +495,7 @@
     "sources": [
       {
         "chunk_id": "fsr_2025_12_risk_assessment_019",
-        "score": 0.6307,
+        "score": 0.6308,
         "text": "### 2.1: Developments in the global risk environment and financial markets\n\nRisks to financial stability have increased during 2025. Global risks remain elevated and material uncertainty in the global macroeconomic outlook persists. Key sources of risk include geopolitical tensions, fragmentation of trade and financial markets, and pressures on sovereign debt markets. A crystallisation of such global risks could have a material impact on the UK as an open economy and global financial centre.\n\nGeopolitical risk remains high. Trade policy uncertainty has remained elevated with the escalation and subsequent de-escalation around China's rare-earth export controls, and the US Supreme Court is currently hearing a case on the legality of tariffs imposed by the current US administration. This uncertainty persists even though, since the July FSR, there have been announcements of a number of bilateral trade deals between the US and partners. In addition, new sanctions imposed on Russian oil over their continued war in Ukraine are a potential source of volatility in the oil market. Elevated geopolitical tensions increase the likelihood of cyberattacks and other operational disruptions, discussed in more detail in Section 7.\n\nTariffs are expected to weigh on global growth, driven both by the direct impact of tariff barriers and the dampening effect of trade policy uncertainty on firms' investment decisions. Analysis in the November 2025 Monetary Policy Report found that tariffs were having a relatively limited effect on global growth to date, but it is too early to judge whether this reflects diminished or merely delayed effects of trade policy changes.\n\nRespondents to the Bank's latest Systemic Risk Survey - 2025 H2 , covering a range of financial institutions, cited geopolitical risk as the second largest systemic threat to the UK financial system, behind cyberattacks.\n\nAgainst this uncertain backdrop, the appropriateness of financial regulation is being debated actively across a number of jurisdictions. Robust regulatory standards and international co-operation are necessary to maintain the resilience of the global financial system, limit regulatory arbitrage, and to prevent and respond to shocks in order to support sustainable economic growth over the long term.\n\nIn the FPC's judgement, many risky asset valuations remain materially stretched. This heightens the risk of a sharp correction.\n\nStock market volatility has fallen since April, and has recently been below its long-term average. Some risky asset prices across advanced economy corporate bond and equity markets have increased since the July FSR, and risk premia across many risky asset classes remain compressed by historical levels, although have widened somewhat relative to the FPC's October meeting. Economic policy uncertainty remains high, although it has fallen from the levels seen in April (Chart 2.1).\n\nMarkets do not appear to be fully reflecting the persistent material uncertainty in the global economic and policy environment, and the potential for adverse outcomes. Some risks are difficult to price, either because they are very unlikely to occur or their impacts are highly unpredictable. The risk of a sharp correction remains high. If participants were to reassess their outlook abruptly this could cause asset prices to realign to the prevailing high level of uncertainty.\n\nThe risk of a sharp correction sits against a backdrop of rising public debt-to-GDP ratios in many advanced economies, potentially constraining their governments' capacity to respond to future shocks. Significant shocks to the global economic or fiscal outlook, should they materialise, could be amplified by vulnerabilities in market-based finance (MBF), such as leveraged positions in sovereign debt markets.\n\nNotably, equity market valuations for technology companies focused on artificial intelligence (AI) remain materially stretched. On some measures, equity valuations are close to levels not seen since the dot-com bubble in the US, and the global financial crisis in the UK.\n\nEquity indices, including the FTSE 100 index and S&P 500 index, reached all-time highs in the second half of this year. Equity valuations on some measures (for example the excess cyclically-adjusted price-to-earnings (CAPE) yield) look stretched relative to historical levels across jurisdictions, especially in the US where, on some measures, they are close to levels not seen since the dot-com bubble (Chart 2.2). On a three year forward basis - ie accounting for projected earnings growth over the next three years - excess earnings yield over inflation-protected government bonds in the US is also close to levels not seen since the dot-com bubble.\n\nThe equity prices of some large US technology companies focused on AI have continued to increase since the July FSR, although have fallen in recent weeks. The size of these companies has increased concentration in the S&P 500 index to historical highs, with the 'Magnificent 7' accounting for over a third of the index.\n\nSome of these firms are trading at price-multiples that imply high levels of future earnings growth. Whether these earnings will be realised, or even prove underestimates, is uncertain. These prices are exposed to a sharp correction if the prospects for AI development, or for the companies to monetise and generate profits from the use of AI, are revised. Given the concentration of the market, investors exposed to the aggregate index will face a high level of pass through from any sharp correction in AI-focused firms.",
         "text_preview": "### 2.1: Developments in the global risk environment and financial markets\n\nRisks to financial stability have increased during 2025. Global risks remain elevated and material uncertainty in the global"
       }
@@ -691,20 +695,95 @@
   "q14": {
     "question": "What was the MPC's assessment of second-round effects from the Middle East energy shock in March 2026?",
     "category": "deep_context",
-    "answer": "According to the March 2026 Monetary Policy Summary and Committee discussions, the MPC's assessment of second-round effects from the Middle East energy shock was as follows:\n\n**Key Risk Assessment:**\nAccording to paragraph 26, \"The MPC was alert to the increased risk of domestic inflationary pressures through second-round effects in wage and price-setting, the risk of which would be greater the longer higher energy prices persisted.\"\n\n**Specific Concerns Identified:**\nThe MPC highlighted several factors that could amplify second-round effects (paragraph 26):\n- Energy and food prices \"were particularly salient for households' formation of inflation expectations\"\n- \"Households and businesses could have a heightened sensitivity to any new inflationary shock, following successive negative supply shocks in recent times\"\n- This sensitivity \"could lead to self-perpetuating behaviour in wage and price dynamics, which could embed domestic inflationary pressures\"\n\n**Current Evidence:**\nAccording to paragraph 15, \"It was too early to judge how large any second-round effects from the new energy price shock would be through wage and price-setting.\" However, the Committee noted that Bank's Agents estimated basic private sector pay settlements were \"now expected to average 3.6% over 2026, 0.2 percentage points higher than the estimate that had been available at the time of the February Report.\"\n\n**Policy Implications:**\nThe MPC indicated in paragraph 29 that \"A larger or more protracted shock, which risked greater second-round effects in wage and price setting, would require a more restrictive policy stance.\"\n\nThe Committee's assessment was that while second-round risks had increased notably, it was too early to quantify their magnitude, and they would monitor developments closely to assess the need for policy response.",
+    "answer": "According to the March 2026 MPC documents, the Committee had a heightened concern about second-round effects from the Middle East energy shock, though it was too early to assess their full magnitude.\n\n**Key Assessment Points:**\n\nThe MPC was \"alert to the increased risk of domestic inflationary pressures through second-round effects in wage and price-setting, the risk of which would be greater the longer higher energy prices persisted\" (Monetary Policy Summary, March 2026, paragraph 26).\n\n**Factors Increasing Second-Round Risk:**\n\nAccording to paragraph 26 of the March 2026 MPC minutes, the Committee identified several concerning factors:\n- Energy and food prices \"were particularly salient for households' formation of inflation expectations\"\n- \"Households and businesses could have a heightened sensitivity to any new inflationary shock, following successive negative supply shocks in recent times\"\n- This \"could lead to self-perpetuating behaviour in wage and price dynamics, which could embed domestic inflationary pressures\"\n\n**Early Evidence:**\n\nThe documents show some early signs of potential second-round effects. According to paragraph 15 of the March 2026 MPC minutes, \"An updated estimate by the Bank's Agents suggested that basic private sector pay settlements were now expected to average 3.6% over 2026, 0.2 percentage points higher than the estimate that had been available at the time of the February Report.\"\n\nHuw Pill specifically noted that \"upward revisions to the Agents' pay survey, with settlements in 2026 now expected at 3.6%\" reinforced his assessment that \"the potential for second-round effects following recent events in the Middle East remains substantial.\"\n\n**Uncertainty:**\n\nHowever, the Committee acknowledged significant uncertainty. According to paragraph 15, \"It was too early to judge how large any second-round effects from the new energy price shock would be through wage and price-setting.\"\n\nThe MPC indicated it would monitor developments closely, with Sarah Breeden noting that \"The Committee will learn more by its April meeting about the scale and duration of the shock, as well as its possible second-round effects.\"",
     "pipeline_name": "enhanced",
     "chunks_retrieved": 10,
     "chunks_used": 5,
+    "crag_rewrites": 0,
+    "hallucination_retries": 0,
+    "is_grounded": true,
+    "metadata_filters_used": {
+      "date": "2026-03"
+    },
+    "pipeline_trace": [
+      "analyze_query",
+      "retrieve",
+      "grade_documents",
+      "rerank",
+      "generate",
+      "check_hallucination"
+    ],
+    "pre_rerank_ids": [
+      "mpc_2026_03_policy_discussion_001",
+      "mpc_2026_03_policy_discussion_005",
+      "mpc_2026_03_individual_statement_010",
+      "mpc_2026_03_policy_discussion_003",
+      "mpc_2026_03_policy_discussion_004",
+      "mpc_2026_03_individual_statement_013",
+      "mpc_2026_03_individual_statement_012",
+      "mpc_2026_03_individual_statement_015",
+      "mpc_2026_03_individual_statement_016"
+    ],
+    "post_rerank_ids": [
+      "mpc_2026_03_policy_discussion_001",
+      "mpc_2026_03_individual_statement_015",
+      "mpc_2026_03_policy_discussion_005",
+      "mpc_2026_03_policy_discussion_004",
+      "mpc_2026_03_individual_statement_010"
+    ],
+    "sources": [
+      {
+        "chunk_id": "mpc_2026_03_policy_discussion_001",
+        "score": 0.96306777,
+        "text": "## Monetary Policy Summary, March 2026\n\nAt its meeting ending on 18 March 2026, the Monetary Policy Committee (MPC) voted unanimously to maintain Bank Rate at 3.75%.\n\nConflict in the Middle East has caused a significant increase in global energy and other commodity prices, which will affect households' fuel and utility prices and have indirect effects via businesses' costs. Prior to this, there had been continued disinflation in domestic prices and wages. CPI inflation will be higher in the near term as a result of the new shock to the economy.\n\nMonetary policy cannot influence global energy prices but aims to ensure that the economic adjustment to them occurs in a way that achieves the 2% target sustainably. The MPC is alert to the increased risk of domestic inflationary pressures through second-round effects in wage and price-setting, the risk of which will be greater the longer higher energy prices persist. The MPC is also assessing the implications for inflation of the weakening in economic activity that is likely to result from higher energy costs.\n\nThe Committee will continue to monitor closely the situation in the Middle East and its impact on global energy supply and energy prices. It stands ready to act as necessary to ensure that CPI inflation remains on track to meet the 2% target in the medium term.",
+        "text_preview": "## Monetary Policy Summary, March 2026\n\nAt its meeting ending on 18 March 2026, the Monetary Policy Committee (MPC) voted unanimously to maintain Bank Rate at 3.75%.\n\nConflict in the Middle East has c"
+      },
+      {
+        "chunk_id": "mpc_2026_03_individual_statement_015",
+        "score": 0.79845446,
+        "text": "**Huw Pill:** Events in the Middle East have imparted an inflationary impulse to the UK economy via their impact on global energy prices. In the first instance, this impulse transmits through higher fuel and utilities prices (direct effects) and the pass-through of higher input costs into other consumer prices (indirect effects). Owing to lags in transmission, monetary policy can do little to dampen the resulting short-term volatility in inflation. But monetary policy must contain potential second-round effects that would otherwise exert a more lasting impact on CPI inflation. I continue to believe structural change in price and wage-setting behaviour over the past decade has made the propagation of inflationary impulses more persistent than in the past. This assessment has been reinforced by upward revisions to the Agents' pay survey, with settlements in 2026 now expected at 3.6%. As such, the potential for second-round effects following recent events in the Middle East remains substantial, justifying caution in monetary policy setting. While financial conditions have tightened in recent weeks, whether this proves sufficient to contain potential upside risks to price stability stemming from energy prices is an open question. I remain alert to those risks and stand ready to act if they intensify.",
+        "text_preview": "**Huw Pill:** Events in the Middle East have imparted an inflationary impulse to the UK economy via their impact on global energy prices. In the first instance, this impulse transmits through higher f"
+      },
+      {
+        "chunk_id": "mpc_2026_03_policy_discussion_005",
+        "score": 0.7845341,
+        "text": "### Overview and the Committee's discussions\n\n20: The recent conflict in the Middle East, and the consequent disruption to oil and gas supply, had led to a significant increase in wholesale energy prices since the MPC's previous meeting. Monetary policy could not influence global energy prices but aimed to ensure that the economic adjustment to these prices occurred in a way that achieved the 2% inflation target sustainably.\n\n21: Prior to these events, there had been continued disinflation in the UK. This partly reflected the restrictive stance of monetary policy, and was consistent with subdued economic growth and building slack in the labour market.\n\n22: In light of the new, and potentially large, external supply shock, the Committee's discussions at this meeting focused on: what was known at this stage and what was likely to be known in the near future; its approach to considering the risks around a new medium-term outlook; and the potential implications for monetary policy.\n\n23: The near-term outlook for CPI inflation had risen relative to the February Report projection. Increased energy prices would impact near-term inflation directly via increased household fuel and utilities prices, and indirectly as business' energy-related costs would also be affected. Preliminary staff estimates, based on energy price developments in the run-up to this meeting, indicated that CPI inflation was now likely to be between 3 and 31\u20442% over the next couple of quarters. In the February Report, CPI had previously been expected to fall back to around the 2% target from April, partly owing to measures in Budget 2025.\n\n24: The first-round impact on inflation from global factors would depend on the scale and duration of the conflict, and its impact on energy and other commodities markets. The Committee noted that even a short-lived conflict was likely to lead to a delay in restoring energy production back to normal levels, as well as the possibility of lingering instability, that could leave energy prices elevated for a period of time. A more protracted conflict could result in broader supply chain disruptions that could push up inflation further, for example owing to disrupted air and sea transport logistics, impacts on fertiliser supply, and trade disruption.\n\n25: Taking into account the lags with which changes in Bank Rate were transmitted, the most important factor in setting policy would be how medium-term inflation was affected by this supply shock. The MPC was assessing a range of risks to medium-term inflation in both directions, although upside risks appeared to have increased most notably since February.\n\n26: The MPC was alert to the increased risk of domestic inflationary pressures through second-round effects in wage and price-setting, the risk of which would be greater the longer higher energy prices persisted. Energy and food prices, which were expected to rise, were particularly salient for households' formation of inflation expectations. And households and businesses could have a heightened sensitivity to any new inflationary shock, following successive negative supply shocks in recent times. This could lead to self-perpetuating behaviour in wage and price dynamics, which could embed domestic inflationary pressures.\n\n27: The MPC was also assessing the implications for inflation from the weakening in economic activity that was likely to result from higher energy costs. In contrast to the energy price shock in 2022, this shock was occurring at a point when growth was below potential and the economy was operating with a margin of spare capacity. Increases in household fuel and utility costs, and other prices, would squeeze real incomes. Household and business confidence could deteriorate and precautionary saving could rise, further weighing on demand. This could result in a more rapid or larger rise in unemployment. These factors could widen the output gap somewhat, potentially constraining second-round effects.\n\n28: Monetary policy had been judged to have been somewhat restrictive prior to the shock. The market-implied path for Bank Rate had shifted up significantly since the MPC's previous meeting, and financial conditions had tightened. Against that backdrop, the Committee would continue to monitor and assess developments closely.\n\n29: Members agreed that developments over the next six weeks could shed light on the likely scale and duration of the conflict, as well as providing some early evidence on the likely propagation of the shock. There was a range of possibilities for how monetary policy might need to respond to different developments and risks. A larger or more protracted shock, which risked greater second-round effects in wage and price setting, would require a more restrictive policy stance. Conversely, policy would need to be less restrictive if the shock was very short-lived, or if there were to be a larger opening up of slack in the economy that was expected to reduce medium-term inflationary pressures. The MPC would act as necessary to ensure the 2% target was met sustainably.",
+        "text_preview": "### Overview and the Committee's discussions\n\n20: The recent conflict in the Middle East, and the consequent disruption to oil and gas supply, had led to a significant increase in wholesale energy pri"
+      },
+      {
+        "chunk_id": "mpc_2026_03_policy_discussion_004",
+        "score": 0.71113056,
+        "text": "### UK current economic conditions\n\n10: There had been only limited news in the near-term domestic outlook prior to the Middle East conflict. Twelve-month UK CPI inflation had fallen to 3.0% in January from 3.4% in December. This was 0.1 percentage points above the short-term forecast published in the February Report, largely due to a smaller-than-expected fall in services inflation. Services consumer price inflation had been 4.4% in January, 0.2 percentage points above the February Report forecast. Higher frequency measures of underlying services inflation had picked up a little. In light of this data news, CPI inflation was now expected to be a little over 3% in February.\n\n11: Volatility in oil and gas prices had made the short-term outlook for inflation particularly uncertain, but recent increases in energy prices would delay the return of CPI inflation to the 2% target that had been expected at the time of the February Report. The immediate effect would be through higher fuel prices. Based on energy prices as of close of business on 16 March, CPI inflation was now expected to be close to 31\u20442% in March, almost 1\u20442 percentage point higher than expected in the February Report.\n\n12: CPI inflation had previously been projected to fall in 2026 Q2, as previous one-off price increases in April 2025 dropped out of the year-on-year comparison alongside the disinflationary effect of the 2025 Budget. Given higher fuel prices, the decline between Q1 and Q2 was now projected to be modest. CPI inflation was expected to be around 3% in Q2 rather than 2.1% in the February Report.\n\n13: Higher wholesale gas prices would have minimal impact on household utility bills in the near term because the Ofgem price cap for April to June had already been determined. However, if current wholesale conditions persisted, they were likely to feed through mechanically into a higher price cap from July. Based on the oil and gas futures curves as of 16 March, Bank staff projections suggested that the direct contribution of energy prices to CPI inflation in 2026 Q3 would be around 3\u20444 percentage points.\n\n14: If they were to occur quickly, indirect effects from firms passing on higher energy costs to consumer prices could further push up CPI inflation by around 1\u20444 percentage point in 2026 Q3. The eventual scale and timing of such indirect effects was uncertain. Taken together with the expected direct effects, and conditioned on energy prices in the run-up to this meeting, CPI inflation could increase to up to 31\u20442% in Q3.\n\n15: It was too early to judge how large any second-round effects from the new energy price shock would be through wage and price-setting. Prior to recent developments in energy prices, annual growth in private sector regular Average Weekly Earnings in the three months to January had been 3.3%, below the forecast in the February Report. An updated estimate by the Bank's Agents suggested that basic private sector pay settlements were now expected to average 3.6% over 2026, 0.2 percentage points higher than the estimate that had been available at the time of the February Report.\n\n16: There had been some declines in inflation expectations ahead of the Middle East conflict. The latest Bank/Ipsos and Citi measures of year-ahead expected inflation had both fallen. The Decision Maker Panel survey had reported that firms' year-ahead own-price inflation expectations in the three months to February had edged down slightly. Timelier financial market-based measures of inflation compensation had increased since the conflict started, with near-term measures having increased markedly and by much more so than medium-term measures.\n\n17: UK GDP had expanded by 0.1% in 2025 Q4, slightly below the 0.2% rate expected in the February Report. Notwithstanding some divergence in the signal from different business surveys, activity had remained subdued in 2026 Q1 with monthly GDP flat in January. Bank staff continued to estimate that underlying quarterly GDP growth for Q1 would be around 0.1 to 0.2%.\n\n18: Labour demand had remained weak. The Labour Force Survey unemployment rate had been 5.2% in the three months to January, unchanged from December and close to the expectation in the February Report. Employment growth had remained subdued, while the vacancies-to-unemployment ratio had remained below the Bank staff estimate of its equilibrium rate.\n\n19: It was too early to assess the full impact of recent developments in the Middle East on bank lending conditions in the United Kingdom. Term Overnight Indexed Swap rates had increased to levels previously seen in early 2025. Some mortgage lenders had increased the interest rates quoted on new mortgage products as a result. Despite a slowing in January, annual growth in the M4ex measure of broad money had remained robust at 3.6%.",
+        "text_preview": "### UK current economic conditions\n\n10: There had been only limited news in the near-term domestic outlook prior to the Middle East conflict. Twelve-month UK CPI inflation had fallen to 3.0% in Januar"
+      },
+      {
+        "chunk_id": "mpc_2026_03_individual_statement_010",
+        "score": 0.5402697,
+        "text": "**Sarah Breeden:** Conflict in the Middle East has significantly shifted the outlook for inflation. Absent this shock, the underlying disinflation process had continued broadly as I expected and, consistent with my vote in February, I would have expected to vote for a cut again in March. But the conflict will have a significant, though at this point highly uncertain, impact on inflation. I associate myself strongly with the MPC's collective assessment and communications at this meeting. Monetary policy cannot influence global energy and commodity prices, but it can and it must aim to ensure that the economic adjustment to them occurs in a way that achieves the 2% target sustainably. How that adjustment occurs is hugely uncertain, with risks to both sides, and I vote to hold at this meeting. The Committee will learn more by its April meeting about the scale and duration of the shock, as well as its possible second-round effects, and so the implications for monetary policy.",
+        "text_preview": "**Sarah Breeden:** Conflict in the Middle East has significantly shifted the outlook for inflation. Absent this shock, the underlying disinflation process had continued broadly as I expected and, cons"
+      }
+    ]
+  },
+  "q15": {
+    "question": "What asymmetric policy risk argument did Lombardelli make in November 2025?",
+    "category": "deep_context",
+    "answer": "According to the November 2025 MPC minutes, Clare Lombardelli made an asymmetric policy risk argument favoring caution in cutting Bank Rate. Specifically, she stated: \"I am more concerned about the costs of cutting rates too quickly than too slowly, including the risks to credibility from any potential policy reversal that is not in response to a new shock.\"\n\nLombardelli elaborated on this asymmetric risk view by noting that \"future policy reversal could be costly for policy credibility\" and that she was \"uncertain about the amount of restriction that our current policy stance is imparting.\" She argued this uncertainty \"calls for retaining policy restriction and, all else equal, could require slowing the pace of future policy easing.\"\n\nHer asymmetric risk assessment was based on concerns about upside risks to inflation, including elevated wage growth that showed little signs of disinflation according to forward-looking indicators, and uncertainty about how much restrictiveness current monetary policy was actually providing to the economy.",
+    "pipeline_name": "enhanced",
+    "chunks_retrieved": 10,
+    "chunks_used": 3,
     "crag_rewrites": 1,
     "hallucination_retries": 0,
     "is_grounded": true,
     "metadata_filters_used": {
       "$and": [
         {
-          "document_type": "MPR"
+          "date": "2025-11"
         },
         {
-          "date": "2026-03"
+          "section_category": "individual_statement"
+        },
+        {
+          "speaker": "Francesca Lombardelli"
         }
       ]
     },
@@ -720,95 +799,33 @@
       "check_hallucination"
     ],
     "pre_rerank_ids": [
-      "mpc_2026_03_policy_discussion_001",
-      "mpc_2026_03_policy_discussion_005",
-      "mpc_2026_03_individual_statement_010",
-      "mpc_2026_03_individual_statement_012",
-      "mpc_2026_03_policy_discussion_004"
+      "mpc_2026_02_individual_statement_008",
+      "mpc_2025_11_policy_discussion_005",
+      "mpc_2025_12_individual_statement_017"
     ],
     "post_rerank_ids": [
-      "mpc_2026_03_policy_discussion_001",
-      "mpc_2026_03_policy_discussion_005",
-      "mpc_2026_03_individual_statement_012",
-      "mpc_2026_03_policy_discussion_004",
-      "mpc_2026_03_individual_statement_010"
+      "mpc_2025_12_individual_statement_017",
+      "mpc_2026_02_individual_statement_008",
+      "mpc_2025_11_policy_discussion_005"
     ],
     "sources": [
       {
-        "chunk_id": "mpc_2026_03_policy_discussion_001",
-        "score": 0.94620544,
-        "text": "## Monetary Policy Summary, March 2026\n\nAt its meeting ending on 18 March 2026, the Monetary Policy Committee (MPC) voted unanimously to maintain Bank Rate at 3.75%.\n\nConflict in the Middle East has caused a significant increase in global energy and other commodity prices, which will affect households' fuel and utility prices and have indirect effects via businesses' costs. Prior to this, there had been continued disinflation in domestic prices and wages. CPI inflation will be higher in the near term as a result of the new shock to the economy.\n\nMonetary policy cannot influence global energy prices but aims to ensure that the economic adjustment to them occurs in a way that achieves the 2% target sustainably. The MPC is alert to the increased risk of domestic inflationary pressures through second-round effects in wage and price-setting, the risk of which will be greater the longer higher energy prices persist. The MPC is also assessing the implications for inflation of the weakening in economic activity that is likely to result from higher energy costs.\n\nThe Committee will continue to monitor closely the situation in the Middle East and its impact on global energy supply and energy prices. It stands ready to act as necessary to ensure that CPI inflation remains on track to meet the 2% target in the medium term.",
-        "text_preview": "## Monetary Policy Summary, March 2026\n\nAt its meeting ending on 18 March 2026, the Monetary Policy Committee (MPC) voted unanimously to maintain Bank Rate at 3.75%.\n\nConflict in the Middle East has c"
+        "chunk_id": "mpc_2025_12_individual_statement_017",
+        "score": 0.59457535,
+        "text": "**Clare Lombardelli:** I continue to be more concerned by the upside risks to inflation, despite growth and inflation data since November having softened at the margin. The Budget should mechanically reduce annual inflation in salient categories, reducing the risk of second-round effects, but in absolute terms underlying inflation is still well above target-consistent rates. Disinflation in wage growth will be crucial in returning inflation sustainably to target, yet forward-looking indicators of wage growth from the DMP and Agents suggest little disinflation in wages over the next year. Elevated wage growth contrasts with softening labour market quantities. This could indicate structural issues in the economy which would sustain greater inflation persistence than embodied in the November central projection. I am also uncertain about the amount of restriction that our current policy stance is imparting, where signals across the data are mixed, and future policy reversal could be costly for policy credibility. This calls for retaining policy restriction and, all else equal, could require slowing the pace of future policy easing.",
+        "text_preview": "**Clare Lombardelli:** I continue to be more concerned by the upside risks to inflation, despite growth and inflation data since November having softened at the margin. The Budget should mechanically "
       },
       {
-        "chunk_id": "mpc_2026_03_policy_discussion_005",
-        "score": 0.826278,
-        "text": "### Overview and the Committee's discussions\n\n20: The recent conflict in the Middle East, and the consequent disruption to oil and gas supply, had led to a significant increase in wholesale energy prices since the MPC's previous meeting. Monetary policy could not influence global energy prices but aimed to ensure that the economic adjustment to these prices occurred in a way that achieved the 2% inflation target sustainably.\n\n21: Prior to these events, there had been continued disinflation in the UK. This partly reflected the restrictive stance of monetary policy, and was consistent with subdued economic growth and building slack in the labour market.\n\n22: In light of the new, and potentially large, external supply shock, the Committee's discussions at this meeting focused on: what was known at this stage and what was likely to be known in the near future; its approach to considering the risks around a new medium-term outlook; and the potential implications for monetary policy.\n\n23: The near-term outlook for CPI inflation had risen relative to the February Report projection. Increased energy prices would impact near-term inflation directly via increased household fuel and utilities prices, and indirectly as business' energy-related costs would also be affected. Preliminary staff estimates, based on energy price developments in the run-up to this meeting, indicated that CPI inflation was now likely to be between 3 and 31\u20442% over the next couple of quarters. In the February Report, CPI had previously been expected to fall back to around the 2% target from April, partly owing to measures in Budget 2025.\n\n24: The first-round impact on inflation from global factors would depend on the scale and duration of the conflict, and its impact on energy and other commodities markets. The Committee noted that even a short-lived conflict was likely to lead to a delay in restoring energy production back to normal levels, as well as the possibility of lingering instability, that could leave energy prices elevated for a period of time. A more protracted conflict could result in broader supply chain disruptions that could push up inflation further, for example owing to disrupted air and sea transport logistics, impacts on fertiliser supply, and trade disruption.\n\n25: Taking into account the lags with which changes in Bank Rate were transmitted, the most important factor in setting policy would be how medium-term inflation was affected by this supply shock. The MPC was assessing a range of risks to medium-term inflation in both directions, although upside risks appeared to have increased most notably since February.\n\n26: The MPC was alert to the increased risk of domestic inflationary pressures through second-round effects in wage and price-setting, the risk of which would be greater the longer higher energy prices persisted. Energy and food prices, which were expected to rise, were particularly salient for households' formation of inflation expectations. And households and businesses could have a heightened sensitivity to any new inflationary shock, following successive negative supply shocks in recent times. This could lead to self-perpetuating behaviour in wage and price dynamics, which could embed domestic inflationary pressures.\n\n27: The MPC was also assessing the implications for inflation from the weakening in economic activity that was likely to result from higher energy costs. In contrast to the energy price shock in 2022, this shock was occurring at a point when growth was below potential and the economy was operating with a margin of spare capacity. Increases in household fuel and utility costs, and other prices, would squeeze real incomes. Household and business confidence could deteriorate and precautionary saving could rise, further weighing on demand. This could result in a more rapid or larger rise in unemployment. These factors could widen the output gap somewhat, potentially constraining second-round effects.\n\n28: Monetary policy had been judged to have been somewhat restrictive prior to the shock. The market-implied path for Bank Rate had shifted up significantly since the MPC's previous meeting, and financial conditions had tightened. Against that backdrop, the Committee would continue to monitor and assess developments closely.\n\n29: Members agreed that developments over the next six weeks could shed light on the likely scale and duration of the conflict, as well as providing some early evidence on the likely propagation of the shock. There was a range of possibilities for how monetary policy might need to respond to different developments and risks. A larger or more protracted shock, which risked greater second-round effects in wage and price setting, would require a more restrictive policy stance. Conversely, policy would need to be less restrictive if the shock was very short-lived, or if there were to be a larger opening up of slack in the economy that was expected to reduce medium-term inflationary pressures. The MPC would act as necessary to ensure the 2% target was met sustainably.",
-        "text_preview": "### Overview and the Committee's discussions\n\n20: The recent conflict in the Middle East, and the consequent disruption to oil and gas supply, had led to a significant increase in wholesale energy pri"
+        "chunk_id": "mpc_2026_02_individual_statement_008",
+        "score": 0.5863576,
+        "text": "**Clare Lombardelli:** Overallthedatacontinuebroadly toshowstrengthinwagesand underlying inflation, weak activity and softening employment. While the near-term fall in CPI inflation should reduce second-round effects, it is not assured that wage growth will return to target-consistent rates (Box A). The recent recovery in productivity is likely cyclical. Structural productivity growth, which has been weak since the financial crisis, may not recover to the extent that Bank staff estimate (Box C). I remain concerned about both upside and downside risks to inflation. The labour market has loosened materially, from an extremely tight starting point, but it is unclear how much downward pressure this is putting on inflation. The current degree of restrictiveness is uncertain (Box E), although evidence on credit does not suggest monetary policy is weighing heavily on the economy. Taken together, I prefer to hold Bank Rate at its current level. I am more concerned about the costs of cutting rates too quickly than too slowly, including the risks to credibility from any potential policy reversal that is not in response to a new shock.",
+        "text_preview": "**Clare Lombardelli:** Overallthedatacontinuebroadly toshowstrengthinwagesand underlying inflation, weak activity and softening employment. While the near-term fall in CPI inflation should reduce seco"
       },
       {
-        "chunk_id": "mpc_2026_03_individual_statement_012",
-        "score": 0.80070794,
-        "text": "**Megan Greene:** The risk of inflation persistence has risen, perhaps significantly, in light of the negative supply shock from the war in the Middle East. Pre-conflict data showed a mixed picture for the underlying disinflationary process: the Agents revised expected average pay settlements up to 3.6% in 2026; but households' inflation expectations, while still elevated, had dropped significantly. With this new energy shock, preliminary Bank staff estimates suggest CPI inflation will rise above 3% for much of this year, above the threshold at which households are more sensitive to inflation outturns in their expectation setting. There could also be increases in fertiliser and food prices, and both energy and food prices are particularly salient for households' inflation expectations. Inflation has been above target for the best part of five years, and households and businesses are likely to be more sensitive to upside surprises in inflation given successive negative supply shocks. I believe there may be a larger trade-off now than in 2022, but that the impact of this energy shock on inflation is paramount. It is appropriate to hold Bank Rate to learn more about the size and duration of the shock, and the extent of potential second-round effects.",
-        "text_preview": "**Megan Greene:** The risk of inflation persistence has risen, perhaps significantly, in light of the negative supply shock from the war in the Middle East. Pre-conflict data showed a mixed picture fo"
-      },
-      {
-        "chunk_id": "mpc_2026_03_policy_discussion_004",
-        "score": 0.79675186,
-        "text": "### UK current economic conditions\n\n10: There had been only limited news in the near-term domestic outlook prior to the Middle East conflict. Twelve-month UK CPI inflation had fallen to 3.0% in January from 3.4% in December. This was 0.1 percentage points above the short-term forecast published in the February Report, largely due to a smaller-than-expected fall in services inflation. Services consumer price inflation had been 4.4% in January, 0.2 percentage points above the February Report forecast. Higher frequency measures of underlying services inflation had picked up a little. In light of this data news, CPI inflation was now expected to be a little over 3% in February.\n\n11: Volatility in oil and gas prices had made the short-term outlook for inflation particularly uncertain, but recent increases in energy prices would delay the return of CPI inflation to the 2% target that had been expected at the time of the February Report. The immediate effect would be through higher fuel prices. Based on energy prices as of close of business on 16 March, CPI inflation was now expected to be close to 31\u20442% in March, almost 1\u20442 percentage point higher than expected in the February Report.\n\n12: CPI inflation had previously been projected to fall in 2026 Q2, as previous one-off price increases in April 2025 dropped out of the year-on-year comparison alongside the disinflationary effect of the 2025 Budget. Given higher fuel prices, the decline between Q1 and Q2 was now projected to be modest. CPI inflation was expected to be around 3% in Q2 rather than 2.1% in the February Report.\n\n13: Higher wholesale gas prices would have minimal impact on household utility bills in the near term because the Ofgem price cap for April to June had already been determined. However, if current wholesale conditions persisted, they were likely to feed through mechanically into a higher price cap from July. Based on the oil and gas futures curves as of 16 March, Bank staff projections suggested that the direct contribution of energy prices to CPI inflation in 2026 Q3 would be around 3\u20444 percentage points.\n\n14: If they were to occur quickly, indirect effects from firms passing on higher energy costs to consumer prices could further push up CPI inflation by around 1\u20444 percentage point in 2026 Q3. The eventual scale and timing of such indirect effects was uncertain. Taken together with the expected direct effects, and conditioned on energy prices in the run-up to this meeting, CPI inflation could increase to up to 31\u20442% in Q3.\n\n15: It was too early to judge how large any second-round effects from the new energy price shock would be through wage and price-setting. Prior to recent developments in energy prices, annual growth in private sector regular Average Weekly Earnings in the three months to January had been 3.3%, below the forecast in the February Report. An updated estimate by the Bank's Agents suggested that basic private sector pay settlements were now expected to average 3.6% over 2026, 0.2 percentage points higher than the estimate that had been available at the time of the February Report.\n\n16: There had been some declines in inflation expectations ahead of the Middle East conflict. The latest Bank/Ipsos and Citi measures of year-ahead expected inflation had both fallen. The Decision Maker Panel survey had reported that firms' year-ahead own-price inflation expectations in the three months to February had edged down slightly. Timelier financial market-based measures of inflation compensation had increased since the conflict started, with near-term measures having increased markedly and by much more so than medium-term measures.\n\n17: UK GDP had expanded by 0.1% in 2025 Q4, slightly below the 0.2% rate expected in the February Report. Notwithstanding some divergence in the signal from different business surveys, activity had remained subdued in 2026 Q1 with monthly GDP flat in January. Bank staff continued to estimate that underlying quarterly GDP growth for Q1 would be around 0.1 to 0.2%.\n\n18: Labour demand had remained weak. The Labour Force Survey unemployment rate had been 5.2% in the three months to January, unchanged from December and close to the expectation in the February Report. Employment growth had remained subdued, while the vacancies-to-unemployment ratio had remained below the Bank staff estimate of its equilibrium rate.\n\n19: It was too early to assess the full impact of recent developments in the Middle East on bank lending conditions in the United Kingdom. Term Overnight Indexed Swap rates had increased to levels previously seen in early 2025. Some mortgage lenders had increased the interest rates quoted on new mortgage products as a result. Despite a slowing in January, annual growth in the M4ex measure of broad money had remained robust at 3.6%.",
-        "text_preview": "### UK current economic conditions\n\n10: There had been only limited news in the near-term domestic outlook prior to the Middle East conflict. Twelve-month UK CPI inflation had fallen to 3.0% in Januar"
-      },
-      {
-        "chunk_id": "mpc_2026_03_individual_statement_010",
-        "score": 0.70067,
-        "text": "**Sarah Breeden:** Conflict in the Middle East has significantly shifted the outlook for inflation. Absent this shock, the underlying disinflation process had continued broadly as I expected and, consistent with my vote in February, I would have expected to vote for a cut again in March. But the conflict will have a significant, though at this point highly uncertain, impact on inflation. I associate myself strongly with the MPC's collective assessment and communications at this meeting. Monetary policy cannot influence global energy and commodity prices, but it can and it must aim to ensure that the economic adjustment to them occurs in a way that achieves the 2% target sustainably. How that adjustment occurs is hugely uncertain, with risks to both sides, and I vote to hold at this meeting. The Committee will learn more by its April meeting about the scale and duration of the shock, as well as its possible second-round effects, and so the implications for monetary policy.",
-        "text_preview": "**Sarah Breeden:** Conflict in the Middle East has significantly shifted the outlook for inflation. Absent this shock, the underlying disinflation process had continued broadly as I expected and, cons"
-      }
-    ]
-  },
-  "q15": {
-    "question": "What asymmetric policy risk argument did Lombardelli make in November 2025?",
-    "category": "deep_context",
-    "answer": "I cannot fully answer this question based on the provided source document. While the document contains a statement from Clare Lombardelli discussing asymmetric policy risks, it is not identified as being from \"November 2025 MPC minutes\" or any other specific dated BoE document that would allow me to confirm this is from November 2025.\n\nHowever, the statement does show Lombardelli making an asymmetric policy risk argument. According to the provided text, Lombardelli argued that there are asymmetric risks favoring maintaining restrictive policy because:\n\n1. \"we have plenty of policy space to lower Bank Rate should it be necessary\" if the economy weakens further\n2. \"a policy reversal would be costly for the MPC's credibility\" if inflationary pressures prove more persistent than expected\n\nShe expressed concern that \"there may be more underlying inflationary pressure in the economy than embodied in the central projection\" due to structural labor market changes and changed wage/price-setting behavior, which \"may mean there is less slack in the economy, leading to more persistent inflationary pressures.\"\n\nTo provide a complete answer with proper citation to the November 2025 MPC minutes, I would need the source document to be clearly identified with its official title and date.",
-    "pipeline_name": "enhanced",
-    "chunks_retrieved": 1,
-    "chunks_used": 1,
-    "crag_rewrites": 0,
-    "hallucination_retries": 0,
-    "is_grounded": true,
-    "metadata_filters_used": {
-      "$and": [
-        {
-          "date": "2025-11"
-        },
-        {
-          "section_category": "individual_statement"
-        },
-        {
-          "speaker": "Clare Lombardelli"
-        }
-      ]
-    },
-    "pipeline_trace": [
-      "analyze_query",
-      "retrieve",
-      "grade_documents",
-      "rerank",
-      "generate",
-      "check_hallucination"
-    ],
-    "pre_rerank_ids": [
-      "mpc_2025_11_individual_statement_009"
-    ],
-    "post_rerank_ids": [
-      "mpc_2025_11_individual_statement_009"
-    ],
-    "sources": [
-      {
-        "chunk_id": "mpc_2025_11_individual_statement_009",
-        "score": 0.4471,
-        "text": "**Clare Lombardelli:** While I expect headline inflation to continue to fall, I worry there may be more underlying inflationary pressure in the economy than embodied in the central projection. Despite recent softer-than-expected data, forward-looking indicators of inflation have been less benign, particularly around pay settlements next year. Structural changes in the labour market (Box F) may mean there is less slack in the economy, leading to more persistent inflationary pressures. Higher inflation expectations and associated threshold effects (Box B and Box C) may have changed wage and price-setting behaviour. In such a scenario, we would need a longer period of restrictive monetary policy to bring inflation sustainably back to target. And it is uncertain how restrictive policy is currently. While I find the ongoing weaker consumption scenario compelling (Box D), we have plenty of policy space to lower Bank Rate should it be necessary, while a policy reversal would be costly for the MPC's credibility.",
-        "text_preview": "**Clare Lombardelli:** While I expect headline inflation to continue to fall, I worry there may be more underlying inflationary pressure in the economy than embodied in the central projection. Despite"
+        "chunk_id": "mpc_2025_11_policy_discussion_005",
+        "score": 0.38401142,
+        "text": "### MPC members' views\n\n20: Members set out the rationale underpinning their individual votes on Bank Rate.\n\nMembers are listed alphabetically under each vote grouping. References in parentheses relate to boxes and sections of the November 2025 Monetary Policy Report. References to scenarios relate to those set out in Section 3 of the November Report.",
+        "text_preview": "### MPC members' views\n\n20: Members set out the rationale underpinning their individual votes on Bank Rate.\n\nMembers are listed alphabetically under each vote grouping. References in parentheses relat"
       }
     ]
   },
@@ -945,7 +962,7 @@
   "q18": {
     "question": "What did Catherine Mann identify as the main driver of the UK's 'consumption gap' in her October 2025 speech?",
     "category": "deep_context",
-    "answer": "Based on the provided document from Catherine Mann's speech, she does not identify a single main driver of the UK's \"consumption gap.\" Instead, she presents multiple contributing factors and emphasizes the complexity of the issue.\n\nAccording to the speech, Mann defines the consumption gap as \"the persistent deviation of real consumption volumes from trend growth\" and notes that \"real consumption has flatlined\" since the pandemic and energy shock from Russia's invasion of Ukraine, even though \"nominal spending has returned to its historical trend.\"\n\nThe key factors Mann identifies as contributing to the consumption gap include:\n\n1. **Real disposable income effects**: She notes that \"real disposable incomes (in purple), which have shifted even further below trend than real incomes. Partly responsible for this are frozen tax brackets, which (particularly in light of higher inflation) have dragged on households' real disposable incomes, and consequently, their ability to spend, but higher interest payable has contributed to the downward shift in real incomes, too.\"\n\n2. **Scarring effects from inflation**: Mann presents evidence that \"consumers have become more sensitive to price changes overall\" and that \"households' experiences during the inflation surge have affected their consumption behavior even after inflation has moderated.\"\n\n3. **Monetary policy transmission**: She acknowledges that \"higher interest rates have a role to play in consumption weakness\" through various channels affecting household spending.\n\n4. **Increased uncertainty**: She discusses how \"heightened uncertainty can encourage households to become more precautionary and build higher saving buffers, which drags on consumption.\"\n\nHowever, Mann does not definitively state which of these is the \"main\" driver, instead presenting them as interconnected factors requiring further analysis to understand their relative contributions to the consumption gap.",
+    "answer": "Based on the provided document from Catherine Mann's speech, she does not identify a single main driver of the UK's \"consumption gap.\" Instead, she presents multiple contributing factors and emphasizes the complexity of the issue.\n\nAccording to the speech, Mann defines the consumption gap as \"the persistent deviation of real consumption volumes from trend growth\" and notes that \"real consumption has flatlined\" since the pandemic and energy shock from Russia's invasion of Ukraine, even though \"nominal spending has returned to its historical trend.\"\n\nThe key factors Mann identifies as contributing to the consumption gap include:\n\n1. **Real disposable income effects**: She notes that \"real disposable incomes (in purple), which have shifted even further below trend than real incomes. Partly responsible for this are frozen tax brackets, which (particularly in light of higher inflation) have dragged on households' real disposable incomes, and consequently, their ability to spend, but higher interest payable has contributed to the downward shift in real incomes, too.\"\n\n2. **Scarring effects from inflation**: The speech presents evidence that \"consumers have become more sensitive to price changes overall\" and that \"households' experiences during the inflation surge have affected their consumption behavior even after inflation has moderated.\"\n\n3. **Monetary policy transmission**: Mann acknowledges that \"higher interest rates have a role to play in consumption weakness\" through various channels affecting household spending.\n\n4. **Increased uncertainty**: She discusses how \"heightened uncertainty can encourage households to become more precautionary and build higher saving buffers, which drags on consumption.\"\n\nHowever, Mann does not definitively state which of these is the \"main\" driver, instead presenting them as interconnected factors requiring further analysis to understand their relative contributions to the consumption gap.",
     "pipeline_name": "enhanced",
     "chunks_retrieved": 10,
     "chunks_used": 5,
@@ -1161,36 +1178,21 @@
   "q21": {
     "question": "What is the Federal Reserve's view on interest rates?",
     "category": "edge_case_out_of_scope",
-    "answer": "Based on the provided source documents, there is very limited information about the Federal Reserve's view on interest rates.\n\nAccording to paragraph 9 of the monetary and financial conditions section: \"At its meeting ending on 17 September, the Federal Reserve's Federal Open Market Committee was expected to reduce the federal funds rate by 25 basis points.\"\n\nHowever, this only describes market expectations of Federal Reserve action, not the Federal Reserve's own stated views on interest rates. The documents do not contain enough information about the Federal Reserve's actual perspective, rationale, or broader views on interest rate policy to provide a comprehensive answer to this question.\n\nThe source documents focus primarily on UK monetary policy and conditions, with only brief references to other central banks' actions or expected actions.",
+    "answer": "This question does not appear to be answerable from the Bank of England document corpus.",
     "pipeline_name": "enhanced",
-    "chunks_retrieved": 10,
-    "chunks_used": 1,
+    "chunks_retrieved": 0,
+    "chunks_used": 0,
     "crag_rewrites": 0,
     "hallucination_retries": 0,
-    "is_grounded": true,
+    "is_grounded": null,
     "metadata_filters_used": null,
     "pipeline_trace": [
       "analyze_query",
-      "retrieve",
-      "grade_documents",
-      "rerank",
-      "generate",
-      "check_hallucination"
+      "abstain_out_of_corpus"
     ],
-    "pre_rerank_ids": [
-      "mpc_2025_09_policy_discussion_004"
-    ],
-    "post_rerank_ids": [
-      "mpc_2025_09_policy_discussion_004"
-    ],
-    "sources": [
-      {
-        "chunk_id": "mpc_2025_09_policy_discussion_004",
-        "score": 0.4218,
-        "text": "### Monetary and financial conditions\n\n7: UK financial conditions were a little tighter compared with those at the time of the MPC's previous meeting. This had largely reflected a shift up in the market-implied path for Bank Rate, and some appreciation in the sterling effective exchange rate, with slightly higher equity prices providing a limited offset. It was too soon to see a material impact of either the shift in the market-implied path or August's Bank Rate reduction on the lending rates offered by banks to households and corporates, given the usual lags. More generally, annual growth in aggregate broad money had remained in line with the rate seen in 2025 so far.\n\n8: Market participants had attributed the rise in UK short-term interest rates to the Committee's August and subsequent communications, alongside UK data developments. In contrast, the rise in longer-maturity gilt yields over the same period had been accounted for by global factors to a greater degree, reflecting a continued increase in term premia that was in large part related to the fiscal outlook in advanced economies.\n\n9: At its meeting on 11 September, the European Central Bank Governing Council had maintained its deposit facility rate at 2%, in line with market expectations. At its meeting ending on 17 September, the Federal Reserve's Federal Open Market Committee was expected to reduce the federal funds rate by 25 basis points.\n\n10: Market expectations were for Bank Rate to remain unchanged at this meeting. In the Bank's latest Market Participants Survey (MaPS), the distribution of Bank Rate expectations had shifted upwards relative to the August survey, consistent with the relatively shallower profile of cuts implied by market pricing.\n\n11: The vast majority of MaPS respondents expected the overall pace of reduction in the stock of UK government bond purchases held for monetary policy purposes to be slower over the coming year relative to the preceding 12 months. In recent months, the largest cluster of responses had remained in the \u00a370 to \u00a385 billion range, although the distribution had shifted down such that the latest median expectation was for a stock reduction of \u00a365 billion.",
-        "text_preview": "### Monetary and financial conditions\n\n7: UK financial conditions were a little tighter compared with those at the time of the MPC's previous meeting. This had largely reflected a shift up in the mark"
-      }
-    ]
+    "pre_rerank_ids": [],
+    "post_rerank_ids": [],
+    "sources": []
   },
   "q22": {
     "question": "What does the BoE think about cryptocurrency regulation?",
@@ -1373,7 +1375,7 @@
   "q25": {
     "question": "What did Sarah Breeden argue in her January 2025 Edinburgh speech about identifying shocks?",
     "category": "deep_context",
-    "answer": "Based on the provided speech document, Sarah Breeden made several key arguments about identifying shocks:\n\n**The fundamental importance of shock identification:**\nBreeden argued that \"as monetary policymakers we must stay focused on where the economy might be heading, not where it has been. That means taking a view on which shocks are hitting the economy and how they might play out over time.\"\n\n**The difficulty of real-time shock identification:**\nShe stated that \"It is notoriously hard to know which shocks are hitting the economy in real time. Reasonable people could take different views on the shocks that explain the same set of data.\" She provided examples: \"is a reduction in economic activity a sign of lower domestic demand, lower demand from abroad or a reduction in the supply capacity of the economy? Is a fall in import price inflation a sign of past shocks easing off or a new shock hitting?\"\n\n**The policy consequences of misidentification:**\nBreeden emphasized that \"Attributing data news to the 'wrong' shocks can have material implications for our understanding of the evolution of the economy in the future, and therefore what we should do with monetary policy.\"\n\n**The Bank's approach to shock identification:**\nShe explained that \"At the Bank we do this by drawing on a wide range of hard and soft data, reports from people closer to the ground - such as the intelligence gathered via our Agency network, including from here in Scotland - and a large set of modelling and analytical techniques.\"\n\n**The need for constant vigilance:**\nIn her conclusion, she stated: \"as monetary policymakers we must always be analysing which shocks we think are hitting the economy and what their implications might be for the medium-term inflation outlook. We have to remain flexible and constantly challenge ourselves about how wrong we could be and what that would mean. We must always be reading between the lines.\"",
+    "answer": "Based on the provided speech document, Sarah Breeden made several key arguments about identifying shocks:\n\n**The fundamental challenge of shock identification:**\nBreeden stated that \"It is notoriously hard to know which shocks are hitting the economy in real time. Reasonable people could take different views on the shocks that explain the same set of data.\" She gave examples: \"is a reduction in economic activity a sign of lower domestic demand, lower demand from abroad or a reduction in the supply capacity of the economy? Is a fall in import price inflation a sign of past shocks easing off or a new shock hitting?\"\n\n**Why shock identification matters for policy:**\nShe argued that \"Attributing data news to the 'wrong' shocks can have material implications for our understanding of the evolution of the economy in the future, and therefore what we should do with monetary policy.\"\n\n**The Bank's approach to shock identification:**\nBreeden explained that \"As policymakers we are constantly discussing and revising our views on which shocks best explain what we are seeing in the economy. At the Bank we do this by drawing on a wide range of hard and soft data, reports from people closer to the ground - such as the intelligence gathered via our Agency network, including from here in Scotland - and a large set of modelling and analytical techniques.\"\n\n**Core principle for policymakers:**\nShe emphasized that \"as monetary policymakers we must always be analysing which shocks we think are hitting the economy and what their implications might be for the medium-term inflation outlook. We have to remain flexible and constantly challenge ourselves about how wrong we could be and what that would mean. We must always be reading between the lines.\"\n\nThe speech presents shock identification as both critically important and inherently difficult for monetary policy decisions.",
     "pipeline_name": "enhanced",
     "chunks_retrieved": 9,
     "chunks_used": 5,

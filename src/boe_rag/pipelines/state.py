@@ -50,6 +50,7 @@ class RAGState(TypedDict, total=False):
     rewritten_question: str | None
     metadata_filters: dict | None
     initial_metadata_filters: dict | None   # preserved across rewrite_query (which clears metadata_filters)
+    out_of_corpus: bool                     # written by analyze_query when question is outside BoE scope
     documents: list[dict]
     graded_documents: list[dict]
     pre_rerank_ids: list[str]

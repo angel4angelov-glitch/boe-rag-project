@@ -46,6 +46,7 @@ from boe_rag.pipelines.base import BasePipeline
 from boe_rag.pipelines.nodes import (
     QueryFilters,
     make_abstain_node,
+    make_abstain_out_of_corpus_node,
     make_analyze_query_node,
     make_check_hallucination_node,
     make_generate_node,
@@ -53,6 +54,7 @@ from boe_rag.pipelines.nodes import (
     make_rerank_node,
     make_retrieve_node,
     make_rewrite_query_node,
+    route_after_analyze_query,
     route_after_grading,
     route_after_hallucination,
 )
@@ -186,6 +188,7 @@ class EnhancedPipeline(BasePipeline):
         )
         hallucination_node = make_check_hallucination_node(hallucination_llm)
         abstain_node = make_abstain_node()
+        abstain_oos_node = make_abstain_out_of_corpus_node()
 
         wf = StateGraph(RAGState)
         wf.add_node("analyze_query", analyze_node)
@@ -197,9 +200,19 @@ class EnhancedPipeline(BasePipeline):
         wf.add_node("generate_retry", generate_retry_node)
         wf.add_node("check_hallucination", hallucination_node)
         wf.add_node("abstain", abstain_node)
+        wf.add_node("abstain_out_of_corpus", abstain_oos_node)
 
         wf.add_edge(START, "analyze_query")
-        wf.add_edge("analyze_query", "retrieve")
+        # B1: analyze_query routes to retrieve (normal) OR short-circuits to
+        # abstain_out_of_corpus when the question is outside BoE scope.
+        wf.add_conditional_edges(
+            "analyze_query",
+            route_after_analyze_query,
+            {
+                "retrieve": "retrieve",
+                "abstain_out_of_corpus": "abstain_out_of_corpus",
+            },
+        )
         wf.add_edge("retrieve", "grade_documents")
         wf.add_conditional_edges(
             "grade_documents",
@@ -223,6 +236,7 @@ class EnhancedPipeline(BasePipeline):
         )
         wf.add_edge("generate_retry", "check_hallucination")
         wf.add_edge("abstain", END)
+        wf.add_edge("abstain_out_of_corpus", END)
 
         return wf.compile()
 
