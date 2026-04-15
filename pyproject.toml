@@ -46,6 +46,11 @@ dev = [
     "ipykernel",
     "ruff",
 ]
+service = [
+    "fastapi",
+    "uvicorn[standard]",
+    "httpx",
+]
 
 [build-system]
 requires = ["setuptools>=75.0"]
