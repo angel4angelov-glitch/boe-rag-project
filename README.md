@@ -45,6 +45,30 @@ boe-rag-project/
 - **Evaluation:** RAGAS
 - **Observability (optional):** LangSmith
 
+## HTTP service (optional)
+
+Wrap the pipeline as a FastAPI service for curl / browser access:
+
+```bash
+pip install -e ".[service]"
+uvicorn service.main:app --reload
+```
+
+Then:
+- `POST http://localhost:8000/query` — body `{"question": "...", "pipeline": "enhanced"}`
+- `GET http://localhost:8000/docs` — Swagger UI (auto-generated)
+- `GET http://localhost:8000/health` / `/ready` — liveness + readiness probes
+
+Optional API-key gate: set `SERVICE_API_KEY=...` in `.env` and pass
+`X-API-Key: ...` on every request. When the env var is unset, no auth.
+
+Example:
+```bash
+curl -X POST http://localhost:8000/query \
+     -H "Content-Type: application/json" \
+     -d '{"question":"What was the February 2026 MPC vote split?"}'
+```
+
 ## Observability — LangSmith tracing (optional)
 
 Set the three LangSmith env vars in `.env` to capture every pipeline run
