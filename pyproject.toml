@@ -36,6 +36,7 @@ dependencies = [
     "pandas",
     "tqdm",
     "scipy",
+    "diskcache",
 ]
 
 [project.optional-dependencies]
