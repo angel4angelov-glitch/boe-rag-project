@@ -24,6 +24,16 @@ Outputs written to ``data/evaluation_results/``:
 
 from __future__ import annotations
 
+# Disable LangSmith tracing for RAGAS runs BEFORE any langchain/langsmith
+# import fires. RAGAS fires ~800 evaluator LLM calls per full run; tracing
+# those burns the free-tier 5k/month quota in a single run without any
+# useful signal (the interesting behaviour is in the pipeline, not the
+# judge). langsmith.utils.get_env_var is lru_cached, so it must be off
+# BEFORE the first import resolves it.
+import os
+os.environ["LANGSMITH_TRACING"] = "false"
+os.environ["LANGCHAIN_TRACING_V2"] = "false"
+
 import argparse
 import asyncio
 import csv

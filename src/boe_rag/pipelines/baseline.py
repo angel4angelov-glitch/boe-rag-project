@@ -30,6 +30,7 @@ from boe_rag.config import (
 )
 from boe_rag.indexing.chroma_store import get_collection
 from boe_rag.models import PipelineResult, RetrievedDocument
+from boe_rag.observability import traced_run
 from boe_rag.pipelines.base import BasePipeline
 from boe_rag.pipelines.prompts import BASELINE_PROMPT
 
@@ -47,6 +48,7 @@ class BaselinePipeline(BasePipeline):
             temperature=LLM_TEMPERATURE,
         )
 
+    @traced_run(pipeline_name="baseline")
     def run(self, query: str) -> PipelineResult:
         results = self._collection.query(
             query_texts=[query],
