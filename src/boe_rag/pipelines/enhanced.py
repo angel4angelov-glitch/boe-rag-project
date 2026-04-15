@@ -41,6 +41,7 @@ from boe_rag.config import (
     RERANK_TOP_N,
 )
 from boe_rag.models import PipelineResult, RetrievedDocument
+from boe_rag.observability import traced_run
 from boe_rag.pipelines.base import BasePipeline
 from boe_rag.pipelines.nodes import (
     QueryFilters,
@@ -225,6 +226,7 @@ class EnhancedPipeline(BasePipeline):
 
         return wf.compile()
 
+    @traced_run(pipeline_name="enhanced")
     def run(self, query: str) -> PipelineResult:
         initial: RAGState = {
             "question": query,

@@ -43,3 +43,28 @@ boe-rag-project/
 - **Reranking:** Cohere rerank
 - **Orchestration:** LangGraph
 - **Evaluation:** RAGAS
+- **Observability (optional):** LangSmith
+
+## Observability — LangSmith tracing (optional)
+
+Set the three LangSmith env vars in `.env` to capture every pipeline run
+and LLM call as a nested trace on [smith.langchain.com](https://smith.langchain.com):
+
+```
+LANGSMITH_TRACING=true
+LANGSMITH_API_KEY=lsv2_pt_...
+LANGSMITH_PROJECT=boe-rag
+```
+
+What's captured: `EnhancedPipeline.run` / `BaselinePipeline.run` as a
+parent span, with every `ChatAnthropic` call, retry attempt, and
+LangGraph node execution nested beneath. Filter the dashboard by the
+`pipeline:baseline` / `pipeline:enhanced` tag.
+
+What's NOT captured (raw SDK calls, no LangChain object to wrap):
+ChromaDB queries, Cohere rerank, OpenAI embeddings. These appear as
+opaque node boxes in the trace with their state I/O visible.
+
+Tracing is auto-disabled in tests (`tests/conftest.py`) and during
+RAGAS runs (`scripts/run_ragas.py` top) — the free-tier 5k/month quota
+is preserved for pipeline debugging.
