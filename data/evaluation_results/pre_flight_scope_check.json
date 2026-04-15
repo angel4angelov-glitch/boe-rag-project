@@ -1,0 +1,386 @@
+{
+  "run_metadata": {
+    "timestamp": "2026-04-15T02:14:33.816363+00:00",
+    "model": "claude-sonnet-4-20250514",
+    "temperature": 0.0,
+    "n_queries": 25,
+    "n_mismatches": 0
+  },
+  "results": [
+    {
+      "query_id": "q01",
+      "question": "What was the MPC vote split in February 2026?",
+      "expected_out_of_corpus": false,
+      "actual_out_of_corpus": false,
+      "raw_filters": {
+        "document_type": "MPC_minutes",
+        "date": "2026-02",
+        "section_category": null,
+        "speaker": null,
+        "out_of_corpus": false
+      },
+      "error": null,
+      "match": true
+    },
+    {
+      "query_id": "q02",
+      "question": "What was Brent crude price cited in the March 2026 MPC minutes?",
+      "expected_out_of_corpus": false,
+      "actual_out_of_corpus": false,
+      "raw_filters": {
+        "document_type": "MPC_minutes",
+        "date": "2026-03",
+        "section_category": null,
+        "speaker": null,
+        "out_of_corpus": false
+      },
+      "error": null,
+      "match": true
+    },
+    {
+      "query_id": "q03",
+      "question": "What was the judgement on CPI inflation cited in the November 2025 MPC minutes?",
+      "expected_out_of_corpus": false,
+      "actual_out_of_corpus": false,
+      "raw_filters": {
+        "document_type": "MPC_minutes",
+        "date": "2025-11",
+        "section_category": "inflation",
+        "speaker": null,
+        "out_of_corpus": false
+      },
+      "error": null,
+      "match": true
+    },
+    {
+      "query_id": "q04",
+      "question": "When did the MPC last cut Bank Rate before March 2026?",
+      "expected_out_of_corpus": false,
+      "actual_out_of_corpus": false,
+      "raw_filters": {
+        "document_type": "MPC_minutes",
+        "date": null,
+        "section_category": "policy_discussion",
+        "speaker": null,
+        "out_of_corpus": false
+      },
+      "error": null,
+      "match": true
+    },
+    {
+      "query_id": "q05",
+      "question": "What was the household saving ratio cited in the November 2025 MPR?",
+      "expected_out_of_corpus": false,
+      "actual_out_of_corpus": false,
+      "raw_filters": {
+        "document_type": "MPR",
+        "date": "2025-11",
+        "section_category": null,
+        "speaker": null,
+        "out_of_corpus": false
+      },
+      "error": null,
+      "match": true
+    },
+    {
+      "query_id": "q06",
+      "question": "How did the February 2026 MPR near-term inflation projection differ from November 2025?",
+      "expected_out_of_corpus": false,
+      "actual_out_of_corpus": false,
+      "raw_filters": {
+        "document_type": "MPR",
+        "date": null,
+        "section_category": "inflation",
+        "speaker": null,
+        "out_of_corpus": false
+      },
+      "error": null,
+      "match": true
+    },
+    {
+      "query_id": "q07",
+      "question": "How did the MPC's language on inflation persistence change between November 2025 and February 2026?",
+      "expected_out_of_corpus": false,
+      "actual_out_of_corpus": false,
+      "raw_filters": {
+        "document_type": "MPC_minutes",
+        "date": null,
+        "section_category": "policy_discussion",
+        "speaker": null,
+        "out_of_corpus": false
+      },
+      "error": null,
+      "match": true
+    },
+    {
+      "query_id": "q08",
+      "question": "Compare voting patterns across November 2025, December 2025 and February 2026 MPC meetings",
+      "expected_out_of_corpus": false,
+      "actual_out_of_corpus": false,
+      "raw_filters": {
+        "document_type": "MPC_minutes",
+        "date": null,
+        "section_category": null,
+        "speaker": null,
+        "out_of_corpus": false
+      },
+      "error": null,
+      "match": true
+    },
+    {
+      "query_id": "q09",
+      "question": "How did the BoE's assessment of global risks evolve between July 2025 and December 2025 FSRs?",
+      "expected_out_of_corpus": false,
+      "actual_out_of_corpus": false,
+      "raw_filters": {
+        "document_type": "FSR",
+        "date": null,
+        "section_category": "risk_assessment",
+        "speaker": null,
+        "out_of_corpus": false
+      },
+      "error": null,
+      "match": true
+    },
+    {
+      "query_id": "q10",
+      "question": "What changed in Catherine Mann's policy stance between November 2025 and February 2026?",
+      "expected_out_of_corpus": false,
+      "actual_out_of_corpus": false,
+      "raw_filters": {
+        "document_type": null,
+        "date": null,
+        "section_category": "individual_statement",
+        "speaker": "Catherine Mann",
+        "out_of_corpus": false
+      },
+      "error": null,
+      "match": true
+    },
+    {
+      "query_id": "q11",
+      "question": "What specific consumption weakness scenario did Box D in the November 2025 MPR describe?",
+      "expected_out_of_corpus": false,
+      "actual_out_of_corpus": false,
+      "raw_filters": {
+        "document_type": "MPR",
+        "date": "2025-11",
+        "section_category": "box_analysis",
+        "speaker": null,
+        "out_of_corpus": false
+      },
+      "error": null,
+      "match": true
+    },
+    {
+      "query_id": "q12",
+      "question": "What structural labour market changes did Clare Lombardelli highlight in November 2025?",
+      "expected_out_of_corpus": false,
+      "actual_out_of_corpus": false,
+      "raw_filters": {
+        "document_type": null,
+        "date": "2025-11",
+        "section_category": "individual_statement",
+        "speaker": "Clare Lombardelli",
+        "out_of_corpus": false
+      },
+      "error": null,
+      "match": true
+    },
+    {
+      "query_id": "q13",
+      "question": "What risks from US corporate defaults did the December 2025 FSR identify?",
+      "expected_out_of_corpus": false,
+      "actual_out_of_corpus": false,
+      "raw_filters": {
+        "document_type": "FSR",
+        "date": "2025-12",
+        "section_category": "risk_assessment",
+        "speaker": null,
+        "out_of_corpus": false
+      },
+      "error": null,
+      "match": true
+    },
+    {
+      "query_id": "q14",
+      "question": "What was the MPC's assessment of second-round effects from the Middle East energy shock in March 2026?",
+      "expected_out_of_corpus": false,
+      "actual_out_of_corpus": false,
+      "raw_filters": {
+        "document_type": null,
+        "date": "2026-03",
+        "section_category": null,
+        "speaker": null,
+        "out_of_corpus": false
+      },
+      "error": null,
+      "match": true
+    },
+    {
+      "query_id": "q15",
+      "question": "What asymmetric policy risk argument did Lombardelli make in November 2025?",
+      "expected_out_of_corpus": false,
+      "actual_out_of_corpus": false,
+      "raw_filters": {
+        "document_type": null,
+        "date": "2025-11",
+        "section_category": "individual_statement",
+        "speaker": "Francesca Lombardelli",
+        "out_of_corpus": false
+      },
+      "error": null,
+      "match": true
+    },
+    {
+      "query_id": "q16",
+      "question": "What was the central argument of Alan Taylor's 'last half mile' speech at Leeds in January 2025?",
+      "expected_out_of_corpus": false,
+      "actual_out_of_corpus": false,
+      "raw_filters": {
+        "document_type": "speech",
+        "date": "2025-01",
+        "section_category": "speech_main",
+        "speaker": "Alan Taylor",
+        "out_of_corpus": false
+      },
+      "error": null,
+      "match": true
+    },
+    {
+      "query_id": "q17",
+      "question": "What did Andrew Bailey's February 2025 Chicago Booth speech argue about the scope of central-bank liquidity provision?",
+      "expected_out_of_corpus": false,
+      "actual_out_of_corpus": false,
+      "raw_filters": {
+        "document_type": "speech",
+        "date": "2025-02",
+        "section_category": "speech_main",
+        "speaker": "Andrew Bailey",
+        "out_of_corpus": false
+      },
+      "error": null,
+      "match": true
+    },
+    {
+      "query_id": "q18",
+      "question": "What did Catherine Mann identify as the main driver of the UK's 'consumption gap' in her October 2025 speech?",
+      "expected_out_of_corpus": false,
+      "actual_out_of_corpus": false,
+      "raw_filters": {
+        "document_type": "speech",
+        "date": "2025-10",
+        "section_category": "speech_main",
+        "speaker": "Catherine Mann",
+        "out_of_corpus": false
+      },
+      "error": null,
+      "match": true
+    },
+    {
+      "query_id": "q19",
+      "question": "What did Swati Dhingra argue about trade fragmentation in her February 2025 Dow Lecture?",
+      "expected_out_of_corpus": false,
+      "actual_out_of_corpus": false,
+      "raw_filters": {
+        "document_type": "speech",
+        "date": "2025-02",
+        "section_category": "speech_main",
+        "speaker": "Swati Dhingra",
+        "out_of_corpus": false
+      },
+      "error": null,
+      "match": true
+    },
+    {
+      "query_id": "q20",
+      "question": "What did Dave Ramsden emphasise in his June 2025 labour market speech?",
+      "expected_out_of_corpus": false,
+      "actual_out_of_corpus": false,
+      "raw_filters": {
+        "document_type": "speech",
+        "date": "2025-06",
+        "section_category": "speech_main",
+        "speaker": "Dave Ramsden",
+        "out_of_corpus": false
+      },
+      "error": null,
+      "match": true
+    },
+    {
+      "query_id": "q21",
+      "question": "What is the Federal Reserve's view on interest rates?",
+      "expected_out_of_corpus": true,
+      "actual_out_of_corpus": true,
+      "raw_filters": {
+        "document_type": null,
+        "date": null,
+        "section_category": null,
+        "speaker": null,
+        "out_of_corpus": true
+      },
+      "error": null,
+      "match": true
+    },
+    {
+      "query_id": "q22",
+      "question": "What does the BoE think about cryptocurrency regulation?",
+      "expected_out_of_corpus": false,
+      "actual_out_of_corpus": false,
+      "raw_filters": {
+        "document_type": null,
+        "date": null,
+        "section_category": null,
+        "speaker": null,
+        "out_of_corpus": false
+      },
+      "error": null,
+      "match": true
+    },
+    {
+      "query_id": "q23",
+      "question": "Summarise the entire November 2025 MPR",
+      "expected_out_of_corpus": false,
+      "actual_out_of_corpus": false,
+      "raw_filters": {
+        "document_type": "MPR",
+        "date": "2025-11",
+        "section_category": null,
+        "speaker": null,
+        "out_of_corpus": false
+      },
+      "error": null,
+      "match": true
+    },
+    {
+      "query_id": "q24",
+      "question": "What was the exact GDP growth figure for Q3 2025 cited on page 23 of the November MPR?",
+      "expected_out_of_corpus": false,
+      "actual_out_of_corpus": false,
+      "raw_filters": {
+        "document_type": "MPR",
+        "date": "2025-11",
+        "section_category": null,
+        "speaker": null,
+        "out_of_corpus": false
+      },
+      "error": null,
+      "match": true
+    },
+    {
+      "query_id": "q25",
+      "question": "What did Sarah Breeden argue in her January 2025 Edinburgh speech about identifying shocks?",
+      "expected_out_of_corpus": false,
+      "actual_out_of_corpus": false,
+      "raw_filters": {
+        "document_type": "speech",
+        "date": "2025-01",
+        "section_category": "speech_main",
+        "speaker": "Sarah Breeden",
+        "out_of_corpus": false
+      },
+      "error": null,
+      "match": true
+    }
+  ]
+}

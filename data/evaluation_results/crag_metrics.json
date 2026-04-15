@@ -1,7 +1,7 @@
 {
   "run_metadata": {
-    "timestamp": "2026-04-14T23:47:56.543233+00:00",
-    "git_sha": "024f73fc98d7de6c87b361300442d0afe4061ccf",
+    "timestamp": "2026-04-15T02:55:21.269272+00:00",
+    "git_sha": "e61974ac49b1778660b5cf5672d8d0bc23c9424b",
     "git_dirty": true,
     "ragas_version": "0.4.3",
     "scipy_version": "1.17.1",
@@ -20,20 +20,22 @@
     "rewrite_recovery_rate": 0.4,
     "hallucination_flag_rate": 0.04,
     "hallucination_recovery_rate": 0.8,
-    "metadata_filter_rate": 0.84,
-    "mean_chunks_retrieved": 8.32,
-    "mean_chunks_used": 2.76,
-    "rerank_top1_change_rate": 0.5454545454545454,
-    "abstain_rate": 0.12,
-    "abstain_correctness": 0.0,
+    "metadata_filter_rate": 0.92,
+    "mean_chunks_retrieved": 8.28,
+    "mean_chunks_used": 2.72,
+    "rerank_top1_change_rate": 0.5714285714285714,
+    "abstain_rate": 0.16,
+    "abstain_correctness": 0.25,
+    "should_abstain_recall": 1.0,
     "abstain_ids": [
       "q06",
       "q10",
+      "q21",
       "q24"
     ],
-    "correct_abstain_ids": [],
-    "missed_abstain_ids": [
+    "correct_abstain_ids": [
       "q21"
-    ]
+    ],
+    "missed_abstain_ids": []
   }
 }

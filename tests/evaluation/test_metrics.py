@@ -179,8 +179,45 @@ class TestCRAGMetrics:
         m = compute_crag_metrics(_fixture_enhanced_results(),
                                  should_abstain_ids={"q04"})
         assert m["abstain_rate"] == pytest.approx(1 / 4)
-        # q04 is both "abstained" and "should have" → correct
+        # q04 is both "abstained" and "should have" → correct (precision-style)
         assert m["abstain_correctness"] == pytest.approx(1.0)
+
+    def test_should_abstain_recall_all_captured(self) -> None:
+        """Recall = |abstains ∩ should_abstain| / |should_abstain|.
+
+        Independent of how many false-positive abstains also happen —
+        that's the precision story (`abstain_correctness`).
+        """
+        m = compute_crag_metrics(_fixture_enhanced_results(),
+                                 should_abstain_ids={"q04"})
+        assert m["should_abstain_recall"] == pytest.approx(1.0)
+
+    def test_should_abstain_recall_with_false_positives(self) -> None:
+        """Precision drops when other queries abstain spuriously; recall doesn't."""
+        results = _fixture_enhanced_results()
+        # q01 also abstains (wrongly); q04 abstains (correctly).
+        results["q01"]["answer"] = (
+            "This question does not appear to be answerable from the "
+            "Bank of England document corpus."
+        )
+        m = compute_crag_metrics(results, should_abstain_ids={"q04"})
+        # 2 abstains, 1 correct → precision = 0.5
+        assert m["abstain_correctness"] == pytest.approx(0.5)
+        # recall still 1.0 (q04 was caught)
+        assert m["should_abstain_recall"] == pytest.approx(1.0)
+
+    def test_should_abstain_recall_missed(self) -> None:
+        """q04 should abstain but doesn't → recall = 0."""
+        results = _fixture_enhanced_results()
+        results["q04"]["answer"] = "Real answer that shouldn't have been given."
+        m = compute_crag_metrics(results, should_abstain_ids={"q04"})
+        assert m["should_abstain_recall"] == pytest.approx(0.0)
+
+    def test_should_abstain_recall_none_when_no_should_abstain(self) -> None:
+        """Empty should_abstain set → recall undefined, returned as None."""
+        m = compute_crag_metrics(_fixture_enhanced_results(),
+                                 should_abstain_ids=set())
+        assert m["should_abstain_recall"] is None
 
     def test_rerank_top1_change_rate(self) -> None:
         m = compute_crag_metrics(_fixture_enhanced_results(),

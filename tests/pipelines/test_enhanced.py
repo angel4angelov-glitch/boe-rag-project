@@ -309,3 +309,39 @@ def test_reranking_capture_exposes_pre_post_ordering_via_rerank_score() -> None:
     # sources are in rerank order -> c3 first.
     assert result.sources[0].chunk_id == "c3"
     assert result.sources[1].chunk_id == "c1"
+
+
+# ── B1: out-of-corpus abstain path ─────────────────────────
+
+
+def test_out_of_corpus_short_circuits_to_abstain() -> None:
+    """analyze_query emits out_of_corpus=True → pipeline abstains without
+    retrieving / grading / generating. The trace ends with
+    'abstain_out_of_corpus' (NOT 'abstain' which is the post-grading path).
+    """
+    from boe_rag.pipelines.nodes import ABSTAIN_MESSAGE
+
+    pipeline = _make_pipeline(
+        structured_llm=_StructuredLLM(QueryFilters(out_of_corpus=True)),
+        # These stubs should NEVER be called — if they are, collection.query_calls
+        # or cohere.calls would be non-zero and the assertions below fail.
+        collection=_StubCollection([]),
+        grade_llm=_QueueLLM([]),
+        rewrite_llm=_QueueLLM([]),
+        cohere=_StubCohere(_RerankResp(results=[])),
+        generate_llm=_QueueLLM([]),
+        hallucination_llm=_QueueLLM([]),
+    )
+
+    result = pipeline.run("What is the Fed's view on interest rates?")
+
+    assert result.answer == ABSTAIN_MESSAGE
+    assert result.pipeline_trace[-1] == "abstain_out_of_corpus"
+    assert result.pipeline_trace[0] == "analyze_query"
+    assert len(result.pipeline_trace) == 2  # only analyze_query + abstain
+    assert result.is_grounded is None
+    assert result.chunks_retrieved == 0
+    assert result.chunks_used == 0
+    # Downstream nodes must NOT have been invoked.
+    assert pipeline._collection.query_calls == []
+    assert pipeline._cohere.calls == 0

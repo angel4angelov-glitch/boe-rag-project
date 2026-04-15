@@ -68,11 +68,17 @@ _SectionCategoryLiteral = Literal[
 
 
 class QueryFilters(BaseModel):
-    """Claude-extracted metadata filters. Every field is optional.
+    """Claude-extracted metadata filters + corpus-scope flag. All optional.
 
-    Only fields the LLM is confident about should be populated. ``None`` on
-    every field means "use an unfiltered search" — grading and reranking
-    still filter downstream.
+    Filter fields (document_type, date, section_category, speaker) populate
+    only when the LLM is confident; ``None`` means "no filter on this axis".
+
+    ``out_of_corpus`` is the B1 scope gate: set True iff the question's
+    primary subject is outside the BoE document corpus (e.g. Federal
+    Reserve policy, ECB speaker statements, market data). When True, the
+    analyze_query node ignores any filter values and the router short-
+    circuits to the abstain_out_of_corpus node. Default False so existing
+    callers / old stubs don't accidentally abstain.
     """
 
     document_type: Literal["MPR", "FSR", "MPC_minutes", "speech"] | None = None
@@ -83,6 +89,14 @@ class QueryFilters(BaseModel):
     speaker: str | None = Field(
         default=None,
         description="First name + last name (no honorifics or middle initials)",
+    )
+    out_of_corpus: bool = Field(
+        default=False,
+        description=(
+            "True iff the question's primary subject is outside the BoE corpus "
+            "(e.g. Federal Reserve, ECB, non-BoE speaker). When True, omit all "
+            "other filter fields and the pipeline will abstain."
+        ),
     )
 
 
@@ -111,9 +125,24 @@ def make_analyze_query_node(structured_llm: Any) -> NodeFn:
             )
         except Exception as e:
             logger.warning("analyze_query failed: %s; continuing with no filters", e)
+            # Do NOT set out_of_corpus on transient error — default False via
+            # absence, so the router falls through to retrieve.
             return {"metadata_filters": None, "pipeline_trace": trace}
 
+        # Scope check wins over filter extraction: if the question is out of
+        # corpus, drop any filters Claude might still have emitted and flag
+        # for the router to short-circuit.
+        if filters.out_of_corpus:
+            return {
+                "out_of_corpus": True,
+                "metadata_filters": None,
+                "pipeline_trace": trace,
+            }
+
         raw = filters.model_dump(exclude_none=True)
+        # out_of_corpus=False is not None, so model_dump includes it. Drop
+        # the scope flag from the filter dict (it's not a ChromaDB field).
+        raw.pop("out_of_corpus", None)
         if "speaker" in raw and raw["speaker"]:
             raw["speaker"] = normalise_speaker(raw["speaker"])
         where = _build_where(raw)
@@ -123,6 +152,7 @@ def make_analyze_query_node(structured_llm: Any) -> NodeFn:
         return {
             "metadata_filters": where,
             "initial_metadata_filters": where,
+            "out_of_corpus": False,
             "pipeline_trace": trace,
         }
 
@@ -351,22 +381,23 @@ def make_check_hallucination_node(llm: Any) -> NodeFn:
 # ── abstain ─────────────────────────────────────────────────
 
 
-_ABSTAIN_MESSAGE = (
+# Single source of truth — imported by adapters.py and node factories.
+# Exact-match detection upstream (is_abstain) is sensitive to any edit.
+ABSTAIN_MESSAGE = (
     "This question does not appear to be answerable from the Bank of England document corpus."
 )
 
 
 def make_abstain_node() -> NodeFn:
-    """Build the terminal-abstain node.
+    """Terminal abstain node — reached after two grading rounds find nothing.
 
-    Reached when two consecutive grading passes find no relevant documents.
-    Returns a fixed, neutral message so RAGAS evaluation of out-of-scope
-    queries is reproducible.
+    Sets the canonical abstain message, clears rerank outputs, nulls
+    is_grounded. Pipeline_trace marker: ``abstain`` (no modifier).
     """
 
     def _node(state: RAGState) -> dict:
         return {
-            "answer": _ABSTAIN_MESSAGE,
+            "answer": ABSTAIN_MESSAGE,
             "reranked_documents": [],
             "is_grounded": None,
             "pipeline_trace": _append_trace(state, "abstain"),
@@ -375,7 +406,45 @@ def make_abstain_node() -> NodeFn:
     return _node
 
 
+def make_abstain_out_of_corpus_node() -> NodeFn:
+    """Terminal abstain node — reached when analyze_query flags out_of_corpus.
+
+    Same state effect as ``make_abstain_node`` but with a distinct
+    pipeline_trace marker (``abstain_out_of_corpus``) so the report /
+    demo log can distinguish "we tried and gave up" (plain abstain)
+    from "we rejected the question upfront" (scope check).
+    """
+
+    def _node(state: RAGState) -> dict:
+        return {
+            "answer": ABSTAIN_MESSAGE,
+            "reranked_documents": [],
+            "is_grounded": None,
+            "pipeline_trace": _append_trace(state, "abstain_out_of_corpus"),
+        }
+
+    return _node
+
+
 # ── Routing ─────────────────────────────────────────────────
+
+
+def route_after_analyze_query(
+    state: RAGState,
+) -> Literal["retrieve", "abstain_out_of_corpus"]:
+    """Decide the post-analyze_query edge.
+
+    - out_of_corpus explicitly True -> abstain_out_of_corpus (short-circuit)
+    - out_of_corpus False OR missing -> retrieve (normal path)
+
+    The "missing" case matters: when analyze_query raises (timeout /
+    rate limit), the node returns a partial state with no
+    out_of_corpus key. Defaulting to ``retrieve`` ensures transient
+    errors don't strand legitimate queries in the abstain branch.
+    """
+    if state.get("out_of_corpus") is True:
+        return "abstain_out_of_corpus"
+    return "retrieve"
 
 
 def route_after_grading(
