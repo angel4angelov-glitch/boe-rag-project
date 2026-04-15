@@ -288,6 +288,25 @@ def main() -> int:
                         default="both")
     parser.add_argument("--sample", type=int, default=None,
                         help="Dry-run with first N queries only")
+    parser.add_argument(
+        "--subset-ids",
+        default=None,
+        help="Comma-separated query IDs (e.g. q04,q07,q21) — scores only these. "
+             "Takes precedence over --sample.",
+    )
+    parser.add_argument(
+        "--out-suffix",
+        default=None,
+        help="Append to output filenames (e.g. 'sonnet_check' → "
+             "ragas_baseline_sonnet_check.jsonl). Keeps headline results "
+             "untouched when running a side experiment.",
+    )
+    parser.add_argument(
+        "--skip-aggregate",
+        action="store_true",
+        help="Skip writing ragas_aggregate.json / comparison_table.csv — "
+             "useful with --subset-ids when you only want the per-sample JSONL.",
+    )
     parser.add_argument("--no-resume", action="store_true",
                         help="Truncate existing JSONL and score fresh")
     parser.add_argument("--concurrency", type=int, default=4)
@@ -308,10 +327,20 @@ def main() -> int:
 
     # Inputs
     test_set = load_test_set(Paths.TEST_SET)
-    if args.sample is not None:
+    if args.subset_ids:
+        wanted = {qid.strip() for qid in args.subset_ids.split(",") if qid.strip()}
+        missing = wanted - test_set.keys()
+        if missing:
+            raise SystemExit(f"Unknown query IDs in --subset-ids: {sorted(missing)}")
+        test_set = {qid: row for qid, row in test_set.items() if qid in wanted}
+        logger.info("Subset mode: scoring %d queries: %s",
+                    len(test_set), sorted(test_set.keys()))
+    elif args.sample is not None:
         limited = dict(list(test_set.items())[: args.sample])
         logger.info("Sample mode: scoring first %d queries only", len(limited))
         test_set = limited
+
+    suffix = f"_{args.out_suffix}" if args.out_suffix else ""
 
     baseline_results = load_pipeline_results(out_dir / "baseline_results.json")
     enhanced_results = load_pipeline_results(out_dir / "enhanced_results.json")
@@ -323,9 +352,11 @@ def main() -> int:
     # Score each requested pipeline
     to_run: list[tuple[str, dict, Path]] = []
     if args.pipeline in ("baseline", "both"):
-        to_run.append(("baseline", baseline_results, out_dir / "ragas_baseline.jsonl"))
+        to_run.append(("baseline", baseline_results,
+                       out_dir / f"ragas_baseline{suffix}.jsonl"))
     if args.pipeline in ("enhanced", "both"):
-        to_run.append(("enhanced", enhanced_results, out_dir / "ragas_enhanced.jsonl"))
+        to_run.append(("enhanced", enhanced_results,
+                       out_dir / f"ragas_enhanced{suffix}.jsonl"))
 
     for name, results, jsonl_path in to_run:
         pairs = results_to_samples(results, test_set)
@@ -340,6 +371,16 @@ def main() -> int:
             resume=not args.no_resume,
             concurrency=args.concurrency,
         ))
+
+    if args.skip_aggregate or args.subset_ids:
+        # Subset / side-experiment runs skip the aggregate writes so the
+        # main ragas_aggregate.json / comparison_table.csv stay in sync
+        # with the headline 25-query run.
+        print("\nWrote per-sample JSONL only (aggregate skipped for subset/side run):")
+        for _, _, p in to_run:
+            if p.exists():
+                print(f"  {p} ({p.stat().st_size} bytes)")
+        return 0
 
     # Aggregate
     baseline_scores = _load_jsonl_scores(out_dir / "ragas_baseline.jsonl")
