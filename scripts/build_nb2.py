@@ -20,24 +20,24 @@ def code(text: str) -> None:
 
 
 # ── Title ───────────────────────────────────────────────────
-md("""# Notebook 2 — Baseline vs Enhanced Pipeline (Demo Log)
+md("""# Notebook 2: Baseline vs Enhanced Pipeline (Demo Log)
 
-**Objective**: side-by-side comparison of the naive baseline RAG and the enhanced corrective RAG (CRAG) pipeline on six representative queries that together exercise every behaviour the enhanced pipeline implements.
+**Objective**: comparison of the baseline RAG and the enhanced corrective RAG (CRAG) pipeline on six queries covering the major CRAG behaviours.
 
-This notebook is the source for `demo_log.pdf` (spec 09 deliverable).
+This notebook is the source for `demo_log.pdf` (spec 09).
 
-**Format**: one **smoke test** cell that live-runs the enhanced pipeline (proves the code works end-to-end), then six **showcase** queries that load locked answers from `data/evaluation_results/` so the answers shown here are exactly the answers RAGAS scored in NB3. This guarantees the demo log and the report's metric tables refer to the same answers.
+**Format**: one smoke-test cell live-runs the enhanced pipeline (proves the code path is intact); the six examples below load locked answers from `data/evaluation_results/`, so the answers shown match exactly what RAGAS scored in Notebook 3.
 
-**Behaviours showcased**:
+**Behaviours covered**:
 
 | # | qid | Behaviour |
 |---|-----|-----------|
-| 1 | q11 | Section-aware chunking + box-analysis metadata filter (enhanced wins) |
-| 2 | q01 | Both pipelines succeed; rerank changes top-1 chunk ordering |
+| 1 | q11 | Section-aware chunking + box-analysis metadata filter |
+| 2 | q01 | Both pipelines answer correctly; rerank changes the top-1 chunk |
 | 3 | q15 | CRAG corrective loop: rewrite fires on retrieval failure and recovers |
-| 4 | q24 | Honest limitation: both pipelines struggle with a page-number citation |
-| 5 | q21 | Out-of-corpus scope gate: enhanced abstains rather than hallucinate |
-| 6 | q13 | Hallucination check fires + rerank changes top-1 |""")
+| 4 | q24 | Limitation: both pipelines struggle with a page-number citation |
+| 5 | q21 | Out-of-corpus scope gate: enhanced abstains instead of hallucinating |
+| 6 | q13 | Hallucination check fires; rerank changes the top-1 |""")
 
 # ── Setup ──────────────────────────────────────────────────
 md("""## Setup""")
@@ -93,9 +93,9 @@ def show_query(qid: str, behaviour: str):
 """)
 
 # ── Smoke test ─────────────────────────────────────────────
-md("""## Smoke test — live execution of the enhanced pipeline
+md("""## Smoke test (live execution)
 
-One live call to prove the code path is intact end-to-end. Uses the simplest factual query in the test set (q02). All other showcase cells below load locked outputs.""")
+One live call to prove the code path is intact. Uses the simplest factual query in the test set (q02). All examples below load locked outputs.""")
 
 code("""# q02: simple factual, ~3 API calls (Anthropic + OpenAI + Cohere), <$0.05.
 # Wrapped in try/except so transient API issues don't break the notebook.
@@ -115,34 +115,34 @@ except Exception as exc:
 """)
 
 # ── 6 showcases ────────────────────────────────────────────
-md("""## Showcase 1 — Box D consumption weakness (q11)
+md("""## Example 1: Box D consumption weakness (q11)
 
-**What to notice**: the enhanced pipeline filters retrieval to `section_category=box_analysis`, pulling Box D as a coherent unit. The baseline scatters across unrelated MPR paragraphs and produces a longer but less precise answer. The enhanced pipeline's hallucination check also fires here (trace shows `generate → check_hallucination → generate`) — the retry tightened the answer.""")
+The metadata filter (`section_category=box_analysis`, `date=2025-11`, `document_type=MPR`) retrieves the Box D chunk directly: one targeted chunk instead of five. The hallucination check fires and the retry tightens the answer to what that chunk strictly supports, flagging that Section 3.3 (referenced by Box D) falls outside the retrieval window. The baseline, with five unfiltered chunks, composes a broader multi-chunk answer. The two outputs illustrate different grounding philosophies (strict single-chunk grounding vs permissive multi-chunk synthesis), not a direct win-loss on this query.""")
 code("""show_query("q11", "Section-aware chunking + box-analysis metadata filter")""")
 
-md("""## Showcase 2 — MPC vote split February 2026 (q01)
+md("""## Example 2: MPC vote split February 2026 (q01)
 
-**What to notice**: both pipelines succeed (vote splits are simple factual content that lives in many chunks). The interesting bit for the enhanced pipeline is the rerank: pre-rerank top-1 is one chunk, post-rerank top-1 is a different one. Cohere's relevance model surfaces a more directly-on-question chunk than vector cosine similarity alone.""")
+Both pipelines answer correctly (vote splits are simple factual content appearing in many chunks). For the enhanced pipeline, the relevant detail is the rerank: pre-rerank top-1 is one chunk, post-rerank top-1 is a different one. Cohere's relevance model surfaces a more relevant chunk than vector cosine similarity alone.""")
 code("""show_query("q01", "Both pipelines succeed; rerank flips top-1")""")
 
-md("""## Showcase 3 — Lombardelli asymmetric policy risk (q15)
+md("""## Example 3: Lombardelli asymmetric policy risk (q15)
 
-**What to notice**: the enhanced pipeline's first retrieval pass found nothing the grader judged relevant. The CRAG corrective loop fired: `analyze_query → retrieve → grade_documents → rewrite_query → retrieve → grade_documents → rerank → generate`. The rewritten query recovered relevant chunks and produced a grounded answer.""")
+The enhanced pipeline's first retrieval pass returned nothing the grader judged relevant. The CRAG corrective loop fired: `analyze_query → retrieve → grade_documents → rewrite_query → retrieve → grade_documents → rerank → generate`. The rewritten query recovered relevant chunks and produced a grounded answer.""")
 code("""show_query("q15", "CRAG corrective loop: rewrite fires and recovers")""")
 
-md("""## Showcase 4 — GDP Q3 2025, page 23 (q24) — honest limitation
+md("""## Example 4: GDP Q3 2025, page 23 (q24)
 
-**What to notice**: the question asks for an exact figure from a specific page of a specific document. Both pipelines struggle because (a) embeddings don't preserve numerical precision and (b) chunks don't preserve page numbers. The enhanced pipeline ultimately abstains (`abstain` in the trace) rather than fabricate a number — which is the right behaviour, even though the assignment ground truth says this question is in-corpus. This is one of three false-positive abstains contributing to the 0.25 abstain-precision noted in NB3.""")
+The question asks for an exact figure from a specific page of a specific document. Both pipelines struggle because (a) embeddings don't preserve numerical precision and (b) chunks don't preserve page numbers. The enhanced pipeline ultimately abstains (`abstain` in the trace) rather than fabricate a number, which is the correct behaviour even though the assignment's ground truth says this question is in-corpus. This is one of three false-positive abstains contributing to the 0.25 abstain-precision reported in Notebook 3.""")
 code("""show_query("q24", "Both pipelines struggle; enhanced abstains rather than fabricate")""")
 
-md("""## Showcase 5 — Federal Reserve view on rates (q21) — out-of-corpus
+md("""## Example 5: Federal Reserve view on rates (q21)
 
-**What to notice**: the question is about the Fed, not the Bank of England. The B1 scope-detection extension flags `out_of_corpus=True` in `analyze_query`, and the router short-circuits straight to `abstain_out_of_corpus` — no retrieval, no generation, no API spend on a question the corpus cannot answer. Trace: `analyze_query → abstain_out_of_corpus`. This is the should-abstain-recall=1.00 behaviour.""")
+The question is about the Fed, not the Bank of England. The scope-detection layer in `analyze_query` flags `out_of_corpus=True`, and the router short-circuits to `abstain_out_of_corpus`: no retrieval, no generation, no API spend on a question the corpus cannot answer. Trace: `analyze_query → abstain_out_of_corpus`. This is the should-abstain-recall = 1.00 behaviour.""")
 code("""show_query("q21", "Out-of-corpus scope gate: enhanced abstains")""")
 
-md("""## Showcase 6 — US corporate default risks (q13)
+md("""## Example 6: US corporate default risks (q13)
 
-**What to notice**: this query exercises two safety mechanisms in sequence. Cohere reranking changes the top-1 chunk, and the hallucination check fires after the first generation (trace shows `generate → check_hallucination → generate → check_hallucination`). The retry produced a grounded final answer.""")
+This query triggers two safety mechanisms in sequence: Cohere reranking changes the top-1 chunk, and the hallucination check fires after the first generation (trace: `generate → check_hallucination → generate → check_hallucination`). The retry produced a grounded final answer.""")
 code("""show_query("q13", "Hallucination check fires + rerank flips top-1")""")
 
 # ── Summary table ─────────────────────────────────────────
@@ -167,10 +167,24 @@ for qid in ["q11", "q01", "q15", "q24", "q21", "q13"]:
 display(pd.DataFrame(rows).set_index("qid"))
 """)
 
+# ── Synthesis ─────────────────────────────────────────────
+md("""## What these six queries collectively demonstrate
+
+Across the six representative queries, every advanced technique from Section 2 of the report fires at least once:
+
+- **Metadata filter** applied on 5 of 6 (every query except q21, which short-circuits before retrieval)
+- **Rerank flipped top-1** on 3 of 6 (q01, q15, q13)
+- **CRAG rewrite** triggered on 2 of 6 (q15 recovered, q24 did not)
+- **Hallucination retry** fired on 2 of 6 (q11, q13 both produced grounded final answers)
+- **Out-of-corpus scope gate** fired on 1 of 6 (q21) with zero API spend beyond `analyze_query`
+- **Post-retrieval abstain** fired on 1 of 6 (q24, a false-positive on in-corpus content)
+
+The abstain-related behaviours (q21 correct, q24 false-positive) are the decisive architectural difference from the baseline: baseline attempts every query and therefore cannot demonstrate scope awareness. Notebook 3 quantifies whether this behavioural delta translates into RAGAS metric gains at the 25-query scale.""")
+
 # ── Closing ───────────────────────────────────────────────
 md("""## What's next
 
-Notebook 3 quantifies these behaviours across the full 25-query test set with RAGAS metrics, paired Wilcoxon + Holm-Bonferroni statistical tests, and per-category analysis.""")
+Notebook 3 quantifies these behaviours across the full 25-query test set with RAGAS metrics, paired Wilcoxon and Holm-Bonferroni statistical tests, and per-category analysis.""")
 
 nb["cells"] = cells
 nb["metadata"]["kernelspec"] = {"display_name": "Python 3", "language": "python", "name": "python3"}
