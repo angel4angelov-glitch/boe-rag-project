@@ -1,49 +1,75 @@
 # BoE Policy Analysis RAG System
 
-Corrective RAG system over Bank of England monetary policy documents (MPRs, FSRs, MPC minutes, speeches). MSc Financial Technology — IB9AU0 Individual Assignment 2.
+Corrective RAG system over Bank of England monetary policy documents (MPRs, FSRs, MPC minutes, speeches). MSc Financial Technology, IB9AU0 Individual Assignment 2, student u2212350.
+
+## Submission deliverables
+
+Per the IB9AU0 brief, this zip contains three main deliverables:
+
+| # | Deliverable | Location in this zip |
+|---|-------------|----------------------|
+| 1 | **Report** describing design decisions, results, evaluation, and reflection (1500 words) | [`report.pdf`](report.pdf) |
+| 2 | **Demo log** with sample inputs, system outputs, and commentary (6 representative queries) | [`demo_log.pdf`](demo_log.pdf) |
+| 3 | **Notebooks + source code** for the full pipeline (baseline + enhanced CRAG) | [`notebooks/`](notebooks/) and [`src/boe_rag/`](src/boe_rag/) |
+
+Supporting files: [`ai_disclosure.md`](ai_disclosure.md), [`requirements.txt`](requirements.txt), [`.env.example`](.env.example).
 
 ## Structure
 
 ```
-boe-rag-project/
-├── PLAN.md                          # Full project plan and decisions
+u2212350.zip
+├── report.pdf                       # Deliverable 1: 1500-word report
+├── demo_log.pdf                     # Deliverable 2: 6 annotated queries
+├── ai_disclosure.md                 # Required AI usage statement
 ├── README.md                        # This file
-├── requirements.txt                 # Python dependencies
-├── .env.example                     # API keys template
+├── requirements.txt                 # Pinned Python dependencies
+├── pyproject.toml                   # Editable-install metadata
+├── .env.example                     # API keys template (no real keys)
 │
-├── data/
-│   ├── raw/                         # Scraped BoE HTML/PDFs
-│   └── processed/                   # Chunked + metadata-tagged documents
+├── notebooks/                       # Deliverable 3a: narrative notebooks
+│   ├── 01_data_ingestion_indexing.ipynb   # Scrape, chunk, embed, store
+│   ├── 02_baseline_and_enhanced.ipynb     # Both pipelines (source of demo_log.pdf)
+│   └── 03_evaluation.ipynb                # RAGAS comparison + statistics
 │
-├── notebooks/
-│   ├── 01_data_ingestion_indexing.ipynb    # Scrape, chunk, embed, store
-│   ├── 02_baseline_and_enhanced.ipynb     # Both RAG pipelines
-│   └── 03_evaluation.ipynb                # RAGAS comparison
+├── src/boe_rag/                     # Deliverable 3b: installable package
+│   ├── scraper/                     # BoE HTML scrapers
+│   ├── chunking/                    # Section-aware + baseline chunkers
+│   ├── indexing/                    # ChromaDB embedding + storage
+│   ├── pipelines/                   # BasePipeline, baseline, enhanced (LangGraph)
+│   ├── evaluation/                  # RAGAS metrics + CRAG-specific metrics
+│   ├── config.py                    # All model names, thresholds, paths
+│   └── models.py                    # Frozen dataclasses + StrEnum types
 │
-├── evaluation/
-│   ├── test_questions.csv           # 15-20 queries with ground truth
-│   └── results/                     # RAGAS output scores
+├── tests/                           # 262+ tests (pytest)
+├── service/                         # FastAPI wrapper (optional)
+├── scripts/                         # Build/render helpers
+├── figures/                         # Figure 1 (pipeline diagram), Figure 2 (per-category chart)
+├── docs/                            # Implementation specs 01-10
 │
-└── outputs/
-    ├── report.pdf                   # 1500-word report
-    └── demo_log.pdf                 # Sample inputs/outputs/commentary
+└── data/
+    ├── raw/                         # Scraped BoE source documents
+    ├── chunks/                      # Processed chunks (baseline + enhanced)
+    ├── evaluation_results/          # RAGAS scores, CRAG metrics, per-category CSV
+    └── test_set.csv                 # 25-query evaluation set with ground truth
 ```
 
 ## Quick Start
 
-1. `pip install -r requirements.txt`
-2. Copy `.env.example` to `.env` and add API keys
-3. Run notebooks in order: 01 → 02 → 03
+```bash
+pip install -r requirements.txt
+cp .env.example .env   # then add ANTHROPIC_API_KEY, OPENAI_API_KEY, COHERE_API_KEY
+# run notebooks in order: 01 -> 02 -> 03
+```
 
 ## Stack
 
-- **Generation:** Claude (Anthropic API)
-- **Embeddings:** OpenAI text-embedding-3-small
-- **Vector store:** ChromaDB
-- **Reranking:** Cohere rerank
-- **Orchestration:** LangGraph
-- **Evaluation:** RAGAS
-- **Observability (optional):** LangSmith
+- **Generation**: Claude Sonnet 4 via `langchain-anthropic`
+- **Embeddings**: OpenAI `text-embedding-3-small`
+- **Vector store**: ChromaDB (`boe_baseline`, `boe_enhanced` collections)
+- **Reranking**: Cohere `rerank-v3.5`
+- **Orchestration**: LangGraph (`StateGraph` with conditional edges)
+- **Evaluation**: RAGAS v0.2+ (Faithfulness, Answer Relevancy, Context Precision, Context Recall)
+- **Observability (optional)**: LangSmith
 
 ## HTTP service (optional)
 
@@ -59,8 +85,7 @@ Then:
 - `GET http://localhost:8000/docs` — Swagger UI (auto-generated)
 - `GET http://localhost:8000/health` / `/ready` — liveness + readiness probes
 
-Optional API-key gate: set `SERVICE_API_KEY=...` in `.env` and pass
-`X-API-Key: ...` on every request. When the env var is unset, no auth.
+Optional API-key gate: set `SERVICE_API_KEY=...` in `.env` and pass `X-API-Key: ...` on every request. When the env var is unset, no auth.
 
 Example:
 ```bash
@@ -69,10 +94,9 @@ curl -X POST http://localhost:8000/query \
      -d '{"question":"What was the February 2026 MPC vote split?"}'
 ```
 
-## Observability — LangSmith tracing (optional)
+## Observability: LangSmith tracing (optional)
 
-Set the three LangSmith env vars in `.env` to capture every pipeline run
-and LLM call as a nested trace on [smith.langchain.com](https://smith.langchain.com):
+Set the three LangSmith env vars in `.env` to capture every pipeline run and LLM call as a nested trace on [smith.langchain.com](https://smith.langchain.com):
 
 ```
 LANGSMITH_TRACING=true
@@ -80,15 +104,8 @@ LANGSMITH_API_KEY=lsv2_pt_...
 LANGSMITH_PROJECT=boe-rag
 ```
 
-What's captured: `EnhancedPipeline.run` / `BaselinePipeline.run` as a
-parent span, with every `ChatAnthropic` call, retry attempt, and
-LangGraph node execution nested beneath. Filter the dashboard by the
-`pipeline:baseline` / `pipeline:enhanced` tag.
+What's captured: `EnhancedPipeline.run` / `BaselinePipeline.run` as a parent span, with every `ChatAnthropic` call, retry attempt, and LangGraph node execution nested beneath. Filter the dashboard by the `pipeline:baseline` / `pipeline:enhanced` tag.
 
-What's NOT captured (raw SDK calls, no LangChain object to wrap):
-ChromaDB queries, Cohere rerank, OpenAI embeddings. These appear as
-opaque node boxes in the trace with their state I/O visible.
+What's NOT captured (raw SDK calls, no LangChain object to wrap): ChromaDB queries, Cohere rerank, OpenAI embeddings. These appear as opaque node boxes in the trace with their state I/O visible.
 
-Tracing is auto-disabled in tests (`tests/conftest.py`) and during
-RAGAS runs (`scripts/run_ragas.py` top) — the free-tier 5k/month quota
-is preserved for pipeline debugging.
+Tracing is auto-disabled in tests (`tests/conftest.py`) and during RAGAS runs (`scripts/run_ragas.py` top), so the free-tier 5k/month quota is preserved for pipeline debugging.
