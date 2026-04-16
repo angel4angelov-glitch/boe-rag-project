@@ -19,24 +19,24 @@ CSS = """
 <style>
   @page { size: A4; margin: 22mm 18mm; }
   body {
-    font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
-    font-size: 10.5pt;
-    line-height: 1.45;
-    color: #111;
-    max-width: 720px;
-    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+    line-height: 1.5;
+    color: #000;
   }
-  h1 { font-size: 18pt; margin: 0 0 6pt 0; }
-  h2 { font-size: 13pt; margin: 18pt 0 6pt 0; border-bottom: 1px solid #ccc; padding-bottom: 2pt; }
-  h3 { font-size: 11pt; margin: 12pt 0 4pt 0; }
-  p { margin: 4pt 0 8pt 0; text-align: justify; }
-  table { border-collapse: collapse; margin: 6pt 0 12pt 0; font-size: 9.5pt; width: 100%; }
-  th, td { border: 1px solid #999; padding: 3pt 6pt; vertical-align: top; }
-  th { background: #f0f0f0; text-align: left; }
-  code { font-family: "SF Mono", Menlo, monospace; font-size: 9.5pt; background: #f5f5f5; padding: 0 2pt; }
-  img { max-width: 100%; height: auto; display: block; margin: 6pt auto; }
-  hr { border: none; border-top: 1px solid #ccc; margin: 12pt 0; }
-  strong { font-weight: 600; }
+  h1 { font-family: Arial, Helvetica, sans-serif; font-size: 16pt; font-weight: bold; margin: 0 0 8pt 0; line-height: 1.3; }
+  h2 { font-family: Arial, Helvetica, sans-serif; font-size: 13pt; font-weight: bold; margin: 16pt 0 6pt 0; line-height: 1.3; }
+  h3 { font-family: Arial, Helvetica, sans-serif; font-size: 11.5pt; font-weight: bold; margin: 12pt 0 4pt 0; line-height: 1.3; }
+  p { margin: 0 0 8pt 0; text-align: justify; }
+  ul, ol { margin: 4pt 0 8pt 0; padding-left: 22pt; }
+  li { margin-bottom: 3pt; }
+  table { border-collapse: collapse; margin: 6pt 0 12pt 0; font-size: 10pt; width: 100%; line-height: 1.3; }
+  th, td { border: 1px solid #000; padding: 4pt 6pt; vertical-align: top; }
+  th { background: #e8e8e8; text-align: left; font-weight: bold; }
+  code { font-family: "Courier New", Courier, monospace; font-size: 10pt; background: #f2f2f2; padding: 0 2pt; }
+  img { max-width: 100%; height: auto; display: block; margin: 8pt auto; }
+  hr { border: none; border-top: 1px solid #000; margin: 14pt 0; }
+  strong { font-weight: bold; }
 </style>
 """
 
