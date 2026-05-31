@@ -85,6 +85,6 @@ Claude Sonnet 4 · OpenAI embeddings · ChromaDB · Cohere rerank · LangGraph �
 
 ## Read more
 
-[`notebooks/`](notebooks/): the full pipeline end to end (ingest, both pipelines, evaluation) · [`docs/`](docs/): component specs
+[`notebooks/`](notebooks/): the full pipeline end to end (ingest, both pipelines, evaluation)
 
 <sub>Individual project for **IB9AU0: Generative AI & AI Applications**, MSc Financial Technology (Warwick Business School). Graded **90/100**.</sub>
