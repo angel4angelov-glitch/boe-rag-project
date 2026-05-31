@@ -30,3 +30,11 @@ Thumbs.db
 # Claude Code internal state
 .claude/
 
+
+# Academic submission artifacts — kept local, not published
+report.pdf
+report.html
+report.md
+demo_log.pdf
+demo_log.html
+ai_disclosure.md

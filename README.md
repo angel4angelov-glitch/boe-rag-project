@@ -56,7 +56,7 @@ Solid arrows are fixed steps; **dashed arrows are decisions an LLM makes at runt
 | Retrieval precision | 0.66 | **0.81** |
 | Refuses when it should | n/a | **100%** |
 
-The honest version is in the report: with n = 25 nothing reaches strict significance, and I say so rather than cherry-pick. The real insight is that **RAGAS scores what a system answers, but a corrective system's value is in what it refuses**, so I built a metric for that.
+The honest version: with n = 25 nothing reaches strict significance, and I say so rather than cherry-pick. The real insight is that **RAGAS scores what a system answers, but a corrective system's value is in what it refuses**, so I built a metric for that.
 
 ## Run it
 
@@ -85,6 +85,6 @@ Claude Sonnet 4 · OpenAI embeddings · ChromaDB · Cohere rerank · LangGraph �
 
 ## Read more
 
-[`report.pdf`](report.pdf): full design, evaluation, and reflection · [`demo_log.pdf`](demo_log.pdf): six worked queries · [`docs/`](docs/): component specs
+[`notebooks/`](notebooks/): the full pipeline end to end (ingest, both pipelines, evaluation) · [`docs/`](docs/): component specs
 
 <sub>Individual project for **IB9AU0: Generative AI & AI Applications**, MSc Financial Technology (Warwick Business School). Graded **90/100**.</sub>
