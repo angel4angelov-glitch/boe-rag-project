@@ -1,111 +1,90 @@
-# BoE Policy Analysis RAG System
+# BoE Policy Analysis — Agentic Corrective RAG
 
-Corrective RAG system over Bank of England monetary policy documents (MPRs, FSRs, MPC minutes, speeches). MSc Financial Technology, IB9AU0 Individual Assignment 2, student u2212350.
+![Python](https://img.shields.io/badge/python-3.11+-blue.svg)
+![Orchestration](https://img.shields.io/badge/orchestration-LangGraph-purple.svg)
+![Eval](https://img.shields.io/badge/eval-RAGAS-orange.svg)
+![Grade](https://img.shields.io/badge/grade-90%2F100-brightgreen.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-## Submission deliverables
+**An AI system that answers questions about Bank of England policy with a source behind every claim — and refuses when it can't.**
 
-Per the IB9AU0 brief, this zip contains three main deliverables:
+> A general-purpose chatbot misreads central-bank documents two ways: its training data predates the latest rate decision, and it invents vote splits and inflation figures with full confidence. This grounds every answer in 23 scraped BoE documents, and treats *knowing when to stay silent* as a core design goal.
 
-| # | Deliverable | Location in this zip |
-|---|-------------|----------------------|
-| 1 | **Report** describing design decisions, results, evaluation, and reflection (1500 words) | [`report.pdf`](report.pdf) |
-| 2 | **Demo log** with sample inputs, system outputs, and commentary (6 representative queries) | [`demo_log.pdf`](demo_log.pdf) |
-| 3 | **Notebooks + source code** for the full pipeline (baseline + enhanced CRAG) | [`notebooks/`](notebooks/) and [`src/boe_rag/`](src/boe_rag/) |
+---
 
-Supporting files: [`ai_disclosure.md`](ai_disclosure.md), [`requirements.txt`](requirements.txt), [`.env.example`](.env.example).
+### What it is
 
-## Structure
+A retrieval-augmented generation (RAG) system, built as two pipelines on the **same** corpus so the design is measured, not the data:
+- a **naive baseline** (fixed chunks, plain retrieval, vanilla prompt), and
+- an **agentic Corrective RAG** — a LangGraph state machine that grades its own retrieved evidence, retries, and self-checks before answering.
 
-```
-u2212350.zip
-├── report.pdf                       # Deliverable 1: 1500-word report
-├── demo_log.pdf                     # Deliverable 2: 6 annotated queries
-├── ai_disclosure.md                 # Required AI usage statement
-├── README.md                        # This file
-├── requirements.txt                 # Pinned Python dependencies
-├── pyproject.toml                   # Editable-install metadata
-├── .env.example                     # API keys template (no real keys)
-│
-├── notebooks/                       # Deliverable 3a: narrative notebooks
-│   ├── 01_data_ingestion_indexing.ipynb   # Scrape, chunk, embed, store
-│   ├── 02_baseline_and_enhanced.ipynb     # Both pipelines (source of demo_log.pdf)
-│   └── 03_evaluation.ipynb                # RAGAS comparison + statistics
-│
-├── src/boe_rag/                     # Deliverable 3b: installable package
-│   ├── scraper/                     # BoE HTML scrapers
-│   ├── chunking/                    # Section-aware + baseline chunkers
-│   ├── indexing/                    # ChromaDB embedding + storage
-│   ├── pipelines/                   # BasePipeline, baseline, enhanced (LangGraph)
-│   ├── evaluation/                  # RAGAS metrics + CRAG-specific metrics
-│   ├── config.py                    # All model names, thresholds, paths
-│   └── models.py                    # Frozen dataclasses + StrEnum types
-│
-├── tests/                           # 262+ tests (pytest)
-├── service/                         # FastAPI wrapper (optional)
-├── scripts/                         # Build/render helpers
-├── figures/                         # Figure 1 (pipeline diagram), Figure 2 (per-category chart)
-├── docs/                            # Implementation specs 01-10
-│
-└── data/
-    ├── raw/                         # Scraped BoE source documents
-    ├── chunks/                      # Processed chunks (baseline + enhanced)
-    ├── evaluation_results/          # RAGAS scores, CRAG metrics, per-category CSV
-    └── test_set.csv                 # 25-query evaluation set with ground truth
-```
+### What it does
 
-## Quick Start
+- **Cites everything** — each claim is tied to a specific source chunk.
+- **Self-corrects** — three LLM-decided loops: abstain on out-of-scope questions *before* retrieving, rewrite-and-retry on a bad query, and regenerate if the draft answer isn't grounded.
+- **Knows its limits** — a pre-retrieval **scope gate** (my original contribution) refuses out-of-corpus questions instead of guessing.
+- **Proves it works** — RAGAS metrics with proper statistics: **+0.148 retrieval precision**, and **100% recall on questions that should be refused**.
+
+---
+
+## How it works
+
+Solid arrows are fixed steps; **dashed arrows are decisions an LLM makes at runtime** — that's what makes it agentic rather than a fixed chain.
+
+![Enhanced pipeline as a LangGraph state machine](figures/pipeline_diagram.png)
+
+<details>
+<summary><b>The five techniques behind it</b> (for the AI crowd)</summary>
+
+| # | Technique | Fixes |
+|---|---|---|
+| 1 | **Section-aware chunking** with metadata (`date`, `speaker`, `box_id`, …) | Fixed-size splitting fragments vote tallies and Boxes |
+| 2 | **LLM query rewriting** — retry once on zero relevant chunks | Retrieval failure → empty context |
+| 3 | **Cohere `rerank-v3.5`** reorders top-10 → top-5 | Cosine similarity misjudges fine relevance |
+| 4 | **Self-refinement loop** — hallucination check triggers a stricter regeneration | Confident, ungrounded answers |
+| 5 | **Out-of-corpus scope gate** *(original)* — refuse *before* retrieving | Vanilla CRAG wastes a full retrieval before realising the question is out of scope |
+
+*Anchors: Yan et al. 2024 (CRAG), Asai et al. 2023 (Self-RAG), Karpukhin et al. 2020.*
+</details>
+
+## Results
+
+25-query test set, graded by a different model family (`gpt-4o-mini`) to avoid bias, with paired Wilcoxon tests, Holm–Bonferroni correction, and bootstrap CIs.
+
+| | Baseline | Enhanced |
+|---|---|---|
+| Retrieval precision | 0.66 | **0.81** |
+| Refuses when it should | — | **100%** |
+
+The honest version is in the report: with n = 25 nothing reaches strict significance, and I say so rather than cherry-pick. The real insight is that **RAGAS scores what a system answers, but a corrective system's value is in what it refuses** — so I built a metric for that.
+
+## Run it
 
 ```bash
-pip install -r requirements.txt
-cp .env.example .env   # then add ANTHROPIC_API_KEY, OPENAI_API_KEY, COHERE_API_KEY
-# run notebooks in order: 01 -> 02 -> 03
+git clone https://github.com/angel4angelov-glitch/boe-rag-project.git
+cd boe-rag-project
+pip install -e ".[dev]"
+cp .env.example .env   # add ANTHROPIC_API_KEY, OPENAI_API_KEY, COHERE_API_KEY
 ```
+
+Then run `notebooks/01 → 02 → 03` (ingest → pipelines → evaluation).
+
+<details>
+<summary><b>Or run it as a live app</b> (FastAPI + Streamlit UI)</summary>
+
+```bash
+pip install -e ".[service]" streamlit
+uvicorn service.main:app --reload     # API on :8000  (Swagger at /docs)
+streamlit run ui.py                   # browser UI
+```
+</details>
 
 ## Stack
 
-- **Generation**: Claude Sonnet 4 via `langchain-anthropic`
-- **Embeddings**: OpenAI `text-embedding-3-small`
-- **Vector store**: ChromaDB (`boe_baseline`, `boe_enhanced` collections)
-- **Reranking**: Cohere `rerank-v3.5`
-- **Orchestration**: LangGraph (`StateGraph` with conditional edges)
-- **Evaluation**: RAGAS v0.2+ (Faithfulness, Answer Relevancy, Context Precision, Context Recall)
-- **Observability (optional)**: LangSmith
+Claude Sonnet 4 · OpenAI embeddings · ChromaDB · Cohere rerank · LangGraph · RAGAS · FastAPI · 248 tests
 
-## HTTP service (optional)
+## Read more
 
-Wrap the pipeline as a FastAPI service for curl / browser access:
+[`report.pdf`](report.pdf) — full design, evaluation, and reflection · [`demo_log.pdf`](demo_log.pdf) — six worked queries · [`docs/`](docs/) — component specs
 
-```bash
-pip install -e ".[service]"
-uvicorn service.main:app --reload
-```
-
-Then:
-- `POST http://localhost:8000/query` — body `{"question": "...", "pipeline": "enhanced"}`
-- `GET http://localhost:8000/docs` — Swagger UI (auto-generated)
-- `GET http://localhost:8000/health` / `/ready` — liveness + readiness probes
-
-Optional API-key gate: set `SERVICE_API_KEY=...` in `.env` and pass `X-API-Key: ...` on every request. When the env var is unset, no auth.
-
-Example:
-```bash
-curl -X POST http://localhost:8000/query \
-     -H "Content-Type: application/json" \
-     -d '{"question":"What was the February 2026 MPC vote split?"}'
-```
-
-## Observability: LangSmith tracing (optional)
-
-Set the three LangSmith env vars in `.env` to capture every pipeline run and LLM call as a nested trace on [smith.langchain.com](https://smith.langchain.com):
-
-```
-LANGSMITH_TRACING=true
-LANGSMITH_API_KEY=lsv2_pt_...
-LANGSMITH_PROJECT=boe-rag
-```
-
-What's captured: `EnhancedPipeline.run` / `BaselinePipeline.run` as a parent span, with every `ChatAnthropic` call, retry attempt, and LangGraph node execution nested beneath. Filter the dashboard by the `pipeline:baseline` / `pipeline:enhanced` tag.
-
-What's NOT captured (raw SDK calls, no LangChain object to wrap): ChromaDB queries, Cohere rerank, OpenAI embeddings. These appear as opaque node boxes in the trace with their state I/O visible.
-
-Tracing is auto-disabled in tests (`tests/conftest.py`) and during RAGAS runs (`scripts/run_ragas.py` top), so the free-tier 5k/month quota is preserved for pipeline debugging.
+<sub>Individual project for **IB9AU0 — Generative AI & AI Applications**, MSc Financial Technology (Warwick Business School). Graded **90/100**.</sub>
